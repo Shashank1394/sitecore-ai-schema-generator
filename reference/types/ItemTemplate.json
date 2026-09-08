@@ -10,7 +10,8 @@
         "display": "ItemTemplateAccess",
         "namedTypes": [
           "ItemTemplateAccess"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -20,8 +21,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -32,7 +35,8 @@
         "display": "ItemTemplateConnection",
         "namedTypes": [
           "ItemTemplateConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -42,8 +46,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -52,8 +58,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "directOnly",
@@ -62,8 +70,10 @@
             "display": "Boolean",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -72,8 +82,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -82,8 +94,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -94,7 +108,8 @@
         "display": "ItemTemplateFieldConnection",
         "namedTypes": [
           "ItemTemplateFieldConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -104,8 +119,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -114,8 +131,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -124,8 +143,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -134,8 +155,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -146,7 +169,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -157,7 +181,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -167,8 +192,10 @@
             "display": "[ID]!",
             "namedTypes": [
               "ID"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -179,7 +206,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -190,7 +218,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -201,7 +230,8 @@
         "display": "ItemTemplateFieldConnection",
         "namedTypes": [
           "ItemTemplateFieldConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -211,8 +241,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -221,8 +253,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -231,8 +265,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -241,8 +277,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -253,7 +291,8 @@
         "display": "ItemTemplateSectionConnection",
         "namedTypes": [
           "ItemTemplateSectionConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -263,8 +302,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -273,8 +314,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -283,8 +326,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -293,8 +338,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -305,7 +352,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -315,8 +363,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -327,7 +377,8 @@
         "display": "ID!",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -337,8 +388,10 @@
             "display": "IdFormat",
             "namedTypes": [
               "IdFormat"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     }

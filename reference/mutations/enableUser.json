@@ -3,51 +3,153 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "EnableUserInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "EnableUserInput!",
+        "namedTypes": [
+          "EnableUserInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "EnableUserPayload",
+    "namedTypes": [
+      "EnableUserPayload"
+    ],
+    "required": false
   },
-  "returnType": "EnableUserPayload",
-  "inputTypes": {
-    "EnableUserInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for enabling a security user.",
-      "fields": {
-        "userName": {
-          "type": "String!",
-          "description": "The name of the user to enable."
-        }
+  "inputDependencyGraph": {
+    "root": {
+      "display": "EnableUserInput!",
+      "namedTypes": [
+        "EnableUserInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "EnableUserInput!",
+        "namedTypes": [
+          "EnableUserInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "EnableUserInput": {
+        "name": "EnableUserInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for enabling a security user.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "userName",
+            "description": "The name of the user to enable.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/EnableUserInput.json",
+        "dependencies": [
+          "String"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean",
-      "description": "The operation status.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "EnableUserPayload",
       "namedTypes": [
         "EnableUserPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "EnableUserPayload",
+        "namedTypes": [
+          "EnableUserPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "EnableUserPayload": {
+        "name": "EnableUserPayload",
         "kind": "OBJECT",
+        "description": "The result of the enable operation for the security user.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": "The operation status.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/EnableUserPayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

@@ -9,7 +9,8 @@
       "description": "The names of indexes to rebuild.",
       "type": {
         "display": "[UNKNOWN!]!",
-        "namedTypes": []
+        "namedTypes": [],
+        "required": true
       }
     }
   ],

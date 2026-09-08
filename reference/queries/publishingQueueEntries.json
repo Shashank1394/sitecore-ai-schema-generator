@@ -3,135 +3,547 @@
   "operationType": "query",
   "rootType": "Query",
   "description": null,
-  "arguments": {
-    "query": {
-      "type": "PublishingQueueEntriesQueryInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "query",
+      "description": null,
+      "type": {
+        "display": "PublishingQueueEntriesQueryInput!",
+        "namedTypes": [
+          "PublishingQueueEntriesQueryInput"
+        ],
+        "required": true
+      },
+      "required": true
+    }
+  ],
+  "returnType": {
+    "display": "PublishingQueueEntryResult",
+    "namedTypes": [
+      "PublishingQueueEntryResult"
+    ],
+    "required": false
+  },
+  "inputDependencyGraph": {
+    "root": {
+      "display": "PublishingQueueEntriesQueryInput!",
+      "namedTypes": [
+        "PublishingQueueEntriesQueryInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "PublishingQueueEntriesQueryInput!",
+        "namedTypes": [
+          "PublishingQueueEntriesQueryInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "PublishingQueueEntriesQueryInput": {
+        "name": "PublishingQueueEntriesQueryInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents an input for querying publishing queue entries.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "dateFilter",
+            "description": "The date filter parameters.",
+            "type": {
+              "display": "DateFilterInput",
+              "namedTypes": [
+                "DateFilterInput"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "itemsFilter",
+            "description": "The items filter parameters.",
+            "type": {
+              "display": "ItemsFilterInput",
+              "namedTypes": [
+                "ItemsFilterInput"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "paging",
+            "description": "The paging parameters.",
+            "type": {
+              "display": "PagingInput",
+              "namedTypes": [
+                "PagingInput"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "sort",
+            "description": "The sort parameters.",
+            "type": {
+              "display": "SortByInput!",
+              "namedTypes": [
+                "SortByInput"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PublishingQueueEntriesQueryInput.json",
+        "dependencies": [
+          "DateFilterInput",
+          "ItemsFilterInput",
+          "PagingInput",
+          "SortByInput"
+        ]
+      },
+      "DateFilterInput": {
+        "name": "DateFilterInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input with date filtering parameters.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "dateFrom",
+            "description": "The date to filter results from.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "dateTo",
+            "description": "The date to filter results to.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/DateFilterInput.json",
+        "dependencies": [
+          "DateTime"
+        ]
+      },
+      "DateTime": {
+        "name": "DateTime",
+        "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/DateTime.json",
+        "dependencies": []
+      },
+      "ItemsFilterInput": {
+        "name": "ItemsFilterInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input with items filtering parameters.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "includeItems",
+            "description": "The include items filter parameters.",
+            "type": {
+              "display": "[ItemToFilterInput]",
+              "namedTypes": [
+                "ItemToFilterInput"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ItemsFilterInput.json",
+        "dependencies": [
+          "ItemToFilterInput"
+        ]
+      },
+      "ItemToFilterInput": {
+        "name": "ItemToFilterInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input with filtering parameters for item.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "itemId",
+            "description": "The item ID.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "language",
+            "description": "The item language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ItemToFilterInput.json",
+        "dependencies": [
+          "ID",
+          "String"
+        ]
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PagingInput": {
+        "name": "PagingInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input with paging parameters.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "pageIndex",
+            "description": "The page index.",
+            "type": {
+              "display": "Int!",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "pageSize",
+            "description": "The page size.",
+            "type": {
+              "display": "Int!",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PagingInput.json",
+        "dependencies": [
+          "Int"
+        ]
+      },
+      "Int": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/Int.json",
+        "dependencies": []
+      },
+      "SortByInput": {
+        "name": "SortByInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input with sort by field name and direction parameters.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "direction",
+            "description": "The sort direction.",
+            "type": {
+              "display": "SortDirection!",
+              "namedTypes": [
+                "SortDirection"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "field",
+            "description": "The name of the field.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/SortByInput.json",
+        "dependencies": [
+          "SortDirection",
+          "String"
+        ]
+      },
+      "SortDirection": {
+        "name": "SortDirection",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "ASCENDING",
+            "description": null
+          },
+          {
+            "name": "DESCENDING",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/SortDirection.json",
+        "dependencies": []
+      }
     }
   },
-  "returnType": "PublishingQueueEntryResult",
-  "inputTypes": {
-    "PublishingQueueEntriesQueryInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents an input for querying publishing queue entries.",
-      "fields": {
-        "dateFilter": {
-          "type": "DateFilterInput",
-          "description": "The date filter parameters."
-        },
-        "itemsFilter": {
-          "type": "ItemsFilterInput",
-          "description": "The items filter parameters."
-        },
-        "paging": {
-          "type": "PagingInput",
-          "description": "The paging parameters."
-        },
-        "sort": {
-          "type": "SortByInput!",
-          "description": "The sort parameters."
-        }
-      }
-    },
-    "DateFilterInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input with date filtering parameters.",
-      "fields": {
-        "dateFrom": {
-          "type": "DateTime!",
-          "description": "The date to filter results from."
-        },
-        "dateTo": {
-          "type": "DateTime!",
-          "description": "The date to filter results to."
-        }
-      }
-    },
-    "ItemsFilterInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input with items filtering parameters.",
-      "fields": {
-        "includeItems": {
-          "type": "[ItemToFilterInput]",
-          "description": "The include items filter parameters."
-        }
-      }
-    },
-    "ItemToFilterInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input with filtering parameters for item.",
-      "fields": {
-        "itemId": {
-          "type": "ID!",
-          "description": "The item ID."
-        },
-        "language": {
-          "type": "String",
-          "description": "The item language."
-        }
-      }
-    },
-    "PagingInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input with paging parameters.",
-      "fields": {
-        "pageIndex": {
-          "type": "Int!",
-          "description": "The page index."
-        },
-        "pageSize": {
-          "type": "Int!",
-          "description": "The page size."
-        }
-      }
-    },
-    "SortByInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input with sort by field name and direction parameters.",
-      "fields": {
-        "direction": {
-          "type": "SortDirection!",
-          "description": "The sort direction."
-        },
-        "field": {
-          "type": "String!",
-          "description": "The name of the field."
-        }
-      }
-    }
-  },
-  "returnFields": {
-    "results": {
-      "type": "[PublishingQueueEntry!]!",
-      "description": "The list of the publishing queue entries.",
-      "arguments": {}
-    },
-    "totalCount": {
-      "type": "Long!",
-      "description": "The total number of publishing queue entries.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "PublishingQueueEntryResult",
       "namedTypes": [
         "PublishingQueueEntryResult"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "PublishingQueueEntryResult",
+        "namedTypes": [
+          "PublishingQueueEntryResult"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "PublishingQueueEntryResult": {
+        "name": "PublishingQueueEntryResult",
         "kind": "OBJECT",
+        "description": "Represents a publishing queue entries result.",
+        "fields": [
+          {
+            "name": "results",
+            "description": "The list of the publishing queue entries.",
+            "type": {
+              "display": "[PublishingQueueEntry!]!",
+              "namedTypes": [
+                "PublishingQueueEntry"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "totalCount",
+            "description": "The total number of publishing queue entries.",
+            "type": {
+              "display": "Long!",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishingQueueEntryResult.json",
-        "references": [
+        "dependencies": [
           "PublishingQueueEntry",
           "Long"
         ]
       },
       "PublishingQueueEntry": {
+        "name": "PublishingQueueEntry",
         "kind": "OBJECT",
+        "description": "Represents the publishing queue entry.",
+        "fields": [
+          {
+            "name": "action",
+            "description": "The action that was done with the publishable item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "date",
+            "description": "The date when the item is publishable.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "id",
+            "description": "The publishing queue entry id.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "item",
+            "description": null,
+            "type": {
+              "display": "PublishingQueueItem",
+              "namedTypes": [
+                "PublishingQueueItem"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "itemId",
+            "description": "The id of the publishable item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "language",
+            "description": "The language of the publishable item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "publishing",
+            "description": null,
+            "type": {
+              "display": "PublishingItemInfo",
+              "namedTypes": [
+                "PublishingItemInfo"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishingQueueEntry.json",
-        "references": [
+        "dependencies": [
           "String",
           "DateTime",
           "PublishingQueueItem",
@@ -139,46 +551,203 @@
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
       },
       "PublishingQueueItem": {
+        "name": "PublishingQueueItem",
         "kind": "OBJECT",
+        "description": "Represents the item in the publishing queue.",
+        "fields": [
+          {
+            "name": "name",
+            "description": "The name of the item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "path",
+            "description": "The path of the item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "templateName",
+            "description": "The template name of the item.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishingQueueItem.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "PublishingItemInfo": {
+        "name": "PublishingItemInfo",
         "kind": "OBJECT",
+        "description": "Represents the publishing item information.",
+        "fields": [
+          {
+            "name": "restrictions",
+            "description": "The list of the item publishing restrictions.",
+            "type": {
+              "display": "[PublishingItemRestriction]",
+              "namedTypes": [
+                "PublishingItemRestriction"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishingItemInfo.json",
-        "references": [
+        "dependencies": [
           "PublishingItemRestriction"
         ]
       },
       "PublishingItemRestriction": {
+        "name": "PublishingItemRestriction",
         "kind": "OBJECT",
+        "description": "Represents the publishing item restriction.",
+        "fields": [
+          {
+            "name": "details",
+            "description": "The restriction details.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "locale",
+            "description": "The item locale.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "version",
+            "description": "The item version.",
+            "type": {
+              "display": "Int!",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishingItemRestriction.json",
-        "references": [
+        "dependencies": [
           "String",
           "Int"
         ]
       },
       "Int": {
+        "name": "Int",
         "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Int.json",
-        "references": []
+        "dependencies": []
       },
       "Long": {
+        "name": "Long",
         "kind": "SCALAR",
+        "description": "The `Long` scalar type represents non-fractional signed whole 64-bit numeric values. Long can represent values between -(2^63) and 2^63 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Long.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

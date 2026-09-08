@@ -11,7 +11,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -21,7 +22,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -31,7 +33,8 @@
         "display": "ID",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -41,7 +44,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     }
   ],

@@ -11,7 +11,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -19,7 +20,8 @@
       "description": "The publishing languages.",
       "type": {
         "display": "[UNKNOWN!]!",
-        "namedTypes": []
+        "namedTypes": [],
+        "required": true
       }
     },
     {
@@ -29,7 +31,8 @@
         "display": "PublishItemMode!",
         "namedTypes": [
           "PublishItemMode"
-        ]
+        ],
+        "required": true
       }
     },
     {
@@ -39,7 +42,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -49,7 +53,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -59,7 +64,8 @@
         "display": "ID",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -69,7 +75,8 @@
         "display": "[ID]",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -79,7 +86,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -89,7 +97,8 @@
         "display": "[String]",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -99,7 +108,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -107,7 +117,8 @@
       "description": "The target databases name.",
       "type": {
         "display": "[UNKNOWN!]!",
-        "namedTypes": []
+        "namedTypes": [],
+        "required": true
       }
     }
   ],

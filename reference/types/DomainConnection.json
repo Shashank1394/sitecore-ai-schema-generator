@@ -10,7 +10,8 @@
         "display": "[DomainEdge!]",
         "namedTypes": [
           "DomainEdge"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "[Domain]",
         "namedTypes": [
           "Domain"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -32,7 +34,8 @@
         "display": "PageInfo!",
         "namedTypes": [
           "PageInfo"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     }

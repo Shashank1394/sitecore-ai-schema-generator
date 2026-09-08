@@ -10,7 +10,8 @@
         "display": "ItemAccess",
         "namedTypes": [
           "ItemAccess"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -20,8 +21,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -32,7 +35,8 @@
         "display": "[Item!]!",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -43,7 +47,8 @@
         "display": "ItemConnection",
         "namedTypes": [
           "ItemConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -53,8 +58,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -63,8 +70,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "excludeTemplateIDs",
@@ -73,8 +82,10 @@
             "display": "[ID]",
             "namedTypes": [
               "ID"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -83,8 +94,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "hasVersionInLanguages",
@@ -93,8 +106,10 @@
             "display": "[ID]",
             "namedTypes": [
               "ID"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "includeHiddenItems",
@@ -103,8 +118,10 @@
             "display": "Boolean",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "includeTemplateIDs",
@@ -113,8 +130,10 @@
             "display": "[ID]",
             "namedTypes": [
               "ID"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -123,8 +142,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "requirePresentation",
@@ -133,8 +154,10 @@
             "display": "Boolean",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -145,7 +168,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -156,7 +180,8 @@
         "display": "ItemTemplate",
         "namedTypes": [
           "ItemTemplate"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -167,7 +192,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -178,7 +204,8 @@
         "display": "ItemField",
         "namedTypes": [
           "ItemField"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -188,8 +215,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -200,7 +229,8 @@
         "display": "ItemFieldConnection",
         "namedTypes": [
           "ItemFieldConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -210,8 +240,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -220,8 +252,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "excludeStandardFields",
@@ -230,8 +264,10 @@
             "display": "Boolean!",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         },
         {
           "name": "first",
@@ -240,8 +276,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -250,8 +288,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "ownFields",
@@ -260,8 +300,10 @@
             "display": "Boolean!",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         },
         {
           "name": "withLanguageFallback",
@@ -270,8 +312,10 @@
             "display": "Boolean!",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -282,7 +326,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -292,8 +337,10 @@
             "display": "[ID]",
             "namedTypes": [
               "ID"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "hasVersionInLanguages",
@@ -302,8 +349,10 @@
             "display": "[ID]",
             "namedTypes": [
               "ID"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "includeHiddenItems",
@@ -312,8 +361,10 @@
             "display": "Boolean",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "includeTemplateIDs",
@@ -322,8 +373,10 @@
             "display": "[ID]",
             "namedTypes": [
               "ID"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "requirePresentation",
@@ -332,8 +385,10 @@
             "display": "Boolean",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -344,7 +399,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -355,7 +411,8 @@
         "display": "Url",
         "namedTypes": [
           "Url"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -365,8 +422,10 @@
             "display": "IconSize",
             "namedTypes": [
               "IconSize"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -377,7 +436,8 @@
         "display": "[ItemTemplate!]!",
         "namedTypes": [
           "ItemTemplate"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -388,7 +448,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -399,7 +460,8 @@
         "display": "ID!",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -409,8 +471,10 @@
             "display": "IdFormat",
             "namedTypes": [
               "IdFormat"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -421,7 +485,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -432,7 +497,8 @@
         "display": "Language!",
         "namedTypes": [
           "Language"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -443,7 +509,8 @@
         "display": "ItemLock",
         "namedTypes": [
           "ItemLock"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -453,8 +520,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -465,7 +534,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -476,7 +546,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -487,7 +558,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -498,7 +570,8 @@
         "display": "ItemPublish!",
         "namedTypes": [
           "ItemPublish"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -509,7 +582,8 @@
         "display": "ItemTemplate",
         "namedTypes": [
           "ItemTemplate"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -520,7 +594,8 @@
         "display": "[Item]",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -531,7 +606,8 @@
         "display": "ItemTemplate!",
         "namedTypes": [
           "ItemTemplate"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -542,7 +618,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -552,8 +629,10 @@
             "display": "MediaUrlOptionsInput",
             "namedTypes": [
               "MediaUrlOptionsInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -564,7 +643,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -574,8 +654,10 @@
             "display": "ItemUrlOptionsInput",
             "namedTypes": [
               "ItemUrlOptionsInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -586,7 +668,8 @@
         "display": "Int!",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -597,7 +680,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -608,7 +692,8 @@
         "display": "[Item!]!",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -618,8 +703,10 @@
             "display": "Boolean!",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -630,7 +717,8 @@
         "display": "ItemWorkflow",
         "namedTypes": [
           "ItemWorkflow"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

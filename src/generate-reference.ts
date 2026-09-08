@@ -64,41 +64,10 @@ type OperationReference = {
   rootType: string;
   description: string | null;
 
-  arguments: Record<
-    string,
-    {
-      type: string;
-      description: string | null;
-    }
-  >;
-
-  returnType: string;
-
-  inputTypes: Record<
-    string,
-    {
-      kind: string;
-      description: string | null;
-      fields: Record<
-        string,
-        {
-          type: string;
-          description: string | null;
-        }
-      >;
-    }
-  >;
-
-  returnFields: Record<
-    string,
-    {
-      type: string;
-      description: string | null;
-      arguments: Record<string, string>;
-    }
-  >;
-
-  outputDependencyGraph: TypeDependencyGraph;
+  arguments: NormalizedArgument[];
+  returnType: NormalizedTypeReference;
+  inputDependencyGraph: TypeDependencyGraph;
+  returnDependencyGraph: TypeDependencyGraph;
 
   metadata: {
     generatedFrom: string;
@@ -108,18 +77,20 @@ type OperationReference = {
 type NormalizedTypeReference = {
   display: string;
   namedTypes: string[];
+  required: boolean;
+};
+
+type NormalizedArgument = {
+  name: string;
+  description: string | null;
+  type: NormalizedTypeReference;
+  required: boolean;
 };
 
 type TypeDependencyGraph = {
   root: NormalizedTypeReference;
-  nodes: Record<
-    string,
-    {
-      kind: string;
-      file: string;
-      references: string[];
-    }
-  >;
+  roots: NormalizedTypeReference[];
+  nodes: Record<string, NormalizedType & { file: string; dependencies: string[] }>;
 };
 
 type NormalizedType = {
@@ -130,11 +101,7 @@ type NormalizedType = {
     name: string;
     description: string | null;
     type: NormalizedTypeReference;
-    arguments: Array<{
-      name: string;
-      description: string | null;
-      type: NormalizedTypeReference;
-    }>;
+    arguments: NormalizedArgument[];
   }>;
   inputFields: Array<{
     name: string;
@@ -231,6 +198,16 @@ function normalizeTypeReference(
   return {
     display: unwrapType(type),
     namedTypes: [...namedTypes],
+    required: type?.kind === "NON_NULL",
+  };
+}
+
+function normalizeArgument(argument: ArgumentDefinition): NormalizedArgument {
+  return {
+    name: argument.name,
+    description: argument.description ?? null,
+    type: normalizeTypeReference(argument.type),
+    required: argument.type?.kind === "NON_NULL",
   };
 }
 
@@ -269,6 +246,36 @@ async function loadType(typeName: string): Promise<GraphQLType | null> {
   }
 }
 
+function normalizeTypeDefinition(definition: GraphQLType): NormalizedType {
+  return {
+    name: definition.name,
+    kind: definition.kind,
+    description: definition.description ?? null,
+    fields: (definition.fields ?? []).map((field) => ({
+      name: field.name,
+      description: field.description ?? null,
+      type: normalizeTypeReference(field.type),
+      arguments: (field.args ?? []).map(normalizeArgument),
+    })),
+    inputFields: (definition.inputFields ?? []).map((field) => ({
+      name: field.name,
+      description: field.description ?? null,
+      type: normalizeTypeReference(field.type),
+    })),
+    interfaces: (definition.interfaces ?? [])
+      .flatMap((reference) => normalizeTypeReference(reference).namedTypes),
+    possibleTypes: (definition.possibleTypes ?? [])
+      .flatMap((reference) => normalizeTypeReference(reference).namedTypes),
+    enumValues: (definition.enumValues ?? []).map((value) => ({
+      name: value.name,
+      description: value.description ?? null,
+    })),
+    metadata: {
+      generatedFrom: "SitecoreAI GraphQL introspection",
+    },
+  };
+}
+
 /**
  * Write one normalized, self-contained document for every named type returned
  * by introspection. These documents are the canonical schema library; root
@@ -288,37 +295,7 @@ async function generateNormalizedTypes(
       throw new Error(`Could not find schema/types/${type.name}.json`);
     }
 
-    const normalized: NormalizedType = {
-      name: definition.name,
-      kind: definition.kind,
-      description: definition.description ?? null,
-      fields: (definition.fields ?? []).map((field) => ({
-        name: field.name,
-        description: field.description ?? null,
-        type: normalizeTypeReference(field.type),
-        arguments: (field.args ?? []).map((argument) => ({
-          name: argument.name,
-          description: argument.description ?? null,
-          type: normalizeTypeReference(argument.type),
-        })),
-      })),
-      inputFields: (definition.inputFields ?? []).map((field) => ({
-        name: field.name,
-        description: field.description ?? null,
-        type: normalizeTypeReference(field.type),
-      })),
-      interfaces: (definition.interfaces ?? [])
-        .flatMap((reference) => normalizeTypeReference(reference).namedTypes),
-      possibleTypes: (definition.possibleTypes ?? [])
-        .flatMap((reference) => normalizeTypeReference(reference).namedTypes),
-      enumValues: (definition.enumValues ?? []).map((value) => ({
-        name: value.name,
-        description: value.description ?? null,
-      })),
-      metadata: {
-        generatedFrom: "SitecoreAI GraphQL introspection",
-      },
-    };
+    const normalized = normalizeTypeDefinition(definition);
 
     const file = typeReferenceFile(definition.name);
 
@@ -335,10 +312,11 @@ async function generateNormalizedTypes(
 }
 
 /**
- * Construct a cycle-safe recursive output graph. Nodes contain only schema
- * links because their complete definitions live in reference/types.
+ * Construct a complete, cycle-safe dependency graph rooted at a type
+ * reference. Every node preserves its complete extracted definition, while
+ * `dependencies` provides the explicit graph edges for efficient traversal.
  */
-async function buildOutputDependencyGraph(
+async function buildDependencyGraph(
   root: TypeRef | null | undefined,
 ): Promise<TypeDependencyGraph> {
   const nodes: TypeDependencyGraph["nodes"] = {};
@@ -361,23 +339,38 @@ async function buildOutputDependencyGraph(
         throw new Error(`Could not find schema/types/${name}.json`);
       }
 
-      const references = new Set<string>();
+      const normalized = normalizeTypeDefinition(definition);
+      const dependencies = new Set<string>();
 
-      for (const field of definition.fields ?? []) {
-        collectNamedTypes(field.type, references);
+      for (const field of normalized.fields) {
+        for (const dependency of field.type.namedTypes) {
+          dependencies.add(dependency);
+        }
+
+        for (const argument of field.arguments) {
+          for (const dependency of argument.type.namedTypes) {
+            dependencies.add(dependency);
+          }
+        }
       }
 
-      for (const possibleType of definition.possibleTypes ?? []) {
-        collectNamedTypes(possibleType, references);
+      for (const field of normalized.inputFields) {
+        for (const dependency of field.type.namedTypes) {
+          dependencies.add(dependency);
+        }
+      }
+
+      for (const dependency of [...normalized.interfaces, ...normalized.possibleTypes]) {
+        dependencies.add(dependency);
       }
 
       nodes[name] = {
-        kind: definition.kind,
+        ...normalized,
         file: typeReferenceFile(name),
-        references: [...references],
+        dependencies: [...dependencies],
       };
 
-      for (const dependency of references) {
+      for (const dependency of dependencies) {
         await visit({ name: dependency });
       }
     }
@@ -387,129 +380,9 @@ async function buildOutputDependencyGraph(
 
   return {
     root: normalizeTypeReference(root),
+    roots: [normalizeTypeReference(root)],
     nodes,
   };
-}
-
-/**
- * Recursively resolves INPUT_OBJECT dependencies.
- *
- * Example:
- *
- * CreateItemInput
- *   -> FieldValueInput
- */
-async function resolveInputDependencies(
-  type: TypeRef | null | undefined,
-  dependencies: Set<string>,
-  visited: Set<string>,
-): Promise<void> {
-  if (!type) {
-    return;
-  }
-
-  const namedTypes = new Set<string>();
-
-  collectNamedTypes(type, namedTypes);
-
-  for (const namedType of namedTypes) {
-    if (visited.has(namedType)) {
-      continue;
-    }
-
-    visited.add(namedType);
-
-    const definition = await loadType(namedType);
-
-    if (!definition) {
-      continue;
-    }
-
-    if (definition.kind !== "INPUT_OBJECT") {
-      continue;
-    }
-
-    dependencies.add(namedType);
-
-    for (const field of definition.inputFields ?? []) {
-      await resolveInputDependencies(field.type, dependencies, visited);
-    }
-  }
-}
-
-/**
- * Build an LLM-friendly representation
- * of an input object.
- */
-async function buildInputDefinitions(
-  dependencies: Set<string>,
-): Promise<OperationReference["inputTypes"]> {
-  const inputTypes: OperationReference["inputTypes"] = {};
-
-  for (const dependency of dependencies) {
-    const definition = await loadType(dependency);
-
-    if (!definition) {
-      continue;
-    }
-
-    if (definition.kind !== "INPUT_OBJECT") {
-      continue;
-    }
-
-    const fields: Record<
-      string,
-      {
-        type: string;
-        description: string | null;
-      }
-    > = {};
-
-    for (const field of definition.inputFields ?? []) {
-      fields[field.name] = {
-        type: unwrapType(field.type),
-        description: field.description ?? null,
-      };
-    }
-
-    inputTypes[dependency] = {
-      kind: definition.kind,
-      description: definition.description ?? null,
-      fields,
-    };
-  }
-
-  return inputTypes;
-}
-
-/**
- * Build a representation of the fields
- * exposed by an output object.
- */
-function buildOutputFields(
-  definition: GraphQLType | null,
-): OperationReference["returnFields"] {
-  if (!definition || definition.kind !== "OBJECT") {
-    return {};
-  }
-
-  const outputFields: OperationReference["returnFields"] = {};
-
-  for (const field of definition.fields ?? []) {
-    const argumentsMap: Record<string, string> = {};
-
-    for (const argument of field.args ?? []) {
-      argumentsMap[argument.name] = unwrapType(argument.type);
-    }
-
-    outputFields[field.name] = {
-      type: unwrapType(field.type),
-      description: field.description ?? null,
-      arguments: argumentsMap,
-    };
-  }
-
-  return outputFields;
 }
 
 /**
@@ -520,33 +393,15 @@ async function buildOperationReference(
   operationType: "query" | "mutation",
   operation: FieldDefinition,
 ): Promise<OperationReference> {
-  const inputDependencies = new Set<string>();
-
-  const inputVisited = new Set<string>();
-
-  /*
-   * Resolve all input objects recursively.
-   */
-  for (const argument of operation.args ?? []) {
-    await resolveInputDependencies(
-      argument.type,
-      inputDependencies,
-      inputVisited,
-    );
-  }
-
-  const inputTypes = await buildInputDefinitions(inputDependencies);
-
-  /* Preserve the complete, cycle-safe graph of output type references. */
-  const outputDependencyGraph = await buildOutputDependencyGraph(operation.type);
-
-  const returnType = unwrapType(operation.type);
-
-  const baseReturnType = returnType.endsWith("!")
-    ? returnType.slice(0, -1)
-    : returnType;
-
-  const returnDefinition = await loadType(baseReturnType);
+  const inputGraphs = await Promise.all(
+    (operation.args ?? []).map((argument) => buildDependencyGraph(argument.type)),
+  );
+  const inputDependencyGraph: TypeDependencyGraph = {
+    root: inputGraphs[0]?.root ?? normalizeTypeReference(null),
+    roots: inputGraphs.flatMap((graph) => graph.roots),
+    nodes: Object.assign({}, ...inputGraphs.map((graph) => graph.nodes)),
+  };
+  const returnDependencyGraph = await buildDependencyGraph(operation.type);
 
   return {
     operation: operation.name,
@@ -557,23 +412,13 @@ async function buildOperationReference(
 
     description: operation.description ?? null,
 
-    arguments: Object.fromEntries(
-      (operation.args ?? []).map((argument) => [
-        argument.name,
-        {
-          type: unwrapType(argument.type),
-          description: argument.description ?? null,
-        },
-      ]),
-    ),
+    arguments: (operation.args ?? []).map(normalizeArgument),
 
-    returnType,
+    returnType: normalizeTypeReference(operation.type),
 
-    inputTypes,
+    inputDependencyGraph,
 
-    returnFields: buildOutputFields(returnDefinition),
-
-    outputDependencyGraph,
+    returnDependencyGraph,
 
     metadata: {
       generatedFrom: "SitecoreAI GraphQL introspection",
@@ -637,10 +482,7 @@ async function generateRootOperations(
     output.push({
       operation: operation.name,
       type: operationType,
-      file: path.join(
-        operationType === "query" ? "queries" : "mutations",
-        fileName,
-      ),
+      file: `${operationType === "query" ? "queries" : "mutations"}/${fileName}`,
     });
   }
 

@@ -3,58 +3,167 @@
   "operationType": "query",
   "rootType": "Query",
   "description": null,
-  "arguments": {
-    "publishingOperationId": {
-      "type": "String!",
-      "description": null
+  "arguments": [
+    {
+      "name": "publishingOperationId",
+      "description": null,
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ],
+        "required": true
+      },
+      "required": true
+    }
+  ],
+  "returnType": {
+    "display": "PublishingStatus",
+    "namedTypes": [
+      "PublishingStatus"
+    ],
+    "required": false
+  },
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String!",
+      "namedTypes": [
+        "String"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      }
     }
   },
-  "returnType": "PublishingStatus",
-  "inputTypes": {},
-  "returnFields": {
-    "isDone": {
-      "type": "Boolean!",
-      "description": "Indicates whether the publishing operation is completed.",
-      "arguments": {}
-    },
-    "isFailed": {
-      "type": "Boolean!",
-      "description": "Indicates whether the publishing operation has failed.",
-      "arguments": {}
-    },
-    "languages": {
-      "type": "[Language]",
-      "description": "The published languages.",
-      "arguments": {}
-    },
-    "processed": {
-      "type": "Long!",
-      "description": "The number of items processed by the publishing operation.",
-      "arguments": {}
-    },
-    "state": {
-      "type": "PublishingOperationState!",
-      "description": "The state of the publishing operation.",
-      "arguments": {}
-    },
-    "targetDatabase": {
-      "type": "Database",
-      "description": "The target database.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "PublishingStatus",
       "namedTypes": [
         "PublishingStatus"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "PublishingStatus",
+        "namedTypes": [
+          "PublishingStatus"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "PublishingStatus": {
+        "name": "PublishingStatus",
         "kind": "OBJECT",
+        "description": "Represents the status of the publishing operation.",
+        "fields": [
+          {
+            "name": "isDone",
+            "description": "Indicates whether the publishing operation is completed.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "isFailed",
+            "description": "Indicates whether the publishing operation has failed.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "languages",
+            "description": "The published languages.",
+            "type": {
+              "display": "[Language]",
+              "namedTypes": [
+                "Language"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "processed",
+            "description": "The number of items processed by the publishing operation.",
+            "type": {
+              "display": "Long!",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "state",
+            "description": "The state of the publishing operation.",
+            "type": {
+              "display": "PublishingOperationState!",
+              "namedTypes": [
+                "PublishingOperationState"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "targetDatabase",
+            "description": "The target database.",
+            "type": {
+              "display": "Database",
+              "namedTypes": [
+                "Database"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishingStatus.json",
-        "references": [
+        "dependencies": [
           "Boolean",
           "Language",
           "Long",
@@ -63,36 +172,224 @@
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       },
       "Language": {
+        "name": "Language",
         "kind": "OBJECT",
+        "description": "Represents a content language used in Sitecore.",
+        "fields": [
+          {
+            "name": "charset",
+            "description": "The charset of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "database",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "displayName",
+            "description": "A human readable name of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "englishName",
+            "description": "Gets the culture name in the format languagefull [country/regionfull] in English.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "iso",
+            "description": "The Two Letter ISO code of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The culture name in the languagecode2-country/regioncode2 format.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "nativeName",
+            "description": "The culture name, consisting of the language, the country/region, and the optional script, that the culture is set to display.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Language.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Long": {
+        "name": "Long",
         "kind": "SCALAR",
+        "description": "The `Long` scalar type represents non-fractional signed whole 64-bit numeric values. Long can represent values between -(2^63) and 2^63 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Long.json",
-        "references": []
+        "dependencies": []
       },
       "PublishingOperationState": {
+        "name": "PublishingOperationState",
         "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "INITIALIZING",
+            "description": null
+          },
+          {
+            "name": "QUEUED",
+            "description": null
+          },
+          {
+            "name": "RUNNING",
+            "description": null
+          },
+          {
+            "name": "ABORTREQUESTED",
+            "description": null
+          },
+          {
+            "name": "ABORTED",
+            "description": null
+          },
+          {
+            "name": "FINISHED",
+            "description": null
+          },
+          {
+            "name": "UNKNOWN",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishingOperationState.json",
-        "references": []
+        "dependencies": []
       },
       "Database": {
+        "name": "Database",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "name",
+            "description": "The database name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Database.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       }

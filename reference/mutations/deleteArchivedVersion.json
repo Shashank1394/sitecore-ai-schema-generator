@@ -3,55 +3,180 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "DeleteArchivedVersionInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "DeleteArchivedVersionInput!",
+        "namedTypes": [
+          "DeleteArchivedVersionInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "DeleteArchivedVersionPayload",
+    "namedTypes": [
+      "DeleteArchivedVersionPayload"
+    ],
+    "required": false
   },
-  "returnType": "DeleteArchivedVersionPayload",
-  "inputTypes": {
-    "DeleteArchivedVersionInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for deleting an archived version.",
-      "fields": {
-        "archiveName": {
-          "type": "String",
-          "description": "The name of the archive. The default value is 'archive'."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "DeleteArchivedVersionInput!",
+      "namedTypes": [
+        "DeleteArchivedVersionInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "DeleteArchivedVersionInput!",
+        "namedTypes": [
+          "DeleteArchivedVersionInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "DeleteArchivedVersionInput": {
+        "name": "DeleteArchivedVersionInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for deleting an archived version.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "archiveName",
+            "description": "The name of the archive. The default value is 'archive'.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "versionId",
+            "description": "The version archival ID.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "versionId": {
-          "type": "ID!",
-          "description": "The version archival ID."
-        }
+        "file": "types/DeleteArchivedVersionInput.json",
+        "dependencies": [
+          "String",
+          "ID"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean!",
-      "description": null,
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "DeleteArchivedVersionPayload",
       "namedTypes": [
         "DeleteArchivedVersionPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "DeleteArchivedVersionPayload",
+        "namedTypes": [
+          "DeleteArchivedVersionPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "DeleteArchivedVersionPayload": {
+        "name": "DeleteArchivedVersionPayload",
         "kind": "OBJECT",
+        "description": "The result of deleting an archived version.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": null,
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DeleteArchivedVersionPayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

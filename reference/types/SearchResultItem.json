@@ -10,7 +10,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "DateTime!",
         "namedTypes": [
           "DateTime"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -32,7 +34,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -43,7 +46,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -54,7 +58,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -65,7 +70,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -76,7 +82,8 @@
         "display": "ID!",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -86,8 +93,10 @@
             "display": "IdFormat",
             "namedTypes": [
               "IdFormat"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -98,7 +107,8 @@
         "display": "Language!",
         "namedTypes": [
           "Language"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -109,7 +119,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -120,7 +131,8 @@
         "display": "ID!",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -130,8 +142,10 @@
             "display": "IdFormat",
             "namedTypes": [
               "IdFormat"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -142,7 +156,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -153,7 +168,8 @@
         "display": "ID!",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -163,8 +179,10 @@
             "display": "IdFormat",
             "namedTypes": [
               "IdFormat"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -175,7 +193,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -186,7 +205,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -197,7 +217,8 @@
         "display": "DateTime!",
         "namedTypes": [
           "DateTime"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -208,7 +229,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -219,7 +241,8 @@
         "display": "Int!",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     }

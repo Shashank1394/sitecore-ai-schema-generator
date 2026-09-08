@@ -3,59 +3,207 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "SetItemArchiveDateInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "SetItemArchiveDateInput!",
+        "namedTypes": [
+          "SetItemArchiveDateInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "SetItemArchiveDatePayload",
+    "namedTypes": [
+      "SetItemArchiveDatePayload"
+    ],
+    "required": false
   },
-  "returnType": "SetItemArchiveDatePayload",
-  "inputTypes": {
-    "SetItemArchiveDateInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for setting the archive date for an item.",
-      "fields": {
-        "archiveDate": {
-          "type": "DateTime",
-          "description": "The archive date. A null value will reset the archive date."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "SetItemArchiveDateInput!",
+      "namedTypes": [
+        "SetItemArchiveDateInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "SetItemArchiveDateInput!",
+        "namedTypes": [
+          "SetItemArchiveDateInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "SetItemArchiveDateInput": {
+        "name": "SetItemArchiveDateInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for setting the archive date for an item.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "archiveDate",
+            "description": "The archive date. A null value will reset the archive date.",
+            "type": {
+              "display": "DateTime",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "itemId",
+            "description": "The ID of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+            "type": {
+              "display": "ID",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "itemPath",
+            "description": "The full path of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "itemId": {
-          "type": "ID",
-          "description": "The ID of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored."
+        "file": "types/SetItemArchiveDateInput.json",
+        "dependencies": [
+          "DateTime",
+          "ID",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "name": "DateTime",
+        "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "itemPath": {
-          "type": "String",
-          "description": "The full path of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored."
-        }
+        "file": "types/DateTime.json",
+        "dependencies": []
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean!",
-      "description": null,
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "SetItemArchiveDatePayload",
       "namedTypes": [
         "SetItemArchiveDatePayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "SetItemArchiveDatePayload",
+        "namedTypes": [
+          "SetItemArchiveDatePayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "SetItemArchiveDatePayload": {
+        "name": "SetItemArchiveDatePayload",
         "kind": "OBJECT",
+        "description": "The result of setting an item archive date.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": null,
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SetItemArchiveDatePayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

@@ -11,7 +11,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -21,7 +22,8 @@
         "display": "[ItemToPublishInput]",
         "namedTypes": [
           "ItemToPublishInput"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -31,7 +33,8 @@
         "display": "PublishItemMode!",
         "namedTypes": [
           "PublishItemMode"
-        ]
+        ],
+        "required": true
       }
     },
     {
@@ -41,7 +44,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -51,7 +55,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -61,7 +66,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -69,7 +75,8 @@
       "description": "The target databases name.",
       "type": {
         "display": "[UNKNOWN!]!",
-        "namedTypes": []
+        "namedTypes": [],
+        "required": true
       }
     }
   ],

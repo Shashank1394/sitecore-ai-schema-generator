@@ -3,92 +3,461 @@
   "operationType": "query",
   "rootType": "Query",
   "description": "Gets all the languages that are supported by Sitecore.",
-  "arguments": {
-    "after": {
-      "type": "String",
-      "description": null
+  "arguments": [
+    {
+      "name": "after",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "before": {
-      "type": "String",
-      "description": null
+    {
+      "name": "before",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "first": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "first",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "last": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "last",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     }
+  ],
+  "returnType": {
+    "display": "SupportedLanguageConnection",
+    "namedTypes": [
+      "SupportedLanguageConnection"
+    ],
+    "required": false
   },
-  "returnType": "SupportedLanguageConnection",
-  "inputTypes": {},
-  "returnFields": {
-    "edges": {
-      "type": "[SupportedLanguageEdge!]",
-      "description": "A list of edges.",
-      "arguments": {}
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String",
+      "namedTypes": [
+        "String"
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
-      "type": "[SupportedLanguage]",
-      "description": "A flattened list of the nodes.",
-      "arguments": {}
-    },
-    "pageInfo": {
-      "type": "PageInfo!",
-      "description": "Information to aid in pagination.",
-      "arguments": {}
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PaginationAmount": {
+        "name": "PaginationAmount",
+        "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PaginationAmount.json",
+        "dependencies": []
+      }
     }
   },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "SupportedLanguageConnection",
       "namedTypes": [
         "SupportedLanguageConnection"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "SupportedLanguageConnection",
+        "namedTypes": [
+          "SupportedLanguageConnection"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "SupportedLanguageConnection": {
+        "name": "SupportedLanguageConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[SupportedLanguageEdge!]",
+              "namedTypes": [
+                "SupportedLanguageEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[SupportedLanguage]",
+              "namedTypes": [
+                "SupportedLanguage"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SupportedLanguageConnection.json",
-        "references": [
+        "dependencies": [
           "SupportedLanguageEdge",
           "SupportedLanguage",
           "PageInfo"
         ]
       },
       "SupportedLanguageEdge": {
+        "name": "SupportedLanguageEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "SupportedLanguage",
+              "namedTypes": [
+                "SupportedLanguage"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SupportedLanguageEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "SupportedLanguage"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "SupportedLanguage": {
+        "name": "SupportedLanguage",
         "kind": "OBJECT",
+        "description": "Represents a content language used in Sitecore.",
+        "fields": [
+          {
+            "name": "charset",
+            "description": "The charset of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "codePage",
+            "description": "The code page of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "customCode",
+            "description": "The custom code of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "encoding",
+            "description": "The encoding of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "language",
+            "description": "A human readable name of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The name in presentational format.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "regionCode",
+            "description": "The region code of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "spellChecker",
+            "description": "The spellchecker used for the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SupportedLanguage.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "PageInfo": {
+        "name": "PageInfo",
         "kind": "OBJECT",
+        "description": "Information about pagination in a connection.",
+        "fields": [
+          {
+            "name": "endCursor",
+            "description": "When paginating forwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasNextPage",
+            "description": "Indicates whether more edges exist following the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasPreviousPage",
+            "description": "Indicates whether more edges exist prior the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "startCursor",
+            "description": "When paginating backwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PageInfo.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

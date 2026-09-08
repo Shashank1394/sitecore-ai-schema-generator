@@ -3,91 +3,316 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "PublishItemInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "PublishItemInput!",
+        "namedTypes": [
+          "PublishItemInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "PublishItemPayload",
+    "namedTypes": [
+      "PublishItemPayload"
+    ],
+    "required": false
   },
-  "returnType": "PublishItemPayload",
-  "inputTypes": {
-    "PublishItemInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for publishing an item.",
-      "fields": {
-        "displayName": {
-          "type": "String",
-          "description": "The display name of the publish request."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "PublishItemInput!",
+      "namedTypes": [
+        "PublishItemInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "PublishItemInput!",
+        "namedTypes": [
+          "PublishItemInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "PublishItemInput": {
+        "name": "PublishItemInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for publishing an item.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "displayName",
+            "description": "The display name of the publish request.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "languages",
+            "description": "The publishing languages.",
+            "type": {
+              "display": "[UNKNOWN!]!",
+              "namedTypes": [],
+              "required": true
+            }
+          },
+          {
+            "name": "publishItemMode",
+            "description": "The publish item mode.",
+            "type": {
+              "display": "PublishItemMode!",
+              "namedTypes": [
+                "PublishItemMode"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "publishRelatedItems",
+            "description": "Indicates whether to publish related items.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "publishSubItems",
+            "description": "Indicates whether to publish sub-items.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "rootItemId",
+            "description": "The ID of the root item. If both ID and path parameters are specified, the path parameter is ignored.",
+            "type": {
+              "display": "ID",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "rootItemIds",
+            "description": "The IDs of the root items. If both ID and path parameters are specified, the path parameter is ignored.",
+            "type": {
+              "display": "[ID]",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "rootItemPath",
+            "description": "The path of the root item.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "rootItemPaths",
+            "description": "The paths of the root items.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "sourceDatabase",
+            "description": "The source database name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "targetDatabases",
+            "description": "The target databases name.",
+            "type": {
+              "display": "[UNKNOWN!]!",
+              "namedTypes": [],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "languages": {
-          "type": "[UNKNOWN!]!",
-          "description": "The publishing languages."
+        "file": "types/PublishItemInput.json",
+        "dependencies": [
+          "String",
+          "PublishItemMode",
+          "Boolean",
+          "ID"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "publishItemMode": {
-          "type": "PublishItemMode!",
-          "description": "The publish item mode."
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PublishItemMode": {
+        "name": "PublishItemMode",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "FULL",
+            "description": null
+          },
+          {
+            "name": "SMART",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "publishRelatedItems": {
-          "type": "Boolean",
-          "description": "Indicates whether to publish related items."
+        "file": "types/PublishItemMode.json",
+        "dependencies": []
+      },
+      "Boolean": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "publishSubItems": {
-          "type": "Boolean",
-          "description": "Indicates whether to publish sub-items."
+        "file": "types/Boolean.json",
+        "dependencies": []
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "rootItemId": {
-          "type": "ID",
-          "description": "The ID of the root item. If both ID and path parameters are specified, the path parameter is ignored."
-        },
-        "rootItemIds": {
-          "type": "[ID]",
-          "description": "The IDs of the root items. If both ID and path parameters are specified, the path parameter is ignored."
-        },
-        "rootItemPath": {
-          "type": "String",
-          "description": "The path of the root item."
-        },
-        "rootItemPaths": {
-          "type": "[String]",
-          "description": "The paths of the root items."
-        },
-        "sourceDatabase": {
-          "type": "String",
-          "description": "The source database name."
-        },
-        "targetDatabases": {
-          "type": "[UNKNOWN!]!",
-          "description": "The target databases name."
-        }
+        "file": "types/ID.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "operationId": {
-      "type": "String",
-      "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "PublishItemPayload",
       "namedTypes": [
         "PublishItemPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "PublishItemPayload",
+        "namedTypes": [
+          "PublishItemPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "PublishItemPayload": {
+        "name": "PublishItemPayload",
         "kind": "OBJECT",
+        "description": "The result of the item publishing operation.",
+        "fields": [
+          {
+            "name": "operationId",
+            "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishItemPayload.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

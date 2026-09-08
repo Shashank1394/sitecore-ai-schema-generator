@@ -10,7 +10,8 @@
         "display": "[UserProfileSelectorEdge!]",
         "namedTypes": [
           "UserProfileSelectorEdge"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "[UserProfileSelector]",
         "namedTypes": [
           "UserProfileSelector"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -32,7 +34,8 @@
         "display": "PageInfo!",
         "namedTypes": [
           "PageInfo"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     }

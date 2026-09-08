@@ -3,46 +3,143 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "ConfigurePageDesignsInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "ConfigurePageDesignsInput!",
+        "namedTypes": [
+          "ConfigurePageDesignsInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "Boolean!",
+    "namedTypes": [
+      "Boolean"
+    ],
+    "required": true
   },
-  "returnType": "Boolean!",
-  "inputTypes": {
-    "ConfigurePageDesignsInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input parameters for templates and page designs",
-      "fields": {
-        "database": {
-          "type": "String",
-          "description": "Context database"
+  "inputDependencyGraph": {
+    "root": {
+      "display": "ConfigurePageDesignsInput!",
+      "namedTypes": [
+        "ConfigurePageDesignsInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "ConfigurePageDesignsInput!",
+        "namedTypes": [
+          "ConfigurePageDesignsInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "ConfigurePageDesignsInput": {
+        "name": "ConfigurePageDesignsInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input parameters for templates and page designs",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "database",
+            "description": "Context database",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "mapping",
+            "description": "List of template ID to page design ID mappings",
+            "type": {
+              "display": "[UNKNOWN!]!",
+              "namedTypes": [],
+              "required": true
+            }
+          },
+          {
+            "name": "siteName",
+            "description": "Current site name",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "mapping": {
-          "type": "[UNKNOWN!]!",
-          "description": "List of template ID to page design ID mappings"
+        "file": "types/ConfigurePageDesignsInput.json",
+        "dependencies": [
+          "String"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "siteName": {
-          "type": "String!",
-          "description": "Current site name"
-        }
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {},
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "Boolean!",
       "namedTypes": [
         "Boolean"
-      ]
+      ],
+      "required": true
     },
+    "roots": [
+      {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ],
+        "required": true
+      }
+    ],
     "nodes": {
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

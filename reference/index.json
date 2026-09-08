@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T07:46:03.445Z",
+  "generatedAt": "2026-09-08T08:06:28.344Z",
   "schema": {
     "queryRoot": "Query",
     "mutationRoot": "Mutation",
@@ -9,634 +9,634 @@
     {
       "operation": "archivedItem",
       "type": "query",
-      "file": "queries\\archivedItem.json"
+      "file": "queries/archivedItem.json"
     },
     {
       "operation": "archivedItems",
       "type": "query",
-      "file": "queries\\archivedItems.json"
+      "file": "queries/archivedItems.json"
     },
     {
       "operation": "availableRenderings",
       "type": "query",
-      "file": "queries\\availableRenderings.json"
+      "file": "queries/availableRenderings.json"
     },
     {
       "operation": "channel",
       "type": "query",
-      "file": "queries\\channel.json"
+      "file": "queries/channel.json"
     },
     {
       "operation": "channels",
       "type": "query",
-      "file": "queries\\channels.json"
+      "file": "queries/channels.json"
     },
     {
       "operation": "currentUser",
       "type": "query",
-      "file": "queries\\currentUser.json"
+      "file": "queries/currentUser.json"
     },
     {
       "operation": "databases",
       "type": "query",
-      "file": "queries\\databases.json"
+      "file": "queries/databases.json"
     },
     {
       "operation": "dataSourceTemplates",
       "type": "query",
-      "file": "queries\\dataSourceTemplates.json"
+      "file": "queries/dataSourceTemplates.json"
     },
     {
       "operation": "domain",
       "type": "query",
-      "file": "queries\\domain.json"
+      "file": "queries/domain.json"
     },
     {
       "operation": "domains",
       "type": "query",
-      "file": "queries\\domains.json"
+      "file": "queries/domains.json"
     },
     {
       "operation": "fallbackLanguage",
       "type": "query",
-      "file": "queries\\fallbackLanguage.json"
+      "file": "queries/fallbackLanguage.json"
     },
     {
       "operation": "index",
       "type": "query",
-      "file": "queries\\index.json"
+      "file": "queries/index.json"
     },
     {
       "operation": "indexes",
       "type": "query",
-      "file": "queries\\indexes.json"
+      "file": "queries/indexes.json"
     },
     {
       "operation": "isJobQueued",
       "type": "query",
-      "file": "queries\\isJobQueued.json"
+      "file": "queries/isJobQueued.json"
     },
     {
       "operation": "isJobRunning",
       "type": "query",
-      "file": "queries\\isJobRunning.json"
+      "file": "queries/isJobRunning.json"
     },
     {
       "operation": "item",
       "type": "query",
-      "file": "queries\\item.json"
+      "file": "queries/item.json"
     },
     {
       "operation": "itemTemplate",
       "type": "query",
-      "file": "queries\\itemTemplate.json"
+      "file": "queries/itemTemplate.json"
     },
     {
       "operation": "itemTemplates",
       "type": "query",
-      "file": "queries\\itemTemplates.json"
+      "file": "queries/itemTemplates.json"
     },
     {
       "operation": "job",
       "type": "query",
-      "file": "queries\\job.json"
+      "file": "queries/job.json"
     },
     {
       "operation": "jobs",
       "type": "query",
-      "file": "queries\\jobs.json"
+      "file": "queries/jobs.json"
     },
     {
       "operation": "language",
       "type": "query",
-      "file": "queries\\language.json"
+      "file": "queries/language.json"
     },
     {
       "operation": "languageItem",
       "type": "query",
-      "file": "queries\\languageItem.json"
+      "file": "queries/languageItem.json"
     },
     {
       "operation": "languages",
       "type": "query",
-      "file": "queries\\languages.json"
+      "file": "queries/languages.json"
     },
     {
       "operation": "mediaItem",
       "type": "query",
-      "file": "queries\\mediaItem.json"
+      "file": "queries/mediaItem.json"
     },
     {
       "operation": "mediaItemAvailability",
       "type": "query",
-      "file": "queries\\mediaItemAvailability.json"
+      "file": "queries/mediaItemAvailability.json"
     },
     {
       "operation": "meta",
       "type": "query",
-      "file": "queries\\meta.json"
+      "file": "queries/meta.json"
     },
     {
       "operation": "pageBranchesRoots",
       "type": "query",
-      "file": "queries\\pageBranchesRoots.json"
+      "file": "queries/pageBranchesRoots.json"
     },
     {
       "operation": "pageDesigns",
       "type": "query",
-      "file": "queries\\pageDesigns.json"
+      "file": "queries/pageDesigns.json"
     },
     {
       "operation": "pageDesignsRoots",
       "type": "query",
-      "file": "queries\\pageDesignsRoots.json"
+      "file": "queries/pageDesignsRoots.json"
     },
     {
       "operation": "parseRule",
       "type": "query",
-      "file": "queries\\parseRule.json"
+      "file": "queries/parseRule.json"
     },
     {
       "operation": "parseRuleSet",
       "type": "query",
-      "file": "queries\\parseRuleSet.json"
+      "file": "queries/parseRuleSet.json"
     },
     {
       "operation": "partialDesigns",
       "type": "query",
-      "file": "queries\\partialDesigns.json"
+      "file": "queries/partialDesigns.json"
     },
     {
       "operation": "partialDesignsRoots",
       "type": "query",
-      "file": "queries\\partialDesignsRoots.json"
+      "file": "queries/partialDesignsRoots.json"
     },
     {
       "operation": "publishingQueueEntries",
       "type": "query",
-      "file": "queries\\publishingQueueEntries.json"
+      "file": "queries/publishingQueueEntries.json"
     },
     {
       "operation": "publishingStatus",
       "type": "query",
-      "file": "queries\\publishingStatus.json"
+      "file": "queries/publishingStatus.json"
     },
     {
       "operation": "publishingTargets",
       "type": "query",
-      "file": "queries\\publishingTargets.json"
+      "file": "queries/publishingTargets.json"
     },
     {
       "operation": "role",
       "type": "query",
-      "file": "queries\\role.json"
+      "file": "queries/role.json"
     },
     {
       "operation": "roles",
       "type": "query",
-      "file": "queries\\roles.json"
+      "file": "queries/roles.json"
     },
     {
       "operation": "rule",
       "type": "query",
-      "file": "queries\\rule.json"
+      "file": "queries/rule.json"
     },
     {
       "operation": "ruleSet",
       "type": "query",
-      "file": "queries\\ruleSet.json"
+      "file": "queries/ruleSet.json"
     },
     {
       "operation": "ruleTemplate",
       "type": "query",
-      "file": "queries\\ruleTemplate.json"
+      "file": "queries/ruleTemplate.json"
     },
     {
       "operation": "search",
       "type": "query",
-      "file": "queries\\search.json"
+      "file": "queries/search.json"
     },
     {
       "operation": "selectionProfiles",
       "type": "query",
-      "file": "queries\\selectionProfiles.json"
+      "file": "queries/selectionProfiles.json"
     },
     {
       "operation": "site",
       "type": "query",
-      "file": "queries\\site.json"
+      "file": "queries/site.json"
     },
     {
       "operation": "siteCollections",
       "type": "query",
-      "file": "queries\\siteCollections.json"
+      "file": "queries/siteCollections.json"
     },
     {
       "operation": "siteCollectionsResults",
       "type": "query",
-      "file": "queries\\siteCollectionsResults.json"
+      "file": "queries/siteCollectionsResults.json"
     },
     {
       "operation": "sites",
       "type": "query",
-      "file": "queries\\sites.json"
+      "file": "queries/sites.json"
     },
     {
       "operation": "solutionSites",
       "type": "query",
-      "file": "queries\\solutionSites.json"
+      "file": "queries/solutionSites.json"
     },
     {
       "operation": "solutionSitesSearch",
       "type": "query",
-      "file": "queries\\solutionSitesSearch.json"
+      "file": "queries/solutionSitesSearch.json"
     },
     {
       "operation": "solutionSitesWithRoot",
       "type": "query",
-      "file": "queries\\solutionSitesWithRoot.json"
+      "file": "queries/solutionSitesWithRoot.json"
     },
     {
       "operation": "solutionTemplates",
       "type": "query",
-      "file": "queries\\solutionTemplates.json"
+      "file": "queries/solutionTemplates.json"
     },
     {
       "operation": "supportedLanguages",
       "type": "query",
-      "file": "queries\\supportedLanguages.json"
+      "file": "queries/supportedLanguages.json"
     },
     {
       "operation": "tenantTemplates",
       "type": "query",
-      "file": "queries\\tenantTemplates.json"
+      "file": "queries/tenantTemplates.json"
     },
     {
       "operation": "user",
       "type": "query",
-      "file": "queries\\user.json"
+      "file": "queries/user.json"
     },
     {
       "operation": "users",
       "type": "query",
-      "file": "queries\\users.json"
+      "file": "queries/users.json"
     },
     {
       "operation": "workflow",
       "type": "query",
-      "file": "queries\\workflow.json"
+      "file": "queries/workflow.json"
     },
     {
       "operation": "workflows",
       "type": "query",
-      "file": "queries\\workflows.json"
+      "file": "queries/workflows.json"
     }
   ],
   "mutations": [
     {
       "operation": "addAccountsToRole",
       "type": "mutation",
-      "file": "mutations\\addAccountsToRole.json"
+      "file": "mutations/addAccountsToRole.json"
     },
     {
       "operation": "addItemVersion",
       "type": "mutation",
-      "file": "mutations\\addItemVersion.json"
+      "file": "mutations/addItemVersion.json"
     },
     {
       "operation": "addLanguage",
       "type": "mutation",
-      "file": "mutations\\addLanguage.json"
+      "file": "mutations/addLanguage.json"
     },
     {
       "operation": "addRoleToRoles",
       "type": "mutation",
-      "file": "mutations\\addRoleToRoles.json"
+      "file": "mutations/addRoleToRoles.json"
     },
     {
       "operation": "archiveItem",
       "type": "mutation",
-      "file": "mutations\\archiveItem.json"
+      "file": "mutations/archiveItem.json"
     },
     {
       "operation": "archiveVersion",
       "type": "mutation",
-      "file": "mutations\\archiveVersion.json"
+      "file": "mutations/archiveVersion.json"
     },
     {
       "operation": "cancelPublishing",
       "type": "mutation",
-      "file": "mutations\\cancelPublishing.json"
+      "file": "mutations/cancelPublishing.json"
     },
     {
       "operation": "changeUserPassword",
       "type": "mutation",
-      "file": "mutations\\changeUserPassword.json"
+      "file": "mutations/changeUserPassword.json"
     },
     {
       "operation": "cleanUpDatabases",
       "type": "mutation",
-      "file": "mutations\\cleanUpDatabases.json"
+      "file": "mutations/cleanUpDatabases.json"
     },
     {
       "operation": "cloneSite",
       "type": "mutation",
-      "file": "mutations\\cloneSite.json"
+      "file": "mutations/cloneSite.json"
     },
     {
       "operation": "configurePageDesigns",
       "type": "mutation",
-      "file": "mutations\\configurePageDesigns.json"
+      "file": "mutations/configurePageDesigns.json"
     },
     {
       "operation": "copyItem",
       "type": "mutation",
-      "file": "mutations\\copyItem.json"
+      "file": "mutations/copyItem.json"
     },
     {
       "operation": "createDomain",
       "type": "mutation",
-      "file": "mutations\\createDomain.json"
+      "file": "mutations/createDomain.json"
     },
     {
       "operation": "createItem",
       "type": "mutation",
-      "file": "mutations\\createItem.json"
+      "file": "mutations/createItem.json"
     },
     {
       "operation": "createItemFromBranch",
       "type": "mutation",
-      "file": "mutations\\createItemFromBranch.json"
+      "file": "mutations/createItemFromBranch.json"
     },
     {
       "operation": "createItemTemplate",
       "type": "mutation",
-      "file": "mutations\\createItemTemplate.json"
+      "file": "mutations/createItemTemplate.json"
     },
     {
       "operation": "createItemTemplateFolder",
       "type": "mutation",
-      "file": "mutations\\createItemTemplateFolder.json"
+      "file": "mutations/createItemTemplateFolder.json"
     },
     {
       "operation": "createRole",
       "type": "mutation",
-      "file": "mutations\\createRole.json"
+      "file": "mutations/createRole.json"
     },
     {
       "operation": "createSite",
       "type": "mutation",
-      "file": "mutations\\createSite.json"
+      "file": "mutations/createSite.json"
     },
     {
       "operation": "createSiteCollection",
       "type": "mutation",
-      "file": "mutations\\createSiteCollection.json"
+      "file": "mutations/createSiteCollection.json"
     },
     {
       "operation": "createUser",
       "type": "mutation",
-      "file": "mutations\\createUser.json"
+      "file": "mutations/createUser.json"
     },
     {
       "operation": "deleteAccountsFromRole",
       "type": "mutation",
-      "file": "mutations\\deleteAccountsFromRole.json"
+      "file": "mutations/deleteAccountsFromRole.json"
     },
     {
       "operation": "deleteArchivedItem",
       "type": "mutation",
-      "file": "mutations\\deleteArchivedItem.json"
+      "file": "mutations/deleteArchivedItem.json"
     },
     {
       "operation": "deleteArchivedVersion",
       "type": "mutation",
-      "file": "mutations\\deleteArchivedVersion.json"
+      "file": "mutations/deleteArchivedVersion.json"
     },
     {
       "operation": "deleteDomain",
       "type": "mutation",
-      "file": "mutations\\deleteDomain.json"
+      "file": "mutations/deleteDomain.json"
     },
     {
       "operation": "deleteItem",
       "type": "mutation",
-      "file": "mutations\\deleteItem.json"
+      "file": "mutations/deleteItem.json"
     },
     {
       "operation": "deleteItemTemplate",
       "type": "mutation",
-      "file": "mutations\\deleteItemTemplate.json"
+      "file": "mutations/deleteItemTemplate.json"
     },
     {
       "operation": "deleteItemVersion",
       "type": "mutation",
-      "file": "mutations\\deleteItemVersion.json"
+      "file": "mutations/deleteItemVersion.json"
     },
     {
       "operation": "deleteLanguage",
       "type": "mutation",
-      "file": "mutations\\deleteLanguage.json"
+      "file": "mutations/deleteLanguage.json"
     },
     {
       "operation": "deleteLanguages",
       "type": "mutation",
-      "file": "mutations\\deleteLanguages.json"
+      "file": "mutations/deleteLanguages.json"
     },
     {
       "operation": "deleteRole",
       "type": "mutation",
-      "file": "mutations\\deleteRole.json"
+      "file": "mutations/deleteRole.json"
     },
     {
       "operation": "deleteRoleFromRoles",
       "type": "mutation",
-      "file": "mutations\\deleteRoleFromRoles.json"
+      "file": "mutations/deleteRoleFromRoles.json"
     },
     {
       "operation": "deleteUser",
       "type": "mutation",
-      "file": "mutations\\deleteUser.json"
+      "file": "mutations/deleteUser.json"
     },
     {
       "operation": "disableUser",
       "type": "mutation",
-      "file": "mutations\\disableUser.json"
+      "file": "mutations/disableUser.json"
     },
     {
       "operation": "emptyArchive",
       "type": "mutation",
-      "file": "mutations\\emptyArchive.json"
+      "file": "mutations/emptyArchive.json"
     },
     {
       "operation": "enableUser",
       "type": "mutation",
-      "file": "mutations\\enableUser.json"
+      "file": "mutations/enableUser.json"
     },
     {
       "operation": "executeWorkflowCommand",
       "type": "mutation",
-      "file": "mutations\\executeWorkflowCommand.json"
+      "file": "mutations/executeWorkflowCommand.json"
     },
     {
       "operation": "moveItem",
       "type": "mutation",
-      "file": "mutations\\moveItem.json"
+      "file": "mutations/moveItem.json"
     },
     {
       "operation": "populateManagedSchema",
       "type": "mutation",
-      "file": "mutations\\populateManagedSchema.json"
+      "file": "mutations/populateManagedSchema.json"
     },
     {
       "operation": "publishItem",
       "type": "mutation",
-      "file": "mutations\\publishItem.json"
+      "file": "mutations/publishItem.json"
     },
     {
       "operation": "publishLanguageSpecificItems",
       "type": "mutation",
-      "file": "mutations\\publishLanguageSpecificItems.json"
+      "file": "mutations/publishLanguageSpecificItems.json"
     },
     {
       "operation": "publishSite",
       "type": "mutation",
-      "file": "mutations\\publishSite.json"
+      "file": "mutations/publishSite.json"
     },
     {
       "operation": "publishWithOptions",
       "type": "mutation",
-      "file": "mutations\\publishWithOptions.json"
+      "file": "mutations/publishWithOptions.json"
     },
     {
       "operation": "rebuildIndexes",
       "type": "mutation",
-      "file": "mutations\\rebuildIndexes.json"
+      "file": "mutations/rebuildIndexes.json"
     },
     {
       "operation": "rebuildLinkDatabase",
       "type": "mutation",
-      "file": "mutations\\rebuildLinkDatabase.json"
+      "file": "mutations/rebuildLinkDatabase.json"
     },
     {
       "operation": "removeSite",
       "type": "mutation",
-      "file": "mutations\\removeSite.json"
+      "file": "mutations/removeSite.json"
     },
     {
       "operation": "removeSiteCollection",
       "type": "mutation",
-      "file": "mutations\\removeSiteCollection.json"
+      "file": "mutations/removeSiteCollection.json"
     },
     {
       "operation": "renameItem",
       "type": "mutation",
-      "file": "mutations\\renameItem.json"
+      "file": "mutations/renameItem.json"
     },
     {
       "operation": "renameSite",
       "type": "mutation",
-      "file": "mutations\\renameSite.json"
+      "file": "mutations/renameSite.json"
     },
     {
       "operation": "renameSiteCollection",
       "type": "mutation",
-      "file": "mutations\\renameSiteCollection.json"
+      "file": "mutations/renameSiteCollection.json"
     },
     {
       "operation": "resetUserSettings",
       "type": "mutation",
-      "file": "mutations\\resetUserSettings.json"
+      "file": "mutations/resetUserSettings.json"
     },
     {
       "operation": "restoreArchivedItem",
       "type": "mutation",
-      "file": "mutations\\restoreArchivedItem.json"
+      "file": "mutations/restoreArchivedItem.json"
     },
     {
       "operation": "restoreArchivedVersion",
       "type": "mutation",
-      "file": "mutations\\restoreArchivedVersion.json"
+      "file": "mutations/restoreArchivedVersion.json"
     },
     {
       "operation": "scaffoldSolution",
       "type": "mutation",
-      "file": "mutations\\scaffoldSolution.json"
+      "file": "mutations/scaffoldSolution.json"
     },
     {
       "operation": "setItemArchiveDate",
       "type": "mutation",
-      "file": "mutations\\setItemArchiveDate.json"
+      "file": "mutations/setItemArchiveDate.json"
     },
     {
       "operation": "setMediaItemAvailability",
       "type": "mutation",
-      "file": "mutations\\setMediaItemAvailability.json"
+      "file": "mutations/setMediaItemAvailability.json"
     },
     {
       "operation": "setVersionArchiveDate",
       "type": "mutation",
-      "file": "mutations\\setVersionArchiveDate.json"
+      "file": "mutations/setVersionArchiveDate.json"
     },
     {
       "operation": "startCopyItem",
       "type": "mutation",
-      "file": "mutations\\startCopyItem.json"
+      "file": "mutations/startCopyItem.json"
     },
     {
       "operation": "startDeleteItem",
       "type": "mutation",
-      "file": "mutations\\startDeleteItem.json"
+      "file": "mutations/startDeleteItem.json"
     },
     {
       "operation": "startWorkflow",
       "type": "mutation",
-      "file": "mutations\\startWorkflow.json"
+      "file": "mutations/startWorkflow.json"
     },
     {
       "operation": "translateItem",
       "type": "mutation",
-      "file": "mutations\\translateItem.json"
+      "file": "mutations/translateItem.json"
     },
     {
       "operation": "translatePage",
       "type": "mutation",
-      "file": "mutations\\translatePage.json"
+      "file": "mutations/translatePage.json"
     },
     {
       "operation": "translateSite",
       "type": "mutation",
-      "file": "mutations\\translateSite.json"
+      "file": "mutations/translateSite.json"
     },
     {
       "operation": "unlockUser",
       "type": "mutation",
-      "file": "mutations\\unlockUser.json"
+      "file": "mutations/unlockUser.json"
     },
     {
       "operation": "updateItem",
       "type": "mutation",
-      "file": "mutations\\updateItem.json"
+      "file": "mutations/updateItem.json"
     },
     {
       "operation": "updateItemTemplate",
       "type": "mutation",
-      "file": "mutations\\updateItemTemplate.json"
+      "file": "mutations/updateItemTemplate.json"
     },
     {
       "operation": "updateSolutionSitesPos",
       "type": "mutation",
-      "file": "mutations\\updateSolutionSitesPos.json"
+      "file": "mutations/updateSolutionSitesPos.json"
     },
     {
       "operation": "updateUser",
       "type": "mutation",
-      "file": "mutations\\updateUser.json"
+      "file": "mutations/updateUser.json"
     },
     {
       "operation": "uploadMedia",
       "type": "mutation",
-      "file": "mutations\\uploadMedia.json"
+      "file": "mutations/uploadMedia.json"
     }
   ],
   "types": [

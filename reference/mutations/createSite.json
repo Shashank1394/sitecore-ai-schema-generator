@@ -3,121 +3,461 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "CreateSiteInput!",
-      "description": null
-    }
-  },
-  "returnType": "CreateSitePayload",
-  "inputTypes": {
-    "CreateSiteInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input needed to create a site",
-      "fields": {
-        "collectionId": {
-          "type": "ID!",
-          "description": "Site collection Id"
-        },
-        "database": {
-          "type": "String",
-          "description": "Context database"
-        },
-        "description": {
-          "type": "String",
-          "description": "Description of the site"
-        },
-        "displayName": {
-          "type": "String",
-          "description": "Display name of the site"
-        },
-        "hostName": {
-          "type": "String!",
-          "description": "Host name of the new site"
-        },
-        "language": {
-          "type": "String!",
-          "description": "Language of the new site"
-        },
-        "languages": {
-          "type": "[String]",
-          "description": "List of supported site languages"
-        },
-        "posMappings": {
-          "type": "[PointOfSaleMappingInput]",
-          "description": "List of Point of sale mappings to language"
-        },
-        "siteCollectionDescription": {
-          "type": "String",
-          "description": "Description of the site collection"
-        },
-        "siteCollectionDisplayName": {
-          "type": "String",
-          "description": "Display name of the site collection"
-        },
-        "siteCollectionName": {
-          "type": "String",
-          "description": "Name of the site collection"
-        },
-        "siteDescription": {
-          "type": "String",
-          "description": "Description of the new site"
-        },
-        "siteDisplayName": {
-          "type": "String",
-          "description": "Display name of the new site"
-        },
-        "siteName": {
-          "type": "String!",
-          "description": "Name of the new site"
-        },
-        "templateId": {
-          "type": "String!",
-          "description": "Site template"
-        }
-      }
-    },
-    "PointOfSaleMappingInput": {
-      "kind": "INPUT_OBJECT",
+  "arguments": [
+    {
+      "name": "input",
       "description": null,
-      "fields": {
-        "language": {
-          "type": "String",
-          "description": "Language of the Point of sale"
+      "type": {
+        "display": "CreateSiteInput!",
+        "namedTypes": [
+          "CreateSiteInput"
+        ],
+        "required": true
+      },
+      "required": true
+    }
+  ],
+  "returnType": {
+    "display": "CreateSitePayload",
+    "namedTypes": [
+      "CreateSitePayload"
+    ],
+    "required": false
+  },
+  "inputDependencyGraph": {
+    "root": {
+      "display": "CreateSiteInput!",
+      "namedTypes": [
+        "CreateSiteInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "CreateSiteInput!",
+        "namedTypes": [
+          "CreateSiteInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "CreateSiteInput": {
+        "name": "CreateSiteInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input needed to create a site",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "collectionId",
+            "description": "Site collection Id",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "database",
+            "description": "Context database",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "description",
+            "description": "Description of the site",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "displayName",
+            "description": "Display name of the site",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "hostName",
+            "description": "Host name of the new site",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "language",
+            "description": "Language of the new site",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "languages",
+            "description": "List of supported site languages",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "posMappings",
+            "description": "List of Point of sale mappings to language",
+            "type": {
+              "display": "[PointOfSaleMappingInput]",
+              "namedTypes": [
+                "PointOfSaleMappingInput"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "siteCollectionDescription",
+            "description": "Description of the site collection",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "siteCollectionDisplayName",
+            "description": "Display name of the site collection",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "siteCollectionName",
+            "description": "Name of the site collection",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "siteDescription",
+            "description": "Description of the new site",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "siteDisplayName",
+            "description": "Display name of the new site",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "siteName",
+            "description": "Name of the new site",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "templateId",
+            "description": "Site template",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "name": {
-          "type": "String",
-          "description": "Name of the Point of sale"
-        }
+        "file": "types/CreateSiteInput.json",
+        "dependencies": [
+          "ID",
+          "String",
+          "PointOfSaleMappingInput"
+        ]
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PointOfSaleMappingInput": {
+        "name": "PointOfSaleMappingInput",
+        "kind": "INPUT_OBJECT",
+        "description": null,
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "language",
+            "description": "Language of the Point of sale",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "name",
+            "description": "Name of the Point of sale",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PointOfSaleMappingInput.json",
+        "dependencies": [
+          "String"
+        ]
       }
     }
   },
-  "returnFields": {
-    "job": {
-      "type": "Job",
-      "description": "Reference of the job",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "CreateSitePayload",
       "namedTypes": [
         "CreateSitePayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "CreateSitePayload",
+        "namedTypes": [
+          "CreateSitePayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "CreateSitePayload": {
+        "name": "CreateSitePayload",
         "kind": "OBJECT",
+        "description": "Represents a site creation payload",
+        "fields": [
+          {
+            "name": "job",
+            "description": "Reference of the job",
+            "type": {
+              "display": "Job",
+              "namedTypes": [
+                "Job"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/CreateSitePayload.json",
-        "references": [
+        "dependencies": [
           "Job"
         ]
       },
       "Job": {
+        "name": "Job",
         "kind": "OBJECT",
+        "description": "Represents a job to be executed in Sitecore.",
+        "fields": [
+          {
+            "name": "displayName",
+            "description": "The job display name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "done",
+            "description": "Indicate whether the job is finished.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "handle",
+            "description": "The job handle.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "metadata",
+            "description": "The job metadata.",
+            "type": {
+              "display": "[KeyValuePair]",
+              "namedTypes": [
+                "KeyValuePair"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The job name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "options",
+            "description": "The job options.",
+            "type": {
+              "display": "JobOptions",
+              "namedTypes": [
+                "JobOptions"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "queueTime",
+            "description": "The job queue time.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "status",
+            "description": "The job status.",
+            "type": {
+              "display": "JobStatus",
+              "namedTypes": [
+                "JobStatus"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Job.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean",
           "KeyValuePair",
@@ -127,45 +467,262 @@
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       },
       "KeyValuePair": {
+        "name": "KeyValuePair",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "value",
+            "description": null,
+            "type": {
+              "display": "Any",
+              "namedTypes": [
+                "Any"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/KeyValuePair.json",
-        "references": [
+        "dependencies": [
           "String",
           "Any"
         ]
       },
       "Any": {
+        "name": "Any",
         "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Any.json",
-        "references": []
+        "dependencies": []
       },
       "JobOptions": {
+        "name": "JobOptions",
         "kind": "OBJECT",
+        "description": "Represents job options.",
+        "fields": [
+          {
+            "name": "abortable",
+            "description": "Indicates whether the job can be aborted.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "category",
+            "description": "The job category.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "jobName",
+            "description": "The job name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "siteName",
+            "description": "The site name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobOptions.json",
-        "references": [
+        "dependencies": [
           "Boolean",
           "String"
         ]
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
       },
       "JobStatus": {
+        "name": "JobStatus",
         "kind": "OBJECT",
+        "description": "Represents a job status.",
+        "fields": [
+          {
+            "name": "exceptions",
+            "description": "The exceptions occurred during job execution.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "expiry",
+            "description": "The expiry date and time of the job.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "jobState",
+            "description": "The state of the job.",
+            "type": {
+              "display": "JobState!",
+              "namedTypes": [
+                "JobState"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "messages",
+            "description": "The messages provided from the job execution.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "processed",
+            "description": "The count of how many entities have been processed.",
+            "type": {
+              "display": "Long!",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "total",
+            "description": "The total.",
+            "type": {
+              "display": "Long!",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobStatus.json",
-        "references": [
+        "dependencies": [
           "String",
           "DateTime",
           "JobState",
@@ -173,14 +730,63 @@
         ]
       },
       "JobState": {
+        "name": "JobState",
         "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "INITIALIZING",
+            "description": null
+          },
+          {
+            "name": "QUEUED",
+            "description": null
+          },
+          {
+            "name": "RUNNING",
+            "description": null
+          },
+          {
+            "name": "ABORTREQUESTED",
+            "description": null
+          },
+          {
+            "name": "ABORTED",
+            "description": null
+          },
+          {
+            "name": "FINISHED",
+            "description": null
+          },
+          {
+            "name": "UNKNOWN",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobState.json",
-        "references": []
+        "dependencies": []
       },
       "Long": {
+        "name": "Long",
         "kind": "SCALAR",
+        "description": "The `Long` scalar type represents non-fractional signed whole 64-bit numeric values. Long can represent values between -(2^63) and 2^63 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Long.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

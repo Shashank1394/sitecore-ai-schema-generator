@@ -3,75 +3,263 @@
   "operationType": "query",
   "rootType": "Query",
   "description": null,
-  "arguments": {
-    "after": {
-      "type": "String",
-      "description": null
+  "arguments": [
+    {
+      "name": "after",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "before": {
-      "type": "String",
-      "description": null
+    {
+      "name": "before",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "first": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "first",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "input": {
-      "type": "DefaultSolutionInput",
-      "description": null
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "DefaultSolutionInput",
+        "namedTypes": [
+          "DefaultSolutionInput"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "last": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "last",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     }
+  ],
+  "returnType": {
+    "display": "SiteCollectionTypeConnection",
+    "namedTypes": [
+      "SiteCollectionTypeConnection"
+    ],
+    "required": false
   },
-  "returnType": "SiteCollectionTypeConnection",
-  "inputTypes": {
-    "DefaultSolutionInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents default input parameters",
-      "fields": {
-        "database": {
-          "type": "String",
-          "description": "Context database"
-        }
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String",
+      "namedTypes": [
+        "String"
+      ],
+      "required": false
+    },
+    "roots": [
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      {
+        "display": "DefaultSolutionInput",
+        "namedTypes": [
+          "DefaultSolutionInput"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      }
+    ],
+    "nodes": {
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PaginationAmount": {
+        "name": "PaginationAmount",
+        "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PaginationAmount.json",
+        "dependencies": []
+      },
+      "DefaultSolutionInput": {
+        "name": "DefaultSolutionInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents default input parameters",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "database",
+            "description": "Context database",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/DefaultSolutionInput.json",
+        "dependencies": [
+          "String"
+        ]
       }
     }
   },
-  "returnFields": {
-    "edges": {
-      "type": "[SiteCollectionTypeEdge!]",
-      "description": "A list of edges.",
-      "arguments": {}
-    },
-    "nodes": {
-      "type": "[SiteCollectionType]",
-      "description": "A flattened list of the nodes.",
-      "arguments": {}
-    },
-    "pageInfo": {
-      "type": "PageInfo!",
-      "description": "Information to aid in pagination.",
-      "arguments": {}
-    },
-    "totalCount": {
-      "type": "Int!",
-      "description": null,
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "SiteCollectionTypeConnection",
       "namedTypes": [
         "SiteCollectionTypeConnection"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "SiteCollectionTypeConnection",
+        "namedTypes": [
+          "SiteCollectionTypeConnection"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "SiteCollectionTypeConnection": {
+        "name": "SiteCollectionTypeConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[SiteCollectionTypeEdge!]",
+              "namedTypes": [
+                "SiteCollectionTypeEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[SiteCollectionType]",
+              "namedTypes": [
+                "SiteCollectionType"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "totalCount",
+            "description": null,
+            "type": {
+              "display": "Int!",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SiteCollectionTypeConnection.json",
-        "references": [
+        "dependencies": [
           "SiteCollectionTypeEdge",
           "SiteCollectionType",
           "PageInfo",
@@ -79,54 +267,633 @@
         ]
       },
       "SiteCollectionTypeEdge": {
+        "name": "SiteCollectionTypeEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "SiteCollectionType",
+              "namedTypes": [
+                "SiteCollectionType"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SiteCollectionTypeEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "SiteCollectionType"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "SiteCollectionType": {
+        "name": "SiteCollectionType",
         "kind": "OBJECT",
+        "description": "Represents a site collection",
+        "fields": [
+          {
+            "name": "access",
+            "description": "The access rights for the current user",
+            "type": {
+              "display": "ItemAccess",
+              "namedTypes": [
+                "ItemAccess"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "collectionDescription",
+            "description": "Collection description",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "collectionName",
+            "description": "Collection name",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "created",
+            "description": "Created date of the site collection",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "createdBy",
+            "description": "Creator of the site collection item",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "description",
+            "description": "Short description of the site collection",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "displayName",
+            "description": "Display name of the site collection",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "id",
+            "description": "A globally-unique identifier of the site collection",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "itemPath",
+            "description": "Path of the site collection item",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "Name of the site collection item",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "sharedSites",
+            "description": "Shared sites",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "sortOrder",
+            "description": "Sort order",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SiteCollectionType.json",
-        "references": [
+        "dependencies": [
           "ItemAccess",
           "String",
           "ID",
+          "IdFormat",
           "Int"
         ]
       },
       "ItemAccess": {
+        "name": "ItemAccess",
         "kind": "OBJECT",
+        "description": "Represents the item access rights for the current user.",
+        "fields": [
+          {
+            "name": "canAddBranch",
+            "description": "The user can add the provided branch to the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "branchId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canAddTemplate",
+            "description": "The user can add the provided template to the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "templateId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canAdmin",
+            "description": "The user can perform admin-level tasks on the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canCopyTo",
+            "description": "The user can copy the item to the provided destination.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "destinationId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canCreate",
+            "description": "The user can create the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canDelete",
+            "description": "The user can delete the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canDuplicate",
+            "description": "The user can create a duplicate of the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canMoveTo",
+            "description": "The user can move the item to the provided destination.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "destinationId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canPublish",
+            "description": "The user can publish the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canRead",
+            "description": "The user can read the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canReadLanguage",
+            "description": "The user can read the item in the current language.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canRemoveVersion",
+            "description": "The user can remove the current version of the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canRename",
+            "description": "The user can rename the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canWrite",
+            "description": "The user can write the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canWriteLanguage",
+            "description": "The user can write the item in the current language.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemAccess.json",
-        "references": [
-          "Boolean"
+        "dependencies": [
+          "Boolean",
+          "ID"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       },
       "ID": {
+        "name": "ID",
         "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ID.json",
-        "references": []
+        "dependencies": []
+      },
+      "IdFormat": {
+        "name": "IdFormat",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "N",
+            "description": null
+          },
+          {
+            "name": "D",
+            "description": null
+          },
+          {
+            "name": "B",
+            "description": null
+          },
+          {
+            "name": "P",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/IdFormat.json",
+        "dependencies": []
       },
       "Int": {
+        "name": "Int",
         "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Int.json",
-        "references": []
+        "dependencies": []
       },
       "PageInfo": {
+        "name": "PageInfo",
         "kind": "OBJECT",
+        "description": "Information about pagination in a connection.",
+        "fields": [
+          {
+            "name": "endCursor",
+            "description": "When paginating forwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasNextPage",
+            "description": "Indicates whether more edges exist following the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasPreviousPage",
+            "description": "Indicates whether more edges exist prior the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "startCursor",
+            "description": "When paginating backwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PageInfo.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]

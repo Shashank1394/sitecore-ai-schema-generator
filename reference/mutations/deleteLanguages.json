@@ -3,55 +3,162 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": "Delete a set of languages. This will remove ALL versions of those languages from every item.",
-  "arguments": {
-    "input": {
-      "type": "DeleteLanguagesInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "DeleteLanguagesInput!",
+        "namedTypes": [
+          "DeleteLanguagesInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "DeleteLanguagesPayload!",
+    "namedTypes": [
+      "DeleteLanguagesPayload"
+    ],
+    "required": true
   },
-  "returnType": "DeleteLanguagesPayload!",
-  "inputTypes": {
-    "DeleteLanguagesInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for deleting multiple languages.",
-      "fields": {
-        "database": {
-          "type": "String",
-          "description": "The database of the languages to be deleted."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "DeleteLanguagesInput!",
+      "namedTypes": [
+        "DeleteLanguagesInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "DeleteLanguagesInput!",
+        "namedTypes": [
+          "DeleteLanguagesInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "DeleteLanguagesInput": {
+        "name": "DeleteLanguagesInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for deleting multiple languages.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "database",
+            "description": "The database of the languages to be deleted.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "names",
+            "description": "The languages names to be deleted.",
+            "type": {
+              "display": "[UNKNOWN!]!",
+              "namedTypes": [],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "names": {
-          "type": "[UNKNOWN!]!",
-          "description": "The languages names to be deleted."
-        }
+        "file": "types/DeleteLanguagesInput.json",
+        "dependencies": [
+          "String"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean",
-      "description": null,
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "DeleteLanguagesPayload!",
       "namedTypes": [
         "DeleteLanguagesPayload"
-      ]
+      ],
+      "required": true
     },
+    "roots": [
+      {
+        "display": "DeleteLanguagesPayload!",
+        "namedTypes": [
+          "DeleteLanguagesPayload"
+        ],
+        "required": true
+      }
+    ],
     "nodes": {
       "DeleteLanguagesPayload": {
+        "name": "DeleteLanguagesPayload",
         "kind": "OBJECT",
+        "description": "The result of the delete operation for multiple languages.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": null,
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DeleteLanguagesPayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

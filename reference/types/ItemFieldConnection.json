@@ -10,7 +10,8 @@
         "display": "[ItemFieldEdge!]",
         "namedTypes": [
           "ItemFieldEdge"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "[ItemField]",
         "namedTypes": [
           "ItemField"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -32,7 +34,8 @@
         "display": "PageInfo!",
         "namedTypes": [
           "PageInfo"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     }

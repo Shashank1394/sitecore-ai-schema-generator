@@ -10,7 +10,8 @@
         "display": "ItemAccess",
         "namedTypes": [
           "ItemAccess"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -32,7 +34,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -43,7 +46,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -54,7 +58,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -65,7 +70,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -76,7 +82,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -87,7 +94,8 @@
         "display": "ID!",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -97,8 +105,10 @@
             "display": "IdFormat",
             "namedTypes": [
               "IdFormat"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -109,7 +119,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -120,7 +131,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -131,7 +143,8 @@
         "display": "[String]",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -142,7 +155,8 @@
         "display": "Int",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

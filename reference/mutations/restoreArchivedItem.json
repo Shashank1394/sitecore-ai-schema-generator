@@ -3,55 +3,180 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "RestoreArchivedItemInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "RestoreArchivedItemInput!",
+        "namedTypes": [
+          "RestoreArchivedItemInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "RestoreArchivedItemPayload",
+    "namedTypes": [
+      "RestoreArchivedItemPayload"
+    ],
+    "required": false
   },
-  "returnType": "RestoreArchivedItemPayload",
-  "inputTypes": {
-    "RestoreArchivedItemInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for restoring an archived item.",
-      "fields": {
-        "archivalId": {
-          "type": "ID!",
-          "description": "The item archival ID."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "RestoreArchivedItemInput!",
+      "namedTypes": [
+        "RestoreArchivedItemInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "RestoreArchivedItemInput!",
+        "namedTypes": [
+          "RestoreArchivedItemInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "RestoreArchivedItemInput": {
+        "name": "RestoreArchivedItemInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for restoring an archived item.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "archivalId",
+            "description": "The item archival ID.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "archiveName",
+            "description": "The name of the archive. The default value is 'archive'.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "archiveName": {
-          "type": "String",
-          "description": "The name of the archive. The default value is 'archive'."
-        }
+        "file": "types/RestoreArchivedItemInput.json",
+        "dependencies": [
+          "ID",
+          "String"
+        ]
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean!",
-      "description": null,
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "RestoreArchivedItemPayload",
       "namedTypes": [
         "RestoreArchivedItemPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "RestoreArchivedItemPayload",
+        "namedTypes": [
+          "RestoreArchivedItemPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "RestoreArchivedItemPayload": {
+        "name": "RestoreArchivedItemPayload",
         "kind": "OBJECT",
+        "description": "The result of restoring an archived item.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": null,
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RestoreArchivedItemPayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

@@ -10,7 +10,8 @@
         "display": "ArchivedItem",
         "namedTypes": [
           "ArchivedItem"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -20,8 +21,10 @@
             "display": "ArchiveItemQueryInput",
             "namedTypes": [
               "ArchiveItemQueryInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -32,7 +35,8 @@
         "display": "[ArchivedItem]",
         "namedTypes": [
           "ArchivedItem"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -42,8 +46,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "pageIndex",
@@ -52,8 +58,10 @@
             "display": "Int",
             "namedTypes": [
               "Int"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "pageSize",
@@ -62,8 +70,10 @@
             "display": "Int",
             "namedTypes": [
               "Int"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -74,7 +84,8 @@
         "display": "[RenderingItemType]",
         "namedTypes": [
           "RenderingItemType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -84,8 +95,10 @@
             "display": "GetRenderingsInput",
             "namedTypes": [
               "GetRenderingsInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -96,7 +109,8 @@
         "display": "ChannelType",
         "namedTypes": [
           "ChannelType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -106,8 +120,10 @@
             "display": "GetChannelInput!",
             "namedTypes": [
               "GetChannelInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -118,7 +134,8 @@
         "display": "ChannelTypeConnection",
         "namedTypes": [
           "ChannelTypeConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -128,8 +145,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -138,8 +157,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -148,8 +169,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "input",
@@ -158,8 +181,10 @@
             "display": "GetChannelsInput",
             "namedTypes": [
               "GetChannelsInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -168,8 +193,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -180,7 +207,8 @@
         "display": "User",
         "namedTypes": [
           "User"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -191,7 +219,8 @@
         "display": "DatabaseConnection",
         "namedTypes": [
           "DatabaseConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -201,8 +230,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -211,8 +242,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -221,8 +254,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -231,8 +266,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -243,7 +280,8 @@
         "display": "DataSourceTemplatesType",
         "namedTypes": [
           "DataSourceTemplatesType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -253,8 +291,10 @@
             "display": "DefaultInput",
             "namedTypes": [
               "DefaultInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -265,7 +305,8 @@
         "display": "Domain",
         "namedTypes": [
           "Domain"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -275,8 +316,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -287,7 +330,8 @@
         "display": "DomainConnection",
         "namedTypes": [
           "DomainConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -297,8 +341,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -307,8 +353,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -317,8 +365,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -327,8 +377,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -339,7 +391,8 @@
         "display": "Language",
         "namedTypes": [
           "Language"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -349,8 +402,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "name",
@@ -359,8 +414,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -371,7 +428,8 @@
         "display": "Index",
         "namedTypes": [
           "Index"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -381,8 +439,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -393,7 +453,8 @@
         "display": "IndexConnection",
         "namedTypes": [
           "IndexConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -403,8 +464,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -413,8 +476,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -423,8 +488,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "indexNames",
@@ -433,8 +500,10 @@
             "display": "[String]",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -443,8 +512,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -455,7 +526,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -465,8 +537,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -477,7 +551,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -487,8 +562,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -499,7 +576,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -509,8 +587,10 @@
             "display": "ItemQueryInput",
             "namedTypes": [
               "ItemQueryInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -521,7 +601,8 @@
         "display": "ItemTemplate",
         "namedTypes": [
           "ItemTemplate"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -531,8 +612,10 @@
             "display": "ItemTemplateQueryInput",
             "namedTypes": [
               "ItemTemplateQueryInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -543,7 +626,8 @@
         "display": "ItemTemplateConnection",
         "namedTypes": [
           "ItemTemplateConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -553,8 +637,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -563,8 +649,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -573,8 +661,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -583,8 +673,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "where",
@@ -593,8 +685,10 @@
             "display": "ItemTemplateQueryInput",
             "namedTypes": [
               "ItemTemplateQueryInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -605,7 +699,8 @@
         "display": "Job",
         "namedTypes": [
           "Job"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -615,8 +710,10 @@
             "display": "JobQueryInput!",
             "namedTypes": [
               "JobQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -627,7 +724,8 @@
         "display": "JobConnection",
         "namedTypes": [
           "JobConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -637,8 +735,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -647,8 +747,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -657,8 +759,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "input",
@@ -667,8 +771,10 @@
             "display": "JobQueryInput",
             "namedTypes": [
               "JobQueryInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -677,8 +783,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -689,7 +797,8 @@
         "display": "Language",
         "namedTypes": [
           "Language"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -699,8 +808,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -711,7 +822,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -721,8 +833,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "name",
@@ -731,8 +845,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -743,7 +859,8 @@
         "display": "LanguageConnection",
         "namedTypes": [
           "LanguageConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -753,8 +870,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -763,8 +882,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "databaseName",
@@ -773,8 +894,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -783,8 +906,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -793,8 +918,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -805,7 +932,8 @@
         "display": "MediaItem",
         "namedTypes": [
           "MediaItem"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -815,8 +943,10 @@
             "display": "MediaItemQueryInput!",
             "namedTypes": [
               "MediaItemQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -827,7 +957,8 @@
         "display": "MediaAvailabilityStatus!",
         "namedTypes": [
           "MediaAvailabilityStatus"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -837,8 +968,10 @@
             "display": "MediaItemQueryInput!",
             "namedTypes": [
               "MediaItemQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -849,7 +982,8 @@
         "display": "ApiMeta!",
         "namedTypes": [
           "ApiMeta"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -860,7 +994,8 @@
         "display": "[PageBranchesRootItemType]",
         "namedTypes": [
           "PageBranchesRootItemType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -870,8 +1005,10 @@
             "display": "DefaultPageBranchesInput",
             "namedTypes": [
               "DefaultPageBranchesInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -882,7 +1019,8 @@
         "display": "[PageDesignType]",
         "namedTypes": [
           "PageDesignType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -892,8 +1030,10 @@
             "display": "DefaultPresentationInput",
             "namedTypes": [
               "DefaultPresentationInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -904,7 +1044,8 @@
         "display": "[PageDesignsRootType]",
         "namedTypes": [
           "PageDesignsRootType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -914,8 +1055,10 @@
             "display": "DefaultPresentationInput",
             "namedTypes": [
               "DefaultPresentationInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -926,7 +1069,8 @@
         "display": "RuleSetRule",
         "namedTypes": [
           "RuleSetRule"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -936,8 +1080,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -948,7 +1094,8 @@
         "display": "RuleSet",
         "namedTypes": [
           "RuleSet"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -958,8 +1105,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -970,7 +1119,8 @@
         "display": "[PartialDesignType]",
         "namedTypes": [
           "PartialDesignType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -980,8 +1130,10 @@
             "display": "DefaultPresentationInput",
             "namedTypes": [
               "DefaultPresentationInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -992,7 +1144,8 @@
         "display": "[PartialDesignsRootType]",
         "namedTypes": [
           "PartialDesignsRootType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1002,8 +1155,10 @@
             "display": "DefaultPresentationInput",
             "namedTypes": [
               "DefaultPresentationInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1014,7 +1169,8 @@
         "display": "PublishingQueueEntryResult",
         "namedTypes": [
           "PublishingQueueEntryResult"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1024,8 +1180,10 @@
             "display": "PublishingQueueEntriesQueryInput!",
             "namedTypes": [
               "PublishingQueueEntriesQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1036,7 +1194,8 @@
         "display": "PublishingStatus",
         "namedTypes": [
           "PublishingStatus"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1046,8 +1205,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1058,7 +1219,8 @@
         "display": "[PublishingTarget]",
         "namedTypes": [
           "PublishingTarget"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -1069,7 +1231,8 @@
         "display": "Role",
         "namedTypes": [
           "Role"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1079,8 +1242,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1091,7 +1256,8 @@
         "display": "RoleConnection",
         "namedTypes": [
           "RoleConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1101,8 +1267,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -1111,8 +1279,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -1121,8 +1291,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -1131,8 +1303,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1143,7 +1317,8 @@
         "display": "Rule",
         "namedTypes": [
           "Rule"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1153,8 +1328,10 @@
             "display": "RulesQueryInput!",
             "namedTypes": [
               "RulesQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1165,7 +1342,8 @@
         "display": "RuleSet",
         "namedTypes": [
           "RuleSet"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1175,8 +1353,10 @@
             "display": "RuleItemQueryInput!",
             "namedTypes": [
               "RuleItemQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1187,7 +1367,8 @@
         "display": "TemplateFieldRule",
         "namedTypes": [
           "TemplateFieldRule"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1197,8 +1378,10 @@
             "display": "TemplateFieldRuleQueryInput!",
             "namedTypes": [
               "TemplateFieldRuleQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1209,7 +1392,8 @@
         "display": "SearchResult!",
         "namedTypes": [
           "SearchResult"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -1219,8 +1403,10 @@
             "display": "SearchQueryInput!",
             "namedTypes": [
               "SearchQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1231,7 +1417,8 @@
         "display": "UserProfileSelectorConnection",
         "namedTypes": [
           "UserProfileSelectorConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1241,8 +1428,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -1251,8 +1440,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -1261,8 +1452,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -1271,8 +1464,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1283,7 +1478,8 @@
         "display": "Site",
         "namedTypes": [
           "Site"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1293,8 +1489,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1305,7 +1503,8 @@
         "display": "[SiteCollectionType]",
         "namedTypes": [
           "SiteCollectionType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1315,8 +1514,10 @@
             "display": "DefaultSolutionInput",
             "namedTypes": [
               "DefaultSolutionInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1327,7 +1528,8 @@
         "display": "SiteCollectionTypeConnection",
         "namedTypes": [
           "SiteCollectionTypeConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1337,8 +1539,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -1347,8 +1551,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -1357,8 +1563,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "input",
@@ -1367,8 +1575,10 @@
             "display": "DefaultSolutionInput",
             "namedTypes": [
               "DefaultSolutionInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -1377,8 +1587,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1389,7 +1601,8 @@
         "display": "[Site]",
         "namedTypes": [
           "Site"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1399,8 +1612,10 @@
             "display": "Boolean",
             "namedTypes": [
               "Boolean"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1411,7 +1626,8 @@
         "display": "[SolutionSiteType]",
         "namedTypes": [
           "SolutionSiteType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1421,8 +1637,10 @@
             "display": "SolutionSitesInput",
             "namedTypes": [
               "SolutionSitesInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1433,7 +1651,8 @@
         "display": "SolutionSiteWithRootTypeConnection",
         "namedTypes": [
           "SolutionSiteWithRootTypeConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1443,8 +1662,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -1453,8 +1674,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -1463,8 +1686,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "input",
@@ -1473,8 +1698,10 @@
             "display": "SolutionSitesSearchInput",
             "namedTypes": [
               "SolutionSitesSearchInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -1483,8 +1710,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1495,7 +1724,8 @@
         "display": "SolutionSiteWithRootTypeConnection",
         "namedTypes": [
           "SolutionSiteWithRootTypeConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1505,8 +1735,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -1515,8 +1747,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -1525,8 +1759,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "input",
@@ -1535,8 +1771,10 @@
             "display": "SolutionSitesInput",
             "namedTypes": [
               "SolutionSitesInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -1545,8 +1783,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1557,7 +1797,8 @@
         "display": "[SolutionTemplateType]",
         "namedTypes": [
           "SolutionTemplateType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1567,8 +1808,10 @@
             "display": "DefaultSolutionInput",
             "namedTypes": [
               "DefaultSolutionInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1579,7 +1822,8 @@
         "display": "SupportedLanguageConnection",
         "namedTypes": [
           "SupportedLanguageConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1589,8 +1833,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -1599,8 +1845,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -1609,8 +1857,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -1619,8 +1869,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1631,7 +1883,8 @@
         "display": "[TenantTemplateType]",
         "namedTypes": [
           "TenantTemplateType"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1641,8 +1894,10 @@
             "display": "TenantTemplatesInput",
             "namedTypes": [
               "TenantTemplatesInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1653,7 +1908,8 @@
         "display": "User",
         "namedTypes": [
           "User"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1663,8 +1919,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1675,7 +1933,8 @@
         "display": "UserConnection",
         "namedTypes": [
           "UserConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1685,8 +1944,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -1695,8 +1956,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -1705,8 +1968,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -1715,8 +1980,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -1727,7 +1994,8 @@
         "display": "Workflow",
         "namedTypes": [
           "Workflow"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1737,8 +2005,10 @@
             "display": "WorkflowIdOrItemQueryInput!",
             "namedTypes": [
               "WorkflowIdOrItemQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1749,7 +2019,8 @@
         "display": "WorkflowConnection",
         "namedTypes": [
           "WorkflowConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1759,8 +2030,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -1769,8 +2042,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -1779,8 +2054,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -1789,8 +2066,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     }

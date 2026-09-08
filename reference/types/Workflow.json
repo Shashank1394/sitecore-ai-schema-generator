@@ -10,7 +10,8 @@
         "display": "WorkflowCommandConnection",
         "namedTypes": [
           "WorkflowCommandConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -20,8 +21,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -30,8 +33,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -40,8 +45,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -50,8 +57,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "query",
@@ -60,8 +69,10 @@
             "display": "WorkflowStateOrItemQueryInput!",
             "namedTypes": [
               "WorkflowStateOrItemQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -72,7 +83,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -83,7 +95,8 @@
         "display": "WorkflowEventConnection",
         "namedTypes": [
           "WorkflowEventConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -93,8 +106,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -103,8 +118,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -113,8 +130,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "item",
@@ -123,8 +142,10 @@
             "display": "ItemQueryInput!",
             "namedTypes": [
               "ItemQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         },
         {
           "name": "last",
@@ -133,8 +154,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -145,7 +168,8 @@
         "display": "WorkflowState",
         "namedTypes": [
           "WorkflowState"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -156,7 +180,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -166,8 +191,10 @@
             "display": "ItemQueryInput!",
             "namedTypes": [
               "ItemQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -178,7 +205,8 @@
         "display": "ItemConnection",
         "namedTypes": [
           "ItemConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -188,8 +216,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -198,8 +228,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -208,8 +240,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -218,8 +252,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "stateId",
@@ -228,8 +264,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -240,7 +278,8 @@
         "display": "Int!",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -250,8 +289,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -262,7 +303,8 @@
         "display": "WorkflowState",
         "namedTypes": [
           "WorkflowState"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -272,8 +314,10 @@
             "display": "WorkflowStateOrItemQueryInput!",
             "namedTypes": [
               "WorkflowStateOrItemQueryInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -284,7 +328,8 @@
         "display": "WorkflowStateConnection",
         "namedTypes": [
           "WorkflowStateConnection"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -294,8 +339,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "before",
@@ -304,8 +351,10 @@
             "display": "String",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "first",
@@ -314,8 +363,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         },
         {
           "name": "last",
@@ -324,8 +375,10 @@
             "display": "PaginationAmount",
             "namedTypes": [
               "PaginationAmount"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -336,7 +389,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     }

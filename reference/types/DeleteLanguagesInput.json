@@ -11,7 +11,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -19,7 +20,8 @@
       "description": "The languages names to be deleted.",
       "type": {
         "display": "[UNKNOWN!]!",
-        "namedTypes": []
+        "namedTypes": [],
+        "required": true
       }
     }
   ],

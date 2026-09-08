@@ -10,7 +10,8 @@
         "display": "[ItemTemplate!]!",
         "namedTypes": [
           "ItemTemplate"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     }

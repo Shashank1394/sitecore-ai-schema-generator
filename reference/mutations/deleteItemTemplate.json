@@ -3,55 +3,180 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "DeleteItemTemplateInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "DeleteItemTemplateInput!",
+        "namedTypes": [
+          "DeleteItemTemplateInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "DeleteItemTemplatePayload",
+    "namedTypes": [
+      "DeleteItemTemplatePayload"
+    ],
+    "required": false
   },
-  "returnType": "DeleteItemTemplatePayload",
-  "inputTypes": {
-    "DeleteItemTemplateInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for deleting an item template.",
-      "fields": {
-        "database": {
-          "type": "String",
-          "description": "The name of the item database."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "DeleteItemTemplateInput!",
+      "namedTypes": [
+        "DeleteItemTemplateInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "DeleteItemTemplateInput!",
+        "namedTypes": [
+          "DeleteItemTemplateInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "DeleteItemTemplateInput": {
+        "name": "DeleteItemTemplateInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for deleting an item template.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "database",
+            "description": "The name of the item database.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "templateId",
+            "description": "The ID of the item template.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "templateId": {
-          "type": "ID!",
-          "description": "The ID of the item template."
-        }
+        "file": "types/DeleteItemTemplateInput.json",
+        "dependencies": [
+          "String",
+          "ID"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean",
-      "description": "The delete template operation status.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "DeleteItemTemplatePayload",
       "namedTypes": [
         "DeleteItemTemplatePayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "DeleteItemTemplatePayload",
+        "namedTypes": [
+          "DeleteItemTemplatePayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "DeleteItemTemplatePayload": {
+        "name": "DeleteItemTemplatePayload",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "successful",
+            "description": "The delete template operation status.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DeleteItemTemplatePayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

@@ -3,88 +3,259 @@
   "operationType": "query",
   "rootType": "Query",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "GetChannelInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "GetChannelInput!",
+        "namedTypes": [
+          "GetChannelInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "ChannelType",
+    "namedTypes": [
+      "ChannelType"
+    ],
+    "required": false
   },
-  "returnType": "ChannelType",
-  "inputTypes": {
-    "GetChannelInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input needed to query a channel",
-      "fields": {
-        "channelId": {
-          "type": "ID",
-          "description": "A globally-unique identifier of the channel"
+  "inputDependencyGraph": {
+    "root": {
+      "display": "GetChannelInput!",
+      "namedTypes": [
+        "GetChannelInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "GetChannelInput!",
+        "namedTypes": [
+          "GetChannelInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "GetChannelInput": {
+        "name": "GetChannelInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input needed to query a channel",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "channelId",
+            "description": "A globally-unique identifier of the channel",
+            "type": {
+              "display": "ID",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "database",
+            "description": "Context database",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "database": {
-          "type": "String",
-          "description": "Context database"
-        }
+        "file": "types/GetChannelInput.json",
+        "dependencies": [
+          "ID",
+          "String"
+        ]
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "analyticsIdentifierIds": {
-      "type": "[ID!]",
-      "description": "Globally-unique identifiers of the analytics identifiers",
-      "arguments": {}
-    },
-    "channelTemplateType": {
-      "type": "String!",
-      "description": "Template type of the channel used for XM channel type mapping",
-      "arguments": {}
-    },
-    "collectionId": {
-      "type": "ID!",
-      "description": "A globally-unique identifier of the collection",
-      "arguments": {}
-    },
-    "createdAt": {
-      "type": "DateTime!",
-      "description": "Creation timestamp of the channel",
-      "arguments": {}
-    },
-    "createdBy": {
-      "type": "String!",
-      "description": "User who created the channel",
-      "arguments": {}
-    },
-    "displayName": {
-      "type": "String!",
-      "description": "The display name of the channel.",
-      "arguments": {}
-    },
-    "id": {
-      "type": "ID!",
-      "description": "A globally-unique identifier of the channel",
-      "arguments": {}
-    },
-    "name": {
-      "type": "String!",
-      "description": "The system name of the channel",
-      "arguments": {}
-    },
-    "sortOrder": {
-      "type": "Int",
-      "description": "Sort order of the channel",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "ChannelType",
       "namedTypes": [
         "ChannelType"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "ChannelType",
+        "namedTypes": [
+          "ChannelType"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "ChannelType": {
+        "name": "ChannelType",
         "kind": "OBJECT",
+        "description": "Represents a channel",
+        "fields": [
+          {
+            "name": "analyticsIdentifierIds",
+            "description": "Globally-unique identifiers of the analytics identifiers",
+            "type": {
+              "display": "[ID!]",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "channelTemplateType",
+            "description": "Template type of the channel used for XM channel type mapping",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "collectionId",
+            "description": "A globally-unique identifier of the collection",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "createdAt",
+            "description": "Creation timestamp of the channel",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "createdBy",
+            "description": "User who created the channel",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "displayName",
+            "description": "The display name of the channel.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "id",
+            "description": "A globally-unique identifier of the channel",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The system name of the channel",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "sortOrder",
+            "description": "Sort order of the channel",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ChannelType.json",
-        "references": [
+        "dependencies": [
           "ID",
           "String",
           "DateTime",
@@ -92,24 +263,64 @@
         ]
       },
       "ID": {
+        "name": "ID",
         "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ID.json",
-        "references": []
+        "dependencies": []
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
       },
       "Int": {
+        "name": "Int",
         "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Int.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

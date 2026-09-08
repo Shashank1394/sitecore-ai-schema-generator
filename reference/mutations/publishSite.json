@@ -3,67 +3,222 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "PublishSiteInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "PublishSiteInput!",
+        "namedTypes": [
+          "PublishSiteInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "PublishSitePayload",
+    "namedTypes": [
+      "PublishSitePayload"
+    ],
+    "required": false
   },
-  "returnType": "PublishSitePayload",
-  "inputTypes": {
-    "PublishSiteInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for publishing a site.",
-      "fields": {
-        "displayName": {
-          "type": "String",
-          "description": "The display name of the publish request."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "PublishSiteInput!",
+      "namedTypes": [
+        "PublishSiteInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "PublishSiteInput!",
+        "namedTypes": [
+          "PublishSiteInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "PublishSiteInput": {
+        "name": "PublishSiteInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for publishing a site.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "displayName",
+            "description": "The display name of the publish request.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "languages",
+            "description": "The publishing languages.",
+            "type": {
+              "display": "[UNKNOWN!]!",
+              "namedTypes": [],
+              "required": true
+            }
+          },
+          {
+            "name": "publishSiteMode",
+            "description": "The publish site mode.",
+            "type": {
+              "display": "PublishSiteMode!",
+              "namedTypes": [
+                "PublishSiteMode"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "sourceDatabase",
+            "description": "The source database name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "targetDatabases",
+            "description": "The target databases name.",
+            "type": {
+              "display": "[UNKNOWN!]!",
+              "namedTypes": [],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "languages": {
-          "type": "[UNKNOWN!]!",
-          "description": "The publishing languages."
+        "file": "types/PublishSiteInput.json",
+        "dependencies": [
+          "String",
+          "PublishSiteMode"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "publishSiteMode": {
-          "type": "PublishSiteMode!",
-          "description": "The publish site mode."
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PublishSiteMode": {
+        "name": "PublishSiteMode",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "FULL",
+            "description": null
+          },
+          {
+            "name": "INCREMENTAL",
+            "description": null
+          },
+          {
+            "name": "SMART",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "sourceDatabase": {
-          "type": "String",
-          "description": "The source database name."
-        },
-        "targetDatabases": {
-          "type": "[UNKNOWN!]!",
-          "description": "The target databases name."
-        }
+        "file": "types/PublishSiteMode.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "operationId": {
-      "type": "String",
-      "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "PublishSitePayload",
       "namedTypes": [
         "PublishSitePayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "PublishSitePayload",
+        "namedTypes": [
+          "PublishSitePayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "PublishSitePayload": {
+        "name": "PublishSitePayload",
         "kind": "OBJECT",
+        "description": "The result of the publishing operation.",
+        "fields": [
+          {
+            "name": "operationId",
+            "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishSitePayload.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

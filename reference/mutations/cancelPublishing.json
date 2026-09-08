@@ -3,56 +3,164 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "publishingOperationId": {
-      "type": "String!",
-      "description": null
+  "arguments": [
+    {
+      "name": "publishingOperationId",
+      "description": null,
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ],
+        "required": true
+      },
+      "required": true
+    }
+  ],
+  "returnType": {
+    "display": "CancelPublishingPayload",
+    "namedTypes": [
+      "CancelPublishingPayload"
+    ],
+    "required": false
+  },
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String!",
+      "namedTypes": [
+        "String"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      }
     }
   },
-  "returnType": "CancelPublishingPayload",
-  "inputTypes": {},
-  "returnFields": {
-    "message": {
-      "type": "String",
-      "description": null,
-      "arguments": {}
-    },
-    "publishingOperationId": {
-      "type": "String",
-      "description": null,
-      "arguments": {}
-    },
-    "success": {
-      "type": "Boolean!",
-      "description": null,
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "CancelPublishingPayload",
       "namedTypes": [
         "CancelPublishingPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "CancelPublishingPayload",
+        "namedTypes": [
+          "CancelPublishingPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "CancelPublishingPayload": {
+        "name": "CancelPublishingPayload",
         "kind": "OBJECT",
+        "description": "The result of the cancel publishing operation.",
+        "fields": [
+          {
+            "name": "message",
+            "description": null,
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "publishingOperationId",
+            "description": null,
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "success",
+            "description": null,
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/CancelPublishingPayload.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

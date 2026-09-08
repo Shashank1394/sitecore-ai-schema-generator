@@ -10,7 +10,8 @@
         "display": "ID!",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -20,8 +21,10 @@
             "display": "IdFormat",
             "namedTypes": [
               "IdFormat"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -32,7 +35,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -43,7 +47,8 @@
         "display": "[RuleDefinition!]!",
         "namedTypes": [
           "RuleDefinition"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     }

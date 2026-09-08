@@ -10,7 +10,8 @@
         "display": "ItemAccess",
         "namedTypes": [
           "ItemAccess"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -32,7 +34,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -43,7 +46,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -54,7 +58,8 @@
         "display": "[KeyValuePairOfStringAndString!]",
         "namedTypes": [
           "KeyValuePairOfStringAndString"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -65,7 +70,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -76,7 +82,8 @@
         "display": "ID!",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -86,8 +93,10 @@
             "display": "IdFormat",
             "namedTypes": [
               "IdFormat"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -98,7 +107,8 @@
         "display": "Language",
         "namedTypes": [
           "Language"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -109,7 +119,8 @@
         "display": "[Language]",
         "namedTypes": [
           "Language"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -120,7 +131,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -131,7 +143,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -142,7 +155,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -153,7 +167,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -164,7 +179,8 @@
         "display": "[PointOfSaleMappingType]",
         "namedTypes": [
           "PointOfSaleMappingType"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -175,7 +191,8 @@
         "display": "[KeyValuePair!]!",
         "namedTypes": [
           "KeyValuePair"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -186,7 +203,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -196,8 +214,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -208,7 +228,8 @@
         "display": "RenderingHostType",
         "namedTypes": [
           "RenderingHostType"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -219,7 +240,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -230,7 +252,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -241,7 +264,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -251,8 +275,10 @@
             "display": "MediaUrlOptionsInput",
             "namedTypes": [
               "MediaUrlOptionsInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -263,7 +289,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -274,7 +301,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -285,7 +313,8 @@
         "display": "SiteCollectionType",
         "namedTypes": [
           "SiteCollectionType"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -296,7 +325,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -307,7 +337,8 @@
         "display": "Int",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -318,7 +349,8 @@
         "display": "Item",
         "namedTypes": [
           "Item"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -329,7 +361,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -340,7 +373,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -351,7 +385,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -361,8 +396,10 @@
             "display": "MediaUrlOptionsInput",
             "namedTypes": [
               "MediaUrlOptionsInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     }

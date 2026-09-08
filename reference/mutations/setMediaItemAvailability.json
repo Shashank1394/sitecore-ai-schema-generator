@@ -3,42 +3,167 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "SetMediaAvailabilityInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "SetMediaAvailabilityInput!",
+        "namedTypes": [
+          "SetMediaAvailabilityInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "Boolean!",
+    "namedTypes": [
+      "Boolean"
+    ],
+    "required": true
   },
-  "returnType": "Boolean!",
-  "inputTypes": {
-    "SetMediaAvailabilityInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents input for setting media item availability status.",
-      "fields": {
-        "mediaItemId": {
-          "type": "ID",
-          "description": "The ID of the media item."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "SetMediaAvailabilityInput!",
+      "namedTypes": [
+        "SetMediaAvailabilityInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "SetMediaAvailabilityInput!",
+        "namedTypes": [
+          "SetMediaAvailabilityInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "SetMediaAvailabilityInput": {
+        "name": "SetMediaAvailabilityInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents input for setting media item availability status.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "mediaItemId",
+            "description": "The ID of the media item.",
+            "type": {
+              "display": "ID",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "status",
+            "description": "The target media availability status.",
+            "type": {
+              "display": "MediaAvailabilityStatus!",
+              "namedTypes": [
+                "MediaAvailabilityStatus"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "status": {
-          "type": "MediaAvailabilityStatus!",
-          "description": "The target media availability status."
-        }
+        "file": "types/SetMediaAvailabilityInput.json",
+        "dependencies": [
+          "ID",
+          "MediaAvailabilityStatus"
+        ]
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "MediaAvailabilityStatus": {
+        "name": "MediaAvailabilityStatus",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "AVAILABLE",
+            "description": null
+          },
+          {
+            "name": "UNAVAILABLE",
+            "description": null
+          },
+          {
+            "name": "NOTFOUND",
+            "description": null
+          },
+          {
+            "name": "UNDEFINED",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/MediaAvailabilityStatus.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {},
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "Boolean!",
       "namedTypes": [
         "Boolean"
-      ]
+      ],
+      "required": true
     },
+    "roots": [
+      {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ],
+        "required": true
+      }
+    ],
     "nodes": {
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

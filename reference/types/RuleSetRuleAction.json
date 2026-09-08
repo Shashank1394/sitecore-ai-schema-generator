@@ -10,7 +10,8 @@
         "display": "RuleSetDefinition",
         "namedTypes": [
           "RuleSetDefinition"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

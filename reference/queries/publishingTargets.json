@@ -3,35 +3,125 @@
   "operationType": "query",
   "rootType": "Query",
   "description": null,
-  "arguments": {},
-  "returnType": "[PublishingTarget]",
-  "inputTypes": {},
-  "returnFields": {},
-  "outputDependencyGraph": {
+  "arguments": [],
+  "returnType": {
+    "display": "[PublishingTarget]",
+    "namedTypes": [
+      "PublishingTarget"
+    ],
+    "required": false
+  },
+  "inputDependencyGraph": {
+    "root": {
+      "display": "UNKNOWN",
+      "namedTypes": [],
+      "required": false
+    },
+    "roots": [],
+    "nodes": {}
+  },
+  "returnDependencyGraph": {
     "root": {
       "display": "[PublishingTarget]",
       "namedTypes": [
         "PublishingTarget"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "[PublishingTarget]",
+        "namedTypes": [
+          "PublishingTarget"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "PublishingTarget": {
+        "name": "PublishingTarget",
         "kind": "OBJECT",
+        "description": "Represents the publishing target.",
+        "fields": [
+          {
+            "name": "name",
+            "description": "The name of the publishing target item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "previewPublishingTarget",
+            "description": "Indicates whether this publishing target can be assigned to workflow states that are not the final state.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "targetDatabase",
+            "description": "The name of the target database.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishingTarget.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

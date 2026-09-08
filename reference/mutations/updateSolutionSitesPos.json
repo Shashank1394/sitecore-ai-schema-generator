@@ -3,68 +3,220 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "UpdateSolutionSitesPosInput!",
-      "description": null
-    }
-  },
-  "returnType": "SetPosPayload",
-  "inputTypes": {
-    "UpdateSolutionSitesPosInput": {
-      "kind": "INPUT_OBJECT",
+  "arguments": [
+    {
+      "name": "input",
       "description": null,
-      "fields": {
-        "database": {
-          "type": "String",
-          "description": "Context database"
+      "type": {
+        "display": "UpdateSolutionSitesPosInput!",
+        "namedTypes": [
+          "UpdateSolutionSitesPosInput"
+        ],
+        "required": true
+      },
+      "required": true
+    }
+  ],
+  "returnType": {
+    "display": "SetPosPayload",
+    "namedTypes": [
+      "SetPosPayload"
+    ],
+    "required": false
+  },
+  "inputDependencyGraph": {
+    "root": {
+      "display": "UpdateSolutionSitesPosInput!",
+      "namedTypes": [
+        "UpdateSolutionSitesPosInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "UpdateSolutionSitesPosInput!",
+        "namedTypes": [
+          "UpdateSolutionSitesPosInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "UpdateSolutionSitesPosInput": {
+        "name": "UpdateSolutionSitesPosInput",
+        "kind": "INPUT_OBJECT",
+        "description": null,
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "database",
+            "description": "Context database",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "posMappingsInput",
+            "description": "Point of sale mappings input",
+            "type": {
+              "display": "[UNKNOWN!]!",
+              "namedTypes": [],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "posMappingsInput": {
-          "type": "[UNKNOWN!]!",
-          "description": "Point of sale mappings input"
-        }
+        "file": "types/UpdateSolutionSitesPosInput.json",
+        "dependencies": [
+          "String"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "result": {
-      "type": "[SetPosResult]",
-      "description": null,
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "SetPosPayload",
       "namedTypes": [
         "SetPosPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "SetPosPayload",
+        "namedTypes": [
+          "SetPosPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "SetPosPayload": {
+        "name": "SetPosPayload",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "result",
+            "description": null,
+            "type": {
+              "display": "[SetPosResult]",
+              "namedTypes": [
+                "SetPosResult"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SetPosPayload.json",
-        "references": [
+        "dependencies": [
           "SetPosResult"
         ]
       },
       "SetPosResult": {
+        "name": "SetPosResult",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "id",
+            "description": null,
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "success",
+            "description": null,
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/SetPosResult.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

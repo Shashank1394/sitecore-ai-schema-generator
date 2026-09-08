@@ -3,51 +3,153 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "EmptyArchiveInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "EmptyArchiveInput!",
+        "namedTypes": [
+          "EmptyArchiveInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "EmptyArchivePayload",
+    "namedTypes": [
+      "EmptyArchivePayload"
+    ],
+    "required": false
   },
-  "returnType": "EmptyArchivePayload",
-  "inputTypes": {
-    "EmptyArchiveInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for emptying an archive",
-      "fields": {
-        "archiveName": {
-          "type": "String",
-          "description": "The name of the archive. The default value is 'archive'."
-        }
+  "inputDependencyGraph": {
+    "root": {
+      "display": "EmptyArchiveInput!",
+      "namedTypes": [
+        "EmptyArchiveInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "EmptyArchiveInput!",
+        "namedTypes": [
+          "EmptyArchiveInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "EmptyArchiveInput": {
+        "name": "EmptyArchiveInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for emptying an archive",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "archiveName",
+            "description": "The name of the archive. The default value is 'archive'.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/EmptyArchiveInput.json",
+        "dependencies": [
+          "String"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean!",
-      "description": null,
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "EmptyArchivePayload",
       "namedTypes": [
         "EmptyArchivePayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "EmptyArchivePayload",
+        "namedTypes": [
+          "EmptyArchivePayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "EmptyArchivePayload": {
+        "name": "EmptyArchivePayload",
         "kind": "OBJECT",
+        "description": "The result of emptying an archive.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": null,
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/EmptyArchivePayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

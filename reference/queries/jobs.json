@@ -3,96 +3,436 @@
   "operationType": "query",
   "rootType": "Query",
   "description": "Get all jobs if no input is specified. The jobName parameter accepts StartWith/EndWith/Wrapped in (*).",
-  "arguments": {
-    "after": {
-      "type": "String",
-      "description": null
+  "arguments": [
+    {
+      "name": "after",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "before": {
-      "type": "String",
-      "description": null
+    {
+      "name": "before",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "first": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "first",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "input": {
-      "type": "JobQueryInput",
-      "description": null
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "JobQueryInput",
+        "namedTypes": [
+          "JobQueryInput"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "last": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "last",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     }
+  ],
+  "returnType": {
+    "display": "JobConnection",
+    "namedTypes": [
+      "JobConnection"
+    ],
+    "required": false
   },
-  "returnType": "JobConnection",
-  "inputTypes": {
-    "JobQueryInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents a job query.",
-      "fields": {
-        "handle": {
-          "type": "String",
-          "description": "The job handle. If both job handle and job name parameters are specified, the job name parameter is ignored."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String",
+      "namedTypes": [
+        "String"
+      ],
+      "required": false
+    },
+    "roots": [
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      {
+        "display": "JobQueryInput",
+        "namedTypes": [
+          "JobQueryInput"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      }
+    ],
+    "nodes": {
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "jobName": {
-          "type": "String",
-          "description": "The job name. If both job handle and job name parameters are specified, the job name parameter is ignored."
-        }
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PaginationAmount": {
+        "name": "PaginationAmount",
+        "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PaginationAmount.json",
+        "dependencies": []
+      },
+      "JobQueryInput": {
+        "name": "JobQueryInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents a job query.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "handle",
+            "description": "The job handle. If both job handle and job name parameters are specified, the job name parameter is ignored.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "jobName",
+            "description": "The job name. If both job handle and job name parameters are specified, the job name parameter is ignored.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/JobQueryInput.json",
+        "dependencies": [
+          "String"
+        ]
       }
     }
   },
-  "returnFields": {
-    "edges": {
-      "type": "[JobEdge!]",
-      "description": "A list of edges.",
-      "arguments": {}
-    },
-    "nodes": {
-      "type": "[Job]",
-      "description": "A flattened list of the nodes.",
-      "arguments": {}
-    },
-    "pageInfo": {
-      "type": "PageInfo!",
-      "description": "Information to aid in pagination.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "JobConnection",
       "namedTypes": [
         "JobConnection"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "JobConnection",
+        "namedTypes": [
+          "JobConnection"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "JobConnection": {
+        "name": "JobConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[JobEdge!]",
+              "namedTypes": [
+                "JobEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[Job]",
+              "namedTypes": [
+                "Job"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobConnection.json",
-        "references": [
+        "dependencies": [
           "JobEdge",
           "Job",
           "PageInfo"
         ]
       },
       "JobEdge": {
+        "name": "JobEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "Job",
+              "namedTypes": [
+                "Job"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "Job"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Job": {
+        "name": "Job",
         "kind": "OBJECT",
+        "description": "Represents a job to be executed in Sitecore.",
+        "fields": [
+          {
+            "name": "displayName",
+            "description": "The job display name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "done",
+            "description": "Indicate whether the job is finished.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "handle",
+            "description": "The job handle.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "metadata",
+            "description": "The job metadata.",
+            "type": {
+              "display": "[KeyValuePair]",
+              "namedTypes": [
+                "KeyValuePair"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The job name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "options",
+            "description": "The job options.",
+            "type": {
+              "display": "JobOptions",
+              "namedTypes": [
+                "JobOptions"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "queueTime",
+            "description": "The job queue time.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "status",
+            "description": "The job status.",
+            "type": {
+              "display": "JobStatus",
+              "namedTypes": [
+                "JobStatus"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Job.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean",
           "KeyValuePair",
@@ -102,40 +442,247 @@
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       },
       "KeyValuePair": {
+        "name": "KeyValuePair",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "value",
+            "description": null,
+            "type": {
+              "display": "Any",
+              "namedTypes": [
+                "Any"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/KeyValuePair.json",
-        "references": [
+        "dependencies": [
           "String",
           "Any"
         ]
       },
       "Any": {
+        "name": "Any",
         "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Any.json",
-        "references": []
+        "dependencies": []
       },
       "JobOptions": {
+        "name": "JobOptions",
         "kind": "OBJECT",
+        "description": "Represents job options.",
+        "fields": [
+          {
+            "name": "abortable",
+            "description": "Indicates whether the job can be aborted.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "category",
+            "description": "The job category.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "jobName",
+            "description": "The job name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "siteName",
+            "description": "The site name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobOptions.json",
-        "references": [
+        "dependencies": [
           "Boolean",
           "String"
         ]
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
       },
       "JobStatus": {
+        "name": "JobStatus",
         "kind": "OBJECT",
+        "description": "Represents a job status.",
+        "fields": [
+          {
+            "name": "exceptions",
+            "description": "The exceptions occurred during job execution.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "expiry",
+            "description": "The expiry date and time of the job.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "jobState",
+            "description": "The state of the job.",
+            "type": {
+              "display": "JobState!",
+              "namedTypes": [
+                "JobState"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "messages",
+            "description": "The messages provided from the job execution.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "processed",
+            "description": "The count of how many entities have been processed.",
+            "type": {
+              "display": "Long!",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "total",
+            "description": "The total.",
+            "type": {
+              "display": "Long!",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobStatus.json",
-        "references": [
+        "dependencies": [
           "String",
           "DateTime",
           "JobState",
@@ -143,19 +690,127 @@
         ]
       },
       "JobState": {
+        "name": "JobState",
         "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "INITIALIZING",
+            "description": null
+          },
+          {
+            "name": "QUEUED",
+            "description": null
+          },
+          {
+            "name": "RUNNING",
+            "description": null
+          },
+          {
+            "name": "ABORTREQUESTED",
+            "description": null
+          },
+          {
+            "name": "ABORTED",
+            "description": null
+          },
+          {
+            "name": "FINISHED",
+            "description": null
+          },
+          {
+            "name": "UNKNOWN",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobState.json",
-        "references": []
+        "dependencies": []
       },
       "Long": {
+        "name": "Long",
         "kind": "SCALAR",
+        "description": "The `Long` scalar type represents non-fractional signed whole 64-bit numeric values. Long can represent values between -(2^63) and 2^63 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Long.json",
-        "references": []
+        "dependencies": []
       },
       "PageInfo": {
+        "name": "PageInfo",
         "kind": "OBJECT",
+        "description": "Information about pagination in a connection.",
+        "fields": [
+          {
+            "name": "endCursor",
+            "description": "When paginating forwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasNextPage",
+            "description": "Indicates whether more edges exist following the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasPreviousPage",
+            "description": "Indicates whether more edges exist prior the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "startCursor",
+            "description": "When paginating backwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PageInfo.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]

@@ -11,7 +11,8 @@
         "display": "DateFilterInput",
         "namedTypes": [
           "DateFilterInput"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -21,7 +22,8 @@
         "display": "ItemsFilterInput",
         "namedTypes": [
           "ItemsFilterInput"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -31,7 +33,8 @@
         "display": "PagingInput",
         "namedTypes": [
           "PagingInput"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -41,7 +44,8 @@
         "display": "SortByInput!",
         "namedTypes": [
           "SortByInput"
-        ]
+        ],
+        "required": true
       }
     }
   ],

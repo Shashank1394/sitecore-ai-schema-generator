@@ -11,7 +11,8 @@
         "display": "SearchStatementInput",
         "namedTypes": [
           "SearchStatementInput"
-        ]
+        ],
+        "required": false
       }
     }
   ],

@@ -3,40 +3,97 @@
   "operationType": "query",
   "rootType": "Query",
   "description": "API meta",
-  "arguments": {},
-  "returnType": "ApiMeta!",
-  "inputTypes": {},
-  "returnFields": {
-    "version": {
-      "type": "String!",
-      "description": "API version.",
-      "arguments": {}
-    },
-    "xMVersion": {
-      "type": "String!",
-      "description": "XM version.",
-      "arguments": {}
-    }
+  "arguments": [],
+  "returnType": {
+    "display": "ApiMeta!",
+    "namedTypes": [
+      "ApiMeta"
+    ],
+    "required": true
   },
-  "outputDependencyGraph": {
+  "inputDependencyGraph": {
+    "root": {
+      "display": "UNKNOWN",
+      "namedTypes": [],
+      "required": false
+    },
+    "roots": [],
+    "nodes": {}
+  },
+  "returnDependencyGraph": {
     "root": {
       "display": "ApiMeta!",
       "namedTypes": [
         "ApiMeta"
-      ]
+      ],
+      "required": true
     },
+    "roots": [
+      {
+        "display": "ApiMeta!",
+        "namedTypes": [
+          "ApiMeta"
+        ],
+        "required": true
+      }
+    ],
     "nodes": {
       "ApiMeta": {
+        "name": "ApiMeta",
         "kind": "OBJECT",
+        "description": "Represents meta information for the API.",
+        "fields": [
+          {
+            "name": "version",
+            "description": "API version.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "xMVersion",
+            "description": "XM version.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ApiMeta.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

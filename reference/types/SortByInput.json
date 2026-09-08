@@ -11,7 +11,8 @@
         "display": "SortDirection!",
         "namedTypes": [
           "SortDirection"
-        ]
+        ],
+        "required": true
       }
     },
     {
@@ -21,7 +22,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       }
     }
   ],

@@ -3,70 +3,488 @@
   "operationType": "query",
   "rootType": "Query",
   "description": null,
-  "arguments": {
-    "archiveName": {
-      "type": "String",
-      "description": null
+  "arguments": [
+    {
+      "name": "archiveName",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "pageIndex": {
-      "type": "Int",
-      "description": null
+    {
+      "name": "pageIndex",
+      "description": null,
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "pageSize": {
-      "type": "Int",
-      "description": null
+    {
+      "name": "pageSize",
+      "description": null,
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ],
+        "required": false
+      },
+      "required": false
+    }
+  ],
+  "returnType": {
+    "display": "[ArchivedItem]",
+    "namedTypes": [
+      "ArchivedItem"
+    ],
+    "required": false
+  },
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String",
+      "namedTypes": [
+        "String"
+      ],
+      "required": false
+    },
+    "roots": [
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ],
+        "required": false
+      },
+      {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ],
+        "required": false
+      }
+    ],
+    "nodes": {
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "Int": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/Int.json",
+        "dependencies": []
+      }
     }
   },
-  "returnType": "[ArchivedItem]",
-  "inputTypes": {},
-  "returnFields": {},
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "[ArchivedItem]",
       "namedTypes": [
         "ArchivedItem"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "[ArchivedItem]",
+        "namedTypes": [
+          "ArchivedItem"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "ArchivedItem": {
+        "name": "ArchivedItem",
         "kind": "OBJECT",
+        "description": "Represents archive entry",
+        "fields": [
+          {
+            "name": "archivalId",
+            "description": "The globally-unique identifier of the entry.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "archivedBy",
+            "description": "The name of the user who archived the entry.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "archivedDate",
+            "description": "The archival date in UTC format.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "database",
+            "description": "The name of the database.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "itemId",
+            "description": "The item ID.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "name",
+            "description": "The item name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "originalLocation",
+            "description": "The name of the database.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "parentId",
+            "description": "The item parent ID.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "versions",
+            "description": null,
+            "type": {
+              "display": "[ArchivedItemVersion]",
+              "namedTypes": [
+                "ArchivedItemVersion"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ArchivedItem.json",
-        "references": [
+        "dependencies": [
           "ID",
+          "IdFormat",
           "String",
           "DateTime",
           "ArchivedItemVersion"
         ]
       },
       "ID": {
+        "name": "ID",
         "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ID.json",
-        "references": []
+        "dependencies": []
+      },
+      "IdFormat": {
+        "name": "IdFormat",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "N",
+            "description": null
+          },
+          {
+            "name": "D",
+            "description": null
+          },
+          {
+            "name": "B",
+            "description": null
+          },
+          {
+            "name": "P",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/IdFormat.json",
+        "dependencies": []
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
       },
       "ArchivedItemVersion": {
+        "name": "ArchivedItemVersion",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "archivalDate",
+            "description": "The archival date in UTC format.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "archivedBy",
+            "description": "The user name who archived this version.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "language",
+            "description": "The item language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "version",
+            "description": "The item version number.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "versionId",
+            "description": "The globally-unique identifier of the version.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ArchivedItemVersion.json",
-        "references": [
+        "dependencies": [
           "DateTime",
           "String",
           "Int",
-          "ID"
+          "ID",
+          "IdFormat"
         ]
       },
       "Int": {
+        "name": "Int",
         "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Int.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

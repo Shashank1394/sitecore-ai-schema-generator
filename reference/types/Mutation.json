@@ -10,7 +10,8 @@
         "display": "AddAccountsToRolePayload",
         "namedTypes": [
           "AddAccountsToRolePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -20,8 +21,10 @@
             "display": "AddAccountsToRoleInput!",
             "namedTypes": [
               "AddAccountsToRoleInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -32,7 +35,8 @@
         "display": "AddItemVersionPayload",
         "namedTypes": [
           "AddItemVersionPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -42,8 +46,10 @@
             "display": "AddItemVersionInput!",
             "namedTypes": [
               "AddItemVersionInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -54,7 +60,8 @@
         "display": "AddLanguagePayload!",
         "namedTypes": [
           "AddLanguagePayload"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -64,8 +71,10 @@
             "display": "AddLanguageInput!",
             "namedTypes": [
               "AddLanguageInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -76,7 +85,8 @@
         "display": "AddRoleToRolesPayload",
         "namedTypes": [
           "AddRoleToRolesPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -86,8 +96,10 @@
             "display": "AddRoleToRolesInput!",
             "namedTypes": [
               "AddRoleToRolesInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -98,7 +110,8 @@
         "display": "ArchiveItemPayload",
         "namedTypes": [
           "ArchiveItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -108,8 +121,10 @@
             "display": "ArchiveItemInput!",
             "namedTypes": [
               "ArchiveItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -120,7 +135,8 @@
         "display": "ArchiveVersionPayload",
         "namedTypes": [
           "ArchiveVersionPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -130,8 +146,10 @@
             "display": "ArchiveVersionInput!",
             "namedTypes": [
               "ArchiveVersionInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -142,7 +160,8 @@
         "display": "CancelPublishingPayload",
         "namedTypes": [
           "CancelPublishingPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -152,8 +171,10 @@
             "display": "String!",
             "namedTypes": [
               "String"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -164,7 +185,8 @@
         "display": "ChangeUserPasswordPayload",
         "namedTypes": [
           "ChangeUserPasswordPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -174,8 +196,10 @@
             "display": "ChangeUserPasswordInput!",
             "namedTypes": [
               "ChangeUserPasswordInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -186,7 +210,8 @@
         "display": "CleanUpDatabasesPayload",
         "namedTypes": [
           "CleanUpDatabasesPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -196,8 +221,10 @@
             "display": "CleanUpDatabasesInput!",
             "namedTypes": [
               "CleanUpDatabasesInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -208,7 +235,8 @@
         "display": "CloneSitePayload",
         "namedTypes": [
           "CloneSitePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -218,8 +246,10 @@
             "display": "CloneSiteInput!",
             "namedTypes": [
               "CloneSiteInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -230,7 +260,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -240,8 +271,10 @@
             "display": "ConfigurePageDesignsInput!",
             "namedTypes": [
               "ConfigurePageDesignsInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -252,7 +285,8 @@
         "display": "CopyItemPayload",
         "namedTypes": [
           "CopyItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -262,8 +296,10 @@
             "display": "CopyItemInput!",
             "namedTypes": [
               "CopyItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -274,7 +310,8 @@
         "display": "CreateDomainPayload",
         "namedTypes": [
           "CreateDomainPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -284,8 +321,10 @@
             "display": "CreateDomainInput!",
             "namedTypes": [
               "CreateDomainInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -296,7 +335,8 @@
         "display": "CreateItemPayload",
         "namedTypes": [
           "CreateItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -306,8 +346,10 @@
             "display": "CreateItemInput!",
             "namedTypes": [
               "CreateItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -318,7 +360,8 @@
         "display": "CreateItemFromBranchPayload",
         "namedTypes": [
           "CreateItemFromBranchPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -328,8 +371,10 @@
             "display": "CreateItemFromBranchInput!",
             "namedTypes": [
               "CreateItemFromBranchInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -340,7 +385,8 @@
         "display": "CreateItemTemplatePayload",
         "namedTypes": [
           "CreateItemTemplatePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -350,8 +396,10 @@
             "display": "CreateItemTemplateInput!",
             "namedTypes": [
               "CreateItemTemplateInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -362,7 +410,8 @@
         "display": "CreateItemPayload",
         "namedTypes": [
           "CreateItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -372,8 +421,10 @@
             "display": "CreateItemTemplateFolderInput!",
             "namedTypes": [
               "CreateItemTemplateFolderInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -384,7 +435,8 @@
         "display": "CreateRolePayload",
         "namedTypes": [
           "CreateRolePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -394,8 +446,10 @@
             "display": "CreateRoleInput!",
             "namedTypes": [
               "CreateRoleInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -406,7 +460,8 @@
         "display": "CreateSitePayload",
         "namedTypes": [
           "CreateSitePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -416,8 +471,10 @@
             "display": "CreateSiteInput!",
             "namedTypes": [
               "CreateSiteInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -428,7 +485,8 @@
         "display": "CreateSiteCollectionPayload",
         "namedTypes": [
           "CreateSiteCollectionPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -438,8 +496,10 @@
             "display": "CreateSiteCollectionInput!",
             "namedTypes": [
               "CreateSiteCollectionInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -450,7 +510,8 @@
         "display": "CreateUserPayload",
         "namedTypes": [
           "CreateUserPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -460,8 +521,10 @@
             "display": "CreateUserInput!",
             "namedTypes": [
               "CreateUserInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -472,7 +535,8 @@
         "display": "DeleteAccountsFromRolePayload",
         "namedTypes": [
           "DeleteAccountsFromRolePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -482,8 +546,10 @@
             "display": "DeleteAccountsFromRoleInput!",
             "namedTypes": [
               "DeleteAccountsFromRoleInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -494,7 +560,8 @@
         "display": "DeleteArchivedItemPayload",
         "namedTypes": [
           "DeleteArchivedItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -504,8 +571,10 @@
             "display": "DeleteArchivedItemInput!",
             "namedTypes": [
               "DeleteArchivedItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -516,7 +585,8 @@
         "display": "DeleteArchivedVersionPayload",
         "namedTypes": [
           "DeleteArchivedVersionPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -526,8 +596,10 @@
             "display": "DeleteArchivedVersionInput!",
             "namedTypes": [
               "DeleteArchivedVersionInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -538,7 +610,8 @@
         "display": "DeleteDomainPayload",
         "namedTypes": [
           "DeleteDomainPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -548,8 +621,10 @@
             "display": "DeleteDomainInput!",
             "namedTypes": [
               "DeleteDomainInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -560,7 +635,8 @@
         "display": "DeleteItemPayload",
         "namedTypes": [
           "DeleteItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -570,8 +646,10 @@
             "display": "DeleteItemInput!",
             "namedTypes": [
               "DeleteItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -582,7 +660,8 @@
         "display": "DeleteItemTemplatePayload",
         "namedTypes": [
           "DeleteItemTemplatePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -592,8 +671,10 @@
             "display": "DeleteItemTemplateInput!",
             "namedTypes": [
               "DeleteItemTemplateInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -604,7 +685,8 @@
         "display": "DeleteItemVersionPayload",
         "namedTypes": [
           "DeleteItemVersionPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -614,8 +696,10 @@
             "display": "DeleteItemVersionInput!",
             "namedTypes": [
               "DeleteItemVersionInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -626,7 +710,8 @@
         "display": "DeleteLanguagePayload!",
         "namedTypes": [
           "DeleteLanguagePayload"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -636,8 +721,10 @@
             "display": "DeleteLanguageInput!",
             "namedTypes": [
               "DeleteLanguageInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -648,7 +735,8 @@
         "display": "DeleteLanguagesPayload!",
         "namedTypes": [
           "DeleteLanguagesPayload"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -658,8 +746,10 @@
             "display": "DeleteLanguagesInput!",
             "namedTypes": [
               "DeleteLanguagesInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -670,7 +760,8 @@
         "display": "DeleteRolePayload",
         "namedTypes": [
           "DeleteRolePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -680,8 +771,10 @@
             "display": "DeleteRoleInput!",
             "namedTypes": [
               "DeleteRoleInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -692,7 +785,8 @@
         "display": "DeleteRoleFromRolesPayload",
         "namedTypes": [
           "DeleteRoleFromRolesPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -702,8 +796,10 @@
             "display": "DeleteRoleFromRolesInput!",
             "namedTypes": [
               "DeleteRoleFromRolesInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -714,7 +810,8 @@
         "display": "DeleteUserPayload",
         "namedTypes": [
           "DeleteUserPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -724,8 +821,10 @@
             "display": "DeleteUserInput!",
             "namedTypes": [
               "DeleteUserInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -736,7 +835,8 @@
         "display": "DisableUserPayload",
         "namedTypes": [
           "DisableUserPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -746,8 +846,10 @@
             "display": "DisableUserInput!",
             "namedTypes": [
               "DisableUserInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -758,7 +860,8 @@
         "display": "EmptyArchivePayload",
         "namedTypes": [
           "EmptyArchivePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -768,8 +871,10 @@
             "display": "EmptyArchiveInput!",
             "namedTypes": [
               "EmptyArchiveInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -780,7 +885,8 @@
         "display": "EnableUserPayload",
         "namedTypes": [
           "EnableUserPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -790,8 +896,10 @@
             "display": "EnableUserInput!",
             "namedTypes": [
               "EnableUserInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -802,7 +910,8 @@
         "display": "ExecuteWorkflowCommandPayload",
         "namedTypes": [
           "ExecuteWorkflowCommandPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -812,8 +921,10 @@
             "display": "ExecuteWorkflowCommandInput!",
             "namedTypes": [
               "ExecuteWorkflowCommandInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -824,7 +935,8 @@
         "display": "MoveItemPayload",
         "namedTypes": [
           "MoveItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -834,8 +946,10 @@
             "display": "MoveItemInput!",
             "namedTypes": [
               "MoveItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -846,7 +960,8 @@
         "display": "PopulateManagedSchemaPayload",
         "namedTypes": [
           "PopulateManagedSchemaPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -856,8 +971,10 @@
             "display": "PopulateManagedSchemaInput",
             "namedTypes": [
               "PopulateManagedSchemaInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -868,7 +985,8 @@
         "display": "PublishItemPayload",
         "namedTypes": [
           "PublishItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -878,8 +996,10 @@
             "display": "PublishItemInput!",
             "namedTypes": [
               "PublishItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -890,7 +1010,8 @@
         "display": "PublishItemPayload",
         "namedTypes": [
           "PublishItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -900,8 +1021,10 @@
             "display": "PublishLanguageSpecificItemsInput!",
             "namedTypes": [
               "PublishLanguageSpecificItemsInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -912,7 +1035,8 @@
         "display": "PublishSitePayload",
         "namedTypes": [
           "PublishSitePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -922,8 +1046,10 @@
             "display": "PublishSiteInput!",
             "namedTypes": [
               "PublishSiteInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -934,7 +1060,8 @@
         "display": "PublishWithOptionsPayload",
         "namedTypes": [
           "PublishWithOptionsPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -944,8 +1071,10 @@
             "display": "PublishWithOptionsInput!",
             "namedTypes": [
               "PublishWithOptionsInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -956,7 +1085,8 @@
         "display": "RebuildIndexesPayload",
         "namedTypes": [
           "RebuildIndexesPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -966,8 +1096,10 @@
             "display": "RebuildIndexesInput",
             "namedTypes": [
               "RebuildIndexesInput"
-            ]
-          }
+            ],
+            "required": false
+          },
+          "required": false
         }
       ]
     },
@@ -978,7 +1110,8 @@
         "display": "RebuildLinkDatabasePayload",
         "namedTypes": [
           "RebuildLinkDatabasePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -988,8 +1121,10 @@
             "display": "RebuildLinkDatabaseInput!",
             "namedTypes": [
               "RebuildLinkDatabaseInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1000,7 +1135,8 @@
         "display": "RemoveSitePayload",
         "namedTypes": [
           "RemoveSitePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1010,8 +1146,10 @@
             "display": "RemoveSiteInput!",
             "namedTypes": [
               "RemoveSiteInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1022,7 +1160,8 @@
         "display": "RemoveSiteCollectionPayload",
         "namedTypes": [
           "RemoveSiteCollectionPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1032,8 +1171,10 @@
             "display": "RemoveSiteCollectionInput!",
             "namedTypes": [
               "RemoveSiteCollectionInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1044,7 +1185,8 @@
         "display": "RenameItemPayload",
         "namedTypes": [
           "RenameItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1054,8 +1196,10 @@
             "display": "RenameItemInput!",
             "namedTypes": [
               "RenameItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1066,7 +1210,8 @@
         "display": "RenameSitePayload",
         "namedTypes": [
           "RenameSitePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1076,8 +1221,10 @@
             "display": "RenameSiteInput!",
             "namedTypes": [
               "RenameSiteInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1088,7 +1235,8 @@
         "display": "RenameSiteCollectionPayload",
         "namedTypes": [
           "RenameSiteCollectionPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1098,8 +1246,10 @@
             "display": "RenameSiteCollectionInput!",
             "namedTypes": [
               "RenameSiteCollectionInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1110,7 +1260,8 @@
         "display": "ResetUserSettingsPayload",
         "namedTypes": [
           "ResetUserSettingsPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1120,8 +1271,10 @@
             "display": "ResetUserSettingsInput!",
             "namedTypes": [
               "ResetUserSettingsInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1132,7 +1285,8 @@
         "display": "RestoreArchivedItemPayload",
         "namedTypes": [
           "RestoreArchivedItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1142,8 +1296,10 @@
             "display": "RestoreArchivedItemInput!",
             "namedTypes": [
               "RestoreArchivedItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1154,7 +1310,8 @@
         "display": "RestoreArchivedVersionPayload",
         "namedTypes": [
           "RestoreArchivedVersionPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1164,8 +1321,10 @@
             "display": "RestoreArchivedVersionInput!",
             "namedTypes": [
               "RestoreArchivedVersionInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1176,7 +1335,8 @@
         "display": "CreateSolutionSitePayload",
         "namedTypes": [
           "CreateSolutionSitePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1186,8 +1346,10 @@
             "display": "CreateSolutionSiteInput!",
             "namedTypes": [
               "CreateSolutionSiteInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1198,7 +1360,8 @@
         "display": "SetItemArchiveDatePayload",
         "namedTypes": [
           "SetItemArchiveDatePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1208,8 +1371,10 @@
             "display": "SetItemArchiveDateInput!",
             "namedTypes": [
               "SetItemArchiveDateInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1220,7 +1385,8 @@
         "display": "Boolean!",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -1230,8 +1396,10 @@
             "display": "SetMediaAvailabilityInput!",
             "namedTypes": [
               "SetMediaAvailabilityInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1242,7 +1410,8 @@
         "display": "SetVersionArchiveDatePayload",
         "namedTypes": [
           "SetVersionArchiveDatePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1252,8 +1421,10 @@
             "display": "SetVersionArchiveDateInput!",
             "namedTypes": [
               "SetVersionArchiveDateInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1264,7 +1435,8 @@
         "display": "StartCopyItemPayload",
         "namedTypes": [
           "StartCopyItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1274,8 +1446,10 @@
             "display": "CopyItemInput!",
             "namedTypes": [
               "CopyItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1286,7 +1460,8 @@
         "display": "StartDeleteItemPayload",
         "namedTypes": [
           "StartDeleteItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1296,8 +1471,10 @@
             "display": "DeleteItemInput!",
             "namedTypes": [
               "DeleteItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1308,7 +1485,8 @@
         "display": "StartWorkflowPayload!",
         "namedTypes": [
           "StartWorkflowPayload"
-        ]
+        ],
+        "required": true
       },
       "arguments": [
         {
@@ -1318,8 +1496,10 @@
             "display": "StartWorkflowInput!",
             "namedTypes": [
               "StartWorkflowInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1330,7 +1510,8 @@
         "display": "TranslateItemPayload",
         "namedTypes": [
           "TranslateItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1340,8 +1521,10 @@
             "display": "TranslateItemInput!",
             "namedTypes": [
               "TranslateItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1352,7 +1535,8 @@
         "display": "TranslatePagePayload",
         "namedTypes": [
           "TranslatePagePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1362,8 +1546,10 @@
             "display": "TranslatePageInput!",
             "namedTypes": [
               "TranslatePageInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1374,7 +1560,8 @@
         "display": "TranslateSitePayload",
         "namedTypes": [
           "TranslateSitePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1384,8 +1571,10 @@
             "display": "TranslateSiteInput!",
             "namedTypes": [
               "TranslateSiteInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1396,7 +1585,8 @@
         "display": "UnlockUserPayload",
         "namedTypes": [
           "UnlockUserPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1406,8 +1596,10 @@
             "display": "UnlockUserInput!",
             "namedTypes": [
               "UnlockUserInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1418,7 +1610,8 @@
         "display": "UpdateItemPayload",
         "namedTypes": [
           "UpdateItemPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1428,8 +1621,10 @@
             "display": "UpdateItemInput!",
             "namedTypes": [
               "UpdateItemInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1440,7 +1635,8 @@
         "display": "UpdateItemTemplatePayload",
         "namedTypes": [
           "UpdateItemTemplatePayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1450,8 +1646,10 @@
             "display": "UpdateItemTemplateInput!",
             "namedTypes": [
               "UpdateItemTemplateInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1462,7 +1660,8 @@
         "display": "SetPosPayload",
         "namedTypes": [
           "SetPosPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1472,8 +1671,10 @@
             "display": "UpdateSolutionSitesPosInput!",
             "namedTypes": [
               "UpdateSolutionSitesPosInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1484,7 +1685,8 @@
         "display": "UpdateUserPayload",
         "namedTypes": [
           "UpdateUserPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1494,8 +1696,10 @@
             "display": "UpdateUserInput!",
             "namedTypes": [
               "UpdateUserInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     },
@@ -1506,7 +1710,8 @@
         "display": "UploadMediaPayload",
         "namedTypes": [
           "UploadMediaPayload"
-        ]
+        ],
+        "required": false
       },
       "arguments": [
         {
@@ -1516,8 +1721,10 @@
             "display": "UploadMediaInput!",
             "namedTypes": [
               "UploadMediaInput"
-            ]
-          }
+            ],
+            "required": true
+          },
+          "required": true
         }
       ]
     }

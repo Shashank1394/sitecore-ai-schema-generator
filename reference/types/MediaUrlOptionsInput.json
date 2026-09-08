@@ -11,7 +11,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -21,7 +22,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -31,7 +33,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -41,7 +44,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -51,7 +55,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -61,7 +66,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -71,7 +77,8 @@
         "display": "Int",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -81,7 +88,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -91,7 +99,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -101,7 +110,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -111,7 +121,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -121,7 +132,8 @@
         "display": "Int",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -131,7 +143,8 @@
         "display": "Int",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -141,7 +154,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -151,7 +165,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -161,7 +176,8 @@
         "display": "Float",
         "namedTypes": [
           "Float"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -171,7 +187,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -181,7 +198,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -191,7 +209,8 @@
         "display": "Int",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -201,7 +220,8 @@
         "display": "Int",
         "namedTypes": [
           "Int"
-        ]
+        ],
+        "required": false
       }
     }
   ],

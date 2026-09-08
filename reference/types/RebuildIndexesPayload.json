@@ -10,7 +10,8 @@
         "display": "[Job]",
         "namedTypes": [
           "Job"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

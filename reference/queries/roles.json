@@ -3,123 +3,893 @@
   "operationType": "query",
   "rootType": "Query",
   "description": null,
-  "arguments": {
-    "after": {
-      "type": "String",
-      "description": null
+  "arguments": [
+    {
+      "name": "after",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "before": {
-      "type": "String",
-      "description": null
+    {
+      "name": "before",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "first": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "first",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "last": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "last",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     }
+  ],
+  "returnType": {
+    "display": "RoleConnection",
+    "namedTypes": [
+      "RoleConnection"
+    ],
+    "required": false
   },
-  "returnType": "RoleConnection",
-  "inputTypes": {},
-  "returnFields": {
-    "edges": {
-      "type": "[RoleEdge!]",
-      "description": "A list of edges.",
-      "arguments": {}
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String",
+      "namedTypes": [
+        "String"
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
-      "type": "[Role]",
-      "description": "A flattened list of the nodes.",
-      "arguments": {}
-    },
-    "pageInfo": {
-      "type": "PageInfo!",
-      "description": "Information to aid in pagination.",
-      "arguments": {}
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PaginationAmount": {
+        "name": "PaginationAmount",
+        "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PaginationAmount.json",
+        "dependencies": []
+      }
     }
   },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "RoleConnection",
       "namedTypes": [
         "RoleConnection"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "RoleConnection",
+        "namedTypes": [
+          "RoleConnection"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "RoleConnection": {
+        "name": "RoleConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[RoleEdge!]",
+              "namedTypes": [
+                "RoleEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[Role]",
+              "namedTypes": [
+                "Role"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RoleConnection.json",
-        "references": [
+        "dependencies": [
           "RoleEdge",
           "Role",
           "PageInfo"
         ]
       },
       "RoleEdge": {
+        "name": "RoleEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "Role",
+              "namedTypes": [
+                "Role"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RoleEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "Role"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Role": {
+        "name": "Role",
         "kind": "OBJECT",
+        "description": "Represents a security role.",
+        "fields": [
+          {
+            "name": "accountType",
+            "description": "The type of the account.",
+            "type": {
+              "display": "AccountType!",
+              "namedTypes": [
+                "AccountType"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "description",
+            "description": "The description.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "displayName",
+            "description": "The display name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "domain",
+            "description": "The domain associated with the account.",
+            "type": {
+              "display": "Domain",
+              "namedTypes": [
+                "Domain"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "isEveryone",
+            "description": "The flag indicating if this role represents an 'everyone' role.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "isGlobal",
+            "description": "The flag indicating if this role is global.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "localName",
+            "description": "The local name of the role.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "memberOf",
+            "description": "The accounts with this role.",
+            "type": {
+              "display": "AccountConnection",
+              "namedTypes": [
+                "AccountConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "indirect",
+                "description": null,
+                "type": {
+                  "display": "Boolean!",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": true
+                },
+                "required": true
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "members",
+            "description": "The account members of the role.",
+            "type": {
+              "display": "AccountConnection",
+              "namedTypes": [
+                "AccountConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "indirect",
+                "description": null,
+                "type": {
+                  "display": "Boolean!",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": true
+                },
+                "required": true
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "name",
+            "description": "The name of the role.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [
+          "Account"
+        ],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Role.json",
-        "references": [
+        "dependencies": [
           "AccountType",
           "String",
           "Domain",
           "Boolean",
-          "AccountConnection"
+          "AccountConnection",
+          "PaginationAmount",
+          "Account"
         ]
       },
       "AccountType": {
+        "name": "AccountType",
         "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "UNKNOWN",
+            "description": null
+          },
+          {
+            "name": "ROLE",
+            "description": null
+          },
+          {
+            "name": "USER",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/AccountType.json",
-        "references": []
+        "dependencies": []
       },
       "Domain": {
+        "name": "Domain",
         "kind": "OBJECT",
+        "description": "Represents a security domain.",
+        "fields": [
+          {
+            "name": "accountNameValidation",
+            "description": "The account name validation.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "accountPrefix",
+            "description": "The account prefix expected for all accounts belonging to the current domain.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "anonymousUserEmailPattern",
+            "description": "The anonymous user email pattern.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "anonymousUserName",
+            "description": "The name of the 'anonymous' user.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "defaultProfileItemId",
+            "description": "The default profile item ID.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "ensureAnonymousUser",
+            "description": "The flag indicating if to ensure that an anonymous user exists for the domain.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "everyoneRoleName",
+            "description": "The name of the 'everyone' role.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "isDefault",
+            "description": "The flag indicating if this instance is default.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The name of the domain.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Domain.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       },
       "AccountConnection": {
+        "name": "AccountConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[AccountEdge!]",
+              "namedTypes": [
+                "AccountEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[Account]",
+              "namedTypes": [
+                "Account"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/AccountConnection.json",
-        "references": [
+        "dependencies": [
           "AccountEdge",
           "Account",
           "PageInfo"
         ]
       },
       "AccountEdge": {
+        "name": "AccountEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "Account",
+              "namedTypes": [
+                "Account"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/AccountEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "Account"
         ]
       },
       "Account": {
+        "name": "Account",
         "kind": "INTERFACE",
+        "description": "Represents a security account.",
+        "fields": [
+          {
+            "name": "accountType",
+            "description": "The type of the account.",
+            "type": {
+              "display": "AccountType!",
+              "namedTypes": [
+                "AccountType"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "description",
+            "description": "The description.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "displayName",
+            "description": "The display name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "domain",
+            "description": "The domain owning the account.",
+            "type": {
+              "display": "Domain",
+              "namedTypes": [
+                "Domain"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "localName",
+            "description": "The local name of the account.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The name of the account.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [
+          "Role",
+          "User"
+        ],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Account.json",
-        "references": [
+        "dependencies": [
           "AccountType",
           "String",
           "Domain",
@@ -128,21 +898,490 @@
         ]
       },
       "User": {
+        "name": "User",
         "kind": "OBJECT",
+        "description": "Represents a security user.",
+        "fields": [
+          {
+            "name": "accountType",
+            "description": "The type of the account.",
+            "type": {
+              "display": "AccountType!",
+              "namedTypes": [
+                "AccountType"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "description",
+            "description": "The description.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "displayName",
+            "description": "The display name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "domain",
+            "description": "The domain associated with the user.",
+            "type": {
+              "display": "Domain",
+              "namedTypes": [
+                "Domain"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "isAdministrator",
+            "description": "The flag indicating if this user is an administrator.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "isAuthenticated",
+            "description": "The flag indicating if this user has been authenticated.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "localName",
+            "description": "The local name of the user.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The name of the user.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "profile",
+            "description": "The user profile.",
+            "type": {
+              "display": "UserProfile",
+              "namedTypes": [
+                "UserProfile"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "roles",
+            "description": "The expanded list of roles.",
+            "type": {
+              "display": "[Role]",
+              "namedTypes": [
+                "Role"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [
+          "Account"
+        ],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/User.json",
-        "references": [
+        "dependencies": [
           "AccountType",
           "String",
           "Domain",
           "Boolean",
           "UserProfile",
-          "Role"
+          "Role",
+          "Account"
         ]
       },
       "UserProfile": {
+        "name": "UserProfile",
         "kind": "OBJECT",
+        "description": "Represents a security user profile.",
+        "fields": [
+          {
+            "name": "badges",
+            "description": "The badges.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "clientLanguage",
+            "description": "The client language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "comments",
+            "description": "The comments.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "contentLanguage",
+            "description": "The content language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "createdDate",
+            "description": "The date and time when the user created.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "cultureName",
+            "description": "The name of the culture.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "currentPosition",
+            "description": "The current position.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "customProperties",
+            "description": "The custom properties.",
+            "type": {
+              "display": "[KeyValuePair]",
+              "namedTypes": [
+                "KeyValuePair"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "disabled",
+            "description": "The flag indicating if the user is locked out.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "email",
+            "description": "The email.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "engagementValue",
+            "description": "The engagement value.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "fullName",
+            "description": "The full name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "isAdministrator",
+            "description": "The flag indicating if this user is an administrator.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "lastActivityDate",
+            "description": "The date and time when the membership user was last authenticated or accessed the application.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "lastLockout",
+            "description": "The most recent date and time when the membership user was locked out.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "lastLoginDate",
+            "description": "The date and time when the user was last authenticated.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "lastPasswordChangedDate",
+            "description": "The date and time when the user password was last updated.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "lastUpdatedDate",
+            "description": "The most recent date and time when the profile was modified.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "managedDomainNames",
+            "description": "The domains to manage.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The user name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "notifications",
+            "description": "The notifications.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "portrait",
+            "description": "The portrait.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "profileItemId",
+            "description": "The profile item ID.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "regionalIsoCode",
+            "description": "The regional ISO code.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "startUrl",
+            "description": "The start URL.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "state",
+            "description": "The state.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "userName",
+            "description": "The user name for the profile.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/UserProfile.json",
-        "references": [
+        "dependencies": [
           "String",
           "DateTime",
           "KeyValuePair",
@@ -150,30 +1389,159 @@
         ]
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
       },
       "KeyValuePair": {
+        "name": "KeyValuePair",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "value",
+            "description": null,
+            "type": {
+              "display": "Any",
+              "namedTypes": [
+                "Any"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/KeyValuePair.json",
-        "references": [
+        "dependencies": [
           "String",
           "Any"
         ]
       },
       "Any": {
+        "name": "Any",
         "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Any.json",
-        "references": []
+        "dependencies": []
       },
       "PageInfo": {
+        "name": "PageInfo",
         "kind": "OBJECT",
+        "description": "Information about pagination in a connection.",
+        "fields": [
+          {
+            "name": "endCursor",
+            "description": "When paginating forwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasNextPage",
+            "description": "Indicates whether more edges exist following the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasPreviousPage",
+            "description": "Indicates whether more edges exist prior the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "startCursor",
+            "description": "When paginating backwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PageInfo.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
+      },
+      "PaginationAmount": {
+        "name": "PaginationAmount",
+        "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PaginationAmount.json",
+        "dependencies": []
       }
     }
   },

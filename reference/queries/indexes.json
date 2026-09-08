@@ -3,81 +3,396 @@
   "operationType": "query",
   "rootType": "Query",
   "description": "Get search indexes. If the indexNames input parameter is null, get all search indexes.",
-  "arguments": {
-    "after": {
-      "type": "String",
-      "description": null
+  "arguments": [
+    {
+      "name": "after",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "before": {
-      "type": "String",
-      "description": null
+    {
+      "name": "before",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "first": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "first",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "indexNames": {
-      "type": "[String]",
-      "description": null
+    {
+      "name": "indexNames",
+      "description": null,
+      "type": {
+        "display": "[String]",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "last": {
-      "type": "PaginationAmount",
-      "description": null
+    {
+      "name": "last",
+      "description": null,
+      "type": {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      "required": false
     }
+  ],
+  "returnType": {
+    "display": "IndexConnection",
+    "namedTypes": [
+      "IndexConnection"
+    ],
+    "required": false
   },
-  "returnType": "IndexConnection",
-  "inputTypes": {},
-  "returnFields": {
-    "edges": {
-      "type": "[IndexEdge!]",
-      "description": "A list of edges.",
-      "arguments": {}
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String",
+      "namedTypes": [
+        "String"
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      },
+      {
+        "display": "[String]",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "PaginationAmount",
+        "namedTypes": [
+          "PaginationAmount"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
-      "type": "[Index]",
-      "description": "A flattened list of the nodes.",
-      "arguments": {}
-    },
-    "pageInfo": {
-      "type": "PageInfo!",
-      "description": "Information to aid in pagination.",
-      "arguments": {}
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "PaginationAmount": {
+        "name": "PaginationAmount",
+        "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PaginationAmount.json",
+        "dependencies": []
+      }
     }
   },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "IndexConnection",
       "namedTypes": [
         "IndexConnection"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "IndexConnection",
+        "namedTypes": [
+          "IndexConnection"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "IndexConnection": {
+        "name": "IndexConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[IndexEdge!]",
+              "namedTypes": [
+                "IndexEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[Index]",
+              "namedTypes": [
+                "Index"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/IndexConnection.json",
-        "references": [
+        "dependencies": [
           "IndexEdge",
           "Index",
           "PageInfo"
         ]
       },
       "IndexEdge": {
+        "name": "IndexEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "Index",
+              "namedTypes": [
+                "Index"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/IndexEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "Index"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Index": {
+        "name": "Index",
         "kind": "OBJECT",
+        "description": "Represents the content search index.",
+        "fields": [
+          {
+            "name": "documentsCount",
+            "description": "The number of documents in the index.",
+            "type": {
+              "display": "Long",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasDeletions",
+            "description": "Indicates if any document has been deleted.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "lastRebuildDuration",
+            "description": "The time duration for the last index rebuild.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "lastUpdated",
+            "description": "The last time the index has been updated.",
+            "type": {
+              "display": "DateTime",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The search index name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "numberOfFields",
+            "description": "The number of fields in the index.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "numberOfTerms",
+            "description": "The number of terms in the index.",
+            "type": {
+              "display": "Long",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "outOfDate",
+            "description": "Indicates if there are out of date indexes.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Index.json",
-        "references": [
+        "dependencies": [
           "Long",
           "Boolean",
           "String",
@@ -86,29 +401,128 @@
         ]
       },
       "Long": {
+        "name": "Long",
         "kind": "SCALAR",
+        "description": "The `Long` scalar type represents non-fractional signed whole 64-bit numeric values. Long can represent values between -(2^63) and 2^63 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Long.json",
-        "references": []
+        "dependencies": []
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
       },
       "Int": {
+        "name": "Int",
         "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Int.json",
-        "references": []
+        "dependencies": []
       },
       "PageInfo": {
+        "name": "PageInfo",
         "kind": "OBJECT",
+        "description": "Information about pagination in a connection.",
+        "fields": [
+          {
+            "name": "endCursor",
+            "description": "When paginating forwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasNextPage",
+            "description": "Indicates whether more edges exist following the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasPreviousPage",
+            "description": "Indicates whether more edges exist prior the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "startCursor",
+            "description": "When paginating backwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PageInfo.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]

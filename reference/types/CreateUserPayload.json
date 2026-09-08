@@ -10,7 +10,8 @@
         "display": "User",
         "namedTypes": [
           "User"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

@@ -3,59 +3,175 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "AddAccountsToRoleInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "AddAccountsToRoleInput!",
+        "namedTypes": [
+          "AddAccountsToRoleInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "AddAccountsToRolePayload",
+    "namedTypes": [
+      "AddAccountsToRolePayload"
+    ],
+    "required": false
   },
-  "returnType": "AddAccountsToRolePayload",
-  "inputTypes": {
-    "AddAccountsToRoleInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for adding security accounts to the current parent security role.",
-      "fields": {
-        "roleName": {
-          "type": "String!",
-          "description": "The name of the parent role."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "AddAccountsToRoleInput!",
+      "namedTypes": [
+        "AddAccountsToRoleInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "AddAccountsToRoleInput!",
+        "namedTypes": [
+          "AddAccountsToRoleInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "AddAccountsToRoleInput": {
+        "name": "AddAccountsToRoleInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for adding security accounts to the current parent security role.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "roleName",
+            "description": "The name of the parent role.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "roles",
+            "description": "The names of the roles to add.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "users",
+            "description": "The names of the users to add.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "roles": {
-          "type": "[String]",
-          "description": "The names of the roles to add."
+        "file": "types/AddAccountsToRoleInput.json",
+        "dependencies": [
+          "String"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "users": {
-          "type": "[String]",
-          "description": "The names of the users to add."
-        }
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean",
-      "description": "The operation status.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "AddAccountsToRolePayload",
       "namedTypes": [
         "AddAccountsToRolePayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "AddAccountsToRolePayload",
+        "namedTypes": [
+          "AddAccountsToRolePayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "AddAccountsToRolePayload": {
+        "name": "AddAccountsToRolePayload",
         "kind": "OBJECT",
+        "description": "The result of adding security accounts to the current parent security role.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": "The operation status.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/AddAccountsToRolePayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

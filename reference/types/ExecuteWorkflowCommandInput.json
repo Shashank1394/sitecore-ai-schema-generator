@@ -11,7 +11,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       }
     },
     {
@@ -21,7 +22,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -31,7 +33,8 @@
         "display": "ItemQueryInput!",
         "namedTypes": [
           "ItemQueryInput"
-        ]
+        ],
+        "required": true
       }
     }
   ],

@@ -3,91 +3,279 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "AddLanguageInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "AddLanguageInput!",
+        "namedTypes": [
+          "AddLanguageInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "AddLanguagePayload!",
+    "namedTypes": [
+      "AddLanguagePayload"
+    ],
+    "required": true
   },
-  "returnType": "AddLanguagePayload!",
-  "inputTypes": {
-    "AddLanguageInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for adding a language.",
-      "fields": {
-        "charset": {
-          "type": "String",
-          "description": "The charset of the language to be created."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "AddLanguageInput!",
+      "namedTypes": [
+        "AddLanguageInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "AddLanguageInput!",
+        "namedTypes": [
+          "AddLanguageInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "AddLanguageInput": {
+        "name": "AddLanguageInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for adding a language.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "charset",
+            "description": "The charset of the language to be created.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "codePage",
+            "description": "The code page of the language to be created.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "customCode",
+            "description": "The custom code of the language to be created.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "database",
+            "description": "The database of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "encoding",
+            "description": "The encoding of the language to be created.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "fallbackCode",
+            "description": "The fallback code of the language to be created.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "languageCode",
+            "description": "The code of the language to be created",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "name",
+            "description": "The name of the language to be created.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "regionCode",
+            "description": "The region code of the language to be created.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "spellChecker",
+            "description": "The spellchecker of the language to be created.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "useSupportedLanguageAsFallback",
+            "description": "Indicator to use language definition as fallback. The default value is true.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "codePage": {
-          "type": "String",
-          "description": "The code page of the language to be created."
+        "file": "types/AddLanguageInput.json",
+        "dependencies": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "customCode": {
-          "type": "String",
-          "description": "The custom code of the language to be created."
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "Boolean": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "database": {
-          "type": "String",
-          "description": "The database of the language."
-        },
-        "encoding": {
-          "type": "String",
-          "description": "The encoding of the language to be created."
-        },
-        "fallbackCode": {
-          "type": "String",
-          "description": "The fallback code of the language to be created."
-        },
-        "languageCode": {
-          "type": "String!",
-          "description": "The code of the language to be created"
-        },
-        "name": {
-          "type": "String",
-          "description": "The name of the language to be created."
-        },
-        "regionCode": {
-          "type": "String",
-          "description": "The region code of the language to be created."
-        },
-        "spellChecker": {
-          "type": "String",
-          "description": "The spellchecker of the language to be created."
-        },
-        "useSupportedLanguageAsFallback": {
-          "type": "Boolean",
-          "description": "Indicator to use language definition as fallback. The default value is true."
-        }
+        "file": "types/Boolean.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean",
-      "description": "The status of the add operation.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "AddLanguagePayload!",
       "namedTypes": [
         "AddLanguagePayload"
-      ]
+      ],
+      "required": true
     },
+    "roots": [
+      {
+        "display": "AddLanguagePayload!",
+        "namedTypes": [
+          "AddLanguagePayload"
+        ],
+        "required": true
+      }
+    ],
     "nodes": {
       "AddLanguagePayload": {
+        "name": "AddLanguagePayload",
         "kind": "OBJECT",
+        "description": "The result of the add operation for the language.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": "The status of the add operation.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/AddLanguagePayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

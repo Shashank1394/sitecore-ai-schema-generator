@@ -3,51 +3,153 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "DeleteRoleInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "DeleteRoleInput!",
+        "namedTypes": [
+          "DeleteRoleInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "DeleteRolePayload",
+    "namedTypes": [
+      "DeleteRolePayload"
+    ],
+    "required": false
   },
-  "returnType": "DeleteRolePayload",
-  "inputTypes": {
-    "DeleteRoleInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for deleting a security role.",
-      "fields": {
-        "roleName": {
-          "type": "String!",
-          "description": "The name of the role to delete."
-        }
+  "inputDependencyGraph": {
+    "root": {
+      "display": "DeleteRoleInput!",
+      "namedTypes": [
+        "DeleteRoleInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "DeleteRoleInput!",
+        "namedTypes": [
+          "DeleteRoleInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "DeleteRoleInput": {
+        "name": "DeleteRoleInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for deleting a security role.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "roleName",
+            "description": "The name of the role to delete.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/DeleteRoleInput.json",
+        "dependencies": [
+          "String"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "successful": {
-      "type": "Boolean",
-      "description": "The operation status",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "DeleteRolePayload",
       "namedTypes": [
         "DeleteRolePayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "DeleteRolePayload",
+        "namedTypes": [
+          "DeleteRolePayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "DeleteRolePayload": {
+        "name": "DeleteRolePayload",
         "kind": "OBJECT",
+        "description": "The result of the delete operation for the security role.",
+        "fields": [
+          {
+            "name": "successful",
+            "description": "The operation status",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DeleteRolePayload.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

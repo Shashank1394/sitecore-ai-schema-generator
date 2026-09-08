@@ -3,89 +3,389 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "CreateItemFromBranchInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "CreateItemFromBranchInput!",
+        "namedTypes": [
+          "CreateItemFromBranchInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "CreateItemFromBranchPayload",
+    "namedTypes": [
+      "CreateItemFromBranchPayload"
+    ],
+    "required": false
   },
-  "returnType": "CreateItemFromBranchPayload",
-  "inputTypes": {
-    "CreateItemFromBranchInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for creating an item from a branch.",
-      "fields": {
-        "branchId": {
-          "type": "ID!",
-          "description": "The unique ID of the branch used for creating the new item."
-        },
-        "database": {
-          "type": "String",
-          "description": "The name of the item database."
-        },
-        "fields": {
-          "type": "[FieldValueInput]",
-          "description": "The field values."
-        },
-        "language": {
-          "type": "String",
-          "description": "The item language."
-        },
-        "name": {
-          "type": "String!",
-          "description": "Name of the new item."
-        },
-        "parent": {
-          "type": "ID!",
-          "description": "The unique ID of the parent item."
-        }
-      }
+  "inputDependencyGraph": {
+    "root": {
+      "display": "CreateItemFromBranchInput!",
+      "namedTypes": [
+        "CreateItemFromBranchInput"
+      ],
+      "required": true
     },
-    "FieldValueInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Item field data.",
-      "fields": {
-        "name": {
-          "type": "String!",
-          "description": "The field name."
+    "roots": [
+      {
+        "display": "CreateItemFromBranchInput!",
+        "namedTypes": [
+          "CreateItemFromBranchInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "CreateItemFromBranchInput": {
+        "name": "CreateItemFromBranchInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for creating an item from a branch.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "branchId",
+            "description": "The unique ID of the branch used for creating the new item.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "database",
+            "description": "The name of the item database.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "fields",
+            "description": "The field values.",
+            "type": {
+              "display": "[FieldValueInput]",
+              "namedTypes": [
+                "FieldValueInput"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "language",
+            "description": "The item language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "name",
+            "description": "Name of the new item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "parent",
+            "description": "The unique ID of the parent item.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "reset": {
-          "type": "Boolean",
-          "description": "Indicates whether to reset the field value. The default value is false."
+        "file": "types/CreateItemFromBranchInput.json",
+        "dependencies": [
+          "ID",
+          "String",
+          "FieldValueInput"
+        ]
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "value": {
-          "type": "String",
-          "description": "The field value. If the value is not specified or the Reset parameter is true, the field value is reset to the standard value."
-        }
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "FieldValueInput": {
+        "name": "FieldValueInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Item field data.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "name",
+            "description": "The field name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "reset",
+            "description": "Indicates whether to reset the field value. The default value is false.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "value",
+            "description": "The field value. If the value is not specified or the Reset parameter is true, the field value is reset to the standard value.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/FieldValueInput.json",
+        "dependencies": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/Boolean.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "job": {
-      "type": "Job",
-      "description": "Reference of the job",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "CreateItemFromBranchPayload",
       "namedTypes": [
         "CreateItemFromBranchPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "CreateItemFromBranchPayload",
+        "namedTypes": [
+          "CreateItemFromBranchPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "CreateItemFromBranchPayload": {
+        "name": "CreateItemFromBranchPayload",
         "kind": "OBJECT",
+        "description": "Represents a branch creation payload",
+        "fields": [
+          {
+            "name": "job",
+            "description": "Reference of the job",
+            "type": {
+              "display": "Job",
+              "namedTypes": [
+                "Job"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/CreateItemFromBranchPayload.json",
-        "references": [
+        "dependencies": [
           "Job"
         ]
       },
       "Job": {
+        "name": "Job",
         "kind": "OBJECT",
+        "description": "Represents a job to be executed in Sitecore.",
+        "fields": [
+          {
+            "name": "displayName",
+            "description": "The job display name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "done",
+            "description": "Indicate whether the job is finished.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "handle",
+            "description": "The job handle.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "metadata",
+            "description": "The job metadata.",
+            "type": {
+              "display": "[KeyValuePair]",
+              "namedTypes": [
+                "KeyValuePair"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The job name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "options",
+            "description": "The job options.",
+            "type": {
+              "display": "JobOptions",
+              "namedTypes": [
+                "JobOptions"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "queueTime",
+            "description": "The job queue time.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "status",
+            "description": "The job status.",
+            "type": {
+              "display": "JobStatus",
+              "namedTypes": [
+                "JobStatus"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Job.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean",
           "KeyValuePair",
@@ -95,45 +395,262 @@
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
       },
       "KeyValuePair": {
+        "name": "KeyValuePair",
         "kind": "OBJECT",
+        "description": null,
+        "fields": [
+          {
+            "name": "key",
+            "description": null,
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "value",
+            "description": null,
+            "type": {
+              "display": "Any",
+              "namedTypes": [
+                "Any"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/KeyValuePair.json",
-        "references": [
+        "dependencies": [
           "String",
           "Any"
         ]
       },
       "Any": {
+        "name": "Any",
         "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Any.json",
-        "references": []
+        "dependencies": []
       },
       "JobOptions": {
+        "name": "JobOptions",
         "kind": "OBJECT",
+        "description": "Represents job options.",
+        "fields": [
+          {
+            "name": "abortable",
+            "description": "Indicates whether the job can be aborted.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "category",
+            "description": "The job category.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "jobName",
+            "description": "The job name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "siteName",
+            "description": "The site name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobOptions.json",
-        "references": [
+        "dependencies": [
           "Boolean",
           "String"
         ]
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
       },
       "JobStatus": {
+        "name": "JobStatus",
         "kind": "OBJECT",
+        "description": "Represents a job status.",
+        "fields": [
+          {
+            "name": "exceptions",
+            "description": "The exceptions occurred during job execution.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "expiry",
+            "description": "The expiry date and time of the job.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "jobState",
+            "description": "The state of the job.",
+            "type": {
+              "display": "JobState!",
+              "namedTypes": [
+                "JobState"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "messages",
+            "description": "The messages provided from the job execution.",
+            "type": {
+              "display": "[String]",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "processed",
+            "description": "The count of how many entities have been processed.",
+            "type": {
+              "display": "Long!",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "total",
+            "description": "The total.",
+            "type": {
+              "display": "Long!",
+              "namedTypes": [
+                "Long"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobStatus.json",
-        "references": [
+        "dependencies": [
           "String",
           "DateTime",
           "JobState",
@@ -141,14 +658,63 @@
         ]
       },
       "JobState": {
+        "name": "JobState",
         "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "INITIALIZING",
+            "description": null
+          },
+          {
+            "name": "QUEUED",
+            "description": null
+          },
+          {
+            "name": "RUNNING",
+            "description": null
+          },
+          {
+            "name": "ABORTREQUESTED",
+            "description": null
+          },
+          {
+            "name": "ABORTED",
+            "description": null
+          },
+          {
+            "name": "FINISHED",
+            "description": null
+          },
+          {
+            "name": "UNKNOWN",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/JobState.json",
-        "references": []
+        "dependencies": []
       },
       "Long": {
+        "name": "Long",
         "kind": "SCALAR",
+        "description": "The `Long` scalar type represents non-fractional signed whole 64-bit numeric values. Long can represent values between -(2^63) and 2^63 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Long.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

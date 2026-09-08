@@ -10,7 +10,8 @@
         "display": "[SetPosResult]",
         "namedTypes": [
           "SetPosResult"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

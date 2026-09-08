@@ -10,7 +10,8 @@
         "display": "Boolean",
         "namedTypes": [
           "Boolean"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "Rule",
         "namedTypes": [
           "Rule"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

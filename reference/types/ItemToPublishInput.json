@@ -11,7 +11,8 @@
         "display": "ID",
         "namedTypes": [
           "ID"
-        ]
+        ],
+        "required": false
       }
     },
     {
@@ -19,7 +20,8 @@
       "description": null,
       "type": {
         "display": "[UNKNOWN!]!",
-        "namedTypes": []
+        "namedTypes": [],
+        "required": true
       }
     }
   ],

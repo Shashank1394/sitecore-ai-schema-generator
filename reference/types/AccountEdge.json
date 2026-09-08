@@ -10,7 +10,8 @@
         "display": "String!",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "Account",
         "namedTypes": [
           "Account"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

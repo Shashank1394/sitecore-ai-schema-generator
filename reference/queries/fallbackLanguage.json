@@ -3,71 +3,216 @@
   "operationType": "query",
   "rootType": "Query",
   "description": "Gets the fallback language for a specified language.",
-  "arguments": {
-    "databaseName": {
-      "type": "String",
-      "description": null
+  "arguments": [
+    {
+      "name": "databaseName",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      "required": false
     },
-    "name": {
-      "type": "String!",
-      "description": null
+    {
+      "name": "name",
+      "description": null,
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "Language",
+    "namedTypes": [
+      "Language"
+    ],
+    "required": false
   },
-  "returnType": "Language",
-  "inputTypes": {},
-  "returnFields": {
-    "charset": {
-      "type": "String",
-      "description": "The charset of the language.",
-      "arguments": {
-        "database": "String"
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String",
+      "namedTypes": [
+        "String"
+      ],
+      "required": false
+    },
+    "roots": [
+      {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ],
+        "required": false
+      },
+      {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ],
+        "required": true
       }
-    },
-    "displayName": {
-      "type": "String",
-      "description": "A human readable name of the language.",
-      "arguments": {}
-    },
-    "englishName": {
-      "type": "String",
-      "description": "Gets the culture name in the format languagefull [country/regionfull] in English.",
-      "arguments": {}
-    },
-    "iso": {
-      "type": "String",
-      "description": "The Two Letter ISO code of the language.",
-      "arguments": {}
-    },
-    "name": {
-      "type": "String!",
-      "description": "The culture name in the languagecode2-country/regioncode2 format.",
-      "arguments": {}
-    },
-    "nativeName": {
-      "type": "String",
-      "description": "The culture name, consisting of the language, the country/region, and the optional script, that the culture is set to display.",
-      "arguments": {}
+    ],
+    "nodes": {
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      }
     }
   },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "Language",
       "namedTypes": [
         "Language"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "Language",
+        "namedTypes": [
+          "Language"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "Language": {
+        "name": "Language",
         "kind": "OBJECT",
+        "description": "Represents a content language used in Sitecore.",
+        "fields": [
+          {
+            "name": "charset",
+            "description": "The charset of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "database",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "displayName",
+            "description": "A human readable name of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "englishName",
+            "description": "Gets the culture name in the format languagefull [country/regionfull] in English.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "iso",
+            "description": "The Two Letter ISO code of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The culture name in the languagecode2-country/regioncode2 format.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "nativeName",
+            "description": "The culture name, consisting of the language, the country/region, and the optional script, that the culture is set to display.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Language.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

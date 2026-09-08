@@ -3,75 +3,235 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "UploadMediaInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "UploadMediaInput!",
+        "namedTypes": [
+          "UploadMediaInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "UploadMediaPayload",
+    "namedTypes": [
+      "UploadMediaPayload"
+    ],
+    "required": false
   },
-  "returnType": "UploadMediaPayload",
-  "inputTypes": {
-    "UploadMediaInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input needed for creating a pre-signed upload URL.",
-      "fields": {
-        "alt": {
-          "type": "String",
-          "description": "The alternative text for the media item."
+  "inputDependencyGraph": {
+    "root": {
+      "display": "UploadMediaInput!",
+      "namedTypes": [
+        "UploadMediaInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "UploadMediaInput!",
+        "namedTypes": [
+          "UploadMediaInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "UploadMediaInput": {
+        "name": "UploadMediaInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input needed for creating a pre-signed upload URL.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "alt",
+            "description": "The alternative text for the media item.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "database",
+            "description": "The database of the media item.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "includeExtensionInItemName",
+            "description": "The indicator to include the file extension with the item name.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "itemPath",
+            "description": "The relative path, under sitecore media library, of the media item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            }
+          },
+          {
+            "name": "language",
+            "description": "The language of the media item.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "overwriteExisting",
+            "description": "The indicator to overwrite the media item.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "versioned",
+            "description": "The indicator to version the media item.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "database": {
-          "type": "String",
-          "description": "The database of the media item."
+        "file": "types/UploadMediaInput.json",
+        "dependencies": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "includeExtensionInItemName": {
-          "type": "Boolean",
-          "description": "The indicator to include the file extension with the item name."
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "Boolean": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "itemPath": {
-          "type": "String!",
-          "description": "The relative path, under sitecore media library, of the media item."
-        },
-        "language": {
-          "type": "String",
-          "description": "The language of the media item."
-        },
-        "overwriteExisting": {
-          "type": "Boolean",
-          "description": "The indicator to overwrite the media item."
-        },
-        "versioned": {
-          "type": "Boolean",
-          "description": "The indicator to version the media item."
-        }
+        "file": "types/Boolean.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "presignedUploadUrl": {
-      "type": "String!",
-      "description": "The absolute URI for the api to upload the media file.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "UploadMediaPayload",
       "namedTypes": [
         "UploadMediaPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "UploadMediaPayload",
+        "namedTypes": [
+          "UploadMediaPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "UploadMediaPayload": {
+        "name": "UploadMediaPayload",
         "kind": "OBJECT",
+        "description": "Represents a media upload payload.",
+        "fields": [
+          {
+            "name": "presignedUploadUrl",
+            "description": "The absolute URI for the api to upload the media file.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/UploadMediaPayload.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

@@ -3,51 +3,134 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "PublishWithOptionsInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "PublishWithOptionsInput!",
+        "namedTypes": [
+          "PublishWithOptionsInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "PublishWithOptionsPayload",
+    "namedTypes": [
+      "PublishWithOptionsPayload"
+    ],
+    "required": false
   },
-  "returnType": "PublishWithOptionsPayload",
-  "inputTypes": {
-    "PublishWithOptionsInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for publishing with options.",
-      "fields": {
-        "options": {
-          "type": "[UNKNOWN!]!",
-          "description": "The publishing options."
-        }
+  "inputDependencyGraph": {
+    "root": {
+      "display": "PublishWithOptionsInput!",
+      "namedTypes": [
+        "PublishWithOptionsInput"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "PublishWithOptionsInput!",
+        "namedTypes": [
+          "PublishWithOptionsInput"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "PublishWithOptionsInput": {
+        "name": "PublishWithOptionsInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for publishing with options.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "options",
+            "description": "The publishing options.",
+            "type": {
+              "display": "[UNKNOWN!]!",
+              "namedTypes": [],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PublishWithOptionsInput.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "operationId": {
-      "type": "String",
-      "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "PublishWithOptionsPayload",
       "namedTypes": [
         "PublishWithOptionsPayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "PublishWithOptionsPayload",
+        "namedTypes": [
+          "PublishWithOptionsPayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "PublishWithOptionsPayload": {
+        "name": "PublishWithOptionsPayload",
         "kind": "OBJECT",
+        "description": "The result of the publishing operation.",
+        "fields": [
+          {
+            "name": "operationId",
+            "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PublishWithOptionsPayload.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       }
     }
   },

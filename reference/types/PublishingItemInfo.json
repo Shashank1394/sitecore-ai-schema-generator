@@ -10,7 +10,8 @@
         "display": "[PublishingItemRestriction]",
         "namedTypes": [
           "PublishingItemRestriction"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     }

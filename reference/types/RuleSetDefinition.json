@@ -10,7 +10,8 @@
         "display": "RuleDefinition",
         "namedTypes": [
           "RuleDefinition"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -21,7 +22,8 @@
         "display": "String",
         "namedTypes": [
           "String"
-        ]
+        ],
+        "required": false
       },
       "arguments": []
     },
@@ -32,7 +34,8 @@
         "display": "[RuleSetTextPart!]!",
         "namedTypes": [
           "RuleSetTextPart"
-        ]
+        ],
+        "required": true
       },
       "arguments": []
     }

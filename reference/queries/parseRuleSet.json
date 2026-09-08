@@ -3,104 +3,600 @@
   "operationType": "query",
   "rootType": "Query",
   "description": null,
-  "arguments": {
-    "ruleSet": {
-      "type": "String!",
-      "description": null
+  "arguments": [
+    {
+      "name": "ruleSet",
+      "description": null,
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ],
+        "required": true
+      },
+      "required": true
+    }
+  ],
+  "returnType": {
+    "display": "RuleSet",
+    "namedTypes": [
+      "RuleSet"
+    ],
+    "required": false
+  },
+  "inputDependencyGraph": {
+    "root": {
+      "display": "String!",
+      "namedTypes": [
+        "String"
+      ],
+      "required": true
+    },
+    "roots": [
+      {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ],
+        "required": true
+      }
+    ],
+    "nodes": {
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
+      }
     }
   },
-  "returnType": "RuleSet",
-  "inputTypes": {},
-  "returnFields": {
-    "rules": {
-      "type": "[RuleSetRule!]!",
-      "description": "The rules.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "RuleSet",
       "namedTypes": [
         "RuleSet"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "RuleSet",
+        "namedTypes": [
+          "RuleSet"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "RuleSet": {
+        "name": "RuleSet",
         "kind": "OBJECT",
+        "description": "Represents a ruleset entity.",
+        "fields": [
+          {
+            "name": "rules",
+            "description": "The rules.",
+            "type": {
+              "display": "[RuleSetRule!]!",
+              "namedTypes": [
+                "RuleSetRule"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleSet.json",
-        "references": [
+        "dependencies": [
           "RuleSetRule"
         ]
       },
       "RuleSetRule": {
+        "name": "RuleSetRule",
         "kind": "OBJECT",
+        "description": "Represents a ruleset rule entity.",
+        "fields": [
+          {
+            "name": "actions",
+            "description": "The actions.",
+            "type": {
+              "display": "[RuleSetRuleAction!]!",
+              "namedTypes": [
+                "RuleSetRuleAction"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "conditions",
+            "description": "The conditions.",
+            "type": {
+              "display": "[RuleSetRuleCondition!]!",
+              "namedTypes": [
+                "RuleSetRuleCondition"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The name of the rule.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "originalXml",
+            "description": "The original XML of the rule.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleSetRule.json",
-        "references": [
+        "dependencies": [
           "RuleSetRuleAction",
           "RuleSetRuleCondition",
           "String"
         ]
       },
       "RuleSetRuleAction": {
+        "name": "RuleSetRuleAction",
         "kind": "OBJECT",
+        "description": "Represents a ruleset rule action entity.",
+        "fields": [
+          {
+            "name": "action",
+            "description": "The action text.",
+            "type": {
+              "display": "RuleSetDefinition",
+              "namedTypes": [
+                "RuleSetDefinition"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleSetRuleAction.json",
-        "references": [
+        "dependencies": [
           "RuleSetDefinition"
         ]
       },
       "RuleSetDefinition": {
+        "name": "RuleSetDefinition",
         "kind": "OBJECT",
+        "description": "Represents a ruleset.",
+        "fields": [
+          {
+            "name": "definition",
+            "description": "The rule definition.",
+            "type": {
+              "display": "RuleDefinition",
+              "namedTypes": [
+                "RuleDefinition"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "text",
+            "description": "The rule definition text.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "textParts",
+            "description": "The rule definition text parts.",
+            "type": {
+              "display": "[RuleSetTextPart!]!",
+              "namedTypes": [
+                "RuleSetTextPart"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleSetDefinition.json",
-        "references": [
+        "dependencies": [
           "RuleDefinition",
           "String",
           "RuleSetTextPart"
         ]
       },
       "RuleDefinition": {
+        "name": "RuleDefinition",
         "kind": "OBJECT",
+        "description": "Represents a rule definition.",
+        "fields": [
+          {
+            "name": "definitionId",
+            "description": "The globally-unique identifier for this rule definition.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "name",
+            "description": "The rule name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "operators",
+            "description": "The rule definition operators used for the reference text.",
+            "type": {
+              "display": "[RuleDefinitionOperation!]!",
+              "namedTypes": [
+                "RuleDefinitionOperation"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "referenceText",
+            "description": "The rule reference text.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "text",
+            "description": "The rule text.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleDefinition.json",
-        "references": [
+        "dependencies": [
           "ID",
+          "IdFormat",
           "String",
           "RuleDefinitionOperation"
         ]
       },
       "ID": {
+        "name": "ID",
         "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ID.json",
-        "references": []
+        "dependencies": []
+      },
+      "IdFormat": {
+        "name": "IdFormat",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "N",
+            "description": null
+          },
+          {
+            "name": "D",
+            "description": null
+          },
+          {
+            "name": "B",
+            "description": null
+          },
+          {
+            "name": "P",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/IdFormat.json",
+        "dependencies": []
       },
       "String": {
+        "name": "String",
         "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/String.json",
-        "references": []
+        "dependencies": []
       },
       "RuleDefinitionOperation": {
+        "name": "RuleDefinitionOperation",
         "kind": "OBJECT",
+        "description": "Represents a rule definition operator",
+        "fields": [
+          {
+            "name": "macro",
+            "description": "The operator macro",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "macroParameters",
+            "description": "The operator macro parameters",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "propertyName",
+            "description": "The operator property name",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "reference",
+            "description": "The operator reference",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "text",
+            "description": "The operator text",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleDefinitionOperation.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "RuleSetTextPart": {
+        "name": "RuleSetTextPart",
         "kind": "OBJECT",
+        "description": "Represents a ruleset text part.",
+        "fields": [
+          {
+            "name": "text",
+            "description": "The text.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "type",
+            "description": "The type.",
+            "type": {
+              "display": "RuleSetTextPartType!",
+              "namedTypes": [
+                "RuleSetTextPartType"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleSetTextPart.json",
-        "references": [
+        "dependencies": [
           "String",
           "RuleSetTextPartType"
         ]
       },
       "RuleSetTextPartType": {
+        "name": "RuleSetTextPartType",
         "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "CLAUSE",
+            "description": null
+          },
+          {
+            "name": "VALUE",
+            "description": null
+          },
+          {
+            "name": "INVALIDVALUE",
+            "description": null
+          },
+          {
+            "name": "PLAINTEXT",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleSetTextPartType.json",
-        "references": []
+        "dependencies": []
       },
       "RuleSetRuleCondition": {
+        "name": "RuleSetRuleCondition",
         "kind": "OBJECT",
+        "description": "Represents a ruleset rule action entity.",
+        "fields": [
+          {
+            "name": "conditionDefinitions",
+            "description": "The ruleset condition definitions.",
+            "type": {
+              "display": "[RuleSetDefinition!]!",
+              "namedTypes": [
+                "RuleSetDefinition"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/RuleSetRuleCondition.json",
-        "references": [
+        "dependencies": [
           "RuleSetDefinition"
         ]
       }

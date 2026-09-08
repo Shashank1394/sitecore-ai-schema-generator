@@ -9,7 +9,8 @@
       "description": "The list of names indexes targetted by the schema population operation.",
       "type": {
         "display": "[UNKNOWN!]!",
-        "namedTypes": []
+        "namedTypes": [],
+        "required": true
       }
     }
   ],

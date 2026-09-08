@@ -3,463 +3,4932 @@
   "operationType": "mutation",
   "rootType": "Mutation",
   "description": null,
-  "arguments": {
-    "input": {
-      "type": "UpdateItemTemplateInput!",
-      "description": null
+  "arguments": [
+    {
+      "name": "input",
+      "description": null,
+      "type": {
+        "display": "UpdateItemTemplateInput!",
+        "namedTypes": [
+          "UpdateItemTemplateInput"
+        ],
+        "required": true
+      },
+      "required": true
     }
+  ],
+  "returnType": {
+    "display": "UpdateItemTemplatePayload",
+    "namedTypes": [
+      "UpdateItemTemplatePayload"
+    ],
+    "required": false
   },
-  "returnType": "UpdateItemTemplatePayload",
-  "inputTypes": {
-    "UpdateItemTemplateInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for updating an item template.",
-      "fields": {
-        "baseTemplates": {
-          "type": "[ID]",
-          "description": "The base templates of the item template."
-        },
-        "createStandardValuesItem": {
-          "type": "Boolean",
-          "description": "The flag indicates whether should create the StandardValues item for the template or not."
-        },
-        "database": {
-          "type": "String",
-          "description": "The name of the item database."
-        },
-        "deleteMissingFields": {
-          "type": "Boolean",
-          "description": "The flag indicates whether fields and sections should be removed from the template that are not present in the input."
-        },
-        "icon": {
-          "type": "String",
-          "description": "The icon of the item template."
-        },
-        "language": {
-          "type": "String",
-          "description": "The language of the item template."
-        },
-        "name": {
-          "type": "String",
-          "description": "The name of the item template."
-        },
-        "sections": {
-          "type": "[ItemTemplateSectionInput]",
-          "description": "The section definitions of the item template. Sections with IDs will be updated. Sections without IDs will be created."
-        },
-        "templateId": {
-          "type": "ID!",
-          "description": "The globally-unique identifier of the item template."
-        }
-      }
+  "inputDependencyGraph": {
+    "root": {
+      "display": "UpdateItemTemplateInput!",
+      "namedTypes": [
+        "UpdateItemTemplateInput"
+      ],
+      "required": true
     },
-    "ItemTemplateSectionInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for creating or updating a template section.",
-      "fields": {
-        "fields": {
-          "type": "[ItemTemplateFieldInput]",
-          "description": "The template fields of the template section. If field ID is provided, the field will be updated. Otherwise, new field will be created."
-        },
-        "icon": {
-          "type": "String",
-          "description": "The icon of the template section."
-        },
-        "name": {
-          "type": "String",
-          "description": "The name of the template section."
-        },
-        "sortOrder": {
-          "type": "Int",
-          "description": "The sort order of the template section."
-        },
-        "templateSectionId": {
-          "type": "ID",
-          "description": "The unique ID of the template section. If the ID is empty, a new template section will be created. Otherwise, the template section will be updated."
-        }
+    "roots": [
+      {
+        "display": "UpdateItemTemplateInput!",
+        "namedTypes": [
+          "UpdateItemTemplateInput"
+        ],
+        "required": true
       }
-    },
-    "ItemTemplateFieldInput": {
-      "kind": "INPUT_OBJECT",
-      "description": "Represents the input for creating or updating a template field.",
-      "fields": {
-        "blob": {
-          "type": "Boolean",
-          "description": "The flag indicating whether the field is a blob field."
+    ],
+    "nodes": {
+      "UpdateItemTemplateInput": {
+        "name": "UpdateItemTemplateInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for updating an item template.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "baseTemplates",
+            "description": "The base templates of the item template.",
+            "type": {
+              "display": "[ID]",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "createStandardValuesItem",
+            "description": "The flag indicates whether should create the StandardValues item for the template or not.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "database",
+            "description": "The name of the item database.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "deleteMissingFields",
+            "description": "The flag indicates whether fields and sections should be removed from the template that are not present in the input.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "icon",
+            "description": "The icon of the item template.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "language",
+            "description": "The language of the item template.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "name",
+            "description": "The name of the item template.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "sections",
+            "description": "The section definitions of the item template. Sections with IDs will be updated. Sections without IDs will be created.",
+            "type": {
+              "display": "[ItemTemplateSectionInput]",
+              "namedTypes": [
+                "ItemTemplateSectionInput"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "templateId",
+            "description": "The globally-unique identifier of the item template.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "defaultValue": {
-          "type": "String",
-          "description": "The default value of the template field."
+        "file": "types/UpdateItemTemplateInput.json",
+        "dependencies": [
+          "ID",
+          "Boolean",
+          "String",
+          "ItemTemplateSectionInput"
+        ]
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "description": {
-          "type": "String",
-          "description": "The description of the template field."
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "Boolean": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "excludeFromTextSearch": {
-          "type": "Boolean",
-          "description": "The flag indicating whether to exclude the content of the field from full text search index."
+        "file": "types/Boolean.json",
+        "dependencies": []
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "helpLink": {
-          "type": "String",
-          "description": "The help link of the template field."
+        "file": "types/String.json",
+        "dependencies": []
+      },
+      "ItemTemplateSectionInput": {
+        "name": "ItemTemplateSectionInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for creating or updating a template section.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "fields",
+            "description": "The template fields of the template section. If field ID is provided, the field will be updated. Otherwise, new field will be created.",
+            "type": {
+              "display": "[ItemTemplateFieldInput]",
+              "namedTypes": [
+                "ItemTemplateFieldInput"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "icon",
+            "description": "The icon of the template section.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "name",
+            "description": "The name of the template section.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "sortOrder",
+            "description": "The sort order of the template section.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "templateSectionId",
+            "description": "The unique ID of the template section. If the ID is empty, a new template section will be created. Otherwise, the template section will be updated.",
+            "type": {
+              "display": "ID",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "icon": {
-          "type": "String",
-          "description": "The icon of the template field."
+        "file": "types/ItemTemplateSectionInput.json",
+        "dependencies": [
+          "ItemTemplateFieldInput",
+          "String",
+          "Int",
+          "ID"
+        ]
+      },
+      "ItemTemplateFieldInput": {
+        "name": "ItemTemplateFieldInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the input for creating or updating a template field.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "blob",
+            "description": "The flag indicating whether the field is a blob field.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "defaultValue",
+            "description": "The default value of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "description",
+            "description": "The description of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "excludeFromTextSearch",
+            "description": "The flag indicating whether to exclude the content of the field from full text search index.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "helpLink",
+            "description": "The help link of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "icon",
+            "description": "The icon of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "ignoreDictionaryTranslations",
+            "description": "The flag indicating whether to ignore dictionary translations.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "name",
+            "description": "The name of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "sharedLanguageFallbackEnabled",
+            "description": "The flag indicating whether to enable the shared Language Fallback.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "sortOrder",
+            "description": "The sort order of the template field.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "source",
+            "description": "The source of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "style",
+            "description": "The style of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "templateFieldId",
+            "description": "The unique ID of the template field. If the ID is empty, a new template field if ID will be created. Otherwise, the template field will be updated.",
+            "type": {
+              "display": "ID",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "title",
+            "description": "The title of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "tooltip",
+            "description": "The tooltip of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "type",
+            "description": "The type of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "validation",
+            "description": "The validation of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "validationText",
+            "description": "The validation text of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "versioning",
+            "description": "The versioning of the template field.",
+            "type": {
+              "display": "FieldVersioning",
+              "namedTypes": [
+                "FieldVersioning"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "ignoreDictionaryTranslations": {
-          "type": "Boolean",
-          "description": "The flag indicating whether to ignore dictionary translations."
+        "file": "types/ItemTemplateFieldInput.json",
+        "dependencies": [
+          "Boolean",
+          "String",
+          "Int",
+          "ID",
+          "FieldVersioning"
+        ]
+      },
+      "Int": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "name": {
-          "type": "String",
-          "description": "The name of the template field."
+        "file": "types/Int.json",
+        "dependencies": []
+      },
+      "FieldVersioning": {
+        "name": "FieldVersioning",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "VERSIONED",
+            "description": null
+          },
+          {
+            "name": "UNVERSIONED",
+            "description": null
+          },
+          {
+            "name": "SHARED",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
         },
-        "sharedLanguageFallbackEnabled": {
-          "type": "Boolean",
-          "description": "The flag indicating whether to enable the shared Language Fallback."
-        },
-        "sortOrder": {
-          "type": "Int",
-          "description": "The sort order of the template field."
-        },
-        "source": {
-          "type": "String",
-          "description": "The source of the template field."
-        },
-        "style": {
-          "type": "String",
-          "description": "The style of the template field."
-        },
-        "templateFieldId": {
-          "type": "ID",
-          "description": "The unique ID of the template field. If the ID is empty, a new template field if ID will be created. Otherwise, the template field will be updated."
-        },
-        "title": {
-          "type": "String",
-          "description": "The title of the template field."
-        },
-        "tooltip": {
-          "type": "String",
-          "description": "The tooltip of the template field."
-        },
-        "type": {
-          "type": "String",
-          "description": "The type of the template field."
-        },
-        "validation": {
-          "type": "String",
-          "description": "The validation of the template field."
-        },
-        "validationText": {
-          "type": "String",
-          "description": "The validation text of the template field."
-        },
-        "versioning": {
-          "type": "FieldVersioning",
-          "description": "The versioning of the template field."
-        }
+        "file": "types/FieldVersioning.json",
+        "dependencies": []
       }
     }
   },
-  "returnFields": {
-    "itemTemplate": {
-      "type": "ItemTemplate",
-      "description": "The updated item template.",
-      "arguments": {}
-    }
-  },
-  "outputDependencyGraph": {
+  "returnDependencyGraph": {
     "root": {
       "display": "UpdateItemTemplatePayload",
       "namedTypes": [
         "UpdateItemTemplatePayload"
-      ]
+      ],
+      "required": false
     },
+    "roots": [
+      {
+        "display": "UpdateItemTemplatePayload",
+        "namedTypes": [
+          "UpdateItemTemplatePayload"
+        ],
+        "required": false
+      }
+    ],
     "nodes": {
       "UpdateItemTemplatePayload": {
+        "name": "UpdateItemTemplatePayload",
         "kind": "OBJECT",
+        "description": "The result of the update operation for the item template.",
+        "fields": [
+          {
+            "name": "itemTemplate",
+            "description": "The updated item template.",
+            "type": {
+              "display": "ItemTemplate",
+              "namedTypes": [
+                "ItemTemplate"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/UpdateItemTemplatePayload.json",
-        "references": [
+        "dependencies": [
           "ItemTemplate"
         ]
       },
       "ItemTemplate": {
+        "name": "ItemTemplate",
         "kind": "OBJECT",
+        "description": "Represents the item template.",
+        "fields": [
+          {
+            "name": "access",
+            "description": "The access rights for the current user or for the given user",
+            "type": {
+              "display": "ItemTemplateAccess",
+              "namedTypes": [
+                "ItemTemplateAccess"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "username",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "baseTemplates",
+            "description": "The base templates of the item template.",
+            "type": {
+              "display": "ItemTemplateConnection",
+              "namedTypes": [
+                "ItemTemplateConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "directOnly",
+                "description": "The flag indicating whether to get direct base templates only.",
+                "type": {
+                  "display": "Boolean",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "fields",
+            "description": "All field definitions of the item template.",
+            "type": {
+              "display": "ItemTemplateFieldConnection",
+              "namedTypes": [
+                "ItemTemplateFieldConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "fullName",
+            "description": "The full name of the item template.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasAnyOfBaseTemplates",
+            "description": "Indicates whether at least one of the specified item templates is a base template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "templateIds",
+                "description": null,
+                "type": {
+                  "display": "[ID]!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "icon",
+            "description": "The icon of the item template.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The name of the item template.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "ownFields",
+            "description": "Only own field definitions of the item template.",
+            "type": {
+              "display": "ItemTemplateFieldConnection",
+              "namedTypes": [
+                "ItemTemplateFieldConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "sections",
+            "description": "The section definitions of the item template.",
+            "type": {
+              "display": "ItemTemplateSectionConnection",
+              "namedTypes": [
+                "ItemTemplateSectionConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "standardValuesItem",
+            "description": "The standard values item created for the item template.",
+            "type": {
+              "display": "Item",
+              "namedTypes": [
+                "Item"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "language",
+                "description": null,
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "templateId",
+            "description": "The globally-unique identifier of the item template.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplate.json",
-        "references": [
+        "dependencies": [
           "ItemTemplateAccess",
-          "ItemTemplateConnection",
-          "ItemTemplateFieldConnection",
           "String",
+          "ItemTemplateConnection",
           "Boolean",
+          "PaginationAmount",
+          "ItemTemplateFieldConnection",
+          "ID",
           "ItemTemplateSectionConnection",
           "Item",
-          "ID"
+          "IdFormat"
         ]
       },
       "ItemTemplateAccess": {
+        "name": "ItemTemplateAccess",
         "kind": "OBJECT",
+        "description": "Represents the item template access rights for the current user.",
+        "fields": [
+          {
+            "name": "canAddBranch",
+            "description": "The user can add the provided branch to the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "branchId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canAddTemplate",
+            "description": "The user can add the provided template to the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "templateId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canAdmin",
+            "description": "The user can perform admin-level tasks on the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canCopyTo",
+            "description": "The user can copy the item template to the provided destination.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "destinationId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canCreate",
+            "description": "The user can create the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canDelete",
+            "description": "The user can delete the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canDuplicate",
+            "description": "The user can create a duplicate of the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canMoveTo",
+            "description": "The user can move the item template to the provided destination.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "destinationId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canRead",
+            "description": "The user can read the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canRename",
+            "description": "The user can rename the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canWrite",
+            "description": "The user can write the item template.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateAccess.json",
-        "references": [
-          "Boolean"
+        "dependencies": [
+          "Boolean",
+          "ID"
         ]
       },
       "Boolean": {
+        "name": "Boolean",
         "kind": "SCALAR",
+        "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Boolean.json",
-        "references": []
+        "dependencies": []
+      },
+      "ID": {
+        "name": "ID",
+        "kind": "SCALAR",
+        "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ID.json",
+        "dependencies": []
+      },
+      "String": {
+        "name": "String",
+        "kind": "SCALAR",
+        "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/String.json",
+        "dependencies": []
       },
       "ItemTemplateConnection": {
+        "name": "ItemTemplateConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[ItemTemplateEdge!]",
+              "namedTypes": [
+                "ItemTemplateEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[ItemTemplate]",
+              "namedTypes": [
+                "ItemTemplate"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateConnection.json",
-        "references": [
+        "dependencies": [
           "ItemTemplateEdge",
           "ItemTemplate",
           "PageInfo"
         ]
       },
       "ItemTemplateEdge": {
+        "name": "ItemTemplateEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "ItemTemplate",
+              "namedTypes": [
+                "ItemTemplate"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "ItemTemplate"
         ]
       },
-      "String": {
-        "kind": "SCALAR",
-        "file": "types/String.json",
-        "references": []
-      },
       "PageInfo": {
+        "name": "PageInfo",
         "kind": "OBJECT",
+        "description": "Information about pagination in a connection.",
+        "fields": [
+          {
+            "name": "endCursor",
+            "description": "When paginating forwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasNextPage",
+            "description": "Indicates whether more edges exist following the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasPreviousPage",
+            "description": "Indicates whether more edges exist prior the set defined by the clients arguments.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "startCursor",
+            "description": "When paginating backwards, the cursor to continue.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/PageInfo.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
+      "PaginationAmount": {
+        "name": "PaginationAmount",
+        "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/PaginationAmount.json",
+        "dependencies": []
+      },
       "ItemTemplateFieldConnection": {
+        "name": "ItemTemplateFieldConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[ItemTemplateFieldEdge!]",
+              "namedTypes": [
+                "ItemTemplateFieldEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[ItemTemplateField]",
+              "namedTypes": [
+                "ItemTemplateField"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateFieldConnection.json",
-        "references": [
+        "dependencies": [
           "ItemTemplateFieldEdge",
           "ItemTemplateField",
           "PageInfo"
         ]
       },
       "ItemTemplateFieldEdge": {
+        "name": "ItemTemplateFieldEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "ItemTemplateField",
+              "namedTypes": [
+                "ItemTemplateField"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateFieldEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "ItemTemplateField"
         ]
       },
       "ItemTemplateField": {
+        "name": "ItemTemplateField",
         "kind": "OBJECT",
+        "description": "Represents the field of the data template in Sitecore.",
+        "fields": [
+          {
+            "name": "blob",
+            "description": "The template field has a blob content.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "dataSource",
+            "description": "The field resolved source items.",
+            "type": {
+              "display": "ItemTemplateFieldSource",
+              "namedTypes": [
+                "ItemTemplateFieldSource"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "defaultValue",
+            "description": "The default value of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "description",
+            "description": "The description of the template field. The value is language specific.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "language",
+                "description": null,
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "excludeFromTextSearch",
+            "description": "Exclude the template field from full text search.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "helpLink",
+            "description": "The help link of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "icon",
+            "description": "The icon of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "ignoreDictionaryTranslations",
+            "description": null,
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "key",
+            "description": "The key of the template field.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The name of the template field.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "section",
+            "description": "The section where the template field belong.",
+            "type": {
+              "display": "ItemTemplateSection!",
+              "namedTypes": [
+                "ItemTemplateSection"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "sharedLanguageFallbackEnabled",
+            "description": null,
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "shortDescription",
+            "description": "The shor description of the template field. The value is language specific.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "language",
+                "description": null,
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "sortOrder",
+            "description": "The sort order.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "source",
+            "description": "The source value of the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "style",
+            "description": "The style for the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "templateFieldId",
+            "description": "The globally-unique identifier of the template field.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "title",
+            "description": "The title of the template field. The value is language specific.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "language",
+                "description": null,
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "toolTip",
+            "description": "The tooltip of the template field. The value is language specific.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "language",
+                "description": null,
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "type",
+            "description": "The type of the template field.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "typeKey",
+            "description": "The type key of the template field.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "validation",
+            "description": "The validation assigned to the template field.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "validationText",
+            "description": "The validation text for the template field. The value is language specific.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "language",
+                "description": null,
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "versioning",
+            "description": "The versioning of the template field.",
+            "type": {
+              "display": "FieldVersioning!",
+              "namedTypes": [
+                "FieldVersioning"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateField.json",
-        "references": [
+        "dependencies": [
           "Boolean",
           "ItemTemplateFieldSource",
           "String",
           "ItemTemplateSection",
           "Int",
           "ID",
+          "IdFormat",
           "FieldVersioning"
         ]
       },
       "ItemTemplateFieldSource": {
+        "name": "ItemTemplateFieldSource",
         "kind": "OBJECT",
+        "description": "Represents the item field sources",
+        "fields": [
+          {
+            "name": "items",
+            "description": "The field resolved source items.",
+            "type": {
+              "display": "ItemConnection",
+              "namedTypes": [
+                "ItemConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "resolvedSources",
+            "description": "The field resolved source mappings.",
+            "type": {
+              "display": "[ItemTemplateFieldResolvedSource!]!",
+              "namedTypes": [
+                "ItemTemplateFieldResolvedSource"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "value",
+            "description": "The source value of the template field.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateFieldSource.json",
-        "references": [
+        "dependencies": [
           "ItemConnection",
-          "ItemTemplateFieldResolvedSource",
-          "String"
+          "String",
+          "PaginationAmount",
+          "ItemTemplateFieldResolvedSource"
         ]
       },
       "ItemConnection": {
+        "name": "ItemConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[ItemEdge!]",
+              "namedTypes": [
+                "ItemEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[Item]",
+              "namedTypes": [
+                "Item"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemConnection.json",
-        "references": [
+        "dependencies": [
           "ItemEdge",
           "Item",
           "PageInfo"
         ]
       },
       "ItemEdge": {
+        "name": "ItemEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "Item",
+              "namedTypes": [
+                "Item"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "Item"
         ]
       },
       "Item": {
+        "name": "Item",
         "kind": "OBJECT",
+        "description": "Represents an item in Sitecore.",
+        "fields": [
+          {
+            "name": "access",
+            "description": "The access rights for the current user or for the given user",
+            "type": {
+              "display": "ItemAccess",
+              "namedTypes": [
+                "ItemAccess"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "username",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "ancestors",
+            "description": "The ancestors of the item.",
+            "type": {
+              "display": "[Item!]!",
+              "namedTypes": [
+                "Item"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "children",
+            "description": "Provides access to the item children.",
+            "type": {
+              "display": "ItemConnection",
+              "namedTypes": [
+                "ItemConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "excludeTemplateIDs",
+                "description": null,
+                "type": {
+                  "display": "[ID]",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "hasVersionInLanguages",
+                "description": null,
+                "type": {
+                  "display": "[ID]",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "includeHiddenItems",
+                "description": null,
+                "type": {
+                  "display": "Boolean",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "includeTemplateIDs",
+                "description": null,
+                "type": {
+                  "display": "[ID]",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "requirePresentation",
+                "description": null,
+                "type": {
+                  "display": "Boolean",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "database",
+            "description": "The name of the database where the item is located.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "displayName",
+            "description": "The localized item name.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "field",
+            "description": "Access field by field name.",
+            "type": {
+              "display": "ItemField",
+              "namedTypes": [
+                "ItemField"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "name",
+                "description": "The field name.",
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "fields",
+            "description": "Provides access to the fields of the item.",
+            "type": {
+              "display": "ItemFieldConnection",
+              "namedTypes": [
+                "ItemFieldConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "excludeStandardFields",
+                "description": null,
+                "type": {
+                  "display": "Boolean!",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": true
+                },
+                "required": true
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "ownFields",
+                "description": null,
+                "type": {
+                  "display": "Boolean!",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": true
+                },
+                "required": true
+              },
+              {
+                "name": "withLanguageFallback",
+                "description": null,
+                "type": {
+                  "display": "Boolean!",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "hasChildren",
+            "description": "Indicates whether the item has sub-items or not. excludeTemplateIDs overwrites includeTemplateIDs if both are present.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "excludeTemplateIDs",
+                "description": null,
+                "type": {
+                  "display": "[ID]",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "hasVersionInLanguages",
+                "description": null,
+                "type": {
+                  "display": "[ID]",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "includeHiddenItems",
+                "description": null,
+                "type": {
+                  "display": "Boolean",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "includeTemplateIDs",
+                "description": null,
+                "type": {
+                  "display": "[ID]",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "requirePresentation",
+                "description": null,
+                "type": {
+                  "display": "Boolean",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "hasPresentation",
+            "description": "Indicates whether the item has a presentation.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "icon",
+            "description": "The URI of the item icon.",
+            "type": {
+              "display": "Url",
+              "namedTypes": [
+                "Url"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "size",
+                "description": null,
+                "type": {
+                  "display": "IconSize",
+                  "namedTypes": [
+                    "IconSize"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "insertOptions",
+            "description": "The insert options of the item.",
+            "type": {
+              "display": "[ItemTemplate!]!",
+              "namedTypes": [
+                "ItemTemplate"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "isFallback",
+            "description": "Indicates whether this item instance was resolved using language or version fallback instead of having its own value.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "itemId",
+            "description": "The globally-unique identifier for the item.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "itemUri",
+            "description": "The URI of the item.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "language",
+            "description": "The item language.",
+            "type": {
+              "display": "Language!",
+              "namedTypes": [
+                "Language"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "lock",
+            "description": "The lock information of the item.",
+            "type": {
+              "display": "ItemLock",
+              "namedTypes": [
+                "ItemLock"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "username",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "name",
+            "description": "A short description of the item. The name is not localized.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "parent",
+            "description": "Provides access to the parent for this item. Returns a null value for the root item.",
+            "type": {
+              "display": "Item",
+              "namedTypes": [
+                "Item"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "path",
+            "description": "The full item path from the root.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "publish",
+            "description": "Publishing information of the item.",
+            "type": {
+              "display": "ItemPublish!",
+              "namedTypes": [
+                "ItemPublish"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "template",
+            "description": "Provides access to the template for this item.",
+            "type": {
+              "display": "ItemTemplate!",
+              "namedTypes": [
+                "ItemTemplate"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "thumbnailUrl",
+            "description": "The thumbnail URL of the item.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "options",
+                "description": null,
+                "type": {
+                  "display": "MediaUrlOptionsInput",
+                  "namedTypes": [
+                    "MediaUrlOptionsInput"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "url",
+            "description": "Gets the item URL.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "options",
+                "description": null,
+                "type": {
+                  "display": "ItemUrlOptionsInput",
+                  "namedTypes": [
+                    "ItemUrlOptionsInput"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "version",
+            "description": "The version of the item.",
+            "type": {
+              "display": "Int!",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "versionName",
+            "description": "The version name of the item",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "versions",
+            "description": "Provides access to the different versions of the item.",
+            "type": {
+              "display": "[Item!]!",
+              "namedTypes": [
+                "Item"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "allLanguages",
+                "description": null,
+                "type": {
+                  "display": "Boolean!",
+                  "namedTypes": [
+                    "Boolean"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "workflow",
+            "description": "Provides access to the different versions of the item.",
+            "type": {
+              "display": "ItemWorkflow",
+              "namedTypes": [
+                "ItemWorkflow"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Item.json",
-        "references": [
+        "dependencies": [
           "ItemAccess",
+          "String",
           "Item",
           "ItemConnection",
-          "String",
+          "ID",
+          "PaginationAmount",
+          "Boolean",
           "ItemField",
           "ItemFieldConnection",
-          "Boolean",
           "Url",
+          "IconSize",
           "ItemTemplate",
-          "ID",
+          "IdFormat",
           "Language",
           "ItemLock",
           "ItemPublish",
+          "MediaUrlOptionsInput",
+          "ItemUrlOptionsInput",
           "Int",
           "ItemWorkflow"
         ]
       },
       "ItemAccess": {
+        "name": "ItemAccess",
         "kind": "OBJECT",
+        "description": "Represents the item access rights for the current user.",
+        "fields": [
+          {
+            "name": "canAddBranch",
+            "description": "The user can add the provided branch to the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "branchId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canAddTemplate",
+            "description": "The user can add the provided template to the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "templateId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canAdmin",
+            "description": "The user can perform admin-level tasks on the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canCopyTo",
+            "description": "The user can copy the item to the provided destination.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "destinationId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canCreate",
+            "description": "The user can create the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canDelete",
+            "description": "The user can delete the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canDuplicate",
+            "description": "The user can create a duplicate of the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canMoveTo",
+            "description": "The user can move the item to the provided destination.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "destinationId",
+                "description": null,
+                "type": {
+                  "display": "ID!",
+                  "namedTypes": [
+                    "ID"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "canPublish",
+            "description": "The user can publish the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canRead",
+            "description": "The user can read the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canReadLanguage",
+            "description": "The user can read the item in the current language.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canRemoveVersion",
+            "description": "The user can remove the current version of the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canRename",
+            "description": "The user can rename the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canWrite",
+            "description": "The user can write the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canWriteLanguage",
+            "description": "The user can write the item in the current language.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemAccess.json",
-        "references": [
-          "Boolean"
+        "dependencies": [
+          "Boolean",
+          "ID"
         ]
       },
       "ItemField": {
+        "name": "ItemField",
         "kind": "OBJECT",
+        "description": "Represents an item field.",
+        "fields": [
+          {
+            "name": "access",
+            "description": "The item field access.",
+            "type": {
+              "display": "ItemFieldAccess!",
+              "namedTypes": [
+                "ItemFieldAccess"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "userName",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "containsFallbackValue",
+            "description": "Indicates if the field value is fallback value.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "containsInheritedValue",
+            "description": "Indicates if the field value is inherited value.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "containsStandardValue",
+            "description": "Indicates if the field value is standard value.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "fieldId",
+            "description": "The globally-unique identifier for the field.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "label",
+            "description": "The field label.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The field name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "templateField",
+            "description": "The item template field.",
+            "type": {
+              "display": "ItemTemplateField!",
+              "namedTypes": [
+                "ItemTemplateField"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "validation",
+            "description": "The item field validation.",
+            "type": {
+              "display": "[ItemFieldValidation!]!",
+              "namedTypes": [
+                "ItemFieldValidation"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "modes",
+                "description": null,
+                "type": {
+                  "display": "[String]",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "value",
+            "description": "The string value of the field.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemField.json",
-        "references": [
+        "dependencies": [
           "ItemFieldAccess",
+          "String",
           "Boolean",
           "ID",
-          "String",
+          "IdFormat",
           "ItemTemplateField",
           "ItemFieldValidation"
         ]
       },
       "ItemFieldAccess": {
+        "name": "ItemFieldAccess",
         "kind": "OBJECT",
+        "description": "Represents the field access rights for the current user.",
+        "fields": [
+          {
+            "name": "canRead",
+            "description": "The user can read the item field.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canWrite",
+            "description": "The user can write the item field.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemFieldAccess.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
-      "ID": {
-        "kind": "SCALAR",
-        "file": "types/ID.json",
-        "references": []
+      "IdFormat": {
+        "name": "IdFormat",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "N",
+            "description": null
+          },
+          {
+            "name": "D",
+            "description": null
+          },
+          {
+            "name": "B",
+            "description": null
+          },
+          {
+            "name": "P",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/IdFormat.json",
+        "dependencies": []
       },
       "ItemFieldValidation": {
+        "name": "ItemFieldValidation",
         "kind": "OBJECT",
+        "description": "Represents the field validation.",
+        "fields": [
+          {
+            "name": "mode",
+            "description": "The field name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "results",
+            "description": "The item field validation results.",
+            "type": {
+              "display": "ItemFieldValidationResultConnection",
+              "namedTypes": [
+                "ItemFieldValidationResultConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "language",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemFieldValidation.json",
-        "references": [
+        "dependencies": [
           "String",
-          "ItemFieldValidationResultConnection"
+          "ItemFieldValidationResultConnection",
+          "PaginationAmount"
         ]
       },
       "ItemFieldValidationResultConnection": {
+        "name": "ItemFieldValidationResultConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[ItemFieldValidationResultEdge!]",
+              "namedTypes": [
+                "ItemFieldValidationResultEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[ItemFieldValidationResult]",
+              "namedTypes": [
+                "ItemFieldValidationResult"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemFieldValidationResultConnection.json",
-        "references": [
+        "dependencies": [
           "ItemFieldValidationResultEdge",
           "ItemFieldValidationResult",
           "PageInfo"
         ]
       },
       "ItemFieldValidationResultEdge": {
+        "name": "ItemFieldValidationResultEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "ItemFieldValidationResult",
+              "namedTypes": [
+                "ItemFieldValidationResult"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemFieldValidationResultEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "ItemFieldValidationResult"
         ]
       },
       "ItemFieldValidationResult": {
+        "name": "ItemFieldValidationResult",
         "kind": "OBJECT",
+        "description": "Represents the field validation results.",
+        "fields": [
+          {
+            "name": "message",
+            "description": "The validation result message for the field.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "result",
+            "description": "The validation result.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "valid",
+            "description": "The status of the validator.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "validator",
+            "description": "The validator name.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemFieldValidationResult.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
       "ItemFieldConnection": {
+        "name": "ItemFieldConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[ItemFieldEdge!]",
+              "namedTypes": [
+                "ItemFieldEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[ItemField]",
+              "namedTypes": [
+                "ItemField"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemFieldConnection.json",
-        "references": [
+        "dependencies": [
           "ItemFieldEdge",
           "ItemField",
           "PageInfo"
         ]
       },
       "ItemFieldEdge": {
+        "name": "ItemFieldEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "ItemField",
+              "namedTypes": [
+                "ItemField"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemFieldEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "ItemField"
         ]
       },
       "Url": {
+        "name": "Url",
         "kind": "SCALAR",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Url.json",
-        "references": []
+        "dependencies": []
+      },
+      "IconSize": {
+        "name": "IconSize",
+        "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "SIZE16",
+            "description": null
+          },
+          {
+            "name": "SIZE24",
+            "description": null
+          },
+          {
+            "name": "SIZE32",
+            "description": null
+          },
+          {
+            "name": "SIZE48",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/IconSize.json",
+        "dependencies": []
       },
       "Language": {
+        "name": "Language",
         "kind": "OBJECT",
+        "description": "Represents a content language used in Sitecore.",
+        "fields": [
+          {
+            "name": "charset",
+            "description": "The charset of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "database",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "displayName",
+            "description": "A human readable name of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "englishName",
+            "description": "Gets the culture name in the format languagefull [country/regionfull] in English.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "iso",
+            "description": "The Two Letter ISO code of the language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The culture name in the languagecode2-country/regioncode2 format.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "nativeName",
+            "description": "The culture name, consisting of the language, the country/region, and the optional script, that the culture is set to display.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Language.json",
-        "references": [
+        "dependencies": [
           "String"
         ]
       },
       "ItemLock": {
+        "name": "ItemLock",
         "kind": "OBJECT",
+        "description": "Represents the item locking information.",
+        "fields": [
+          {
+            "name": "isLocked",
+            "description": "The item is locked.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "lockedBy",
+            "description": "The user who locks the item.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "user",
+            "description": "Get user info of the item lock.",
+            "type": {
+              "display": "ItemLockForUser",
+              "namedTypes": [
+                "ItemLockForUser"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "username",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemLock.json",
-        "references": [
+        "dependencies": [
           "Boolean",
           "String",
           "ItemLockForUser"
         ]
       },
       "ItemLockForUser": {
+        "name": "ItemLockForUser",
         "kind": "OBJECT",
+        "description": "Represents the item locking information for the current user.",
+        "fields": [
+          {
+            "name": "canLock",
+            "description": "The user can lock the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canUnlock",
+            "description": "The user can unlock the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hasLock",
+            "description": "The user locks the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemLockForUser.json",
-        "references": [
+        "dependencies": [
           "Boolean"
         ]
       },
       "ItemPublish": {
+        "name": "ItemPublish",
         "kind": "OBJECT",
+        "description": "Represents the item publishing information.",
+        "fields": [
+          {
+            "name": "hasPublishableVersion",
+            "description": "The item has publishable version.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "hideVersion",
+            "description": "The item version can be published.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "neverPublish",
+            "description": "Never publish the item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "validFrom",
+            "description": "Valid from date of the item, expressed as UTC.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "validTo",
+            "description": "Valid to date of the item, expressed as UTC.",
+            "type": {
+              "display": "DateTime!",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemPublish.json",
-        "references": [
+        "dependencies": [
           "Boolean",
           "DateTime"
         ]
       },
       "DateTime": {
+        "name": "DateTime",
         "kind": "SCALAR",
+        "description": "The `DateTime` scalar represents an ISO-8601 compliant date time type.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/DateTime.json",
-        "references": []
+        "dependencies": []
+      },
+      "MediaUrlOptionsInput": {
+        "name": "MediaUrlOptionsInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents media URL options.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "absolutePath",
+            "description": "Controls whether to render media links as absolute.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "allowStretch",
+            "description": "Controls whether to allow image stretch.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "alwaysAppendRevision",
+            "description": "Controls whether to include the media item revision.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "alwaysIncludeServerUrl",
+            "description": "Controls whether to include the server address (host).",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "database",
+            "description": "Sets the database.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "disableMediaCache",
+            "description": "Controls whether to disable using media cache.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "height",
+            "description": "Sets height for images.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "ignoreAspectRatio",
+            "description": "Controls whether to respect the aspect ratio when resizing.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "includeExtension",
+            "description": "Controls whether to include the media extension.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "language",
+            "description": "Sets media language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "lowercaseUrls",
+            "description": "Controls the letter case for the generated URL.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "maxHeight",
+            "description": "Sets max height for images.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "maxWidth",
+            "description": "Sets max width for images.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "mediaLinkServerUrl",
+            "description": "Sets Server url that will be used for media links. Used only when AlwaysIncludeServerUrl is set to true.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "requestExtension",
+            "description": "Sets media extension.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "scale",
+            "description": "Sets scale for images.",
+            "type": {
+              "display": "Float",
+              "namedTypes": [
+                "Float"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "thumbnail",
+            "description": "Controls whether to generate a thumbnail.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "useItemPath",
+            "description": "Controls whether to include item path.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "version",
+            "description": "Sets media version.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "width",
+            "description": "Sets width for images.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/MediaUrlOptionsInput.json",
+        "dependencies": [
+          "Boolean",
+          "String",
+          "Int",
+          "Float"
+        ]
       },
       "Int": {
+        "name": "Int",
         "kind": "SCALAR",
+        "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Int.json",
-        "references": []
+        "dependencies": []
+      },
+      "Float": {
+        "name": "Float",
+        "kind": "SCALAR",
+        "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point).",
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/Float.json",
+        "dependencies": []
+      },
+      "ItemUrlOptionsInput": {
+        "name": "ItemUrlOptionsInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents an item query.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "alwaysIncludeServerUrl",
+            "description": "Indicates whether to include the server URL for an absolute URL path. Otherwise, a relative path will be generated.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "disableLanguageEmbedding",
+            "description": "Indicates whether to disable language embedding. To disable embedding the language in the URL path, set the value to true.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "language",
+            "description": "The language to use in the generated URL.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "siteName",
+            "description": "The site name to use for generating URL.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ItemUrlOptionsInput.json",
+        "dependencies": [
+          "Boolean",
+          "String"
+        ]
       },
       "ItemWorkflow": {
+        "name": "ItemWorkflow",
         "kind": "OBJECT",
+        "description": "Represents the item workflow.",
+        "fields": [
+          {
+            "name": "canEdit",
+            "description": "Determines whether the source item can be edited.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "canSave",
+            "description": "Determines whether the source item can be saved.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "workflow",
+            "description": "The workflow.",
+            "type": {
+              "display": "Workflow",
+              "namedTypes": [
+                "Workflow"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "workflowState",
+            "description": "The current workflow state of the item.",
+            "type": {
+              "display": "WorkflowState",
+              "namedTypes": [
+                "WorkflowState"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemWorkflow.json",
-        "references": [
+        "dependencies": [
           "Boolean",
           "Workflow",
           "WorkflowState"
         ]
       },
       "Workflow": {
+        "name": "Workflow",
         "kind": "OBJECT",
+        "description": "Represents a workflow configured in Sitecore.",
+        "fields": [
+          {
+            "name": "commands",
+            "description": "Gets the workflow commands for the specified state. You can pass the state ID or specify an item of which the current workflow state will be used.",
+            "type": {
+              "display": "WorkflowCommandConnection",
+              "namedTypes": [
+                "WorkflowCommandConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "query",
+                "description": null,
+                "type": {
+                  "display": "WorkflowStateOrItemQueryInput!",
+                  "namedTypes": [
+                    "WorkflowStateOrItemQueryInput"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "displayName",
+            "description": "The display name of the workflow.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "history",
+            "description": "Gets the workflow history for the specified item.",
+            "type": {
+              "display": "WorkflowEventConnection",
+              "namedTypes": [
+                "WorkflowEventConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "item",
+                "description": null,
+                "type": {
+                  "display": "ItemQueryInput!",
+                  "namedTypes": [
+                    "ItemQueryInput"
+                  ],
+                  "required": true
+                },
+                "required": true
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "initialState",
+            "description": "Gets the initial state of the workflow.",
+            "type": {
+              "display": "WorkflowState",
+              "namedTypes": [
+                "WorkflowState"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "isApproved",
+            "description": "Checks if the workflow is approved for the specified item.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "item",
+                "description": null,
+                "type": {
+                  "display": "ItemQueryInput!",
+                  "namedTypes": [
+                    "ItemQueryInput"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "items",
+            "description": "Gets the items on the specified state",
+            "type": {
+              "display": "ItemConnection",
+              "namedTypes": [
+                "ItemConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "stateId",
+                "description": null,
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "itemsCount",
+            "description": "Gets the number of items on the specified state.",
+            "type": {
+              "display": "Int!",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "stateId",
+                "description": null,
+                "type": {
+                  "display": "String!",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "description": "Finds a specific state.",
+            "type": {
+              "display": "WorkflowState",
+              "namedTypes": [
+                "WorkflowState"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "query",
+                "description": null,
+                "type": {
+                  "display": "WorkflowStateOrItemQueryInput!",
+                  "namedTypes": [
+                    "WorkflowStateOrItemQueryInput"
+                  ],
+                  "required": true
+                },
+                "required": true
+              }
+            ]
+          },
+          {
+            "name": "states",
+            "description": "Gets the list of states defined for the workflow.",
+            "type": {
+              "display": "WorkflowStateConnection",
+              "namedTypes": [
+                "WorkflowStateConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "workflowId",
+            "description": "The workflow ID.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/Workflow.json",
-        "references": [
+        "dependencies": [
           "WorkflowCommandConnection",
           "String",
+          "PaginationAmount",
+          "WorkflowStateOrItemQueryInput",
           "WorkflowEventConnection",
+          "ItemQueryInput",
           "WorkflowState",
           "Boolean",
           "ItemConnection",
@@ -468,117 +4937,978 @@
         ]
       },
       "WorkflowCommandConnection": {
+        "name": "WorkflowCommandConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[WorkflowCommandEdge!]",
+              "namedTypes": [
+                "WorkflowCommandEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[WorkflowCommand]",
+              "namedTypes": [
+                "WorkflowCommand"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowCommandConnection.json",
-        "references": [
+        "dependencies": [
           "WorkflowCommandEdge",
           "WorkflowCommand",
           "PageInfo"
         ]
       },
       "WorkflowCommandEdge": {
+        "name": "WorkflowCommandEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "WorkflowCommand",
+              "namedTypes": [
+                "WorkflowCommand"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowCommandEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "WorkflowCommand"
         ]
       },
       "WorkflowCommand": {
+        "name": "WorkflowCommand",
         "kind": "OBJECT",
+        "description": "Represents a workflow command.",
+        "fields": [
+          {
+            "name": "commandId",
+            "description": "Gets the workflow command ID.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "displayName",
+            "description": "Gets the display name of the workflow command.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "icon",
+            "description": "Gets the display name of the workflow state.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "suppressComments",
+            "description": "Gets value indicating whether to suppress comments for this command.",
+            "type": {
+              "display": "Boolean!",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowCommand.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
+      "WorkflowStateOrItemQueryInput": {
+        "name": "WorkflowStateOrItemQueryInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents the workflow state query. You must provide the StateId or the Item. If both are specified the StateId will be used and Item will be ignored",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "item",
+            "description": "When provided, the workflow state of this item will be used in the query.",
+            "type": {
+              "display": "ItemQueryInput",
+              "namedTypes": [
+                "ItemQueryInput"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "stateId",
+            "description": "The Id of workflow state item.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/WorkflowStateOrItemQueryInput.json",
+        "dependencies": [
+          "ItemQueryInput",
+          "String"
+        ]
+      },
+      "ItemQueryInput": {
+        "name": "ItemQueryInput",
+        "kind": "INPUT_OBJECT",
+        "description": "Represents an item query.",
+        "fields": [],
+        "inputFields": [
+          {
+            "name": "database",
+            "description": "The name of the database where item exits.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "existingVersionOnly",
+            "description": "Indicates whether to return the item even if the requested version does not exist.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "itemId",
+            "description": "The item ID. If both ID and path parameters are specified, the path parameter is ignored.",
+            "type": {
+              "display": "ID",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "language",
+            "description": "The item language.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "path",
+            "description": "The full item path. If both ID and path parameters are specified, the path parameter is ignored.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "requirePresentation",
+            "description": "DEPRECATED. Indicates whether the item required must have presentation.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            }
+          },
+          {
+            "name": "version",
+            "description": "The version number of the item.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            }
+          }
+        ],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
+        "file": "types/ItemQueryInput.json",
+        "dependencies": [
+          "String",
+          "Boolean",
+          "ID",
+          "Int"
+        ]
+      },
       "WorkflowEventConnection": {
+        "name": "WorkflowEventConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[WorkflowEventEdge!]",
+              "namedTypes": [
+                "WorkflowEventEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[WorkflowEvent]",
+              "namedTypes": [
+                "WorkflowEvent"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowEventConnection.json",
-        "references": [
+        "dependencies": [
           "WorkflowEventEdge",
           "WorkflowEvent",
           "PageInfo"
         ]
       },
       "WorkflowEventEdge": {
+        "name": "WorkflowEventEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "WorkflowEvent",
+              "namedTypes": [
+                "WorkflowEvent"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowEventEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "WorkflowEvent"
         ]
       },
       "WorkflowEvent": {
+        "name": "WorkflowEvent",
         "kind": "OBJECT",
+        "description": "Represents a workflow event.",
+        "fields": [
+          {
+            "name": "comments",
+            "description": "Gets event comments.",
+            "type": {
+              "display": "[String!]!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "date",
+            "description": "Gets the workflow event data.",
+            "type": {
+              "display": "DateTime",
+              "namedTypes": [
+                "DateTime"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "newState",
+            "description": "Gets the new state of the workflow event.",
+            "type": {
+              "display": "WorkflowState",
+              "namedTypes": [
+                "WorkflowState"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "oldState",
+            "description": "Gets the old state of the workflow event.",
+            "type": {
+              "display": "WorkflowState",
+              "namedTypes": [
+                "WorkflowState"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "user",
+            "description": "Gets the name of the user that triggered the event.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowEvent.json",
-        "references": [
+        "dependencies": [
           "String",
           "DateTime",
           "WorkflowState"
         ]
       },
       "WorkflowState": {
+        "name": "WorkflowState",
         "kind": "OBJECT",
+        "description": "Represents the workflow state.",
+        "fields": [
+          {
+            "name": "displayName",
+            "description": "Gets the display name of the workflow state.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "final",
+            "description": "Gets a value indicating if the state is the final state in the workflow.",
+            "type": {
+              "display": "Boolean",
+              "namedTypes": [
+                "Boolean"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "icon",
+            "description": "Gets the icon of the workflow state.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "stateId",
+            "description": "Gets the workflow state ID.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowState.json",
-        "references": [
+        "dependencies": [
           "String",
           "Boolean"
         ]
       },
       "WorkflowStateConnection": {
+        "name": "WorkflowStateConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[WorkflowStateEdge!]",
+              "namedTypes": [
+                "WorkflowStateEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[WorkflowState]",
+              "namedTypes": [
+                "WorkflowState"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowStateConnection.json",
-        "references": [
+        "dependencies": [
           "WorkflowStateEdge",
           "WorkflowState",
           "PageInfo"
         ]
       },
       "WorkflowStateEdge": {
+        "name": "WorkflowStateEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "WorkflowState",
+              "namedTypes": [
+                "WorkflowState"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/WorkflowStateEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "WorkflowState"
         ]
       },
       "ItemTemplateFieldResolvedSource": {
+        "name": "ItemTemplateFieldResolvedSource",
         "kind": "OBJECT",
+        "description": "Represents the resolved source mapping for an item field source.",
+        "fields": [
+          {
+            "name": "items",
+            "description": "The resolved items for this source mapping.",
+            "type": {
+              "display": "ItemConnection",
+              "namedTypes": [
+                "ItemConnection"
+              ],
+              "required": false
+            },
+            "arguments": [
+              {
+                "name": "after",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "before",
+                "description": null,
+                "type": {
+                  "display": "String",
+                  "namedTypes": [
+                    "String"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "first",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              },
+              {
+                "name": "last",
+                "description": null,
+                "type": {
+                  "display": "PaginationAmount",
+                  "namedTypes": [
+                    "PaginationAmount"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "source",
+            "description": "The source value for this resolved mapping.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "sourceIndex",
+            "description": "The position of this source within the field source expression.",
+            "type": {
+              "display": "Int!",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateFieldResolvedSource.json",
-        "references": [
+        "dependencies": [
           "ItemConnection",
           "String",
+          "PaginationAmount",
           "Int"
         ]
       },
       "ItemTemplateSection": {
+        "name": "ItemTemplateSection",
         "kind": "OBJECT",
+        "description": "Represents the section of the data template in Sitecore.",
+        "fields": [
+          {
+            "name": "icon",
+            "description": "The icon of the template section.",
+            "type": {
+              "display": "String",
+              "namedTypes": [
+                "String"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "itemTemplateSectionId",
+            "description": "The globally-unique identifier of the template section.",
+            "type": {
+              "display": "ID!",
+              "namedTypes": [
+                "ID"
+              ],
+              "required": true
+            },
+            "arguments": [
+              {
+                "name": "format",
+                "description": null,
+                "type": {
+                  "display": "IdFormat",
+                  "namedTypes": [
+                    "IdFormat"
+                  ],
+                  "required": false
+                },
+                "required": false
+              }
+            ]
+          },
+          {
+            "name": "key",
+            "description": "The key of the template section.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "name",
+            "description": "The name of the template section.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "sortOrder",
+            "description": "The sort order.",
+            "type": {
+              "display": "Int",
+              "namedTypes": [
+                "Int"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateSection.json",
-        "references": [
+        "dependencies": [
           "String",
           "ID",
+          "IdFormat",
           "Int"
         ]
       },
       "FieldVersioning": {
+        "name": "FieldVersioning",
         "kind": "ENUM",
+        "description": null,
+        "fields": [],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [
+          {
+            "name": "VERSIONED",
+            "description": null
+          },
+          {
+            "name": "UNVERSIONED",
+            "description": null
+          },
+          {
+            "name": "SHARED",
+            "description": null
+          }
+        ],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/FieldVersioning.json",
-        "references": []
+        "dependencies": []
       },
       "ItemTemplateSectionConnection": {
+        "name": "ItemTemplateSectionConnection",
         "kind": "OBJECT",
+        "description": "A connection to a list of items.",
+        "fields": [
+          {
+            "name": "edges",
+            "description": "A list of edges.",
+            "type": {
+              "display": "[ItemTemplateSectionEdge!]",
+              "namedTypes": [
+                "ItemTemplateSectionEdge"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "nodes",
+            "description": "A flattened list of the nodes.",
+            "type": {
+              "display": "[ItemTemplateSection]",
+              "namedTypes": [
+                "ItemTemplateSection"
+              ],
+              "required": false
+            },
+            "arguments": []
+          },
+          {
+            "name": "pageInfo",
+            "description": "Information to aid in pagination.",
+            "type": {
+              "display": "PageInfo!",
+              "namedTypes": [
+                "PageInfo"
+              ],
+              "required": true
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateSectionConnection.json",
-        "references": [
+        "dependencies": [
           "ItemTemplateSectionEdge",
           "ItemTemplateSection",
           "PageInfo"
         ]
       },
       "ItemTemplateSectionEdge": {
+        "name": "ItemTemplateSectionEdge",
         "kind": "OBJECT",
+        "description": "An edge in a connection.",
+        "fields": [
+          {
+            "name": "cursor",
+            "description": "A cursor for use in pagination.",
+            "type": {
+              "display": "String!",
+              "namedTypes": [
+                "String"
+              ],
+              "required": true
+            },
+            "arguments": []
+          },
+          {
+            "name": "node",
+            "description": "The item at the end of the edge.",
+            "type": {
+              "display": "ItemTemplateSection",
+              "namedTypes": [
+                "ItemTemplateSection"
+              ],
+              "required": false
+            },
+            "arguments": []
+          }
+        ],
+        "inputFields": [],
+        "interfaces": [],
+        "possibleTypes": [],
+        "enumValues": [],
+        "metadata": {
+          "generatedFrom": "SitecoreAI GraphQL introspection"
+        },
         "file": "types/ItemTemplateSectionEdge.json",
-        "references": [
+        "dependencies": [
           "String",
           "ItemTemplateSection"
         ]
