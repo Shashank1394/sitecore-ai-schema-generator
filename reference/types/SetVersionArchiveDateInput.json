@@ -1,0 +1,64 @@
+{
+  "name": "SetVersionArchiveDateInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for setting the archive date for an item version.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "archiveDate",
+      "description": "The archive date. A null value will reset the archive date.",
+      "type": {
+        "display": "DateTime",
+        "namedTypes": [
+          "DateTime"
+        ]
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The ID of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "itemPath",
+      "description": "The full path of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language of the version.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "version",
+      "description": "The version number. If not present, the latest version will be used.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

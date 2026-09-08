@@ -1,0 +1,99 @@
+{
+  "operation": "domains",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "DomainConnection",
+  "inputTypes": {},
+  "returnFields": {
+    "edges": {
+      "type": "[DomainEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[Domain]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DomainConnection",
+      "namedTypes": [
+        "DomainConnection"
+      ]
+    },
+    "nodes": {
+      "DomainConnection": {
+        "kind": "OBJECT",
+        "file": "types/DomainConnection.json",
+        "references": [
+          "DomainEdge",
+          "Domain",
+          "PageInfo"
+        ]
+      },
+      "DomainEdge": {
+        "kind": "OBJECT",
+        "file": "types/DomainEdge.json",
+        "references": [
+          "String",
+          "Domain"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Domain": {
+        "kind": "OBJECT",
+        "file": "types/Domain.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "name": "ItemTemplateFieldInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating or updating a template field.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "blob",
+      "description": "The flag indicating whether the field is a blob field.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "defaultValue",
+      "description": "The default value of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "description",
+      "description": "The description of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "excludeFromTextSearch",
+      "description": "The flag indicating whether to exclude the content of the field from full text search index.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "helpLink",
+      "description": "The help link of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "icon",
+      "description": "The icon of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "ignoreDictionaryTranslations",
+      "description": "The flag indicating whether to ignore dictionary translations.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "sharedLanguageFallbackEnabled",
+      "description": "The flag indicating whether to enable the shared Language Fallback.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "sortOrder",
+      "description": "The sort order of the template field.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    },
+    {
+      "name": "source",
+      "description": "The source of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "style",
+      "description": "The style of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "templateFieldId",
+      "description": "The unique ID of the template field. If the ID is empty, a new template field if ID will be created. Otherwise, the template field will be updated.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "title",
+      "description": "The title of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "tooltip",
+      "description": "The tooltip of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "type",
+      "description": "The type of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "validation",
+      "description": "The validation of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "validationText",
+      "description": "The validation text of the template field.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "versioning",
+      "description": "The versioning of the template field.",
+      "type": {
+        "display": "FieldVersioning",
+        "namedTypes": [
+          "FieldVersioning"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

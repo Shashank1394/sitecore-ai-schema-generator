@@ -1,0 +1,25 @@
+{
+  "name": "UpdateUserPayload",
+  "kind": "OBJECT",
+  "description": "The result of the update operation for the security user.",
+  "fields": [
+    {
+      "name": "user",
+      "description": "The updated user.",
+      "type": {
+        "display": "User",
+        "namedTypes": [
+          "User"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

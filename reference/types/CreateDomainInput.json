@@ -1,0 +1,34 @@
+{
+  "name": "CreateDomainInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating a security domain.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "domainName",
+      "description": "The name of the new domain.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "locallyManagedDomain",
+      "description": "The flag indicating whether the domain is managed locally.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

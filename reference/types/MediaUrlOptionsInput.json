@@ -1,0 +1,214 @@
+{
+  "name": "MediaUrlOptionsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents media URL options.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "absolutePath",
+      "description": "Controls whether to render media links as absolute.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "allowStretch",
+      "description": "Controls whether to allow image stretch.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "alwaysAppendRevision",
+      "description": "Controls whether to include the media item revision.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "alwaysIncludeServerUrl",
+      "description": "Controls whether to include the server address (host).",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "database",
+      "description": "Sets the database.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "disableMediaCache",
+      "description": "Controls whether to disable using media cache.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "height",
+      "description": "Sets height for images.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    },
+    {
+      "name": "ignoreAspectRatio",
+      "description": "Controls whether to respect the aspect ratio when resizing.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "includeExtension",
+      "description": "Controls whether to include the media extension.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "Sets media language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "lowercaseUrls",
+      "description": "Controls the letter case for the generated URL.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "maxHeight",
+      "description": "Sets max height for images.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    },
+    {
+      "name": "maxWidth",
+      "description": "Sets max width for images.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    },
+    {
+      "name": "mediaLinkServerUrl",
+      "description": "Sets Server url that will be used for media links. Used only when AlwaysIncludeServerUrl is set to true.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "requestExtension",
+      "description": "Sets media extension.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "scale",
+      "description": "Sets scale for images.",
+      "type": {
+        "display": "Float",
+        "namedTypes": [
+          "Float"
+        ]
+      }
+    },
+    {
+      "name": "thumbnail",
+      "description": "Controls whether to generate a thumbnail.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "useItemPath",
+      "description": "Controls whether to include item path.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "version",
+      "description": "Sets media version.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    },
+    {
+      "name": "width",
+      "description": "Sets width for images.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "name": "CreateUserInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating a security user.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "clientLanguage",
+      "description": "The client language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "comment",
+      "description": "A comment about the user.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "defaultContentLanguage",
+      "description": "The default content language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "email",
+      "description": "The email.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "fullName",
+      "description": "The full name.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "isAdministrator",
+      "description": "The flag indicating if this user is an administrator.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "password",
+      "description": "The user password.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "portrait",
+      "description": "The portrait.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "regionalIsoCode",
+      "description": "The regional ISO code.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "roleNames",
+      "description": "The roles to assign to the new user.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "startUrl",
+      "description": "The start URL.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "userName",
+      "description": "The name of the user.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "userProfileId",
+      "description": "The profile ID.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "wallpaper",
+      "description": "The wallpaper.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

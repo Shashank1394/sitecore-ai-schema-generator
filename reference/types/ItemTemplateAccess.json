@@ -1,0 +1,179 @@
+{
+  "name": "ItemTemplateAccess",
+  "kind": "OBJECT",
+  "description": "Represents the item template access rights for the current user.",
+  "fields": [
+    {
+      "name": "canAddBranch",
+      "description": "The user can add the provided branch to the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "branchId",
+          "description": null,
+          "type": {
+            "display": "ID!",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "canAddTemplate",
+      "description": "The user can add the provided template to the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "templateId",
+          "description": null,
+          "type": {
+            "display": "ID!",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "canAdmin",
+      "description": "The user can perform admin-level tasks on the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canCopyTo",
+      "description": "The user can copy the item template to the provided destination.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "destinationId",
+          "description": null,
+          "type": {
+            "display": "ID!",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "canCreate",
+      "description": "The user can create the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canDelete",
+      "description": "The user can delete the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canDuplicate",
+      "description": "The user can create a duplicate of the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canMoveTo",
+      "description": "The user can move the item template to the provided destination.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "destinationId",
+          "description": null,
+          "type": {
+            "display": "ID!",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "canRead",
+      "description": "The user can read the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canRename",
+      "description": "The user can rename the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canWrite",
+      "description": "The user can write the item template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

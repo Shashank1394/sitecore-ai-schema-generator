@@ -1,0 +1,39 @@
+{
+  "name": "GetRenderingsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input parameters for geting site renderings",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "renderingId",
+      "description": "Unique identifier of the rendering.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "siteRootItemId",
+      "description": "Unique identifier of the site root item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

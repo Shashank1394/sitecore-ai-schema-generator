@@ -1,0 +1,32 @@
+{
+  "name": "SitePosMappingsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to set POS",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "id",
+      "description": "Site id",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "newValue",
+      "description": "New POS value",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "name": "ItemQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents an item query.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the database where item exits.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "existingVersionOnly",
+      "description": "Indicates whether to return the item even if the requested version does not exist.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The item ID. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "path",
+      "description": "The full item path. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "requirePresentation",
+      "description": "DEPRECATED. Indicates whether the item required must have presentation.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "version",
+      "description": "The version number of the item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "PagingInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with paging parameters.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "pageIndex",
+      "description": "The page index.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    },
+    {
+      "name": "pageSize",
+      "description": "The page size.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

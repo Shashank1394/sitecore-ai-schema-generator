@@ -1,0 +1,38 @@
+{
+  "name": "SortByInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with sort by field name and direction parameters.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "direction",
+      "description": "The sort direction.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "SortDirection",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "field",
+      "description": "The name of the field.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

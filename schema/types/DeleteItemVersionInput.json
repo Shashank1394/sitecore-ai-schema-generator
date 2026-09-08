@@ -1,0 +1,57 @@
+{
+  "name": "DeleteItemVersionInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting an item version.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the item database",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The ID of the item. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "path",
+      "description": "The item path.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "version",
+      "description": "The version of the item to be deleted. If not specified, the latest version will be deleted.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

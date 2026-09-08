@@ -1,0 +1,40 @@
+{
+  "name": "RuleSetTextPart",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset text part.",
+  "fields": [
+    {
+      "name": "text",
+      "description": "The text.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "type",
+      "description": "The type.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "RuleSetTextPartType",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

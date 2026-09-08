@@ -1,0 +1,36 @@
+{
+  "name": "ItemTemplateSectionEdge",
+  "kind": "OBJECT",
+  "description": "An edge in a connection.",
+  "fields": [
+    {
+      "name": "cursor",
+      "description": "A cursor for use in pagination.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "node",
+      "description": "The item at the end of the edge.",
+      "type": {
+        "display": "ItemTemplateSection",
+        "namedTypes": [
+          "ItemTemplateSection"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

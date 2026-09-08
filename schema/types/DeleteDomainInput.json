@@ -1,0 +1,25 @@
+{
+  "name": "DeleteDomainInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting a security domain.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "domainName",
+      "description": "The name of the domain to delete.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

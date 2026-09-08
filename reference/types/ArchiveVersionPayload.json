@@ -1,0 +1,36 @@
+{
+  "name": "ArchiveVersionPayload",
+  "kind": "OBJECT",
+  "description": "The result of archiving a version.",
+  "fields": [
+    {
+      "name": "archiveVersionId",
+      "description": "The globally-unique identifier.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

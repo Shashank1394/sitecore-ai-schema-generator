@@ -1,0 +1,22 @@
+{
+  "name": "PublishItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the item publishing operation.",
+  "fields": [
+    {
+      "name": "operationId",
+      "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

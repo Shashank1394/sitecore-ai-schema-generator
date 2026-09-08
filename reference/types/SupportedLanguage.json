@@ -1,0 +1,102 @@
+{
+  "name": "SupportedLanguage",
+  "kind": "OBJECT",
+  "description": "Represents a content language used in Sitecore.",
+  "fields": [
+    {
+      "name": "charset",
+      "description": "The charset of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "codePage",
+      "description": "The code page of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "customCode",
+      "description": "The custom code of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "encoding",
+      "description": "The encoding of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "language",
+      "description": "A human readable name of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name in presentational format.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "regionCode",
+      "description": "The region code of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "spellChecker",
+      "description": "The spellchecker used for the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

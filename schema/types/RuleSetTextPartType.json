@@ -1,0 +1,28 @@
+{
+  "name": "RuleSetTextPartType",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "CLAUSE",
+      "description": null
+    },
+    {
+      "name": "VALUE",
+      "description": null
+    },
+    {
+      "name": "INVALIDVALUE",
+      "description": null
+    },
+    {
+      "name": "PLAINTEXT",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

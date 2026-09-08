@@ -1,0 +1,24 @@
+{
+  "name": "SolutionSitesSearchInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input parameters for querying solution sites",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "filterStatement",
+      "description": null,
+      "type": {
+        "display": "SearchStatementInput",
+        "namedTypes": [
+          "SearchStatementInput"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

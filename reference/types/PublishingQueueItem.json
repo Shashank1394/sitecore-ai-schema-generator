@@ -1,0 +1,47 @@
+{
+  "name": "PublishingQueueItem",
+  "kind": "OBJECT",
+  "description": "Represents the item in the publishing queue.",
+  "fields": [
+    {
+      "name": "name",
+      "description": "The name of the item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "path",
+      "description": "The path of the item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "templateName",
+      "description": "The template name of the item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

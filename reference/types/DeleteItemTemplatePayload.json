@@ -1,0 +1,25 @@
+{
+  "name": "DeleteItemTemplatePayload",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The delete template operation status.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

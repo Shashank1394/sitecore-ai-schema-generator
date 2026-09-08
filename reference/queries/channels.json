@@ -1,0 +1,145 @@
+{
+  "operation": "channels",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "input": {
+      "type": "GetChannelsInput",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "ChannelTypeConnection",
+  "inputTypes": {
+    "GetChannelsInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input needed to query channels",
+      "fields": {
+        "channelTemplateType": {
+          "type": "Uuid!",
+          "description": "Optional channel template type filter"
+        },
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        },
+        "name": {
+          "type": "String",
+          "description": "Optional channel name filter"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "edges": {
+      "type": "[ChannelTypeEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[ChannelType]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    },
+    "totalCount": {
+      "type": "Int!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ChannelTypeConnection",
+      "namedTypes": [
+        "ChannelTypeConnection"
+      ]
+    },
+    "nodes": {
+      "ChannelTypeConnection": {
+        "kind": "OBJECT",
+        "file": "types/ChannelTypeConnection.json",
+        "references": [
+          "ChannelTypeEdge",
+          "ChannelType",
+          "PageInfo",
+          "Int"
+        ]
+      },
+      "ChannelTypeEdge": {
+        "kind": "OBJECT",
+        "file": "types/ChannelTypeEdge.json",
+        "references": [
+          "String",
+          "ChannelType"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "ChannelType": {
+        "kind": "OBJECT",
+        "file": "types/ChannelType.json",
+        "references": [
+          "ID",
+          "String",
+          "DateTime",
+          "Int"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

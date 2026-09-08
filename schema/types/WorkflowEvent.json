@@ -1,0 +1,73 @@
+{
+  "name": "WorkflowEvent",
+  "kind": "OBJECT",
+  "description": "Represents a workflow event.",
+  "fields": [
+    {
+      "name": "comments",
+      "description": "Gets event comments.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "date",
+      "description": "Gets the workflow event data.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "DateTime",
+        "ofType": null
+      }
+    },
+    {
+      "name": "newState",
+      "description": "Gets the new state of the workflow event.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowState",
+        "ofType": null
+      }
+    },
+    {
+      "name": "oldState",
+      "description": "Gets the old state of the workflow event.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowState",
+        "ofType": null
+      }
+    },
+    {
+      "name": "user",
+      "description": "Gets the name of the user that triggered the event.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

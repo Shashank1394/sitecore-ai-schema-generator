@@ -1,0 +1,36 @@
+{
+  "name": "TemplateFieldRule",
+  "kind": "OBJECT",
+  "description": "Represents a rule template entity.",
+  "fields": [
+    {
+      "name": "hideActions",
+      "description": "Indicates whether to hide actions.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "rule",
+      "description": "The rule.",
+      "type": {
+        "display": "Rule",
+        "namedTypes": [
+          "Rule"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,683 @@
+{
+  "name": "Item",
+  "kind": "OBJECT",
+  "description": "Represents an item in Sitecore.",
+  "fields": [
+    {
+      "name": "access",
+      "description": "The access rights for the current user or for the given user",
+      "args": [
+        {
+          "name": "username",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemAccess",
+        "ofType": null
+      }
+    },
+    {
+      "name": "ancestors",
+      "description": "The ancestors of the item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "Item"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "children",
+      "description": "Provides access to the item children.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "excludeTemplateIDs",
+          "description": null,
+          "type": {
+            "kind": "LIST",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "hasVersionInLanguages",
+          "description": null,
+          "type": {
+            "kind": "LIST",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "includeHiddenItems",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "Boolean",
+            "ofType": null
+          }
+        },
+        {
+          "name": "includeTemplateIDs",
+          "description": null,
+          "type": {
+            "kind": "LIST",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "requirePresentation",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "Boolean",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "The name of the database where the item is located.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "displayName",
+      "description": "The localized item name.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "field",
+      "description": "Access field by field name.",
+      "args": [
+        {
+          "name": "name",
+          "description": "The field name.",
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemField",
+        "ofType": null
+      }
+    },
+    {
+      "name": "fields",
+      "description": "Provides access to the fields of the item.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "excludeStandardFields",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "ownFields",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "withLanguageFallback",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemFieldConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "hasChildren",
+      "description": "Indicates whether the item has sub-items or not. excludeTemplateIDs overwrites includeTemplateIDs if both are present.",
+      "args": [
+        {
+          "name": "excludeTemplateIDs",
+          "description": null,
+          "type": {
+            "kind": "LIST",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "hasVersionInLanguages",
+          "description": null,
+          "type": {
+            "kind": "LIST",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "includeHiddenItems",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "Boolean",
+            "ofType": null
+          }
+        },
+        {
+          "name": "includeTemplateIDs",
+          "description": null,
+          "type": {
+            "kind": "LIST",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "requirePresentation",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "Boolean",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "hasPresentation",
+      "description": "Indicates whether the item has a presentation.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "icon",
+      "description": "The URI of the item icon.",
+      "args": [
+        {
+          "name": "size",
+          "description": null,
+          "type": {
+            "kind": "ENUM",
+            "name": "IconSize",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Url",
+        "ofType": null
+      }
+    },
+    {
+      "name": "insertOptions",
+      "description": "The insert options of the item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "ItemTemplate"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "isFallback",
+      "description": "Indicates whether this item instance was resolved using language or version fallback instead of having its own value.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The globally-unique identifier for the item.",
+      "args": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "kind": "ENUM",
+            "name": "IdFormat",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "itemUri",
+      "description": "The URI of the item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Language",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "lock",
+      "description": "The lock information of the item.",
+      "args": [
+        {
+          "name": "username",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemLock",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "A short description of the item. The name is not localized.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "parent",
+      "description": "Provides access to the parent for this item. Returns a null value for the root item.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "path",
+      "description": "The full item path from the root.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "publish",
+      "description": "Publishing information of the item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "ItemPublish",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "template",
+      "description": "Provides access to the template for this item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "ItemTemplate",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "thumbnailUrl",
+      "description": "The thumbnail URL of the item.",
+      "args": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "MediaUrlOptionsInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "url",
+      "description": "Gets the item URL.",
+      "args": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "ItemUrlOptionsInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "version",
+      "description": "The version of the item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Int",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "versionName",
+      "description": "The version name of the item",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "versions",
+      "description": "Provides access to the different versions of the item.",
+      "args": [
+        {
+          "name": "allLanguages",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "Item"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "workflow",
+      "description": "Provides access to the different versions of the item.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemWorkflow",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

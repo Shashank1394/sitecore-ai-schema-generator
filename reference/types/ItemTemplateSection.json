@@ -1,0 +1,80 @@
+{
+  "name": "ItemTemplateSection",
+  "kind": "OBJECT",
+  "description": "Represents the section of the data template in Sitecore.",
+  "fields": [
+    {
+      "name": "icon",
+      "description": "The icon of the template section.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "itemTemplateSectionId",
+      "description": "The globally-unique identifier of the template section.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "key",
+      "description": "The key of the template section.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name of the template section.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "sortOrder",
+      "description": "The sort order.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

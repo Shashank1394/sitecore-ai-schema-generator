@@ -1,0 +1,25 @@
+{
+  "name": "SetPosPayload",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "result",
+      "description": null,
+      "type": {
+        "display": "[SetPosResult]",
+        "namedTypes": [
+          "SetPosResult"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

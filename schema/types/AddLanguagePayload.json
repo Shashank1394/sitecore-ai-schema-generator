@@ -1,0 +1,22 @@
+{
+  "name": "AddLanguagePayload",
+  "kind": "OBJECT",
+  "description": "The result of the add operation for the language.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The status of the add operation.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

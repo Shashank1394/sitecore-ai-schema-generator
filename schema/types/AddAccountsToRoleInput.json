@@ -1,0 +1,51 @@
+{
+  "name": "AddAccountsToRoleInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for adding security accounts to the current parent security role.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "roleName",
+      "description": "The name of the parent role.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "roles",
+      "description": "The names of the roles to add.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "users",
+      "description": "The names of the users to add.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

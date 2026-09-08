@@ -1,0 +1,54 @@
+{
+  "name": "SearchCriteriaType",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "EXACT",
+      "description": null
+    },
+    {
+      "name": "STARTSWITH",
+      "description": null
+    },
+    {
+      "name": "CONTAINS",
+      "description": null
+    },
+    {
+      "name": "ENDSWITH",
+      "description": null
+    },
+    {
+      "name": "WILDCARD",
+      "description": null
+    },
+    {
+      "name": "SEARCH",
+      "description": null
+    },
+    {
+      "name": "RANGE",
+      "description": null
+    },
+    {
+      "name": "FUZZY",
+      "description": null
+    },
+    {
+      "name": "PROXIMITY",
+      "description": null
+    },
+    {
+      "name": "REGEXP",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

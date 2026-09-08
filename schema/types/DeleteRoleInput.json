@@ -1,0 +1,25 @@
+{
+  "name": "DeleteRoleInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting a security role.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "roleName",
+      "description": "The name of the role to delete.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

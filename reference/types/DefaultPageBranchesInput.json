@@ -1,0 +1,34 @@
+{
+  "name": "DefaultPageBranchesInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents default page branches input parameters",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "Current site name",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

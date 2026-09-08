@@ -1,0 +1,25 @@
+{
+  "name": "Database",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "name",
+      "description": "The database name.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

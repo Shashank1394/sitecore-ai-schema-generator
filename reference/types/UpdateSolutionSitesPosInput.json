@@ -1,0 +1,32 @@
+{
+  "name": "UpdateSolutionSitesPosInput",
+  "kind": "INPUT_OBJECT",
+  "description": null,
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "posMappingsInput",
+      "description": "Point of sale mappings input",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

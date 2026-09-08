@@ -1,0 +1,34 @@
+{
+  "name": "RemoveSiteCollectionInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to remove a site collection",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "id",
+      "description": "ID of the site collection to remove",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

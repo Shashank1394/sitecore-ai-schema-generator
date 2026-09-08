@@ -1,0 +1,25 @@
+{
+  "name": "PublishingItemInfo",
+  "kind": "OBJECT",
+  "description": "Represents the publishing item information.",
+  "fields": [
+    {
+      "name": "restrictions",
+      "description": "The list of the item publishing restrictions.",
+      "type": {
+        "display": "[PublishingItemRestriction]",
+        "namedTypes": [
+          "PublishingItemRestriction"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

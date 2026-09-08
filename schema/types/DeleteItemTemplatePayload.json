@@ -1,0 +1,22 @@
+{
+  "name": "DeleteItemTemplatePayload",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The delete template operation status.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

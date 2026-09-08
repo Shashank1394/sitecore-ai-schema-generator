@@ -1,0 +1,152 @@
+{
+  "operation": "job",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "Get a specific job by job name or job handle.",
+  "arguments": {
+    "input": {
+      "type": "JobQueryInput!",
+      "description": null
+    }
+  },
+  "returnType": "Job",
+  "inputTypes": {
+    "JobQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents a job query.",
+      "fields": {
+        "handle": {
+          "type": "String",
+          "description": "The job handle. If both job handle and job name parameters are specified, the job name parameter is ignored."
+        },
+        "jobName": {
+          "type": "String",
+          "description": "The job name. If both job handle and job name parameters are specified, the job name parameter is ignored."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "displayName": {
+      "type": "String",
+      "description": "The job display name.",
+      "arguments": {}
+    },
+    "done": {
+      "type": "Boolean!",
+      "description": "Indicate whether the job is finished.",
+      "arguments": {}
+    },
+    "handle": {
+      "type": "String!",
+      "description": "The job handle.",
+      "arguments": {}
+    },
+    "metadata": {
+      "type": "[KeyValuePair]",
+      "description": "The job metadata.",
+      "arguments": {}
+    },
+    "name": {
+      "type": "String",
+      "description": "The job name.",
+      "arguments": {}
+    },
+    "options": {
+      "type": "JobOptions",
+      "description": "The job options.",
+      "arguments": {}
+    },
+    "queueTime": {
+      "type": "DateTime!",
+      "description": "The job queue time.",
+      "arguments": {}
+    },
+    "status": {
+      "type": "JobStatus",
+      "description": "The job status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Job",
+      "namedTypes": [
+        "Job"
+      ]
+    },
+    "nodes": {
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

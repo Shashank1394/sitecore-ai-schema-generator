@@ -1,0 +1,645 @@
+{
+  "name": "RenderingItemType",
+  "kind": "OBJECT",
+  "description": "Represents a rendering GraphQL type",
+  "fields": [
+    {
+      "name": "access",
+      "description": "The access rights for the current user or for the given user",
+      "type": {
+        "display": "ItemAccess",
+        "namedTypes": [
+          "ItemAccess"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "username",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "ancestors",
+      "description": "The ancestors of the item.",
+      "type": {
+        "display": "[Item!]!",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "children",
+      "description": "Provides access to the item children.",
+      "type": {
+        "display": "ItemConnection",
+        "namedTypes": [
+          "ItemConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "excludeTemplateIDs",
+          "description": null,
+          "type": {
+            "display": "[ID]",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "hasVersionInLanguages",
+          "description": null,
+          "type": {
+            "display": "[ID]",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        },
+        {
+          "name": "includeHiddenItems",
+          "description": null,
+          "type": {
+            "display": "Boolean",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        },
+        {
+          "name": "includeTemplateIDs",
+          "description": null,
+          "type": {
+            "display": "[ID]",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "requirePresentation",
+          "description": null,
+          "type": {
+            "display": "Boolean",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "database",
+      "description": "The name of the database where the item is located.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "datasourceTemplate",
+      "description": "Provides access to the datasource template for this rendering",
+      "type": {
+        "display": "ItemTemplate",
+        "namedTypes": [
+          "ItemTemplate"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayName",
+      "description": "The localized item name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "field",
+      "description": "Access field by field name.",
+      "type": {
+        "display": "ItemField",
+        "namedTypes": [
+          "ItemField"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "name",
+          "description": "The field name.",
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "fields",
+      "description": "Provides access to the fields of the item.",
+      "type": {
+        "display": "ItemFieldConnection",
+        "namedTypes": [
+          "ItemFieldConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "excludeStandardFields",
+          "description": null,
+          "type": {
+            "display": "Boolean!",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "ownFields",
+          "description": null,
+          "type": {
+            "display": "Boolean!",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        },
+        {
+          "name": "withLanguageFallback",
+          "description": null,
+          "type": {
+            "display": "Boolean!",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "hasChildren",
+      "description": "Indicates whether the item has sub-items or not. excludeTemplateIDs overwrites includeTemplateIDs if both are present.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "excludeTemplateIDs",
+          "description": null,
+          "type": {
+            "display": "[ID]",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        },
+        {
+          "name": "hasVersionInLanguages",
+          "description": null,
+          "type": {
+            "display": "[ID]",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        },
+        {
+          "name": "includeHiddenItems",
+          "description": null,
+          "type": {
+            "display": "Boolean",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        },
+        {
+          "name": "includeTemplateIDs",
+          "description": null,
+          "type": {
+            "display": "[ID]",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        },
+        {
+          "name": "requirePresentation",
+          "description": null,
+          "type": {
+            "display": "Boolean",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "hasPresentation",
+      "description": "Indicates whether the item has a presentation.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "icon",
+      "description": "The URI of the item icon.",
+      "type": {
+        "display": "Url",
+        "namedTypes": [
+          "Url"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "size",
+          "description": null,
+          "type": {
+            "display": "IconSize",
+            "namedTypes": [
+              "IconSize"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "insertOptions",
+      "description": "The insert options of the item.",
+      "type": {
+        "display": "[ItemTemplate!]!",
+        "namedTypes": [
+          "ItemTemplate"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "isFallback",
+      "description": "Indicates whether this item instance was resolved using language or version fallback instead of having its own value.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "itemId",
+      "description": "The globally-unique identifier for the item.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "itemUri",
+      "description": "The URI of the item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "type": {
+        "display": "Language!",
+        "namedTypes": [
+          "Language"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "lock",
+      "description": "The lock information of the item.",
+      "type": {
+        "display": "ItemLock",
+        "namedTypes": [
+          "ItemLock"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "username",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "name",
+      "description": "A short description of the item. The name is not localized.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "parent",
+      "description": "Provides access to the parent for this item. Returns a null value for the root item.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "path",
+      "description": "The full item path from the root.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "publish",
+      "description": "Publishing information of the item.",
+      "type": {
+        "display": "ItemPublish!",
+        "namedTypes": [
+          "ItemPublish"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "renderingParametersTemplate",
+      "description": "Provides access to the rendering parameters template for this rendering",
+      "type": {
+        "display": "ItemTemplate",
+        "namedTypes": [
+          "ItemTemplate"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "renderingVariants",
+      "description": "Provides access to the rendering variants for this rendering",
+      "type": {
+        "display": "[Item]",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "template",
+      "description": "Provides access to the template for this item.",
+      "type": {
+        "display": "ItemTemplate!",
+        "namedTypes": [
+          "ItemTemplate"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "thumbnailUrl",
+      "description": "The thumbnail URL of the item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "display": "MediaUrlOptionsInput",
+            "namedTypes": [
+              "MediaUrlOptionsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "url",
+      "description": "Gets the item URL.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "display": "ItemUrlOptionsInput",
+            "namedTypes": [
+              "ItemUrlOptionsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "version",
+      "description": "The version of the item.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "versionName",
+      "description": "The version name of the item",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "versions",
+      "description": "Provides access to the different versions of the item.",
+      "type": {
+        "display": "[Item!]!",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "allLanguages",
+          "description": null,
+          "type": {
+            "display": "Boolean!",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "workflow",
+      "description": "Provides access to the different versions of the item.",
+      "type": {
+        "display": "ItemWorkflow",
+        "namedTypes": [
+          "ItemWorkflow"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

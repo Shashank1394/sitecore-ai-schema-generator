@@ -1,0 +1,36 @@
+{
+  "name": "PartialDesignType",
+  "kind": "OBJECT",
+  "description": "Represents a partial design type",
+  "fields": [
+    {
+      "name": "partialDesign",
+      "description": "The partial design item",
+      "type": {
+        "display": "Item!",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "siteName",
+      "description": "Site name",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

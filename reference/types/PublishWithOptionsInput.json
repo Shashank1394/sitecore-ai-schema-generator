@@ -1,0 +1,22 @@
+{
+  "name": "PublishWithOptionsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for publishing with options.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "options",
+      "description": "The publishing options.",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

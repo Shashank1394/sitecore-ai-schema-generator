@@ -1,0 +1,56 @@
+{
+  "name": "ItemLock",
+  "kind": "OBJECT",
+  "description": "Represents the item locking information.",
+  "fields": [
+    {
+      "name": "isLocked",
+      "description": "The item is locked.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "lockedBy",
+      "description": "The user who locks the item.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "user",
+      "description": "Get user info of the item lock.",
+      "args": [
+        {
+          "name": "username",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemLockForUser",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

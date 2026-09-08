@@ -1,0 +1,184 @@
+{
+  "operation": "currentUser",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {},
+  "returnType": "User",
+  "inputTypes": {},
+  "returnFields": {
+    "accountType": {
+      "type": "AccountType!",
+      "description": "The type of the account.",
+      "arguments": {}
+    },
+    "description": {
+      "type": "String",
+      "description": "The description.",
+      "arguments": {}
+    },
+    "displayName": {
+      "type": "String",
+      "description": "The display name.",
+      "arguments": {}
+    },
+    "domain": {
+      "type": "Domain",
+      "description": "The domain associated with the user.",
+      "arguments": {}
+    },
+    "isAdministrator": {
+      "type": "Boolean!",
+      "description": "The flag indicating if this user is an administrator.",
+      "arguments": {}
+    },
+    "isAuthenticated": {
+      "type": "Boolean!",
+      "description": "The flag indicating if this user has been authenticated.",
+      "arguments": {}
+    },
+    "localName": {
+      "type": "String!",
+      "description": "The local name of the user.",
+      "arguments": {}
+    },
+    "name": {
+      "type": "String!",
+      "description": "The name of the user.",
+      "arguments": {}
+    },
+    "profile": {
+      "type": "UserProfile",
+      "description": "The user profile.",
+      "arguments": {}
+    },
+    "roles": {
+      "type": "[Role]",
+      "description": "The expanded list of roles.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "User",
+      "namedTypes": [
+        "User"
+      ]
+    },
+    "nodes": {
+      "User": {
+        "kind": "OBJECT",
+        "file": "types/User.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Boolean",
+          "UserProfile",
+          "Role"
+        ]
+      },
+      "AccountType": {
+        "kind": "ENUM",
+        "file": "types/AccountType.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Domain": {
+        "kind": "OBJECT",
+        "file": "types/Domain.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "UserProfile": {
+        "kind": "OBJECT",
+        "file": "types/UserProfile.json",
+        "references": [
+          "String",
+          "DateTime",
+          "KeyValuePair",
+          "Boolean"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "Role": {
+        "kind": "OBJECT",
+        "file": "types/Role.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Boolean",
+          "AccountConnection"
+        ]
+      },
+      "AccountConnection": {
+        "kind": "OBJECT",
+        "file": "types/AccountConnection.json",
+        "references": [
+          "AccountEdge",
+          "Account",
+          "PageInfo"
+        ]
+      },
+      "AccountEdge": {
+        "kind": "OBJECT",
+        "file": "types/AccountEdge.json",
+        "references": [
+          "String",
+          "Account"
+        ]
+      },
+      "Account": {
+        "kind": "INTERFACE",
+        "file": "types/Account.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Role",
+          "User"
+        ]
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

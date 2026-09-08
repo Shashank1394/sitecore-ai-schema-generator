@@ -1,0 +1,146 @@
+{
+  "name": "ArchivedItem",
+  "kind": "OBJECT",
+  "description": "Represents archive entry",
+  "fields": [
+    {
+      "name": "archivalId",
+      "description": "The globally-unique identifier of the entry.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "archivedBy",
+      "description": "The name of the user who archived the entry.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "archivedDate",
+      "description": "The archival date in UTC format.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "database",
+      "description": "The name of the database.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "itemId",
+      "description": "The item ID.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "name",
+      "description": "The item name.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "originalLocation",
+      "description": "The name of the database.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "parentId",
+      "description": "The item parent ID.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "versions",
+      "description": null,
+      "type": {
+        "display": "[ArchivedItemVersion]",
+        "namedTypes": [
+          "ArchivedItemVersion"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

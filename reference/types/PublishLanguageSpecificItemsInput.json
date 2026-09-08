@@ -1,0 +1,82 @@
+{
+  "name": "PublishLanguageSpecificItemsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for publishing an item.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "displayName",
+      "description": "The display name of the publish request.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "itemsToPublish",
+      "description": "The IDs of the root items. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "display": "[ItemToPublishInput]",
+        "namedTypes": [
+          "ItemToPublishInput"
+        ]
+      }
+    },
+    {
+      "name": "publishItemMode",
+      "description": "The publish item mode.",
+      "type": {
+        "display": "PublishItemMode!",
+        "namedTypes": [
+          "PublishItemMode"
+        ]
+      }
+    },
+    {
+      "name": "publishRelatedItems",
+      "description": "Indicates whether to publish related items.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "publishSubItems",
+      "description": "Indicates whether to publish sub-items.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "sourceDatabase",
+      "description": "The source database name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "targetDatabases",
+      "description": "The target databases name.",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

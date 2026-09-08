@@ -1,0 +1,86 @@
+{
+  "name": "Language",
+  "kind": "OBJECT",
+  "description": "Represents a content language used in Sitecore.",
+  "fields": [
+    {
+      "name": "charset",
+      "description": "The charset of the language.",
+      "args": [
+        {
+          "name": "database",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "displayName",
+      "description": "A human readable name of the language.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "englishName",
+      "description": "Gets the culture name in the format languagefull [country/regionfull] in English.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "iso",
+      "description": "The Two Letter ISO code of the language.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "The culture name in the languagecode2-country/regioncode2 format.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "nativeName",
+      "description": "The culture name, consisting of the language, the country/region, and the optional script, that the culture is set to display.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

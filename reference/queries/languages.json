@@ -1,0 +1,102 @@
+{
+  "operation": "languages",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "Get all the languages in the specified database for the current user.",
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "databaseName": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "LanguageConnection",
+  "inputTypes": {},
+  "returnFields": {
+    "edges": {
+      "type": "[LanguageEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[Language]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "LanguageConnection",
+      "namedTypes": [
+        "LanguageConnection"
+      ]
+    },
+    "nodes": {
+      "LanguageConnection": {
+        "kind": "OBJECT",
+        "file": "types/LanguageConnection.json",
+        "references": [
+          "LanguageEdge",
+          "Language",
+          "PageInfo"
+        ]
+      },
+      "LanguageEdge": {
+        "kind": "OBJECT",
+        "file": "types/LanguageEdge.json",
+        "references": [
+          "String",
+          "Language"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Language": {
+        "kind": "OBJECT",
+        "file": "types/Language.json",
+        "references": [
+          "String"
+        ]
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

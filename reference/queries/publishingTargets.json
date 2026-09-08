@@ -1,0 +1,41 @@
+{
+  "operation": "publishingTargets",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {},
+  "returnType": "[PublishingTarget]",
+  "inputTypes": {},
+  "returnFields": {},
+  "outputDependencyGraph": {
+    "root": {
+      "display": "[PublishingTarget]",
+      "namedTypes": [
+        "PublishingTarget"
+      ]
+    },
+    "nodes": {
+      "PublishingTarget": {
+        "kind": "OBJECT",
+        "file": "types/PublishingTarget.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

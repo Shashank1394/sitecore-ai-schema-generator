@@ -1,0 +1,64 @@
+{
+  "name": "ArchiveVersionInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for archiving a version.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "archiveName",
+      "description": "The name of the archive. The default value is 'archive'.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The ID of the item to archive. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "itemPath",
+      "description": "The full path of the item to archive. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language of the version to archive.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "version",
+      "description": "The version number to archive. If not present, the latest version will be used.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

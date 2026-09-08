@@ -1,0 +1,44 @@
+{
+  "name": "GetRenderingsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input parameters for geting site renderings",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "renderingId",
+      "description": "Unique identifier of the rendering.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "siteRootItemId",
+      "description": "Unique identifier of the site root item.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

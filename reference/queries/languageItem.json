@@ -1,0 +1,607 @@
+{
+  "operation": "languageItem",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "Gets the specified language item.",
+  "arguments": {
+    "databaseName": {
+      "type": "String",
+      "description": null
+    },
+    "name": {
+      "type": "String!",
+      "description": null
+    }
+  },
+  "returnType": "Item",
+  "inputTypes": {},
+  "returnFields": {
+    "access": {
+      "type": "ItemAccess",
+      "description": "The access rights for the current user or for the given user",
+      "arguments": {
+        "username": "String"
+      }
+    },
+    "ancestors": {
+      "type": "[Item!]!",
+      "description": "The ancestors of the item.",
+      "arguments": {}
+    },
+    "children": {
+      "type": "ItemConnection",
+      "description": "Provides access to the item children.",
+      "arguments": {
+        "after": "String",
+        "before": "String",
+        "excludeTemplateIDs": "[ID]",
+        "first": "PaginationAmount",
+        "hasVersionInLanguages": "[ID]",
+        "includeHiddenItems": "Boolean",
+        "includeTemplateIDs": "[ID]",
+        "last": "PaginationAmount",
+        "requirePresentation": "Boolean"
+      }
+    },
+    "database": {
+      "type": "String!",
+      "description": "The name of the database where the item is located.",
+      "arguments": {}
+    },
+    "displayName": {
+      "type": "String",
+      "description": "The localized item name.",
+      "arguments": {}
+    },
+    "field": {
+      "type": "ItemField",
+      "description": "Access field by field name.",
+      "arguments": {
+        "name": "String!"
+      }
+    },
+    "fields": {
+      "type": "ItemFieldConnection",
+      "description": "Provides access to the fields of the item.",
+      "arguments": {
+        "after": "String",
+        "before": "String",
+        "excludeStandardFields": "Boolean!",
+        "first": "PaginationAmount",
+        "last": "PaginationAmount",
+        "ownFields": "Boolean!",
+        "withLanguageFallback": "Boolean!"
+      }
+    },
+    "hasChildren": {
+      "type": "Boolean!",
+      "description": "Indicates whether the item has sub-items or not. excludeTemplateIDs overwrites includeTemplateIDs if both are present.",
+      "arguments": {
+        "excludeTemplateIDs": "[ID]",
+        "hasVersionInLanguages": "[ID]",
+        "includeHiddenItems": "Boolean",
+        "includeTemplateIDs": "[ID]",
+        "requirePresentation": "Boolean"
+      }
+    },
+    "hasPresentation": {
+      "type": "Boolean!",
+      "description": "Indicates whether the item has a presentation.",
+      "arguments": {}
+    },
+    "icon": {
+      "type": "Url",
+      "description": "The URI of the item icon.",
+      "arguments": {
+        "size": "IconSize"
+      }
+    },
+    "insertOptions": {
+      "type": "[ItemTemplate!]!",
+      "description": "The insert options of the item.",
+      "arguments": {}
+    },
+    "isFallback": {
+      "type": "Boolean!",
+      "description": "Indicates whether this item instance was resolved using language or version fallback instead of having its own value.",
+      "arguments": {}
+    },
+    "itemId": {
+      "type": "ID!",
+      "description": "The globally-unique identifier for the item.",
+      "arguments": {
+        "format": "IdFormat"
+      }
+    },
+    "itemUri": {
+      "type": "String!",
+      "description": "The URI of the item.",
+      "arguments": {}
+    },
+    "language": {
+      "type": "Language!",
+      "description": "The item language.",
+      "arguments": {}
+    },
+    "lock": {
+      "type": "ItemLock",
+      "description": "The lock information of the item.",
+      "arguments": {
+        "username": "String"
+      }
+    },
+    "name": {
+      "type": "String!",
+      "description": "A short description of the item. The name is not localized.",
+      "arguments": {}
+    },
+    "parent": {
+      "type": "Item",
+      "description": "Provides access to the parent for this item. Returns a null value for the root item.",
+      "arguments": {}
+    },
+    "path": {
+      "type": "String!",
+      "description": "The full item path from the root.",
+      "arguments": {}
+    },
+    "publish": {
+      "type": "ItemPublish!",
+      "description": "Publishing information of the item.",
+      "arguments": {}
+    },
+    "template": {
+      "type": "ItemTemplate!",
+      "description": "Provides access to the template for this item.",
+      "arguments": {}
+    },
+    "thumbnailUrl": {
+      "type": "String",
+      "description": "The thumbnail URL of the item.",
+      "arguments": {
+        "options": "MediaUrlOptionsInput"
+      }
+    },
+    "url": {
+      "type": "String!",
+      "description": "Gets the item URL.",
+      "arguments": {
+        "options": "ItemUrlOptionsInput"
+      }
+    },
+    "version": {
+      "type": "Int!",
+      "description": "The version of the item.",
+      "arguments": {}
+    },
+    "versionName": {
+      "type": "String",
+      "description": "The version name of the item",
+      "arguments": {}
+    },
+    "versions": {
+      "type": "[Item!]!",
+      "description": "Provides access to the different versions of the item.",
+      "arguments": {
+        "allLanguages": "Boolean!"
+      }
+    },
+    "workflow": {
+      "type": "ItemWorkflow",
+      "description": "Provides access to the different versions of the item.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Item",
+      "namedTypes": [
+        "Item"
+      ]
+    },
+    "nodes": {
+      "Item": {
+        "kind": "OBJECT",
+        "file": "types/Item.json",
+        "references": [
+          "ItemAccess",
+          "Item",
+          "ItemConnection",
+          "String",
+          "ItemField",
+          "ItemFieldConnection",
+          "Boolean",
+          "Url",
+          "ItemTemplate",
+          "ID",
+          "Language",
+          "ItemLock",
+          "ItemPublish",
+          "Int",
+          "ItemWorkflow"
+        ]
+      },
+      "ItemAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "ItemConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemConnection.json",
+        "references": [
+          "ItemEdge",
+          "Item",
+          "PageInfo"
+        ]
+      },
+      "ItemEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemEdge.json",
+        "references": [
+          "String",
+          "Item"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "ItemField": {
+        "kind": "OBJECT",
+        "file": "types/ItemField.json",
+        "references": [
+          "ItemFieldAccess",
+          "Boolean",
+          "ID",
+          "String",
+          "ItemTemplateField",
+          "ItemFieldValidation"
+        ]
+      },
+      "ItemFieldAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "ItemTemplateField": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateField.json",
+        "references": [
+          "Boolean",
+          "ItemTemplateFieldSource",
+          "String",
+          "ItemTemplateSection",
+          "Int",
+          "ID",
+          "FieldVersioning"
+        ]
+      },
+      "ItemTemplateFieldSource": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldSource.json",
+        "references": [
+          "ItemConnection",
+          "ItemTemplateFieldResolvedSource",
+          "String"
+        ]
+      },
+      "ItemTemplateFieldResolvedSource": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldResolvedSource.json",
+        "references": [
+          "ItemConnection",
+          "String",
+          "Int"
+        ]
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      },
+      "ItemTemplateSection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSection.json",
+        "references": [
+          "String",
+          "ID",
+          "Int"
+        ]
+      },
+      "FieldVersioning": {
+        "kind": "ENUM",
+        "file": "types/FieldVersioning.json",
+        "references": []
+      },
+      "ItemFieldValidation": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidation.json",
+        "references": [
+          "String",
+          "ItemFieldValidationResultConnection"
+        ]
+      },
+      "ItemFieldValidationResultConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResultConnection.json",
+        "references": [
+          "ItemFieldValidationResultEdge",
+          "ItemFieldValidationResult",
+          "PageInfo"
+        ]
+      },
+      "ItemFieldValidationResultEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResultEdge.json",
+        "references": [
+          "String",
+          "ItemFieldValidationResult"
+        ]
+      },
+      "ItemFieldValidationResult": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResult.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "ItemFieldConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldConnection.json",
+        "references": [
+          "ItemFieldEdge",
+          "ItemField",
+          "PageInfo"
+        ]
+      },
+      "ItemFieldEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldEdge.json",
+        "references": [
+          "String",
+          "ItemField"
+        ]
+      },
+      "Url": {
+        "kind": "SCALAR",
+        "file": "types/Url.json",
+        "references": []
+      },
+      "ItemTemplate": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplate.json",
+        "references": [
+          "ItemTemplateAccess",
+          "ItemTemplateConnection",
+          "ItemTemplateFieldConnection",
+          "String",
+          "Boolean",
+          "ItemTemplateSectionConnection",
+          "Item",
+          "ID"
+        ]
+      },
+      "ItemTemplateAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ItemTemplateConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateConnection.json",
+        "references": [
+          "ItemTemplateEdge",
+          "ItemTemplate",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateEdge.json",
+        "references": [
+          "String",
+          "ItemTemplate"
+        ]
+      },
+      "ItemTemplateFieldConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldConnection.json",
+        "references": [
+          "ItemTemplateFieldEdge",
+          "ItemTemplateField",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateFieldEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldEdge.json",
+        "references": [
+          "String",
+          "ItemTemplateField"
+        ]
+      },
+      "ItemTemplateSectionConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSectionConnection.json",
+        "references": [
+          "ItemTemplateSectionEdge",
+          "ItemTemplateSection",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateSectionEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSectionEdge.json",
+        "references": [
+          "String",
+          "ItemTemplateSection"
+        ]
+      },
+      "Language": {
+        "kind": "OBJECT",
+        "file": "types/Language.json",
+        "references": [
+          "String"
+        ]
+      },
+      "ItemLock": {
+        "kind": "OBJECT",
+        "file": "types/ItemLock.json",
+        "references": [
+          "Boolean",
+          "String",
+          "ItemLockForUser"
+        ]
+      },
+      "ItemLockForUser": {
+        "kind": "OBJECT",
+        "file": "types/ItemLockForUser.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ItemPublish": {
+        "kind": "OBJECT",
+        "file": "types/ItemPublish.json",
+        "references": [
+          "Boolean",
+          "DateTime"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "ItemWorkflow": {
+        "kind": "OBJECT",
+        "file": "types/ItemWorkflow.json",
+        "references": [
+          "Boolean",
+          "Workflow",
+          "WorkflowState"
+        ]
+      },
+      "Workflow": {
+        "kind": "OBJECT",
+        "file": "types/Workflow.json",
+        "references": [
+          "WorkflowCommandConnection",
+          "String",
+          "WorkflowEventConnection",
+          "WorkflowState",
+          "Boolean",
+          "ItemConnection",
+          "Int",
+          "WorkflowStateConnection"
+        ]
+      },
+      "WorkflowCommandConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommandConnection.json",
+        "references": [
+          "WorkflowCommandEdge",
+          "WorkflowCommand",
+          "PageInfo"
+        ]
+      },
+      "WorkflowCommandEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommandEdge.json",
+        "references": [
+          "String",
+          "WorkflowCommand"
+        ]
+      },
+      "WorkflowCommand": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommand.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "WorkflowEventConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEventConnection.json",
+        "references": [
+          "WorkflowEventEdge",
+          "WorkflowEvent",
+          "PageInfo"
+        ]
+      },
+      "WorkflowEventEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEventEdge.json",
+        "references": [
+          "String",
+          "WorkflowEvent"
+        ]
+      },
+      "WorkflowEvent": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEvent.json",
+        "references": [
+          "String",
+          "DateTime",
+          "WorkflowState"
+        ]
+      },
+      "WorkflowState": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowState.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "WorkflowStateConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowStateConnection.json",
+        "references": [
+          "WorkflowStateEdge",
+          "WorkflowState",
+          "PageInfo"
+        ]
+      },
+      "WorkflowStateEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowStateEdge.json",
+        "references": [
+          "String",
+          "WorkflowState"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

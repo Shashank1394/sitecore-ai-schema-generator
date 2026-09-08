@@ -1,0 +1,131 @@
+{
+  "operation": "ruleTemplate",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "query": {
+      "type": "TemplateFieldRuleQueryInput!",
+      "description": null
+    }
+  },
+  "returnType": "TemplateFieldRule",
+  "inputTypes": {
+    "TemplateFieldRuleQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the template item query.",
+      "fields": {
+        "ruleFieldId": {
+          "type": "String!",
+          "description": "The field ID."
+        },
+        "template": {
+          "type": "ItemTemplateQueryInput!",
+          "description": "The template item with the rule field."
+        }
+      }
+    },
+    "ItemTemplateQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents a query against item templates.",
+      "fields": {
+        "contextItemId": {
+          "type": "ID",
+          "description": "The ID of the context item. If provided the template query will try to lookup field sources."
+        },
+        "database": {
+          "type": "String",
+          "description": "The name of the item database."
+        },
+        "path": {
+          "type": "String",
+          "description": "The path of the item template."
+        },
+        "templateId": {
+          "type": "ID",
+          "description": "The ID of the item template. If both ID and path parameters are specified, the path parameter is ignored."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "hideActions": {
+      "type": "Boolean",
+      "description": "Indicates whether to hide actions.",
+      "arguments": {}
+    },
+    "rule": {
+      "type": "Rule",
+      "description": "The rule.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "TemplateFieldRule",
+      "namedTypes": [
+        "TemplateFieldRule"
+      ]
+    },
+    "nodes": {
+      "TemplateFieldRule": {
+        "kind": "OBJECT",
+        "file": "types/TemplateFieldRule.json",
+        "references": [
+          "Boolean",
+          "Rule"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "Rule": {
+        "kind": "OBJECT",
+        "file": "types/Rule.json",
+        "references": [
+          "RuleDefinitionGroup"
+        ]
+      },
+      "RuleDefinitionGroup": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinitionGroup.json",
+        "references": [
+          "ID",
+          "String",
+          "RuleDefinition"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "RuleDefinition": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinition.json",
+        "references": [
+          "ID",
+          "String",
+          "RuleDefinitionOperation"
+        ]
+      },
+      "RuleDefinitionOperation": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinitionOperation.json",
+        "references": [
+          "String"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

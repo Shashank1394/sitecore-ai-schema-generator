@@ -1,0 +1,192 @@
+{
+  "name": "MediaUrlOptionsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents media URL options.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "absolutePath",
+      "description": "Controls whether to render media links as absolute.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "allowStretch",
+      "description": "Controls whether to allow image stretch.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "alwaysAppendRevision",
+      "description": "Controls whether to include the media item revision.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "alwaysIncludeServerUrl",
+      "description": "Controls whether to include the server address (host).",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "Sets the database.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "disableMediaCache",
+      "description": "Controls whether to disable using media cache.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "height",
+      "description": "Sets height for images.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "ignoreAspectRatio",
+      "description": "Controls whether to respect the aspect ratio when resizing.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "includeExtension",
+      "description": "Controls whether to include the media extension.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "Sets media language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "lowercaseUrls",
+      "description": "Controls the letter case for the generated URL.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "maxHeight",
+      "description": "Sets max height for images.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "maxWidth",
+      "description": "Sets max width for images.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "mediaLinkServerUrl",
+      "description": "Sets Server url that will be used for media links. Used only when AlwaysIncludeServerUrl is set to true.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "requestExtension",
+      "description": "Sets media extension.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "scale",
+      "description": "Sets scale for images.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Float",
+        "ofType": null
+      }
+    },
+    {
+      "name": "thumbnail",
+      "description": "Controls whether to generate a thumbnail.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "useItemPath",
+      "description": "Controls whether to include item path.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "version",
+      "description": "Sets media version.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "width",
+      "description": "Sets width for images.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

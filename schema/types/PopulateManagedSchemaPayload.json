@@ -1,0 +1,26 @@
+{
+  "name": "PopulateManagedSchemaPayload",
+  "kind": "OBJECT",
+  "description": "The result of the schema population operation.",
+  "fields": [
+    {
+      "name": "jobs",
+      "description": "The references to all schema population jobs.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Job",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

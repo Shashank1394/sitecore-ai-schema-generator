@@ -1,0 +1,25 @@
+{
+  "name": "DeleteItemVersionPayload",
+  "kind": "OBJECT",
+  "description": "The result of the delete item version operation.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The item in the latest version.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

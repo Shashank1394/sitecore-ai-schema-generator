@@ -1,0 +1,74 @@
+{
+  "name": "SearchCriteriaInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents a criterion in the search statement",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "boost",
+      "description": "The boost value.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Float",
+        "ofType": null
+      }
+    },
+    {
+      "name": "criteriaType",
+      "description": "The criterion type. The default value is EXACT.",
+      "type": {
+        "kind": "ENUM",
+        "name": "SearchCriteriaType",
+        "ofType": null
+      }
+    },
+    {
+      "name": "field",
+      "description": "The field name.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "operator",
+      "description": "The search operator. The default value is SHOULD.",
+      "type": {
+        "kind": "ENUM",
+        "name": "SearchOperator",
+        "ofType": null
+      }
+    },
+    {
+      "name": "parameters",
+      "description": "The additional parameters. The field is needed for certain types of criteria.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "value",
+      "description": "The field value.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

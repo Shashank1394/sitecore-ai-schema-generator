@@ -1,0 +1,24 @@
+{
+  "name": "DefaultInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents default input parameters",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

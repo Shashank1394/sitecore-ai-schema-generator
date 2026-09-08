@@ -1,0 +1,58 @@
+{
+  "name": "ItemFieldValidationResult",
+  "kind": "OBJECT",
+  "description": "Represents the field validation results.",
+  "fields": [
+    {
+      "name": "message",
+      "description": "The validation result message for the field.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "result",
+      "description": "The validation result.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "valid",
+      "description": "The status of the validator.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "validator",
+      "description": "The validator name.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Decimal",
+  "kind": "SCALAR",
+  "description": "The built-in `Decimal` scalar type.",
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

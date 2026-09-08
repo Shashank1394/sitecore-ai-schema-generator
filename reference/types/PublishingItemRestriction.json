@@ -1,0 +1,47 @@
+{
+  "name": "PublishingItemRestriction",
+  "kind": "OBJECT",
+  "description": "Represents the publishing item restriction.",
+  "fields": [
+    {
+      "name": "details",
+      "description": "The restriction details.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "locale",
+      "description": "The item locale.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "version",
+      "description": "The item version.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

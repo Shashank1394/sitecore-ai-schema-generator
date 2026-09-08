@@ -1,0 +1,98 @@
+{
+  "operation": "databases",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "DatabaseConnection",
+  "inputTypes": {},
+  "returnFields": {
+    "edges": {
+      "type": "[DatabaseEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[Database]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DatabaseConnection",
+      "namedTypes": [
+        "DatabaseConnection"
+      ]
+    },
+    "nodes": {
+      "DatabaseConnection": {
+        "kind": "OBJECT",
+        "file": "types/DatabaseConnection.json",
+        "references": [
+          "DatabaseEdge",
+          "Database",
+          "PageInfo"
+        ]
+      },
+      "DatabaseEdge": {
+        "kind": "OBJECT",
+        "file": "types/DatabaseEdge.json",
+        "references": [
+          "String",
+          "Database"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Database": {
+        "kind": "OBJECT",
+        "file": "types/Database.json",
+        "references": [
+          "String"
+        ]
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

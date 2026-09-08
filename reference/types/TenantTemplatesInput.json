@@ -1,0 +1,44 @@
+{
+  "name": "TenantTemplatesInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents tenant templates query input parameters",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "hasPageDesign",
+      "description": "Context database",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "Current site name",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

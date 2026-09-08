@@ -1,0 +1,36 @@
+{
+  "name": "PublishingQueueEntryResult",
+  "kind": "OBJECT",
+  "description": "Represents a publishing queue entries result.",
+  "fields": [
+    {
+      "name": "results",
+      "description": "The list of the publishing queue entries.",
+      "type": {
+        "display": "[PublishingQueueEntry!]!",
+        "namedTypes": [
+          "PublishingQueueEntry"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "totalCount",
+      "description": "The total number of publishing queue entries.",
+      "type": {
+        "display": "Long!",
+        "namedTypes": [
+          "Long"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

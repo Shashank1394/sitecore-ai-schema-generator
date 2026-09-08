@@ -1,0 +1,38 @@
+{
+  "name": "SearchFacetMetricInput",
+  "kind": "INPUT_OBJECT",
+  "description": "The field for ordering the search results.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "function",
+      "description": "The facet metric function.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "key",
+      "description": "The facet metric key.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

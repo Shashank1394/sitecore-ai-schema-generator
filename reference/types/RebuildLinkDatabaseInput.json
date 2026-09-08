@@ -1,0 +1,22 @@
+{
+  "name": "RebuildLinkDatabaseInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for rebuilding database links.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "databaseNames",
+      "description": "The names of the database databases targetted by the link rebuilding operation.",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "name": "SolutionTemplateType",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "builtInTemplate",
+      "description": "Indicates whether the template is a built-in template",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "contents",
+      "description": "Contains information what's in the template",
+      "type": {
+        "display": "[KeyValuePair!]!",
+        "namedTypes": [
+          "KeyValuePair"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "createdBy",
+      "description": "Template creator",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "description",
+      "description": "Description of the site template",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "enabled",
+      "description": "Indicates whether the template is enabled",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "id",
+      "description": "A globally-unique identifier for site template",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "imageBase64",
+      "description": "The image for the template encoded to base64",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "Name of the site template",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "siteCollection",
+      "description": "Site collection",
+      "type": {
+        "display": "SiteCollectionType",
+        "namedTypes": [
+          "SiteCollectionType"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "thumbnailUrl",
+      "description": "The URL of the thumbnail for the site template",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "display": "MediaUrlOptionsInput",
+            "namedTypes": [
+              "MediaUrlOptionsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "updated",
+      "description": "Date when the template was updated",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "name": "JobStatus",
+  "kind": "OBJECT",
+  "description": "Represents a job status.",
+  "fields": [
+    {
+      "name": "exceptions",
+      "description": "The exceptions occurred during job execution.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "expiry",
+      "description": "The expiry date and time of the job.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "DateTime",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "jobState",
+      "description": "The state of the job.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "JobState",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "messages",
+      "description": "The messages provided from the job execution.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "processed",
+      "description": "The count of how many entities have been processed.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Long",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "total",
+      "description": "The total.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Long",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,46 @@
+{
+  "operation": "meta",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "API meta",
+  "arguments": {},
+  "returnType": "ApiMeta!",
+  "inputTypes": {},
+  "returnFields": {
+    "version": {
+      "type": "String!",
+      "description": "API version.",
+      "arguments": {}
+    },
+    "xMVersion": {
+      "type": "String!",
+      "description": "XM version.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ApiMeta!",
+      "namedTypes": [
+        "ApiMeta"
+      ]
+    },
+    "nodes": {
+      "ApiMeta": {
+        "kind": "OBJECT",
+        "file": "types/ApiMeta.json",
+        "references": [
+          "String"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

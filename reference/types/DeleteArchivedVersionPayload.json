@@ -1,0 +1,25 @@
+{
+  "name": "DeleteArchivedVersionPayload",
+  "kind": "OBJECT",
+  "description": "The result of deleting an archived version.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": null,
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

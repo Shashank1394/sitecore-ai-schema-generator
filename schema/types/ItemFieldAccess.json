@@ -1,0 +1,40 @@
+{
+  "name": "ItemFieldAccess",
+  "kind": "OBJECT",
+  "description": "Represents the field access rights for the current user.",
+  "fields": [
+    {
+      "name": "canRead",
+      "description": "The user can read the item field.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "canWrite",
+      "description": "The user can write the item field.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

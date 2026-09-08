@@ -1,0 +1,36 @@
+{
+  "name": "TenantTemplateType",
+  "kind": "OBJECT",
+  "description": "Represents a tenant template type",
+  "fields": [
+    {
+      "name": "pageDesign",
+      "description": "The page design item",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "template",
+      "description": "Provides access to the tenant template.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "ItemTemplate",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

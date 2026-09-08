@@ -1,0 +1,34 @@
+{
+  "name": "WorkflowStateOrItemQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the workflow state query. You must provide the StateId or the Item. If both are specified the StateId will be used and Item will be ignored",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "item",
+      "description": "When provided, the workflow state of this item will be used in the query.",
+      "type": {
+        "display": "ItemQueryInput",
+        "namedTypes": [
+          "ItemQueryInput"
+        ]
+      }
+    },
+    {
+      "name": "stateId",
+      "description": "The Id of workflow state item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

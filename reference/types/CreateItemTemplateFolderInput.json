@@ -1,0 +1,54 @@
+{
+  "name": "CreateItemTemplateFolderInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating an item template folder.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language of the item template folder.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the item template folder.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "parent",
+      "description": "The unique ID of the item where the new item template folder will be created.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,1350 @@
+{
+  "queryType": {
+    "name": "Query"
+  },
+  "mutationType": {
+    "name": "Mutation"
+  },
+  "types": [
+    {
+      "name": "__Directive",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "__DirectiveLocation",
+      "kind": "ENUM"
+    },
+    {
+      "name": "__EnumValue",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "__Field",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "__InputValue",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "__Schema",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "__Type",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "__TypeKind",
+      "kind": "ENUM"
+    },
+    {
+      "name": "String",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "Boolean",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "Int",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "MultiplierPath",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "Query",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Mutation",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "MediaAvailabilityStatus",
+      "kind": "ENUM"
+    },
+    {
+      "name": "ItemTemplate",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PaginationAmount",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "ItemTemplateConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemFieldValidationResultConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Language",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SupportedLanguage",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "LanguageConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SupportedLanguageConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Domain",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DomainConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Role",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RoleConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "User",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UserProfileSelector",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UserConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UserProfileSelectorConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Index",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "IndexConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Database",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DatabaseConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Job",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "JobConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Workflow",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SolutionSiteWithRootType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SiteCollectionType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SolutionSiteWithRootTypeConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SiteCollectionTypeConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ChannelType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ChannelTypeConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemTemplateSection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemTemplateField",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ID",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "ItemTemplateSectionConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemTemplateFieldConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PageInfo",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemTemplateEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemFieldValidationResultEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ChannelTypeEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "LanguageEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SupportedLanguageEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DomainEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Account",
+      "kind": "INTERFACE"
+    },
+    {
+      "name": "AccountConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RoleEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UserEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UserProfileSelectorEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "IndexEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DatabaseEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "JobEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowCommand",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowEvent",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Item",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowState",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowCommandConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowEventConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowStateConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SolutionSiteWithRootTypeEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SiteCollectionTypeEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowStateEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemTemplateSectionEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemTemplateFieldEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "AccountEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemField",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemFieldConnection",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowCommandEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowEventEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemFieldEdge",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ApiMeta",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "WorkflowStateOrItemQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ItemQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "MediaItem",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "MediaItemQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ItemTemplateQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "Site",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SearchResult",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SearchQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "JobQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "Rule",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RulesQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RuleItemQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "TemplateFieldRuleQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RuleSet",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "TemplateFieldRule",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RuleSetRule",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PublishingTarget",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PublishingQueueEntriesQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishingStatus",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PublishingQueueEntryResult",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ArchivedItem",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ArchiveItemQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "WorkflowIdOrItemQueryInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RenderingItemType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "GetRenderingsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DataSourceTemplatesType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DefaultInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SolutionTemplateType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DefaultSolutionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SolutionSitesInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SolutionSitesSearchInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SolutionSiteType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "GetChannelsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "GetChannelInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PageBranchesRootItemType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DefaultPageBranchesInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PartialDesignsRootType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DefaultPresentationInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "TenantTemplatesInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PageDesignsRootType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PageDesignType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PartialDesignType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "TenantTemplateType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "UpdateItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RenameItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "MoveItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "AddItemVersionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteItemVersionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CopyItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UpdateItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RenameItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "MoveItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "AddItemVersionPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DeleteItemVersionPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CopyItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UploadMediaPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UploadMediaInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SetMediaAvailabilityInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteItemTemplatePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DeleteItemTemplateInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "UpdateItemTemplateInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CreateItemTemplateInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CreateItemTemplateFolderInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "UpdateItemTemplatePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateItemTemplatePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "AddLanguagePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "AddLanguageInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteLanguageInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteLanguagesInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteLanguagePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DeleteLanguagesPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateDomainPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateDomainInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteDomainInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteDomainPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateRolePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateRoleInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteRoleInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "AddRoleToRolesInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteRoleFromRolesInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "AddAccountsToRoleInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteAccountsFromRoleInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteRolePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "AddRoleToRolesPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DeleteRoleFromRolesPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "AddAccountsToRolePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DeleteAccountsFromRolePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateUserPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateUserInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "UpdateUserInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteUserInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "UnlockUserInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "EnableUserInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DisableUserInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ResetUserSettingsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ChangeUserPasswordInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "UpdateUserPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DeleteUserPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "UnlockUserPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "EnableUserPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DisableUserPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ResetUserSettingsPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ChangeUserPasswordPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RebuildIndexesPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RebuildIndexesInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PopulateManagedSchemaInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PopulateManagedSchemaPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RebuildLinkDatabasePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RebuildLinkDatabaseInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CleanUpDatabasesInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CleanUpDatabasesPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CancelPublishingPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PublishSiteInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishLanguageSpecificItemsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishWithOptionsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishSitePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PublishItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PublishWithOptionsPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ArchiveItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ArchiveItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ArchiveVersionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SetItemArchiveDateInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SetVersionArchiveDateInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RestoreArchivedItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RestoreArchivedVersionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteArchivedItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DeleteArchivedVersionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "EmptyArchiveInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ArchiveVersionPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SetItemArchiveDatePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SetVersionArchiveDatePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RestoreArchivedItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RestoreArchivedVersionPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DeleteArchivedItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DeleteArchivedVersionPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "EmptyArchivePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "StartWorkflowPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "StartWorkflowInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ExecuteWorkflowCommandInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ExecuteWorkflowCommandPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateSolutionSitePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateSolutionSiteInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CreateSiteCollectionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RemoveSiteCollectionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RenameSiteCollectionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CreateSiteInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "UpdateSolutionSitesPosInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RemoveSiteInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RenameSiteInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CloneSiteInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "TranslateSiteInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "TranslatePageInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "TranslateItemInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "CreateSiteCollectionPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RemoveSiteCollectionPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RenameSiteCollectionPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateSitePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SetPosPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RemoveSitePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RenameSitePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CloneSitePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "TranslateSitePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "TranslatePagePayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "TranslateItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateItemFromBranchPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "CreateItemFromBranchInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "StartCopyItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "StartDeleteItemPayload",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ConfigurePageDesignsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "IdFormat",
+      "kind": "ENUM"
+    },
+    {
+      "name": "ItemTemplateAccess",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "AccountType",
+      "kind": "ENUM"
+    },
+    {
+      "name": "UserProfile",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "DateTime",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "Long",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "KeyValuePair",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "JobOptions",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "JobStatus",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemAccess",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemTemplateFieldSource",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "FieldVersioning",
+      "kind": "ENUM"
+    },
+    {
+      "name": "ItemUrlOptionsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "MediaUrlOptionsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "IconSize",
+      "kind": "ENUM"
+    },
+    {
+      "name": "Url",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "ItemLock",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemWorkflow",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemPublish",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemFieldAccess",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemFieldValidation",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Any",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "ItemFieldValidationResult",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SearchResultItem",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SearchResultFacetCategory",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "KeyValuePairOfStringAndDecimal",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SearchStatementInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SearchPagingInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SearchFacetMetricInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SearchSortInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "RuleDefinitionGroup",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RuleSetRuleAction",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RuleSetRuleCondition",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PagingInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SortByInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "DateFilterInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ItemsFilterInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishingOperationState",
+      "kind": "ENUM"
+    },
+    {
+      "name": "PublishingQueueEntry",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ArchivedItemVersion",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RenderingHostType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PointOfSaleMappingType",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "KeyValuePairOfStringAndString",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Uuid",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "FieldValueInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "ItemTemplateSectionInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishSiteMode",
+      "kind": "ENUM"
+    },
+    {
+      "name": "PublishItemMode",
+      "kind": "ENUM"
+    },
+    {
+      "name": "ItemToPublishInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishingOptionsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PointOfSaleMappingInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SitePosMappingsInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SetPosResult",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PageDesignsMappingInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "JobState",
+      "kind": "ENUM"
+    },
+    {
+      "name": "ItemTemplateFieldResolvedSource",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Float",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "ItemLockForUser",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "SearchResultFacet",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "Decimal",
+      "kind": "SCALAR"
+    },
+    {
+      "name": "SearchCriteriaInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SearchOperator",
+      "kind": "ENUM"
+    },
+    {
+      "name": "SortDirection",
+      "kind": "ENUM"
+    },
+    {
+      "name": "RuleDefinition",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RuleSetDefinition",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemToFilterInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "PublishingQueueItem",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PublishingItemInfo",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "ItemTemplateFieldInput",
+      "kind": "INPUT_OBJECT"
+    },
+    {
+      "name": "SearchCriteriaType",
+      "kind": "ENUM"
+    },
+    {
+      "name": "RuleDefinitionOperation",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RuleSetTextPart",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "PublishingItemRestriction",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "RuleSetTextPartType",
+      "kind": "ENUM"
+    }
+  ]
+}

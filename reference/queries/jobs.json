@@ -1,0 +1,168 @@
+{
+  "operation": "jobs",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "Get all jobs if no input is specified. The jobName parameter accepts StartWith/EndWith/Wrapped in (*).",
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "input": {
+      "type": "JobQueryInput",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "JobConnection",
+  "inputTypes": {
+    "JobQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents a job query.",
+      "fields": {
+        "handle": {
+          "type": "String",
+          "description": "The job handle. If both job handle and job name parameters are specified, the job name parameter is ignored."
+        },
+        "jobName": {
+          "type": "String",
+          "description": "The job name. If both job handle and job name parameters are specified, the job name parameter is ignored."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "edges": {
+      "type": "[JobEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[Job]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "JobConnection",
+      "namedTypes": [
+        "JobConnection"
+      ]
+    },
+    "nodes": {
+      "JobConnection": {
+        "kind": "OBJECT",
+        "file": "types/JobConnection.json",
+        "references": [
+          "JobEdge",
+          "Job",
+          "PageInfo"
+        ]
+      },
+      "JobEdge": {
+        "kind": "OBJECT",
+        "file": "types/JobEdge.json",
+        "references": [
+          "String",
+          "Job"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

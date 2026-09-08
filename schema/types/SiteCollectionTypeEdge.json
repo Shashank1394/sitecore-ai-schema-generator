@@ -1,0 +1,36 @@
+{
+  "name": "SiteCollectionTypeEdge",
+  "kind": "OBJECT",
+  "description": "An edge in a connection.",
+  "fields": [
+    {
+      "name": "cursor",
+      "description": "A cursor for use in pagination.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "node",
+      "description": "The item at the end of the edge.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SiteCollectionType",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DeleteItemVersionPayload",
+  "kind": "OBJECT",
+  "description": "The result of the delete item version operation.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The item in the latest version.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

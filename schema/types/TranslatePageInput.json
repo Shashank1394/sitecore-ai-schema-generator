@@ -1,0 +1,87 @@
+{
+  "name": "TranslatePageInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to translate a page",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "brandKitId",
+      "description": "Brand kit identifier",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "pageId",
+      "description": "Page ID",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "resetWorkflow",
+      "description": "Ensure that translated versions are created in the initial workflow state",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "sourceLanguage",
+      "description": "Source language",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "targetLanguage",
+      "description": "Target language",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "translateIfTargetVersionExists",
+      "description": "Skip item if target language version already exists",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

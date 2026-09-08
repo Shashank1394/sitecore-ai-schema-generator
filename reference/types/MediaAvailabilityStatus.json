@@ -1,0 +1,30 @@
+{
+  "name": "MediaAvailabilityStatus",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "AVAILABLE",
+      "description": null
+    },
+    {
+      "name": "UNAVAILABLE",
+      "description": null
+    },
+    {
+      "name": "NOTFOUND",
+      "description": null
+    },
+    {
+      "name": "UNDEFINED",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

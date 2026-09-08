@@ -1,0 +1,84 @@
+{
+  "name": "ItemTemplateSection",
+  "kind": "OBJECT",
+  "description": "Represents the section of the data template in Sitecore.",
+  "fields": [
+    {
+      "name": "icon",
+      "description": "The icon of the template section.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemTemplateSectionId",
+      "description": "The globally-unique identifier of the template section.",
+      "args": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "kind": "ENUM",
+            "name": "IdFormat",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "key",
+      "description": "The key of the template section.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the template section.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "sortOrder",
+      "description": "The sort order.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

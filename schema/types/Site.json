@@ -1,0 +1,356 @@
+{
+  "name": "Site",
+  "kind": "OBJECT",
+  "description": "Represents a site configured within Sitecore.",
+  "fields": [
+    {
+      "name": "backend",
+      "description": "Indicates whether this instance is a backend site.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "browserTitle",
+      "description": "The browser title.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "cacheMedia",
+      "description": "The flag indicating whether to use media cache. ",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "contentDatabase",
+      "description": "The content database.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Database",
+        "ofType": null
+      }
+    },
+    {
+      "name": "contentLanguage",
+      "description": "The content language.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Language",
+        "ofType": null
+      }
+    },
+    {
+      "name": "contentStartItem",
+      "description": "The content start item.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "contentStartPath",
+      "description": "The content start path.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "The database.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Database",
+        "ofType": null
+      }
+    },
+    {
+      "name": "defaultDevice",
+      "description": "The default device.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "device",
+      "description": "The device.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "dictionaryDomain",
+      "description": "The dictionary domain.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "disableFiltering",
+      "description": "Indicates whether the SiteContext disables the filtering.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "disableWebEditEditing",
+      "description": "Indicates whether the WebEdit mode is editable.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "disableXmlControls",
+      "description": "Indicates whether XML controls are disabled for this site.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "displayDate",
+      "description": "The display date.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "DateTime",
+        "ofType": null
+      }
+    },
+    {
+      "name": "displayMode",
+      "description": "The display mode.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "domain",
+      "description": "The domain.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "enableDebugger",
+      "description": "Indicates whether the SiteContext enables the debugger.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "enablePreview",
+      "description": "Indicates whether the SiteContext enables previewing.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "enableWebEdit",
+      "description": "Indicates whether the SiteContext enables web editing.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "enableWorkflow",
+      "description": "Indicates whether the SiteContext enables workflow.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "filterItems",
+      "description": "Indicates whether the SiteContext filters the items.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "hostName",
+      "description": "The host name.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "loginPage",
+      "description": "The login page.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the site.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "previewUnpublishableItems",
+      "description": "Indicates whether to allow previewing items that cannot be published yet.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "properties",
+      "description": "The properties.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "KeyValuePair",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "requireLogin",
+      "description": "Indicates whether the SiteContext requires login.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rootItem",
+      "description": "The root item.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rootPath",
+      "description": "The root path.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "startItem",
+      "description": "The start item.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "startPath",
+      "description": "The start path.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "targetHostName",
+      "description": "The name of the target host.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

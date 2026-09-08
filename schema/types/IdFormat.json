@@ -1,0 +1,28 @@
+{
+  "name": "IdFormat",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "N",
+      "description": null
+    },
+    {
+      "name": "D",
+      "description": null
+    },
+    {
+      "name": "B",
+      "description": null
+    },
+    {
+      "name": "P",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Boolean",
+  "kind": "SCALAR",
+  "description": "The `Boolean` scalar type represents `true` or `false`.",
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

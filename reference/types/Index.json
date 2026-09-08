@@ -1,0 +1,102 @@
+{
+  "name": "Index",
+  "kind": "OBJECT",
+  "description": "Represents the content search index.",
+  "fields": [
+    {
+      "name": "documentsCount",
+      "description": "The number of documents in the index.",
+      "type": {
+        "display": "Long",
+        "namedTypes": [
+          "Long"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "hasDeletions",
+      "description": "Indicates if any document has been deleted.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "lastRebuildDuration",
+      "description": "The time duration for the last index rebuild.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "lastUpdated",
+      "description": "The last time the index has been updated.",
+      "type": {
+        "display": "DateTime",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The search index name.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "numberOfFields",
+      "description": "The number of fields in the index.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "numberOfTerms",
+      "description": "The number of terms in the index.",
+      "type": {
+        "display": "Long",
+        "namedTypes": [
+          "Long"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "outOfDate",
+      "description": "Indicates if there are out of date indexes.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

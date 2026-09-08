@@ -1,0 +1,93 @@
+{
+  "name": "Account",
+  "kind": "INTERFACE",
+  "description": "Represents a security account.",
+  "fields": [
+    {
+      "name": "accountType",
+      "description": "The type of the account.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "AccountType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "description",
+      "description": "The description.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "displayName",
+      "description": "The display name.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "domain",
+      "description": "The domain owning the account.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Domain",
+        "ofType": null
+      }
+    },
+    {
+      "name": "localName",
+      "description": "The local name of the account.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the account.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": [
+    {
+      "name": "Role",
+      "kind": "OBJECT"
+    },
+    {
+      "name": "User",
+      "kind": "OBJECT"
+    }
+  ],
+  "enumValues": null,
+  "ofType": null
+}

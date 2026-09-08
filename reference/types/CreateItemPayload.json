@@ -1,0 +1,25 @@
+{
+  "name": "CreateItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the create operation for the item.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The created item.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

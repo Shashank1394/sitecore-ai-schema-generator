@@ -1,0 +1,32 @@
+{
+  "name": "PointOfSaleMappingType",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "language",
+      "description": "Language of the Point of sale",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "Name of the Point of sale",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

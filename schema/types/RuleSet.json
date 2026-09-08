@@ -1,0 +1,33 @@
+{
+  "name": "RuleSet",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset entity.",
+  "fields": [
+    {
+      "name": "rules",
+      "description": "The rules.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "RuleSetRule"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

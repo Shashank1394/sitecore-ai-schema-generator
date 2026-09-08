@@ -1,0 +1,22 @@
+{
+  "name": "CopyItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the copy operation of the item.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The copied item.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

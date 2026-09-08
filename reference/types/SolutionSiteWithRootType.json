@@ -1,0 +1,36 @@
+{
+  "name": "SolutionSiteWithRootType",
+  "kind": "OBJECT",
+  "description": "Represents a solution site",
+  "fields": [
+    {
+      "name": "siteRoot",
+      "description": null,
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "sites",
+      "description": null,
+      "type": {
+        "display": "[SolutionSiteType]",
+        "namedTypes": [
+          "SolutionSiteType"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

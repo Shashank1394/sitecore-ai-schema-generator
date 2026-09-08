@@ -1,0 +1,80 @@
+{
+  "name": "ArchivedItemVersion",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "archivalDate",
+      "description": "The archival date in UTC format.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "archivedBy",
+      "description": "The user name who archived this version.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "version",
+      "description": "The item version number.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "versionId",
+      "description": "The globally-unique identifier of the version.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

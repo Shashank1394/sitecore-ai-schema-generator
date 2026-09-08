@@ -1,0 +1,26 @@
+{
+  "name": "StartWorkflowPayload",
+  "kind": "OBJECT",
+  "description": "Represents the payload for starting a workflow.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The operation status.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,44 @@
+{
+  "name": "ExecuteWorkflowCommandInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for executing a workflow command.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "commandId",
+      "description": "The ID of the workflow command.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "comments",
+      "description": "The workflow comments.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "item",
+      "description": "The target item of the workflow command.",
+      "type": {
+        "display": "ItemQueryInput!",
+        "namedTypes": [
+          "ItemQueryInput"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

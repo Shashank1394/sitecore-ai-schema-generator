@@ -1,0 +1,76 @@
+{
+  "operation": "archivedItems",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "archiveName": {
+      "type": "String",
+      "description": null
+    },
+    "pageIndex": {
+      "type": "Int",
+      "description": null
+    },
+    "pageSize": {
+      "type": "Int",
+      "description": null
+    }
+  },
+  "returnType": "[ArchivedItem]",
+  "inputTypes": {},
+  "returnFields": {},
+  "outputDependencyGraph": {
+    "root": {
+      "display": "[ArchivedItem]",
+      "namedTypes": [
+        "ArchivedItem"
+      ]
+    },
+    "nodes": {
+      "ArchivedItem": {
+        "kind": "OBJECT",
+        "file": "types/ArchivedItem.json",
+        "references": [
+          "ID",
+          "String",
+          "DateTime",
+          "ArchivedItemVersion"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "ArchivedItemVersion": {
+        "kind": "OBJECT",
+        "file": "types/ArchivedItemVersion.json",
+        "references": [
+          "DateTime",
+          "String",
+          "Int",
+          "ID"
+        ]
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

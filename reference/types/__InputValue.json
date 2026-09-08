@@ -1,0 +1,58 @@
+{
+  "name": "__InputValue",
+  "kind": "OBJECT",
+  "description": "Arguments provided to Fields or Directives and the input fields of an InputObject are represented as Input Values which describe their type and optionally a default value.",
+  "fields": [
+    {
+      "name": "defaultValue",
+      "description": "A GraphQL-formatted string representing the default value for this input value.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "description",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": null,
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "type",
+      "description": null,
+      "type": {
+        "display": "__Type!",
+        "namedTypes": [
+          "__Type"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

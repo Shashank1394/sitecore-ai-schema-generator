@@ -1,0 +1,25 @@
+{
+  "name": "EnableUserPayload",
+  "kind": "OBJECT",
+  "description": "The result of the enable operation for the security user.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The operation status.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

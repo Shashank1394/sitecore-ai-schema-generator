@@ -1,0 +1,157 @@
+{
+  "name": "ItemField",
+  "kind": "OBJECT",
+  "description": "Represents an item field.",
+  "fields": [
+    {
+      "name": "access",
+      "description": "The item field access.",
+      "type": {
+        "display": "ItemFieldAccess!",
+        "namedTypes": [
+          "ItemFieldAccess"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "userName",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "containsFallbackValue",
+      "description": "Indicates if the field value is fallback value.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "containsInheritedValue",
+      "description": "Indicates if the field value is inherited value.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "containsStandardValue",
+      "description": "Indicates if the field value is standard value.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "fieldId",
+      "description": "The globally-unique identifier for the field.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "description": "The field label.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The field name.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "templateField",
+      "description": "The item template field.",
+      "type": {
+        "display": "ItemTemplateField!",
+        "namedTypes": [
+          "ItemTemplateField"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "validation",
+      "description": "The item field validation.",
+      "type": {
+        "display": "[ItemFieldValidation!]!",
+        "namedTypes": [
+          "ItemFieldValidation"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "modes",
+          "description": null,
+          "type": {
+            "display": "[String]",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "value",
+      "description": "The string value of the field.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

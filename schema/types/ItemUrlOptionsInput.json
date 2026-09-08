@@ -1,0 +1,48 @@
+{
+  "name": "ItemUrlOptionsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents an item query.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "alwaysIncludeServerUrl",
+      "description": "Indicates whether to include the server URL for an absolute URL path. Otherwise, a relative path will be generated.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "disableLanguageEmbedding",
+      "description": "Indicates whether to disable language embedding. To disable embedding the language in the URL path, set the value to true.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language to use in the generated URL.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "The site name to use for generating URL.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

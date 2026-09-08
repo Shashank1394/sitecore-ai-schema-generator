@@ -1,0 +1,36 @@
+{
+  "name": "PointOfSaleMappingType",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "language",
+      "description": "Language of the Point of sale",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "Name of the Point of sale",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

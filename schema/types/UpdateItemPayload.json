@@ -1,0 +1,22 @@
+{
+  "name": "UpdateItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the update operation for the item.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The updated item.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

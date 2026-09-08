@@ -1,0 +1,11 @@
+{
+  "name": "MultiplierPath",
+  "kind": "SCALAR",
+  "description": "The multiplier path scalar represents a valid GraphQL multiplier path string.",
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

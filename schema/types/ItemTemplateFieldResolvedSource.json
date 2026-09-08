@@ -1,0 +1,87 @@
+{
+  "name": "ItemTemplateFieldResolvedSource",
+  "kind": "OBJECT",
+  "description": "Represents the resolved source mapping for an item field source.",
+  "fields": [
+    {
+      "name": "items",
+      "description": "The resolved items for this source mapping.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "source",
+      "description": "The source value for this resolved mapping.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "sourceIndex",
+      "description": "The position of this source within the field source expression.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Int",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

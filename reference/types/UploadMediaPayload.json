@@ -1,0 +1,25 @@
+{
+  "name": "UploadMediaPayload",
+  "kind": "OBJECT",
+  "description": "Represents a media upload payload.",
+  "fields": [
+    {
+      "name": "presignedUploadUrl",
+      "description": "The absolute URI for the api to upload the media file.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

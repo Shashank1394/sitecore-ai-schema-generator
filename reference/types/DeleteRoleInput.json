@@ -1,0 +1,24 @@
+{
+  "name": "DeleteRoleInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting a security role.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "roleName",
+      "description": "The name of the role to delete.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

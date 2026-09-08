@@ -1,0 +1,94 @@
+{
+  "name": "CloneSiteInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to clone a site",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "cloneName",
+      "description": "Clone site name",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "cloneSiteDefinitions",
+      "description": "Clone site defitninions from source site or create new one",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "description",
+      "description": "Clone site description",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "displayName",
+      "description": "Clone site display name",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "posMappings",
+      "description": "Point of sale mappings",
+      "type": {
+        "display": "[PointOfSaleMappingInput]",
+        "namedTypes": [
+          "PointOfSaleMappingInput"
+        ]
+      }
+    },
+    {
+      "name": "siteId",
+      "description": "Site ID",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "Site name",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

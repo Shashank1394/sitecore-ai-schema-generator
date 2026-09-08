@@ -1,0 +1,24 @@
+{
+  "name": "SearchOperator",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "SHOULD",
+      "description": null
+    },
+    {
+      "name": "MUST",
+      "description": null
+    },
+    {
+      "name": "NOT",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

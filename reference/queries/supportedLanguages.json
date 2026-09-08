@@ -1,0 +1,98 @@
+{
+  "operation": "supportedLanguages",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "Gets all the languages that are supported by Sitecore.",
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "SupportedLanguageConnection",
+  "inputTypes": {},
+  "returnFields": {
+    "edges": {
+      "type": "[SupportedLanguageEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[SupportedLanguage]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "SupportedLanguageConnection",
+      "namedTypes": [
+        "SupportedLanguageConnection"
+      ]
+    },
+    "nodes": {
+      "SupportedLanguageConnection": {
+        "kind": "OBJECT",
+        "file": "types/SupportedLanguageConnection.json",
+        "references": [
+          "SupportedLanguageEdge",
+          "SupportedLanguage",
+          "PageInfo"
+        ]
+      },
+      "SupportedLanguageEdge": {
+        "kind": "OBJECT",
+        "file": "types/SupportedLanguageEdge.json",
+        "references": [
+          "String",
+          "SupportedLanguage"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "SupportedLanguage": {
+        "kind": "OBJECT",
+        "file": "types/SupportedLanguage.json",
+        "references": [
+          "String"
+        ]
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

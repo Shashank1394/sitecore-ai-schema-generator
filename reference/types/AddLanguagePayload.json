@@ -1,0 +1,25 @@
+{
+  "name": "AddLanguagePayload",
+  "kind": "OBJECT",
+  "description": "The result of the add operation for the language.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The status of the add operation.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

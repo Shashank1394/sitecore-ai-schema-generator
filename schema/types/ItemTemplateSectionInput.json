@@ -1,0 +1,61 @@
+{
+  "name": "ItemTemplateSectionInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating or updating a template section.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "fields",
+      "description": "The template fields of the template section. If field ID is provided, the field will be updated. Otherwise, new field will be created.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "ItemTemplateFieldInput",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "icon",
+      "description": "The icon of the template section.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the template section.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sortOrder",
+      "description": "The sort order of the template section.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "templateSectionId",
+      "description": "The unique ID of the template section. If the ID is empty, a new template section will be created. Otherwise, the template section will be updated.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,79 @@
+{
+  "name": "UploadMediaInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input needed for creating a pre-signed upload URL.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "alt",
+      "description": "The alternative text for the media item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "The database of the media item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "includeExtensionInItemName",
+      "description": "The indicator to include the file extension with the item name.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemPath",
+      "description": "The relative path, under sitecore media library, of the media item.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language of the media item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "overwriteExisting",
+      "description": "The indicator to overwrite the media item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "versioned",
+      "description": "The indicator to version the media item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

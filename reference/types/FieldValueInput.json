@@ -1,0 +1,44 @@
+{
+  "name": "FieldValueInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Item field data.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "name",
+      "description": "The field name.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "reset",
+      "description": "Indicates whether to reset the field value. The default value is false.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "value",
+      "description": "The field value. If the value is not specified or the Reset parameter is true, the field value is reset to the standard value.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

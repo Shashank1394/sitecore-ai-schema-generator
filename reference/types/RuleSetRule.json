@@ -1,0 +1,58 @@
+{
+  "name": "RuleSetRule",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset rule entity.",
+  "fields": [
+    {
+      "name": "actions",
+      "description": "The actions.",
+      "type": {
+        "display": "[RuleSetRuleAction!]!",
+        "namedTypes": [
+          "RuleSetRuleAction"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "conditions",
+      "description": "The conditions.",
+      "type": {
+        "display": "[RuleSetRuleCondition!]!",
+        "namedTypes": [
+          "RuleSetRuleCondition"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name of the rule.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "originalXml",
+      "description": "The original XML of the rule.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

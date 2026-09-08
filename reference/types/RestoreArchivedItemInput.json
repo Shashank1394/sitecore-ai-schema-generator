@@ -1,0 +1,34 @@
+{
+  "name": "RestoreArchivedItemInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for restoring an archived item.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "archivalId",
+      "description": "The item archival ID.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "archiveName",
+      "description": "The name of the archive. The default value is 'archive'.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

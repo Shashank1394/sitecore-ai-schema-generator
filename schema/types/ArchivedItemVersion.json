@@ -1,0 +1,84 @@
+{
+  "name": "ArchivedItemVersion",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "archivalDate",
+      "description": "The archival date in UTC format.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "DateTime",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "archivedBy",
+      "description": "The user name who archived this version.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "version",
+      "description": "The item version number.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "versionId",
+      "description": "The globally-unique identifier of the version.",
+      "args": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "kind": "ENUM",
+            "name": "IdFormat",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

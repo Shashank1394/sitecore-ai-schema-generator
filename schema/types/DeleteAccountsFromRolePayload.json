@@ -1,0 +1,22 @@
+{
+  "name": "DeleteAccountsFromRolePayload",
+  "kind": "OBJECT",
+  "description": "The result of deleting security accounts from the current parent security role.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The operation status",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

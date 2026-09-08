@@ -1,0 +1,83 @@
+{
+  "name": "Account",
+  "kind": "INTERFACE",
+  "description": "Represents a security account.",
+  "fields": [
+    {
+      "name": "accountType",
+      "description": "The type of the account.",
+      "type": {
+        "display": "AccountType!",
+        "namedTypes": [
+          "AccountType"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "description",
+      "description": "The description.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayName",
+      "description": "The display name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "domain",
+      "description": "The domain owning the account.",
+      "type": {
+        "display": "Domain",
+        "namedTypes": [
+          "Domain"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "localName",
+      "description": "The local name of the account.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name of the account.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [
+    "Role",
+    "User"
+  ],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

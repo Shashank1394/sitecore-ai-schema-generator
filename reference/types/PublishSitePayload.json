@@ -1,0 +1,25 @@
+{
+  "name": "PublishSitePayload",
+  "kind": "OBJECT",
+  "description": "The result of the publishing operation.",
+  "fields": [
+    {
+      "name": "operationId",
+      "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

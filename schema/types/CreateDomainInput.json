@@ -1,0 +1,34 @@
+{
+  "name": "CreateDomainInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating a security domain.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "domainName",
+      "description": "The name of the new domain.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "locallyManagedDomain",
+      "description": "The flag indicating whether the domain is managed locally.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

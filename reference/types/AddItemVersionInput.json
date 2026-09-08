@@ -1,0 +1,74 @@
+{
+  "name": "AddItemVersionInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for adding an item version.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The item ID. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "path",
+      "description": "The item path.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "version",
+      "description": "The item version to use as the base for creating a new version. Default is latest version.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    },
+    {
+      "name": "versionName",
+      "description": "The name of the item version.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

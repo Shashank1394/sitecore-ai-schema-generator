@@ -1,0 +1,636 @@
+{
+  "operation": "search",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "query": {
+      "type": "SearchQueryInput!",
+      "description": null
+    }
+  },
+  "returnType": "SearchResult!",
+  "inputTypes": {
+    "SearchQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input with search query and parameters.",
+      "fields": {
+        "facetMetrics": {
+          "type": "[SearchFacetMetricInput]",
+          "description": "The list of facets metrics."
+        },
+        "facetOnFields": {
+          "type": "[String]",
+          "description": "The list of fields for building facets."
+        },
+        "filterStatement": {
+          "type": "SearchStatementInput",
+          "description": "The filter statement."
+        },
+        "index": {
+          "type": "String",
+          "description": "The name of the index used for searching."
+        },
+        "language": {
+          "type": "String",
+          "description": "The flag controlling whether to search in a particular language."
+        },
+        "latestVersionOnly": {
+          "type": "Boolean",
+          "description": "The flag controlling whether to return all or only latest versions of items in the search result."
+        },
+        "paging": {
+          "type": "SearchPagingInput",
+          "description": "The paging parameters."
+        },
+        "searchStatement": {
+          "type": "SearchStatementInput",
+          "description": "The search statement."
+        },
+        "sort": {
+          "type": "[SearchSortInput]",
+          "description": "The list of fields for ordering the search results."
+        }
+      }
+    },
+    "SearchFacetMetricInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "The field for ordering the search results.",
+      "fields": {
+        "function": {
+          "type": "String!",
+          "description": "The facet metric function."
+        },
+        "key": {
+          "type": "String!",
+          "description": "The facet metric key."
+        }
+      }
+    },
+    "SearchStatementInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents a statement in the search query.",
+      "fields": {
+        "criteria": {
+          "type": "[SearchCriteriaInput]",
+          "description": "The criteria."
+        },
+        "operator": {
+          "type": "SearchOperator",
+          "description": "The search operator. The default value is SHOULD."
+        },
+        "subStatements": {
+          "type": "[SearchStatementInput]",
+          "description": "The sub-statements."
+        }
+      }
+    },
+    "SearchCriteriaInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents a criterion in the search statement",
+      "fields": {
+        "boost": {
+          "type": "Float",
+          "description": "The boost value."
+        },
+        "criteriaType": {
+          "type": "SearchCriteriaType",
+          "description": "The criterion type. The default value is EXACT."
+        },
+        "field": {
+          "type": "String!",
+          "description": "The field name."
+        },
+        "operator": {
+          "type": "SearchOperator",
+          "description": "The search operator. The default value is SHOULD."
+        },
+        "parameters": {
+          "type": "String",
+          "description": "The additional parameters. The field is needed for certain types of criteria."
+        },
+        "value": {
+          "type": "String!",
+          "description": "The field value."
+        }
+      }
+    },
+    "SearchPagingInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input with paging parameters.",
+      "fields": {
+        "pageIndex": {
+          "type": "Int",
+          "description": "The page index."
+        },
+        "pageSize": {
+          "type": "Int",
+          "description": "The page size."
+        },
+        "skip": {
+          "type": "Int",
+          "description": "The number of items to skip. If the 'pageIndex' is specified, this parameter is ignored."
+        }
+      }
+    },
+    "SearchSortInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "The field for ordering the search results.",
+      "fields": {
+        "direction": {
+          "type": "SortDirection",
+          "description": "The sort direction."
+        },
+        "field": {
+          "type": "String!",
+          "description": "The name of the field."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "facetMetrics": {
+      "type": "[KeyValuePairOfStringAndDecimal!]",
+      "description": "The facet metric result.",
+      "arguments": {}
+    },
+    "facets": {
+      "type": "[SearchResultFacetCategory]",
+      "description": "The facet result.",
+      "arguments": {}
+    },
+    "results": {
+      "type": "[SearchResultItem!]!",
+      "description": "The search result.",
+      "arguments": {}
+    },
+    "totalCount": {
+      "type": "Int!",
+      "description": "The number of items in the search result.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "SearchResult!",
+      "namedTypes": [
+        "SearchResult"
+      ]
+    },
+    "nodes": {
+      "SearchResult": {
+        "kind": "OBJECT",
+        "file": "types/SearchResult.json",
+        "references": [
+          "KeyValuePairOfStringAndDecimal",
+          "SearchResultFacetCategory",
+          "SearchResultItem",
+          "Int"
+        ]
+      },
+      "KeyValuePairOfStringAndDecimal": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePairOfStringAndDecimal.json",
+        "references": [
+          "String",
+          "Decimal"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Decimal": {
+        "kind": "SCALAR",
+        "file": "types/Decimal.json",
+        "references": []
+      },
+      "SearchResultFacetCategory": {
+        "kind": "OBJECT",
+        "file": "types/SearchResultFacetCategory.json",
+        "references": [
+          "SearchResultFacet",
+          "String"
+        ]
+      },
+      "SearchResultFacet": {
+        "kind": "OBJECT",
+        "file": "types/SearchResultFacet.json",
+        "references": [
+          "Int",
+          "String"
+        ]
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      },
+      "SearchResultItem": {
+        "kind": "OBJECT",
+        "file": "types/SearchResultItem.json",
+        "references": [
+          "String",
+          "DateTime",
+          "Item",
+          "ID",
+          "Language",
+          "Int"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "Item": {
+        "kind": "OBJECT",
+        "file": "types/Item.json",
+        "references": [
+          "ItemAccess",
+          "Item",
+          "ItemConnection",
+          "String",
+          "ItemField",
+          "ItemFieldConnection",
+          "Boolean",
+          "Url",
+          "ItemTemplate",
+          "ID",
+          "Language",
+          "ItemLock",
+          "ItemPublish",
+          "Int",
+          "ItemWorkflow"
+        ]
+      },
+      "ItemAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "ItemConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemConnection.json",
+        "references": [
+          "ItemEdge",
+          "Item",
+          "PageInfo"
+        ]
+      },
+      "ItemEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemEdge.json",
+        "references": [
+          "String",
+          "Item"
+        ]
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "ItemField": {
+        "kind": "OBJECT",
+        "file": "types/ItemField.json",
+        "references": [
+          "ItemFieldAccess",
+          "Boolean",
+          "ID",
+          "String",
+          "ItemTemplateField",
+          "ItemFieldValidation"
+        ]
+      },
+      "ItemFieldAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "ItemTemplateField": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateField.json",
+        "references": [
+          "Boolean",
+          "ItemTemplateFieldSource",
+          "String",
+          "ItemTemplateSection",
+          "Int",
+          "ID",
+          "FieldVersioning"
+        ]
+      },
+      "ItemTemplateFieldSource": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldSource.json",
+        "references": [
+          "ItemConnection",
+          "ItemTemplateFieldResolvedSource",
+          "String"
+        ]
+      },
+      "ItemTemplateFieldResolvedSource": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldResolvedSource.json",
+        "references": [
+          "ItemConnection",
+          "String",
+          "Int"
+        ]
+      },
+      "ItemTemplateSection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSection.json",
+        "references": [
+          "String",
+          "ID",
+          "Int"
+        ]
+      },
+      "FieldVersioning": {
+        "kind": "ENUM",
+        "file": "types/FieldVersioning.json",
+        "references": []
+      },
+      "ItemFieldValidation": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidation.json",
+        "references": [
+          "String",
+          "ItemFieldValidationResultConnection"
+        ]
+      },
+      "ItemFieldValidationResultConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResultConnection.json",
+        "references": [
+          "ItemFieldValidationResultEdge",
+          "ItemFieldValidationResult",
+          "PageInfo"
+        ]
+      },
+      "ItemFieldValidationResultEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResultEdge.json",
+        "references": [
+          "String",
+          "ItemFieldValidationResult"
+        ]
+      },
+      "ItemFieldValidationResult": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResult.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "ItemFieldConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldConnection.json",
+        "references": [
+          "ItemFieldEdge",
+          "ItemField",
+          "PageInfo"
+        ]
+      },
+      "ItemFieldEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldEdge.json",
+        "references": [
+          "String",
+          "ItemField"
+        ]
+      },
+      "Url": {
+        "kind": "SCALAR",
+        "file": "types/Url.json",
+        "references": []
+      },
+      "ItemTemplate": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplate.json",
+        "references": [
+          "ItemTemplateAccess",
+          "ItemTemplateConnection",
+          "ItemTemplateFieldConnection",
+          "String",
+          "Boolean",
+          "ItemTemplateSectionConnection",
+          "Item",
+          "ID"
+        ]
+      },
+      "ItemTemplateAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ItemTemplateConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateConnection.json",
+        "references": [
+          "ItemTemplateEdge",
+          "ItemTemplate",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateEdge.json",
+        "references": [
+          "String",
+          "ItemTemplate"
+        ]
+      },
+      "ItemTemplateFieldConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldConnection.json",
+        "references": [
+          "ItemTemplateFieldEdge",
+          "ItemTemplateField",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateFieldEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldEdge.json",
+        "references": [
+          "String",
+          "ItemTemplateField"
+        ]
+      },
+      "ItemTemplateSectionConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSectionConnection.json",
+        "references": [
+          "ItemTemplateSectionEdge",
+          "ItemTemplateSection",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateSectionEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSectionEdge.json",
+        "references": [
+          "String",
+          "ItemTemplateSection"
+        ]
+      },
+      "Language": {
+        "kind": "OBJECT",
+        "file": "types/Language.json",
+        "references": [
+          "String"
+        ]
+      },
+      "ItemLock": {
+        "kind": "OBJECT",
+        "file": "types/ItemLock.json",
+        "references": [
+          "Boolean",
+          "String",
+          "ItemLockForUser"
+        ]
+      },
+      "ItemLockForUser": {
+        "kind": "OBJECT",
+        "file": "types/ItemLockForUser.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ItemPublish": {
+        "kind": "OBJECT",
+        "file": "types/ItemPublish.json",
+        "references": [
+          "Boolean",
+          "DateTime"
+        ]
+      },
+      "ItemWorkflow": {
+        "kind": "OBJECT",
+        "file": "types/ItemWorkflow.json",
+        "references": [
+          "Boolean",
+          "Workflow",
+          "WorkflowState"
+        ]
+      },
+      "Workflow": {
+        "kind": "OBJECT",
+        "file": "types/Workflow.json",
+        "references": [
+          "WorkflowCommandConnection",
+          "String",
+          "WorkflowEventConnection",
+          "WorkflowState",
+          "Boolean",
+          "ItemConnection",
+          "Int",
+          "WorkflowStateConnection"
+        ]
+      },
+      "WorkflowCommandConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommandConnection.json",
+        "references": [
+          "WorkflowCommandEdge",
+          "WorkflowCommand",
+          "PageInfo"
+        ]
+      },
+      "WorkflowCommandEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommandEdge.json",
+        "references": [
+          "String",
+          "WorkflowCommand"
+        ]
+      },
+      "WorkflowCommand": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommand.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "WorkflowEventConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEventConnection.json",
+        "references": [
+          "WorkflowEventEdge",
+          "WorkflowEvent",
+          "PageInfo"
+        ]
+      },
+      "WorkflowEventEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEventEdge.json",
+        "references": [
+          "String",
+          "WorkflowEvent"
+        ]
+      },
+      "WorkflowEvent": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEvent.json",
+        "references": [
+          "String",
+          "DateTime",
+          "WorkflowState"
+        ]
+      },
+      "WorkflowState": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowState.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "WorkflowStateConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowStateConnection.json",
+        "references": [
+          "WorkflowStateEdge",
+          "WorkflowState",
+          "PageInfo"
+        ]
+      },
+      "WorkflowStateEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowStateEdge.json",
+        "references": [
+          "String",
+          "WorkflowState"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

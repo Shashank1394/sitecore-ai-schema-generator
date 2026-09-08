@@ -1,0 +1,53 @@
+{
+  "name": "RuleSetDefinition",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset.",
+  "fields": [
+    {
+      "name": "definition",
+      "description": "The rule definition.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RuleDefinition",
+        "ofType": null
+      }
+    },
+    {
+      "name": "text",
+      "description": "The rule definition text.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "textParts",
+      "description": "The rule definition text parts.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "RuleSetTextPart"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

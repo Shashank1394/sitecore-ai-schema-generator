@@ -1,0 +1,22 @@
+{
+  "name": "CleanUpDatabasesPayload",
+  "kind": "OBJECT",
+  "description": "The result of the database cleanup operation.",
+  "fields": [
+    {
+      "name": "job",
+      "description": "The reference of the cleanup job.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Job",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

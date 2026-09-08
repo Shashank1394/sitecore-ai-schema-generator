@@ -1,0 +1,13 @@
+{
+  "name": "Boolean",
+  "kind": "SCALAR",
+  "description": "The `Boolean` scalar type represents `true` or `false`.",
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

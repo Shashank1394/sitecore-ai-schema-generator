@@ -1,0 +1,30 @@
+{
+  "name": "RuleSetTextPartType",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "CLAUSE",
+      "description": null
+    },
+    {
+      "name": "VALUE",
+      "description": null
+    },
+    {
+      "name": "INVALIDVALUE",
+      "description": null
+    },
+    {
+      "name": "PLAINTEXT",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

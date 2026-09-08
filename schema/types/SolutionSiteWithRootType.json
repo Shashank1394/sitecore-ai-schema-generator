@@ -1,0 +1,36 @@
+{
+  "name": "SolutionSiteWithRootType",
+  "kind": "OBJECT",
+  "description": "Represents a solution site",
+  "fields": [
+    {
+      "name": "siteRoot",
+      "description": null,
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sites",
+      "description": null,
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "SolutionSiteType",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

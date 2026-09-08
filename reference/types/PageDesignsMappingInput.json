@@ -1,0 +1,34 @@
+{
+  "name": "PageDesignsMappingInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents mapping beetwean tempalte ID and page design ID",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "pageDesignId",
+      "description": "The ID of the page design",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "templateId",
+      "description": "The ID of the template",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

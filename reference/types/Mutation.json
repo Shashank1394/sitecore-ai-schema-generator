@@ -1,0 +1,1532 @@
+{
+  "name": "Mutation",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "addAccountsToRole",
+      "description": null,
+      "type": {
+        "display": "AddAccountsToRolePayload",
+        "namedTypes": [
+          "AddAccountsToRolePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "AddAccountsToRoleInput!",
+            "namedTypes": [
+              "AddAccountsToRoleInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "addItemVersion",
+      "description": null,
+      "type": {
+        "display": "AddItemVersionPayload",
+        "namedTypes": [
+          "AddItemVersionPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "AddItemVersionInput!",
+            "namedTypes": [
+              "AddItemVersionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "addLanguage",
+      "description": null,
+      "type": {
+        "display": "AddLanguagePayload!",
+        "namedTypes": [
+          "AddLanguagePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "AddLanguageInput!",
+            "namedTypes": [
+              "AddLanguageInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "addRoleToRoles",
+      "description": null,
+      "type": {
+        "display": "AddRoleToRolesPayload",
+        "namedTypes": [
+          "AddRoleToRolesPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "AddRoleToRolesInput!",
+            "namedTypes": [
+              "AddRoleToRolesInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "archiveItem",
+      "description": null,
+      "type": {
+        "display": "ArchiveItemPayload",
+        "namedTypes": [
+          "ArchiveItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "ArchiveItemInput!",
+            "namedTypes": [
+              "ArchiveItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "archiveVersion",
+      "description": null,
+      "type": {
+        "display": "ArchiveVersionPayload",
+        "namedTypes": [
+          "ArchiveVersionPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "ArchiveVersionInput!",
+            "namedTypes": [
+              "ArchiveVersionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "cancelPublishing",
+      "description": null,
+      "type": {
+        "display": "CancelPublishingPayload",
+        "namedTypes": [
+          "CancelPublishingPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "publishingOperationId",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "changeUserPassword",
+      "description": null,
+      "type": {
+        "display": "ChangeUserPasswordPayload",
+        "namedTypes": [
+          "ChangeUserPasswordPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "ChangeUserPasswordInput!",
+            "namedTypes": [
+              "ChangeUserPasswordInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "cleanUpDatabases",
+      "description": null,
+      "type": {
+        "display": "CleanUpDatabasesPayload",
+        "namedTypes": [
+          "CleanUpDatabasesPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CleanUpDatabasesInput!",
+            "namedTypes": [
+              "CleanUpDatabasesInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "cloneSite",
+      "description": null,
+      "type": {
+        "display": "CloneSitePayload",
+        "namedTypes": [
+          "CloneSitePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CloneSiteInput!",
+            "namedTypes": [
+              "CloneSiteInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "configurePageDesigns",
+      "description": null,
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "ConfigurePageDesignsInput!",
+            "namedTypes": [
+              "ConfigurePageDesignsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "copyItem",
+      "description": null,
+      "type": {
+        "display": "CopyItemPayload",
+        "namedTypes": [
+          "CopyItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CopyItemInput!",
+            "namedTypes": [
+              "CopyItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createDomain",
+      "description": null,
+      "type": {
+        "display": "CreateDomainPayload",
+        "namedTypes": [
+          "CreateDomainPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateDomainInput!",
+            "namedTypes": [
+              "CreateDomainInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createItem",
+      "description": null,
+      "type": {
+        "display": "CreateItemPayload",
+        "namedTypes": [
+          "CreateItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateItemInput!",
+            "namedTypes": [
+              "CreateItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createItemFromBranch",
+      "description": null,
+      "type": {
+        "display": "CreateItemFromBranchPayload",
+        "namedTypes": [
+          "CreateItemFromBranchPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateItemFromBranchInput!",
+            "namedTypes": [
+              "CreateItemFromBranchInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createItemTemplate",
+      "description": null,
+      "type": {
+        "display": "CreateItemTemplatePayload",
+        "namedTypes": [
+          "CreateItemTemplatePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateItemTemplateInput!",
+            "namedTypes": [
+              "CreateItemTemplateInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createItemTemplateFolder",
+      "description": null,
+      "type": {
+        "display": "CreateItemPayload",
+        "namedTypes": [
+          "CreateItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateItemTemplateFolderInput!",
+            "namedTypes": [
+              "CreateItemTemplateFolderInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createRole",
+      "description": null,
+      "type": {
+        "display": "CreateRolePayload",
+        "namedTypes": [
+          "CreateRolePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateRoleInput!",
+            "namedTypes": [
+              "CreateRoleInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createSite",
+      "description": null,
+      "type": {
+        "display": "CreateSitePayload",
+        "namedTypes": [
+          "CreateSitePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateSiteInput!",
+            "namedTypes": [
+              "CreateSiteInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createSiteCollection",
+      "description": null,
+      "type": {
+        "display": "CreateSiteCollectionPayload",
+        "namedTypes": [
+          "CreateSiteCollectionPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateSiteCollectionInput!",
+            "namedTypes": [
+              "CreateSiteCollectionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "createUser",
+      "description": null,
+      "type": {
+        "display": "CreateUserPayload",
+        "namedTypes": [
+          "CreateUserPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateUserInput!",
+            "namedTypes": [
+              "CreateUserInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteAccountsFromRole",
+      "description": null,
+      "type": {
+        "display": "DeleteAccountsFromRolePayload",
+        "namedTypes": [
+          "DeleteAccountsFromRolePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteAccountsFromRoleInput!",
+            "namedTypes": [
+              "DeleteAccountsFromRoleInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteArchivedItem",
+      "description": null,
+      "type": {
+        "display": "DeleteArchivedItemPayload",
+        "namedTypes": [
+          "DeleteArchivedItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteArchivedItemInput!",
+            "namedTypes": [
+              "DeleteArchivedItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteArchivedVersion",
+      "description": null,
+      "type": {
+        "display": "DeleteArchivedVersionPayload",
+        "namedTypes": [
+          "DeleteArchivedVersionPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteArchivedVersionInput!",
+            "namedTypes": [
+              "DeleteArchivedVersionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteDomain",
+      "description": null,
+      "type": {
+        "display": "DeleteDomainPayload",
+        "namedTypes": [
+          "DeleteDomainPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteDomainInput!",
+            "namedTypes": [
+              "DeleteDomainInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteItem",
+      "description": null,
+      "type": {
+        "display": "DeleteItemPayload",
+        "namedTypes": [
+          "DeleteItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteItemInput!",
+            "namedTypes": [
+              "DeleteItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteItemTemplate",
+      "description": null,
+      "type": {
+        "display": "DeleteItemTemplatePayload",
+        "namedTypes": [
+          "DeleteItemTemplatePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteItemTemplateInput!",
+            "namedTypes": [
+              "DeleteItemTemplateInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteItemVersion",
+      "description": null,
+      "type": {
+        "display": "DeleteItemVersionPayload",
+        "namedTypes": [
+          "DeleteItemVersionPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteItemVersionInput!",
+            "namedTypes": [
+              "DeleteItemVersionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteLanguage",
+      "description": "Delete a specific language. This will remove ALL versions of this language from every item.",
+      "type": {
+        "display": "DeleteLanguagePayload!",
+        "namedTypes": [
+          "DeleteLanguagePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteLanguageInput!",
+            "namedTypes": [
+              "DeleteLanguageInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteLanguages",
+      "description": "Delete a set of languages. This will remove ALL versions of those languages from every item.",
+      "type": {
+        "display": "DeleteLanguagesPayload!",
+        "namedTypes": [
+          "DeleteLanguagesPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteLanguagesInput!",
+            "namedTypes": [
+              "DeleteLanguagesInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteRole",
+      "description": null,
+      "type": {
+        "display": "DeleteRolePayload",
+        "namedTypes": [
+          "DeleteRolePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteRoleInput!",
+            "namedTypes": [
+              "DeleteRoleInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteRoleFromRoles",
+      "description": null,
+      "type": {
+        "display": "DeleteRoleFromRolesPayload",
+        "namedTypes": [
+          "DeleteRoleFromRolesPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteRoleFromRolesInput!",
+            "namedTypes": [
+              "DeleteRoleFromRolesInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "deleteUser",
+      "description": null,
+      "type": {
+        "display": "DeleteUserPayload",
+        "namedTypes": [
+          "DeleteUserPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteUserInput!",
+            "namedTypes": [
+              "DeleteUserInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "disableUser",
+      "description": null,
+      "type": {
+        "display": "DisableUserPayload",
+        "namedTypes": [
+          "DisableUserPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DisableUserInput!",
+            "namedTypes": [
+              "DisableUserInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "emptyArchive",
+      "description": null,
+      "type": {
+        "display": "EmptyArchivePayload",
+        "namedTypes": [
+          "EmptyArchivePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "EmptyArchiveInput!",
+            "namedTypes": [
+              "EmptyArchiveInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "enableUser",
+      "description": null,
+      "type": {
+        "display": "EnableUserPayload",
+        "namedTypes": [
+          "EnableUserPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "EnableUserInput!",
+            "namedTypes": [
+              "EnableUserInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "executeWorkflowCommand",
+      "description": "Executes the workflow command for the specified item.",
+      "type": {
+        "display": "ExecuteWorkflowCommandPayload",
+        "namedTypes": [
+          "ExecuteWorkflowCommandPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "ExecuteWorkflowCommandInput!",
+            "namedTypes": [
+              "ExecuteWorkflowCommandInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "moveItem",
+      "description": null,
+      "type": {
+        "display": "MoveItemPayload",
+        "namedTypes": [
+          "MoveItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "MoveItemInput!",
+            "namedTypes": [
+              "MoveItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "populateManagedSchema",
+      "description": "Execute populate managed schema operation. If the indexNames input parameter is null, Populate Managed Schema for all indexes.",
+      "type": {
+        "display": "PopulateManagedSchemaPayload",
+        "namedTypes": [
+          "PopulateManagedSchemaPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "PopulateManagedSchemaInput",
+            "namedTypes": [
+              "PopulateManagedSchemaInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "publishItem",
+      "description": null,
+      "type": {
+        "display": "PublishItemPayload",
+        "namedTypes": [
+          "PublishItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "PublishItemInput!",
+            "namedTypes": [
+              "PublishItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "publishLanguageSpecificItems",
+      "description": null,
+      "type": {
+        "display": "PublishItemPayload",
+        "namedTypes": [
+          "PublishItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "PublishLanguageSpecificItemsInput!",
+            "namedTypes": [
+              "PublishLanguageSpecificItemsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "publishSite",
+      "description": null,
+      "type": {
+        "display": "PublishSitePayload",
+        "namedTypes": [
+          "PublishSitePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "PublishSiteInput!",
+            "namedTypes": [
+              "PublishSiteInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "publishWithOptions",
+      "description": null,
+      "type": {
+        "display": "PublishWithOptionsPayload",
+        "namedTypes": [
+          "PublishWithOptionsPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "PublishWithOptionsInput!",
+            "namedTypes": [
+              "PublishWithOptionsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "rebuildIndexes",
+      "description": "Execute rebuild search index operation. If the indexNames input parameter is null, Rebuild for all search indexes.",
+      "type": {
+        "display": "RebuildIndexesPayload",
+        "namedTypes": [
+          "RebuildIndexesPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RebuildIndexesInput",
+            "namedTypes": [
+              "RebuildIndexesInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "rebuildLinkDatabase",
+      "description": null,
+      "type": {
+        "display": "RebuildLinkDatabasePayload",
+        "namedTypes": [
+          "RebuildLinkDatabasePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RebuildLinkDatabaseInput!",
+            "namedTypes": [
+              "RebuildLinkDatabaseInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "removeSite",
+      "description": null,
+      "type": {
+        "display": "RemoveSitePayload",
+        "namedTypes": [
+          "RemoveSitePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RemoveSiteInput!",
+            "namedTypes": [
+              "RemoveSiteInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "removeSiteCollection",
+      "description": null,
+      "type": {
+        "display": "RemoveSiteCollectionPayload",
+        "namedTypes": [
+          "RemoveSiteCollectionPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RemoveSiteCollectionInput!",
+            "namedTypes": [
+              "RemoveSiteCollectionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "renameItem",
+      "description": null,
+      "type": {
+        "display": "RenameItemPayload",
+        "namedTypes": [
+          "RenameItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RenameItemInput!",
+            "namedTypes": [
+              "RenameItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "renameSite",
+      "description": null,
+      "type": {
+        "display": "RenameSitePayload",
+        "namedTypes": [
+          "RenameSitePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RenameSiteInput!",
+            "namedTypes": [
+              "RenameSiteInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "renameSiteCollection",
+      "description": null,
+      "type": {
+        "display": "RenameSiteCollectionPayload",
+        "namedTypes": [
+          "RenameSiteCollectionPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RenameSiteCollectionInput!",
+            "namedTypes": [
+              "RenameSiteCollectionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "resetUserSettings",
+      "description": null,
+      "type": {
+        "display": "ResetUserSettingsPayload",
+        "namedTypes": [
+          "ResetUserSettingsPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "ResetUserSettingsInput!",
+            "namedTypes": [
+              "ResetUserSettingsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "restoreArchivedItem",
+      "description": null,
+      "type": {
+        "display": "RestoreArchivedItemPayload",
+        "namedTypes": [
+          "RestoreArchivedItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RestoreArchivedItemInput!",
+            "namedTypes": [
+              "RestoreArchivedItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "restoreArchivedVersion",
+      "description": null,
+      "type": {
+        "display": "RestoreArchivedVersionPayload",
+        "namedTypes": [
+          "RestoreArchivedVersionPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "RestoreArchivedVersionInput!",
+            "namedTypes": [
+              "RestoreArchivedVersionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "scaffoldSolution",
+      "description": null,
+      "type": {
+        "display": "CreateSolutionSitePayload",
+        "namedTypes": [
+          "CreateSolutionSitePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CreateSolutionSiteInput!",
+            "namedTypes": [
+              "CreateSolutionSiteInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "setItemArchiveDate",
+      "description": null,
+      "type": {
+        "display": "SetItemArchiveDatePayload",
+        "namedTypes": [
+          "SetItemArchiveDatePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "SetItemArchiveDateInput!",
+            "namedTypes": [
+              "SetItemArchiveDateInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "setMediaItemAvailability",
+      "description": null,
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "SetMediaAvailabilityInput!",
+            "namedTypes": [
+              "SetMediaAvailabilityInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "setVersionArchiveDate",
+      "description": null,
+      "type": {
+        "display": "SetVersionArchiveDatePayload",
+        "namedTypes": [
+          "SetVersionArchiveDatePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "SetVersionArchiveDateInput!",
+            "namedTypes": [
+              "SetVersionArchiveDateInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "startCopyItem",
+      "description": null,
+      "type": {
+        "display": "StartCopyItemPayload",
+        "namedTypes": [
+          "StartCopyItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "CopyItemInput!",
+            "namedTypes": [
+              "CopyItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "startDeleteItem",
+      "description": null,
+      "type": {
+        "display": "StartDeleteItemPayload",
+        "namedTypes": [
+          "StartDeleteItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DeleteItemInput!",
+            "namedTypes": [
+              "DeleteItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "startWorkflow",
+      "description": "Starts the workflow for the specified item. When executed, it will set the state to the initial state and clear all workflow history",
+      "type": {
+        "display": "StartWorkflowPayload!",
+        "namedTypes": [
+          "StartWorkflowPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "StartWorkflowInput!",
+            "namedTypes": [
+              "StartWorkflowInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "translateItem",
+      "description": null,
+      "type": {
+        "display": "TranslateItemPayload",
+        "namedTypes": [
+          "TranslateItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "TranslateItemInput!",
+            "namedTypes": [
+              "TranslateItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "translatePage",
+      "description": null,
+      "type": {
+        "display": "TranslatePagePayload",
+        "namedTypes": [
+          "TranslatePagePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "TranslatePageInput!",
+            "namedTypes": [
+              "TranslatePageInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "translateSite",
+      "description": null,
+      "type": {
+        "display": "TranslateSitePayload",
+        "namedTypes": [
+          "TranslateSitePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "TranslateSiteInput!",
+            "namedTypes": [
+              "TranslateSiteInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "unlockUser",
+      "description": null,
+      "type": {
+        "display": "UnlockUserPayload",
+        "namedTypes": [
+          "UnlockUserPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "UnlockUserInput!",
+            "namedTypes": [
+              "UnlockUserInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "updateItem",
+      "description": null,
+      "type": {
+        "display": "UpdateItemPayload",
+        "namedTypes": [
+          "UpdateItemPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "UpdateItemInput!",
+            "namedTypes": [
+              "UpdateItemInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "updateItemTemplate",
+      "description": null,
+      "type": {
+        "display": "UpdateItemTemplatePayload",
+        "namedTypes": [
+          "UpdateItemTemplatePayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "UpdateItemTemplateInput!",
+            "namedTypes": [
+              "UpdateItemTemplateInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "updateSolutionSitesPos",
+      "description": null,
+      "type": {
+        "display": "SetPosPayload",
+        "namedTypes": [
+          "SetPosPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "UpdateSolutionSitesPosInput!",
+            "namedTypes": [
+              "UpdateSolutionSitesPosInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "updateUser",
+      "description": null,
+      "type": {
+        "display": "UpdateUserPayload",
+        "namedTypes": [
+          "UpdateUserPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "UpdateUserInput!",
+            "namedTypes": [
+              "UpdateUserInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "uploadMedia",
+      "description": null,
+      "type": {
+        "display": "UploadMediaPayload",
+        "namedTypes": [
+          "UploadMediaPayload"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "UploadMediaInput!",
+            "namedTypes": [
+              "UploadMediaInput"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

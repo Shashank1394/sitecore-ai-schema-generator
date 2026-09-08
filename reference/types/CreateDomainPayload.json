@@ -1,0 +1,25 @@
+{
+  "name": "CreateDomainPayload",
+  "kind": "OBJECT",
+  "description": "The result of the operation to create  the security domain.",
+  "fields": [
+    {
+      "name": "domain",
+      "description": "The created domain.",
+      "type": {
+        "display": "Domain",
+        "namedTypes": [
+          "Domain"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

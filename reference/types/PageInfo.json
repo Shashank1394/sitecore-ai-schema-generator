@@ -1,0 +1,58 @@
+{
+  "name": "PageInfo",
+  "kind": "OBJECT",
+  "description": "Information about pagination in a connection.",
+  "fields": [
+    {
+      "name": "endCursor",
+      "description": "When paginating forwards, the cursor to continue.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "hasNextPage",
+      "description": "Indicates whether more edges exist following the set defined by the clients arguments.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "hasPreviousPage",
+      "description": "Indicates whether more edges exist prior the set defined by the clients arguments.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "startCursor",
+      "description": "When paginating backwards, the cursor to continue.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

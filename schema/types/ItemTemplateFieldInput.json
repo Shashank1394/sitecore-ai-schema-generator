@@ -1,0 +1,183 @@
+{
+  "name": "ItemTemplateFieldInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating or updating a template field.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "blob",
+      "description": "The flag indicating whether the field is a blob field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "defaultValue",
+      "description": "The default value of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "description",
+      "description": "The description of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "excludeFromTextSearch",
+      "description": "The flag indicating whether to exclude the content of the field from full text search index.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "helpLink",
+      "description": "The help link of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "icon",
+      "description": "The icon of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "ignoreDictionaryTranslations",
+      "description": "The flag indicating whether to ignore dictionary translations.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sharedLanguageFallbackEnabled",
+      "description": "The flag indicating whether to enable the shared Language Fallback.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sortOrder",
+      "description": "The sort order of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "source",
+      "description": "The source of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "style",
+      "description": "The style of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "templateFieldId",
+      "description": "The unique ID of the template field. If the ID is empty, a new template field if ID will be created. Otherwise, the template field will be updated.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "title",
+      "description": "The title of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "tooltip",
+      "description": "The tooltip of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "type",
+      "description": "The type of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "validation",
+      "description": "The validation of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "validationText",
+      "description": "The validation text of the template field.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "versioning",
+      "description": "The versioning of the template field.",
+      "type": {
+        "kind": "ENUM",
+        "name": "FieldVersioning",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

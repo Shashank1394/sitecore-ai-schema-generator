@@ -1,0 +1,104 @@
+{
+  "name": "SearchQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with search query and parameters.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "facetMetrics",
+      "description": "The list of facets metrics.",
+      "type": {
+        "display": "[SearchFacetMetricInput]",
+        "namedTypes": [
+          "SearchFacetMetricInput"
+        ]
+      }
+    },
+    {
+      "name": "facetOnFields",
+      "description": "The list of fields for building facets.",
+      "type": {
+        "display": "[String]",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "filterStatement",
+      "description": "The filter statement.",
+      "type": {
+        "display": "SearchStatementInput",
+        "namedTypes": [
+          "SearchStatementInput"
+        ]
+      }
+    },
+    {
+      "name": "index",
+      "description": "The name of the index used for searching.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The flag controlling whether to search in a particular language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "latestVersionOnly",
+      "description": "The flag controlling whether to return all or only latest versions of items in the search result.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "paging",
+      "description": "The paging parameters.",
+      "type": {
+        "display": "SearchPagingInput",
+        "namedTypes": [
+          "SearchPagingInput"
+        ]
+      }
+    },
+    {
+      "name": "searchStatement",
+      "description": "The search statement.",
+      "type": {
+        "display": "SearchStatementInput",
+        "namedTypes": [
+          "SearchStatementInput"
+        ]
+      }
+    },
+    {
+      "name": "sort",
+      "description": "The list of fields for ordering the search results.",
+      "type": {
+        "display": "[SearchSortInput]",
+        "namedTypes": [
+          "SearchSortInput"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

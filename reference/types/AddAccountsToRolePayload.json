@@ -1,0 +1,25 @@
+{
+  "name": "AddAccountsToRolePayload",
+  "kind": "OBJECT",
+  "description": "The result of adding security accounts to the current parent security role.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The operation status.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

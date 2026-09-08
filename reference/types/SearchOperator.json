@@ -1,0 +1,26 @@
+{
+  "name": "SearchOperator",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "SHOULD",
+      "description": null
+    },
+    {
+      "name": "MUST",
+      "description": null
+    },
+    {
+      "name": "NOT",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "RuleSetRuleCondition",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset rule action entity.",
+  "fields": [
+    {
+      "name": "conditionDefinitions",
+      "description": "The ruleset condition definitions.",
+      "type": {
+        "display": "[RuleSetDefinition!]!",
+        "namedTypes": [
+          "RuleSetDefinition"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

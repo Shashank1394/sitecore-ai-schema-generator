@@ -1,0 +1,28 @@
+{
+  "name": "IconSize",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "SIZE16",
+      "description": null
+    },
+    {
+      "name": "SIZE24",
+      "description": null
+    },
+    {
+      "name": "SIZE32",
+      "description": null
+    },
+    {
+      "name": "SIZE48",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

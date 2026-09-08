@@ -1,0 +1,66 @@
+{
+  "name": "AddItemVersionInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for adding an item version.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The item ID. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "path",
+      "description": "The item path.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "version",
+      "description": "The item version to use as the base for creating a new version. Default is latest version.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "versionName",
+      "description": "The name of the item version.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

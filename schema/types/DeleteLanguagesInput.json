@@ -1,0 +1,37 @@
+{
+  "name": "DeleteLanguagesInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting multiple languages.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The database of the languages to be deleted.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "names",
+      "description": "The languages names to be deleted.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

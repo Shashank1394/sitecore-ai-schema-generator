@@ -1,0 +1,135 @@
+{
+  "operation": "archivedItem",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "where": {
+      "type": "ArchiveItemQueryInput",
+      "description": null
+    }
+  },
+  "returnType": "ArchivedItem",
+  "inputTypes": {
+    "ArchiveItemQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for querying an archived item.",
+      "fields": {
+        "archivalId": {
+          "type": "ID!",
+          "description": "The archival ID."
+        },
+        "archiveName": {
+          "type": "String",
+          "description": "The name of the archive. The default value is 'archive'."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "archivalId": {
+      "type": "ID!",
+      "description": "The globally-unique identifier of the entry.",
+      "arguments": {
+        "format": "IdFormat"
+      }
+    },
+    "archivedBy": {
+      "type": "String!",
+      "description": "The name of the user who archived the entry.",
+      "arguments": {}
+    },
+    "archivedDate": {
+      "type": "DateTime!",
+      "description": "The archival date in UTC format.",
+      "arguments": {}
+    },
+    "database": {
+      "type": "String!",
+      "description": "The name of the database.",
+      "arguments": {}
+    },
+    "itemId": {
+      "type": "ID!",
+      "description": "The item ID.",
+      "arguments": {
+        "format": "IdFormat"
+      }
+    },
+    "name": {
+      "type": "String!",
+      "description": "The item name.",
+      "arguments": {}
+    },
+    "originalLocation": {
+      "type": "String!",
+      "description": "The name of the database.",
+      "arguments": {}
+    },
+    "parentId": {
+      "type": "ID!",
+      "description": "The item parent ID.",
+      "arguments": {
+        "format": "IdFormat"
+      }
+    },
+    "versions": {
+      "type": "[ArchivedItemVersion]",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ArchivedItem",
+      "namedTypes": [
+        "ArchivedItem"
+      ]
+    },
+    "nodes": {
+      "ArchivedItem": {
+        "kind": "OBJECT",
+        "file": "types/ArchivedItem.json",
+        "references": [
+          "ID",
+          "String",
+          "DateTime",
+          "ArchivedItemVersion"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "ArchivedItemVersion": {
+        "kind": "OBJECT",
+        "file": "types/ArchivedItemVersion.json",
+        "references": [
+          "DateTime",
+          "String",
+          "Int",
+          "ID"
+        ]
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "name": "CreateUserInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating a security user.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "clientLanguage",
+      "description": "The client language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "comment",
+      "description": "A comment about the user.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "defaultContentLanguage",
+      "description": "The default content language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "email",
+      "description": "The email.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "fullName",
+      "description": "The full name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "isAdministrator",
+      "description": "The flag indicating if this user is an administrator.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "password",
+      "description": "The user password.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "portrait",
+      "description": "The portrait.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "regionalIsoCode",
+      "description": "The regional ISO code.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "roleNames",
+      "description": "The roles to assign to the new user.",
+      "type": {
+        "display": "[String]",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "startUrl",
+      "description": "The start URL.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "userName",
+      "description": "The name of the user.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "userProfileId",
+      "description": "The profile ID.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "wallpaper",
+      "description": "The wallpaper.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

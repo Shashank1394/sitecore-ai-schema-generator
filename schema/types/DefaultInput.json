@@ -1,0 +1,21 @@
+{
+  "name": "DefaultInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents default input parameters",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

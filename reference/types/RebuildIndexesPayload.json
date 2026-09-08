@@ -1,0 +1,25 @@
+{
+  "name": "RebuildIndexesPayload",
+  "kind": "OBJECT",
+  "description": "The result of the index rebuilding operation.",
+  "fields": [
+    {
+      "name": "jobs",
+      "description": "The references for all index rebuilding jobs.",
+      "type": {
+        "display": "[Job]",
+        "namedTypes": [
+          "Job"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

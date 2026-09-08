@@ -1,0 +1,50 @@
+{
+  "name": "ConfigurePageDesignsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input parameters for templates and page designs",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "mapping",
+      "description": "List of template ID to page design ID mappings",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "Current site name",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

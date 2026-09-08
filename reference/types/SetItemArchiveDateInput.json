@@ -1,0 +1,44 @@
+{
+  "name": "SetItemArchiveDateInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for setting the archive date for an item.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "archiveDate",
+      "description": "The archive date. A null value will reset the archive date.",
+      "type": {
+        "display": "DateTime",
+        "namedTypes": [
+          "DateTime"
+        ]
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The ID of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "itemPath",
+      "description": "The full path of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

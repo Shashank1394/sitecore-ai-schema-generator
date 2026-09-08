@@ -1,0 +1,58 @@
+{
+  "name": "SearchResult",
+  "kind": "OBJECT",
+  "description": "Represents a search result.",
+  "fields": [
+    {
+      "name": "facetMetrics",
+      "description": "The facet metric result.",
+      "type": {
+        "display": "[KeyValuePairOfStringAndDecimal!]",
+        "namedTypes": [
+          "KeyValuePairOfStringAndDecimal"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "facets",
+      "description": "The facet result.",
+      "type": {
+        "display": "[SearchResultFacetCategory]",
+        "namedTypes": [
+          "SearchResultFacetCategory"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "results",
+      "description": "The search result.",
+      "type": {
+        "display": "[SearchResultItem!]!",
+        "namedTypes": [
+          "SearchResultItem"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "totalCount",
+      "description": "The number of items in the search result.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

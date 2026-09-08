@@ -1,0 +1,37 @@
+{
+  "name": "ItemToPublishInput",
+  "kind": "INPUT_OBJECT",
+  "description": null,
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "id",
+      "description": null,
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "languages",
+      "description": null,
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "RuleSetRuleCondition",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset rule action entity.",
+  "fields": [
+    {
+      "name": "conditionDefinitions",
+      "description": "The ruleset condition definitions.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "RuleSetDefinition"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

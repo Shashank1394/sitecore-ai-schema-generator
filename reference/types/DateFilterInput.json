@@ -1,0 +1,34 @@
+{
+  "name": "DateFilterInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with date filtering parameters.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "dateFrom",
+      "description": "The date to filter results from.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      }
+    },
+    {
+      "name": "dateTo",
+      "description": "The date to filter results to.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

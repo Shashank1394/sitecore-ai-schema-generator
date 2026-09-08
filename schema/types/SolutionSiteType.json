@@ -1,0 +1,389 @@
+{
+  "name": "SolutionSiteType",
+  "kind": "OBJECT",
+  "description": "Represents a solution site",
+  "fields": [
+    {
+      "name": "access",
+      "description": "The access rights for the current user",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemAccess",
+        "ofType": null
+      }
+    },
+    {
+      "name": "created",
+      "description": "Created date of the site",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "description",
+      "description": "Short description of the site",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "displayName",
+      "description": "Display name of the site",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "globalSettings",
+      "description": "Global settings",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "NON_NULL",
+          "name": null,
+          "ofType": {
+            "kind": "OBJECT",
+            "name": "KeyValuePairOfStringAndString",
+            "ofType": null
+          }
+        }
+      }
+    },
+    {
+      "name": "hostname",
+      "description": "Hostname",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "id",
+      "description": "A globally-unique identifier",
+      "args": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "kind": "ENUM",
+            "name": "IdFormat",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "language",
+      "description": "Default language of the site",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Language",
+        "ofType": null
+      }
+    },
+    {
+      "name": "languages",
+      "description": "Languages used on the site",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Language",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "linkableSite",
+      "description": "Is site linkable",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "linkSettings",
+      "description": "Link settings",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "Name of the site",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "notFoundErrorPage",
+      "description": "The not found error page item of the site",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "posMappings",
+      "description": "Point of sale of the site",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "PointOfSaleMappingType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "properties",
+      "description": "List of site properties",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "KeyValuePair"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "property",
+      "description": "Access property by key.",
+      "args": [
+        {
+          "name": "key",
+          "description": "The property key.",
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "renderingHost",
+      "description": null,
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RenderingHostType",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rootItem",
+      "description": "The root item of the site",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rootItemThumbnailBase64",
+      "description": "The thumbnail for the site root item encoded to base64",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rootItemThumbnailUrl",
+      "description": "The URL of the thumbnail for the site root item",
+      "args": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "MediaUrlOptionsInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "serverErrorPage",
+      "description": "The server error page item of the site",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "settings",
+      "description": "The settings of the site",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "siteCollection",
+      "description": "Site collection",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SiteCollectionType",
+        "ofType": null
+      }
+    },
+    {
+      "name": "siteDefinition",
+      "description": "The site definition item of the site",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sortOrder",
+      "description": "Sort order",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "startItem",
+      "description": "The start item of the site",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "targetHostname",
+      "description": "Target hostname",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "thumbnailBase64",
+      "description": "The thumbnail for the site encoded to base64",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "thumbnailUrl",
+      "description": "The URL of the thumbnail for the site",
+      "args": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "MediaUrlOptionsInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,26 @@
+{
+  "name": "SetPosPayload",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "result",
+      "description": null,
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "SetPosResult",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

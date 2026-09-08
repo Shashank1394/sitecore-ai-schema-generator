@@ -1,0 +1,159 @@
+{
+  "name": "SolutionTemplateType",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "builtInTemplate",
+      "description": "Indicates whether the template is a built-in template",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "contents",
+      "description": "Contains information what's in the template",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "KeyValuePair"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "createdBy",
+      "description": "Template creator",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "description",
+      "description": "Description of the site template",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "enabled",
+      "description": "Indicates whether the template is enabled",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "id",
+      "description": "A globally-unique identifier for site template",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "imageBase64",
+      "description": "The image for the template encoded to base64",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "Name of the site template",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "siteCollection",
+      "description": "Site collection",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SiteCollectionType",
+        "ofType": null
+      }
+    },
+    {
+      "name": "thumbnailUrl",
+      "description": "The URL of the thumbnail for the site template",
+      "args": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "MediaUrlOptionsInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "updated",
+      "description": "Date when the template was updated",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

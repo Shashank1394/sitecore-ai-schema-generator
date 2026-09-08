@@ -1,0 +1,34 @@
+{
+  "name": "RestoreArchivedItemInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for restoring an archived item.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "archivalId",
+      "description": "The item archival ID.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "archiveName",
+      "description": "The name of the archive. The default value is 'archive'.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

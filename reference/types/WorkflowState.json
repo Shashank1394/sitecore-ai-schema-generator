@@ -1,0 +1,58 @@
+{
+  "name": "WorkflowState",
+  "kind": "OBJECT",
+  "description": "Represents the workflow state.",
+  "fields": [
+    {
+      "name": "displayName",
+      "description": "Gets the display name of the workflow state.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "final",
+      "description": "Gets a value indicating if the state is the final state in the workflow.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "icon",
+      "description": "Gets the icon of the workflow state.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "stateId",
+      "description": "Gets the workflow state ID.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

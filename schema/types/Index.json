@@ -1,0 +1,96 @@
+{
+  "name": "Index",
+  "kind": "OBJECT",
+  "description": "Represents the content search index.",
+  "fields": [
+    {
+      "name": "documentsCount",
+      "description": "The number of documents in the index.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Long",
+        "ofType": null
+      }
+    },
+    {
+      "name": "hasDeletions",
+      "description": "Indicates if any document has been deleted.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "lastRebuildDuration",
+      "description": "The time duration for the last index rebuild.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "lastUpdated",
+      "description": "The last time the index has been updated.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "DateTime",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "The search index name.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "numberOfFields",
+      "description": "The number of fields in the index.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    },
+    {
+      "name": "numberOfTerms",
+      "description": "The number of terms in the index.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Long",
+        "ofType": null
+      }
+    },
+    {
+      "name": "outOfDate",
+      "description": "Indicates if there are out of date indexes.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

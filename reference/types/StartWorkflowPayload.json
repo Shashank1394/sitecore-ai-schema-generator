@@ -1,0 +1,25 @@
+{
+  "name": "StartWorkflowPayload",
+  "kind": "OBJECT",
+  "description": "Represents the payload for starting a workflow.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The operation status.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "AddItemVersionPayload",
+  "kind": "OBJECT",
+  "description": "The result of the add item version operation for the item.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The item in the new version.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

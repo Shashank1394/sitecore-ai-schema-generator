@@ -1,0 +1,32 @@
+{
+  "name": "TemplateFieldRule",
+  "kind": "OBJECT",
+  "description": "Represents a rule template entity.",
+  "fields": [
+    {
+      "name": "hideActions",
+      "description": "Indicates whether to hide actions.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rule",
+      "description": "The rule.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Rule",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

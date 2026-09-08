@@ -1,0 +1,161 @@
+{
+  "operation": "ruleSet",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "query": {
+      "type": "RuleItemQueryInput!",
+      "description": null
+    }
+  },
+  "returnType": "RuleSet",
+  "inputTypes": {
+    "RuleItemQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the rule item query.",
+      "fields": {
+        "item": {
+          "type": "ItemQueryInput!",
+          "description": "The item with the rule field."
+        },
+        "ruleFieldId": {
+          "type": "String!",
+          "description": "The field ID."
+        }
+      }
+    },
+    "ItemQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents an item query.",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "The name of the database where item exits."
+        },
+        "existingVersionOnly": {
+          "type": "Boolean",
+          "description": "Indicates whether to return the item even if the requested version does not exist."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The item ID. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "language": {
+          "type": "String",
+          "description": "The item language."
+        },
+        "path": {
+          "type": "String",
+          "description": "The full item path. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "requirePresentation": {
+          "type": "Boolean",
+          "description": "DEPRECATED. Indicates whether the item required must have presentation."
+        },
+        "version": {
+          "type": "Int",
+          "description": "The version number of the item."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "rules": {
+      "type": "[RuleSetRule!]!",
+      "description": "The rules.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "RuleSet",
+      "namedTypes": [
+        "RuleSet"
+      ]
+    },
+    "nodes": {
+      "RuleSet": {
+        "kind": "OBJECT",
+        "file": "types/RuleSet.json",
+        "references": [
+          "RuleSetRule"
+        ]
+      },
+      "RuleSetRule": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetRule.json",
+        "references": [
+          "RuleSetRuleAction",
+          "RuleSetRuleCondition",
+          "String"
+        ]
+      },
+      "RuleSetRuleAction": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetRuleAction.json",
+        "references": [
+          "RuleSetDefinition"
+        ]
+      },
+      "RuleSetDefinition": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetDefinition.json",
+        "references": [
+          "RuleDefinition",
+          "String",
+          "RuleSetTextPart"
+        ]
+      },
+      "RuleDefinition": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinition.json",
+        "references": [
+          "ID",
+          "String",
+          "RuleDefinitionOperation"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "RuleDefinitionOperation": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinitionOperation.json",
+        "references": [
+          "String"
+        ]
+      },
+      "RuleSetTextPart": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetTextPart.json",
+        "references": [
+          "String",
+          "RuleSetTextPartType"
+        ]
+      },
+      "RuleSetTextPartType": {
+        "kind": "ENUM",
+        "file": "types/RuleSetTextPartType.json",
+        "references": []
+      },
+      "RuleSetRuleCondition": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetRuleCondition.json",
+        "references": [
+          "RuleSetDefinition"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

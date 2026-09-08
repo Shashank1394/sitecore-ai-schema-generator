@@ -1,0 +1,20 @@
+{
+  "name": "PublishItemMode",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "FULL",
+      "description": null
+    },
+    {
+      "name": "SMART",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

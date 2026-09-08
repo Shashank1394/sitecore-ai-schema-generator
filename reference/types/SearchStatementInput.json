@@ -1,0 +1,44 @@
+{
+  "name": "SearchStatementInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents a statement in the search query.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "criteria",
+      "description": "The criteria.",
+      "type": {
+        "display": "[SearchCriteriaInput]",
+        "namedTypes": [
+          "SearchCriteriaInput"
+        ]
+      }
+    },
+    {
+      "name": "operator",
+      "description": "The search operator. The default value is SHOULD.",
+      "type": {
+        "display": "SearchOperator",
+        "namedTypes": [
+          "SearchOperator"
+        ]
+      }
+    },
+    {
+      "name": "subStatements",
+      "description": "The sub-statements.",
+      "type": {
+        "display": "[SearchStatementInput]",
+        "namedTypes": [
+          "SearchStatementInput"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

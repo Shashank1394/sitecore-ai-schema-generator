@@ -1,0 +1,25 @@
+{
+  "name": "RebuildLinkDatabasePayload",
+  "kind": "OBJECT",
+  "description": "The result of of the database link rebuilding operation.",
+  "fields": [
+    {
+      "name": "job",
+      "description": "The reference of the database link rebuilding job.",
+      "type": {
+        "display": "Job",
+        "namedTypes": [
+          "Job"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

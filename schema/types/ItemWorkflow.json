@@ -1,0 +1,60 @@
+{
+  "name": "ItemWorkflow",
+  "kind": "OBJECT",
+  "description": "Represents the item workflow.",
+  "fields": [
+    {
+      "name": "canEdit",
+      "description": "Determines whether the source item can be edited.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "canSave",
+      "description": "Determines whether the source item can be saved.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "workflow",
+      "description": "The workflow.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Workflow",
+        "ofType": null
+      }
+    },
+    {
+      "name": "workflowState",
+      "description": "The current workflow state of the item.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowState",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,26 @@
+{
+  "name": "UploadMediaPayload",
+  "kind": "OBJECT",
+  "description": "Represents a media upload payload.",
+  "fields": [
+    {
+      "name": "presignedUploadUrl",
+      "description": "The absolute URI for the api to upload the media file.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

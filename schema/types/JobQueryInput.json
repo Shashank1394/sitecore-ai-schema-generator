@@ -1,0 +1,30 @@
+{
+  "name": "JobQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents a job query.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "handle",
+      "description": "The job handle. If both job handle and job name parameters are specified, the job name parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "jobName",
+      "description": "The job name. If both job handle and job name parameters are specified, the job name parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

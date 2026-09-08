@@ -1,0 +1,88 @@
+{
+  "name": "ItemTemplateFieldSource",
+  "kind": "OBJECT",
+  "description": "Represents the item field sources",
+  "fields": [
+    {
+      "name": "items",
+      "description": "The field resolved source items.",
+      "type": {
+        "display": "ItemConnection",
+        "namedTypes": [
+          "ItemConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "resolvedSources",
+      "description": "The field resolved source mappings.",
+      "type": {
+        "display": "[ItemTemplateFieldResolvedSource!]!",
+        "namedTypes": [
+          "ItemTemplateFieldResolvedSource"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "value",
+      "description": "The source value of the template field.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

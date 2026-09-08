@@ -1,0 +1,30 @@
+{
+  "name": "WorkflowIdOrItemQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the workflow query. You must specify the WorkflowId or the Item. If both are specified the Item will be ignored.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "item",
+      "description": "The workflow item.",
+      "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "ItemQueryInput",
+        "ofType": null
+      }
+    },
+    {
+      "name": "workflowId",
+      "description": "The ID of workflow.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

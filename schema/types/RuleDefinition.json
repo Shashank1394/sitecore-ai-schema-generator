@@ -1,0 +1,87 @@
+{
+  "name": "RuleDefinition",
+  "kind": "OBJECT",
+  "description": "Represents a rule definition.",
+  "fields": [
+    {
+      "name": "definitionId",
+      "description": "The globally-unique identifier for this rule definition.",
+      "args": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "kind": "ENUM",
+            "name": "IdFormat",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The rule name.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "operators",
+      "description": "The rule definition operators used for the reference text.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "RuleDefinitionOperation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "referenceText",
+      "description": "The rule reference text.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "text",
+      "description": "The rule text.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,26 @@
+{
+  "name": "RestoreArchivedItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of restoring an archived item.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": null,
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

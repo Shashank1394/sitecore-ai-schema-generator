@@ -1,0 +1,40 @@
+{
+  "name": "SearchResultFacet",
+  "kind": "OBJECT",
+  "description": "Represents a search facet.",
+  "fields": [
+    {
+      "name": "count",
+      "description": "The number of documents matching the facet value.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Int",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The facet value.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

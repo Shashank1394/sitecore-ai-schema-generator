@@ -1,0 +1,135 @@
+{
+  "name": "__Type",
+  "kind": "OBJECT",
+  "description": "The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\r\n\r\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.",
+  "fields": [
+    {
+      "name": "description",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "enumValues",
+      "description": null,
+      "type": {
+        "display": "[__EnumValue!]",
+        "namedTypes": [
+          "__EnumValue"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "includeDeprecated",
+          "description": null,
+          "type": {
+            "display": "Boolean",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "fields",
+      "description": null,
+      "type": {
+        "display": "[__Field!]",
+        "namedTypes": [
+          "__Field"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "includeDeprecated",
+          "description": null,
+          "type": {
+            "display": "Boolean",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "inputFields",
+      "description": null,
+      "type": {
+        "display": "[__InputValue!]",
+        "namedTypes": [
+          "__InputValue"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "interfaces",
+      "description": null,
+      "type": {
+        "display": "[__Type!]",
+        "namedTypes": [
+          "__Type"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "kind",
+      "description": null,
+      "type": {
+        "display": "__TypeKind!",
+        "namedTypes": [
+          "__TypeKind"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "ofType",
+      "description": null,
+      "type": {
+        "display": "__Type",
+        "namedTypes": [
+          "__Type"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "possibleTypes",
+      "description": null,
+      "type": {
+        "display": "[__Type!]",
+        "namedTypes": [
+          "__Type"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

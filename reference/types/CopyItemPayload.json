@@ -1,0 +1,25 @@
+{
+  "name": "CopyItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the copy operation of the item.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The copied item.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

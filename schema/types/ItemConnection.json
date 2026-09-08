@@ -1,0 +1,58 @@
+{
+  "name": "ItemConnection",
+  "kind": "OBJECT",
+  "description": "A connection to a list of items.",
+  "fields": [
+    {
+      "name": "edges",
+      "description": "A list of edges.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "NON_NULL",
+          "name": null,
+          "ofType": {
+            "kind": "OBJECT",
+            "name": "ItemEdge",
+            "ofType": null
+          }
+        }
+      }
+    },
+    {
+      "name": "nodes",
+      "description": "A flattened list of the nodes.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Item",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "pageInfo",
+      "description": "Information to aid in pagination.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "PageInfo",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

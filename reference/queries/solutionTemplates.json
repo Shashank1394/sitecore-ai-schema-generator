@@ -1,0 +1,100 @@
+{
+  "operation": "solutionTemplates",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DefaultSolutionInput",
+      "description": null
+    }
+  },
+  "returnType": "[SolutionTemplateType]",
+  "inputTypes": {
+    "DefaultSolutionInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents default input parameters",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        }
+      }
+    }
+  },
+  "returnFields": {},
+  "outputDependencyGraph": {
+    "root": {
+      "display": "[SolutionTemplateType]",
+      "namedTypes": [
+        "SolutionTemplateType"
+      ]
+    },
+    "nodes": {
+      "SolutionTemplateType": {
+        "kind": "OBJECT",
+        "file": "types/SolutionTemplateType.json",
+        "references": [
+          "Boolean",
+          "KeyValuePair",
+          "String",
+          "ID",
+          "SiteCollectionType"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "SiteCollectionType": {
+        "kind": "OBJECT",
+        "file": "types/SiteCollectionType.json",
+        "references": [
+          "ItemAccess",
+          "String",
+          "ID",
+          "Int"
+        ]
+      },
+      "ItemAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

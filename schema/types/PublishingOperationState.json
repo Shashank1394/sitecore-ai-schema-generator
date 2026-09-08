@@ -1,0 +1,40 @@
+{
+  "name": "PublishingOperationState",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "INITIALIZING",
+      "description": null
+    },
+    {
+      "name": "QUEUED",
+      "description": null
+    },
+    {
+      "name": "RUNNING",
+      "description": null
+    },
+    {
+      "name": "ABORTREQUESTED",
+      "description": null
+    },
+    {
+      "name": "ABORTED",
+      "description": null
+    },
+    {
+      "name": "FINISHED",
+      "description": null
+    },
+    {
+      "name": "UNKNOWN",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

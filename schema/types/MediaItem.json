@@ -1,0 +1,120 @@
+{
+  "name": "MediaItem",
+  "kind": "OBJECT",
+  "description": "Represents an item within Sitecore.",
+  "fields": [
+    {
+      "name": "alt",
+      "description": "The alt text.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "description",
+      "description": "The description of the media.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "extension",
+      "description": "The extension of the media file.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "innerItem",
+      "description": "The media item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Item",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "mediaPath",
+      "description": "The path in the media library.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "mimeType",
+      "description": "The MIME type of the media item.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "size",
+      "description": "The size of the media item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Long",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "title",
+      "description": "The title of the media.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "url",
+      "description": "Gets the media URL.",
+      "args": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "MediaUrlOptionsInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

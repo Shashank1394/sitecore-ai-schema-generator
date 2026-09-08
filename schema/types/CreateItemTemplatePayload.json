@@ -1,0 +1,22 @@
+{
+  "name": "CreateItemTemplatePayload",
+  "kind": "OBJECT",
+  "description": "The result of the create operation for the item template.",
+  "fields": [
+    {
+      "name": "itemTemplate",
+      "description": "The created item template.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemTemplate",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

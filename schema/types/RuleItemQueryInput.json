@@ -1,0 +1,38 @@
+{
+  "name": "RuleItemQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the rule item query.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "item",
+      "description": "The item with the rule field.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "ItemQueryInput",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "ruleFieldId",
+      "description": "The field ID.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,94 @@
+{
+  "name": "CreateItemTemplateInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating an item template.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "baseTemplates",
+      "description": "The base templates of the item templates.",
+      "type": {
+        "display": "[ID]",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "createStandardValuesItem",
+      "description": "The flag indicates whether should create the StandardValues item for the template or not.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "icon",
+      "description": "The icon of the item template.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language of the item template.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "description": "The item template name.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "parent",
+      "description": "The unique ID of the item where the new item template will be created.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "sections",
+      "description": "The section definitions of the item template.",
+      "type": {
+        "display": "[ItemTemplateSectionInput]",
+        "namedTypes": [
+          "ItemTemplateSectionInput"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "RuleSetRuleAction",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset rule action entity.",
+  "fields": [
+    {
+      "name": "action",
+      "description": "The action text.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RuleSetDefinition",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

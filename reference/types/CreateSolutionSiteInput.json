@@ -1,0 +1,134 @@
+{
+  "name": "CreateSolutionSiteInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to create a site",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "hostName",
+      "description": "Host name of the new site",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "Language of the new site",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "languages",
+      "description": "List of supported site languages",
+      "type": {
+        "display": "[String]",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "posMappings",
+      "description": "List of Point of sale mappings to language",
+      "type": {
+        "display": "[PointOfSaleMappingInput]",
+        "namedTypes": [
+          "PointOfSaleMappingInput"
+        ]
+      }
+    },
+    {
+      "name": "siteCollectionDescription",
+      "description": "Description of the site collection",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "siteCollectionDisplayName",
+      "description": "Display name of the site collection",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "siteCollectionName",
+      "description": "Name of the site collection",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "siteDescription",
+      "description": "Description of the new site",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "siteDisplayName",
+      "description": "Display name of the new site",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "Name of the new site",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "templateId",
+      "description": "Site template",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

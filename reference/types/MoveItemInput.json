@@ -1,0 +1,74 @@
+{
+  "name": "MoveItemInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for moving an item.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The ID of the item. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "path",
+      "description": "The item path.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "sortOrder",
+      "description": "The sort order of the item.",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      }
+    },
+    {
+      "name": "targetParentId",
+      "description": "The ID of the parent item. If both ID and path parameters are specified, the target parent path parameter is ignored.",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "targetParentPath",
+      "description": "The path of the parent item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

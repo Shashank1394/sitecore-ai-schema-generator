@@ -1,0 +1,22 @@
+{
+  "name": "DeleteLanguagesPayload",
+  "kind": "OBJECT",
+  "description": "The result of the delete operation for multiple languages.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": null,
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

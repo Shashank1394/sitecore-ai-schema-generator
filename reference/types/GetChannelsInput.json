@@ -1,0 +1,44 @@
+{
+  "name": "GetChannelsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to query channels",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "channelTemplateType",
+      "description": "Optional channel template type filter",
+      "type": {
+        "display": "Uuid!",
+        "namedTypes": [
+          "Uuid"
+        ]
+      }
+    },
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "description": "Optional channel name filter",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

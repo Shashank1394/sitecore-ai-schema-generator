@@ -1,0 +1,22 @@
+{
+  "name": "CreateSolutionSitePayload",
+  "kind": "OBJECT",
+  "description": "Represents a solution creation payload",
+  "fields": [
+    {
+      "name": "job",
+      "description": "Reference of the job",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Job",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,25 @@
+{
+  "name": "RulesQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the rule item query.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "rulesPath",
+      "description": "The rules path.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

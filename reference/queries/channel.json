@@ -1,0 +1,119 @@
+{
+  "operation": "channel",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "GetChannelInput!",
+      "description": null
+    }
+  },
+  "returnType": "ChannelType",
+  "inputTypes": {
+    "GetChannelInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input needed to query a channel",
+      "fields": {
+        "channelId": {
+          "type": "ID",
+          "description": "A globally-unique identifier of the channel"
+        },
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "analyticsIdentifierIds": {
+      "type": "[ID!]",
+      "description": "Globally-unique identifiers of the analytics identifiers",
+      "arguments": {}
+    },
+    "channelTemplateType": {
+      "type": "String!",
+      "description": "Template type of the channel used for XM channel type mapping",
+      "arguments": {}
+    },
+    "collectionId": {
+      "type": "ID!",
+      "description": "A globally-unique identifier of the collection",
+      "arguments": {}
+    },
+    "createdAt": {
+      "type": "DateTime!",
+      "description": "Creation timestamp of the channel",
+      "arguments": {}
+    },
+    "createdBy": {
+      "type": "String!",
+      "description": "User who created the channel",
+      "arguments": {}
+    },
+    "displayName": {
+      "type": "String!",
+      "description": "The display name of the channel.",
+      "arguments": {}
+    },
+    "id": {
+      "type": "ID!",
+      "description": "A globally-unique identifier of the channel",
+      "arguments": {}
+    },
+    "name": {
+      "type": "String!",
+      "description": "The system name of the channel",
+      "arguments": {}
+    },
+    "sortOrder": {
+      "type": "Int",
+      "description": "Sort order of the channel",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ChannelType",
+      "namedTypes": [
+        "ChannelType"
+      ]
+    },
+    "nodes": {
+      "ChannelType": {
+        "kind": "OBJECT",
+        "file": "types/ChannelType.json",
+        "references": [
+          "ID",
+          "String",
+          "DateTime",
+          "Int"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

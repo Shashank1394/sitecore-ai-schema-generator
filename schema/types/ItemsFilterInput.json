@@ -1,0 +1,25 @@
+{
+  "name": "ItemsFilterInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with items filtering parameters.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "includeItems",
+      "description": "The include items filter parameters.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "ItemToFilterInput",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

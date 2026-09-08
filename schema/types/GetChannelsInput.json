@@ -1,0 +1,43 @@
+{
+  "name": "GetChannelsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to query channels",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "channelTemplateType",
+      "description": "Optional channel template type filter",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Uuid",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "Optional channel name filter",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

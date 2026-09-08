@@ -1,0 +1,21 @@
+{
+  "name": "SolutionSitesSearchInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input parameters for querying solution sites",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "filterStatement",
+      "description": null,
+      "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "SearchStatementInput",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

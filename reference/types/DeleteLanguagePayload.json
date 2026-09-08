@@ -1,0 +1,25 @@
+{
+  "name": "DeleteLanguagePayload",
+  "kind": "OBJECT",
+  "description": "The result of the delete operation for the language",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The status of the delete operation",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

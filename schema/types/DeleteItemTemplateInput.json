@@ -1,0 +1,34 @@
+{
+  "name": "DeleteItemTemplateInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting an item template.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "templateId",
+      "description": "The ID of the item template.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

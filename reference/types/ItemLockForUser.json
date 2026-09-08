@@ -1,0 +1,47 @@
+{
+  "name": "ItemLockForUser",
+  "kind": "OBJECT",
+  "description": "Represents the item locking information for the current user.",
+  "fields": [
+    {
+      "name": "canLock",
+      "description": "The user can lock the item.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canUnlock",
+      "description": "The user can unlock the item.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "hasLock",
+      "description": "The user locks the item.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

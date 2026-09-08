@@ -1,0 +1,74 @@
+{
+  "name": "CreateItemInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for creating an item.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "fields",
+      "description": "The field values.",
+      "type": {
+        "display": "[FieldValueInput]",
+        "namedTypes": [
+          "FieldValueInput"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "description": "Name of the new item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "parent",
+      "description": "The unique ID of the parent item.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "templateId",
+      "description": "The unique ID of the template used for creating the new item.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

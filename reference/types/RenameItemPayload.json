@@ -1,0 +1,25 @@
+{
+  "name": "RenameItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the rename operation for the item.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The renamed item.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

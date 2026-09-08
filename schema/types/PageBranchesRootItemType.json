@@ -1,0 +1,40 @@
+{
+  "name": "PageBranchesRootItemType",
+  "kind": "OBJECT",
+  "description": "Represents a page branches root type",
+  "fields": [
+    {
+      "name": "root",
+      "description": "The root item",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Item",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "Site name",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

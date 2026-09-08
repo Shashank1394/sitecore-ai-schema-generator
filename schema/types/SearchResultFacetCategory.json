@@ -1,0 +1,47 @@
+{
+  "name": "SearchResultFacetCategory",
+  "kind": "OBJECT",
+  "description": "Represents a category with associated search facets.",
+  "fields": [
+    {
+      "name": "facets",
+      "description": "The search facets.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "SearchResultFacet"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the facet category.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

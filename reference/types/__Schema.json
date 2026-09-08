@@ -1,0 +1,80 @@
+{
+  "name": "__Schema",
+  "kind": "OBJECT",
+  "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
+  "fields": [
+    {
+      "name": "description",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "directives",
+      "description": "A list of all directives supported by this server.",
+      "type": {
+        "display": "[__Directive!]!",
+        "namedTypes": [
+          "__Directive"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "mutationType",
+      "description": "If this server supports mutation, the type that mutation operations will be rooted at.",
+      "type": {
+        "display": "__Type",
+        "namedTypes": [
+          "__Type"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "queryType",
+      "description": "The type that query operations will be rooted at.",
+      "type": {
+        "display": "__Type!",
+        "namedTypes": [
+          "__Type"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "subscriptionType",
+      "description": "If this server support subscription, the type that subscription operations will be rooted at.",
+      "type": {
+        "display": "__Type",
+        "namedTypes": [
+          "__Type"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "types",
+      "description": "A list of all types supported by this server.",
+      "type": {
+        "display": "[__Type!]!",
+        "namedTypes": [
+          "__Type"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

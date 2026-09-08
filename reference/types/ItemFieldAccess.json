@@ -1,0 +1,36 @@
+{
+  "name": "ItemFieldAccess",
+  "kind": "OBJECT",
+  "description": "Represents the field access rights for the current user.",
+  "fields": [
+    {
+      "name": "canRead",
+      "description": "The user can read the item field.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canWrite",
+      "description": "The user can write the item field.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

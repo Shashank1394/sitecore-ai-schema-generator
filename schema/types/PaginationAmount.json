@@ -1,0 +1,11 @@
+{
+  "name": "PaginationAmount",
+  "kind": "SCALAR",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

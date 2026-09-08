@@ -1,0 +1,22 @@
+{
+  "name": "CreateDomainPayload",
+  "kind": "OBJECT",
+  "description": "The result of the operation to create  the security domain.",
+  "fields": [
+    {
+      "name": "domain",
+      "description": "The created domain.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Domain",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

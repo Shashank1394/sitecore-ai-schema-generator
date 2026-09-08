@@ -1,0 +1,353 @@
+{
+  "name": "ItemTemplate",
+  "kind": "OBJECT",
+  "description": "Represents the item template.",
+  "fields": [
+    {
+      "name": "access",
+      "description": "The access rights for the current user or for the given user",
+      "type": {
+        "display": "ItemTemplateAccess",
+        "namedTypes": [
+          "ItemTemplateAccess"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "username",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "baseTemplates",
+      "description": "The base templates of the item template.",
+      "type": {
+        "display": "ItemTemplateConnection",
+        "namedTypes": [
+          "ItemTemplateConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "directOnly",
+          "description": "The flag indicating whether to get direct base templates only.",
+          "type": {
+            "display": "Boolean",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "fields",
+      "description": "All field definitions of the item template.",
+      "type": {
+        "display": "ItemTemplateFieldConnection",
+        "namedTypes": [
+          "ItemTemplateFieldConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "fullName",
+      "description": "The full name of the item template.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "hasAnyOfBaseTemplates",
+      "description": "Indicates whether at least one of the specified item templates is a base template.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "templateIds",
+          "description": null,
+          "type": {
+            "display": "[ID]!",
+            "namedTypes": [
+              "ID"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "description": "The icon of the item template.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name of the item template.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "ownFields",
+      "description": "Only own field definitions of the item template.",
+      "type": {
+        "display": "ItemTemplateFieldConnection",
+        "namedTypes": [
+          "ItemTemplateFieldConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "sections",
+      "description": "The section definitions of the item template.",
+      "type": {
+        "display": "ItemTemplateSectionConnection",
+        "namedTypes": [
+          "ItemTemplateSectionConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "standardValuesItem",
+      "description": "The standard values item created for the item template.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "language",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "templateId",
+      "description": "The globally-unique identifier of the item template.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

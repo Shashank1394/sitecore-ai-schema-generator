@@ -1,0 +1,38 @@
+{
+  "name": "TemplateFieldRuleQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the template item query.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "ruleFieldId",
+      "description": "The field ID.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "template",
+      "description": "The template item with the rule field.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "ItemTemplateQueryInput",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,34 @@
+{
+  "name": "SetMediaAvailabilityInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input for setting media item availability status.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "mediaItemId",
+      "description": "The ID of the media item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "status",
+      "description": "The target media availability status.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "MediaAvailabilityStatus",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

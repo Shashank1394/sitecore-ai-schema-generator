@@ -1,0 +1,25 @@
+{
+  "name": "CreateSiteCollectionPayload",
+  "kind": "OBJECT",
+  "description": "Represents a create site collection payload",
+  "fields": [
+    {
+      "name": "job",
+      "description": "Reference of the job",
+      "type": {
+        "display": "Job",
+        "namedTypes": [
+          "Job"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

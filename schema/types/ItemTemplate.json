@@ -1,0 +1,347 @@
+{
+  "name": "ItemTemplate",
+  "kind": "OBJECT",
+  "description": "Represents the item template.",
+  "fields": [
+    {
+      "name": "access",
+      "description": "The access rights for the current user or for the given user",
+      "args": [
+        {
+          "name": "username",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemTemplateAccess",
+        "ofType": null
+      }
+    },
+    {
+      "name": "baseTemplates",
+      "description": "The base templates of the item template.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "directOnly",
+          "description": "The flag indicating whether to get direct base templates only.",
+          "type": {
+            "kind": "SCALAR",
+            "name": "Boolean",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemTemplateConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "fields",
+      "description": "All field definitions of the item template.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemTemplateFieldConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "fullName",
+      "description": "The full name of the item template.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "hasAnyOfBaseTemplates",
+      "description": "Indicates whether at least one of the specified item templates is a base template.",
+      "args": [
+        {
+          "name": "templateIds",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              }
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "icon",
+      "description": "The icon of the item template.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the item template.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "ownFields",
+      "description": "Only own field definitions of the item template.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemTemplateFieldConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sections",
+      "description": "The section definitions of the item template.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemTemplateSectionConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "standardValuesItem",
+      "description": "The standard values item created for the item template.",
+      "args": [
+        {
+          "name": "language",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "templateId",
+      "description": "The globally-unique identifier of the item template.",
+      "args": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "kind": "ENUM",
+            "name": "IdFormat",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

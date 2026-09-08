@@ -1,0 +1,25 @@
+{
+  "name": "RuleSet",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset entity.",
+  "fields": [
+    {
+      "name": "rules",
+      "description": "The rules.",
+      "type": {
+        "display": "[RuleSetRule!]!",
+        "namedTypes": [
+          "RuleSetRule"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

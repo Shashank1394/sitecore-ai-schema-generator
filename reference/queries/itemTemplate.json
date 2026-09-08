@@ -1,0 +1,535 @@
+{
+  "operation": "itemTemplate",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "where": {
+      "type": "ItemTemplateQueryInput",
+      "description": null
+    }
+  },
+  "returnType": "ItemTemplate",
+  "inputTypes": {
+    "ItemTemplateQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents a query against item templates.",
+      "fields": {
+        "contextItemId": {
+          "type": "ID",
+          "description": "The ID of the context item. If provided the template query will try to lookup field sources."
+        },
+        "database": {
+          "type": "String",
+          "description": "The name of the item database."
+        },
+        "path": {
+          "type": "String",
+          "description": "The path of the item template."
+        },
+        "templateId": {
+          "type": "ID",
+          "description": "The ID of the item template. If both ID and path parameters are specified, the path parameter is ignored."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "access": {
+      "type": "ItemTemplateAccess",
+      "description": "The access rights for the current user or for the given user",
+      "arguments": {
+        "username": "String"
+      }
+    },
+    "baseTemplates": {
+      "type": "ItemTemplateConnection",
+      "description": "The base templates of the item template.",
+      "arguments": {
+        "after": "String",
+        "before": "String",
+        "directOnly": "Boolean",
+        "first": "PaginationAmount",
+        "last": "PaginationAmount"
+      }
+    },
+    "fields": {
+      "type": "ItemTemplateFieldConnection",
+      "description": "All field definitions of the item template.",
+      "arguments": {
+        "after": "String",
+        "before": "String",
+        "first": "PaginationAmount",
+        "last": "PaginationAmount"
+      }
+    },
+    "fullName": {
+      "type": "String!",
+      "description": "The full name of the item template.",
+      "arguments": {}
+    },
+    "hasAnyOfBaseTemplates": {
+      "type": "Boolean!",
+      "description": "Indicates whether at least one of the specified item templates is a base template.",
+      "arguments": {
+        "templateIds": "[ID]!"
+      }
+    },
+    "icon": {
+      "type": "String",
+      "description": "The icon of the item template.",
+      "arguments": {}
+    },
+    "name": {
+      "type": "String!",
+      "description": "The name of the item template.",
+      "arguments": {}
+    },
+    "ownFields": {
+      "type": "ItemTemplateFieldConnection",
+      "description": "Only own field definitions of the item template.",
+      "arguments": {
+        "after": "String",
+        "before": "String",
+        "first": "PaginationAmount",
+        "last": "PaginationAmount"
+      }
+    },
+    "sections": {
+      "type": "ItemTemplateSectionConnection",
+      "description": "The section definitions of the item template.",
+      "arguments": {
+        "after": "String",
+        "before": "String",
+        "first": "PaginationAmount",
+        "last": "PaginationAmount"
+      }
+    },
+    "standardValuesItem": {
+      "type": "Item",
+      "description": "The standard values item created for the item template.",
+      "arguments": {
+        "language": "String!"
+      }
+    },
+    "templateId": {
+      "type": "ID!",
+      "description": "The globally-unique identifier of the item template.",
+      "arguments": {
+        "format": "IdFormat"
+      }
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ItemTemplate",
+      "namedTypes": [
+        "ItemTemplate"
+      ]
+    },
+    "nodes": {
+      "ItemTemplate": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplate.json",
+        "references": [
+          "ItemTemplateAccess",
+          "ItemTemplateConnection",
+          "ItemTemplateFieldConnection",
+          "String",
+          "Boolean",
+          "ItemTemplateSectionConnection",
+          "Item",
+          "ID"
+        ]
+      },
+      "ItemTemplateAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "ItemTemplateConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateConnection.json",
+        "references": [
+          "ItemTemplateEdge",
+          "ItemTemplate",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateEdge.json",
+        "references": [
+          "String",
+          "ItemTemplate"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "ItemTemplateFieldConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldConnection.json",
+        "references": [
+          "ItemTemplateFieldEdge",
+          "ItemTemplateField",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateFieldEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldEdge.json",
+        "references": [
+          "String",
+          "ItemTemplateField"
+        ]
+      },
+      "ItemTemplateField": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateField.json",
+        "references": [
+          "Boolean",
+          "ItemTemplateFieldSource",
+          "String",
+          "ItemTemplateSection",
+          "Int",
+          "ID",
+          "FieldVersioning"
+        ]
+      },
+      "ItemTemplateFieldSource": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldSource.json",
+        "references": [
+          "ItemConnection",
+          "ItemTemplateFieldResolvedSource",
+          "String"
+        ]
+      },
+      "ItemConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemConnection.json",
+        "references": [
+          "ItemEdge",
+          "Item",
+          "PageInfo"
+        ]
+      },
+      "ItemEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemEdge.json",
+        "references": [
+          "String",
+          "Item"
+        ]
+      },
+      "Item": {
+        "kind": "OBJECT",
+        "file": "types/Item.json",
+        "references": [
+          "ItemAccess",
+          "Item",
+          "ItemConnection",
+          "String",
+          "ItemField",
+          "ItemFieldConnection",
+          "Boolean",
+          "Url",
+          "ItemTemplate",
+          "ID",
+          "Language",
+          "ItemLock",
+          "ItemPublish",
+          "Int",
+          "ItemWorkflow"
+        ]
+      },
+      "ItemAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ItemField": {
+        "kind": "OBJECT",
+        "file": "types/ItemField.json",
+        "references": [
+          "ItemFieldAccess",
+          "Boolean",
+          "ID",
+          "String",
+          "ItemTemplateField",
+          "ItemFieldValidation"
+        ]
+      },
+      "ItemFieldAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "ItemFieldValidation": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidation.json",
+        "references": [
+          "String",
+          "ItemFieldValidationResultConnection"
+        ]
+      },
+      "ItemFieldValidationResultConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResultConnection.json",
+        "references": [
+          "ItemFieldValidationResultEdge",
+          "ItemFieldValidationResult",
+          "PageInfo"
+        ]
+      },
+      "ItemFieldValidationResultEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResultEdge.json",
+        "references": [
+          "String",
+          "ItemFieldValidationResult"
+        ]
+      },
+      "ItemFieldValidationResult": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldValidationResult.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "ItemFieldConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldConnection.json",
+        "references": [
+          "ItemFieldEdge",
+          "ItemField",
+          "PageInfo"
+        ]
+      },
+      "ItemFieldEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemFieldEdge.json",
+        "references": [
+          "String",
+          "ItemField"
+        ]
+      },
+      "Url": {
+        "kind": "SCALAR",
+        "file": "types/Url.json",
+        "references": []
+      },
+      "Language": {
+        "kind": "OBJECT",
+        "file": "types/Language.json",
+        "references": [
+          "String"
+        ]
+      },
+      "ItemLock": {
+        "kind": "OBJECT",
+        "file": "types/ItemLock.json",
+        "references": [
+          "Boolean",
+          "String",
+          "ItemLockForUser"
+        ]
+      },
+      "ItemLockForUser": {
+        "kind": "OBJECT",
+        "file": "types/ItemLockForUser.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "ItemPublish": {
+        "kind": "OBJECT",
+        "file": "types/ItemPublish.json",
+        "references": [
+          "Boolean",
+          "DateTime"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      },
+      "ItemWorkflow": {
+        "kind": "OBJECT",
+        "file": "types/ItemWorkflow.json",
+        "references": [
+          "Boolean",
+          "Workflow",
+          "WorkflowState"
+        ]
+      },
+      "Workflow": {
+        "kind": "OBJECT",
+        "file": "types/Workflow.json",
+        "references": [
+          "WorkflowCommandConnection",
+          "String",
+          "WorkflowEventConnection",
+          "WorkflowState",
+          "Boolean",
+          "ItemConnection",
+          "Int",
+          "WorkflowStateConnection"
+        ]
+      },
+      "WorkflowCommandConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommandConnection.json",
+        "references": [
+          "WorkflowCommandEdge",
+          "WorkflowCommand",
+          "PageInfo"
+        ]
+      },
+      "WorkflowCommandEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommandEdge.json",
+        "references": [
+          "String",
+          "WorkflowCommand"
+        ]
+      },
+      "WorkflowCommand": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowCommand.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "WorkflowEventConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEventConnection.json",
+        "references": [
+          "WorkflowEventEdge",
+          "WorkflowEvent",
+          "PageInfo"
+        ]
+      },
+      "WorkflowEventEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEventEdge.json",
+        "references": [
+          "String",
+          "WorkflowEvent"
+        ]
+      },
+      "WorkflowEvent": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowEvent.json",
+        "references": [
+          "String",
+          "DateTime",
+          "WorkflowState"
+        ]
+      },
+      "WorkflowState": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowState.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "WorkflowStateConnection": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowStateConnection.json",
+        "references": [
+          "WorkflowStateEdge",
+          "WorkflowState",
+          "PageInfo"
+        ]
+      },
+      "WorkflowStateEdge": {
+        "kind": "OBJECT",
+        "file": "types/WorkflowStateEdge.json",
+        "references": [
+          "String",
+          "WorkflowState"
+        ]
+      },
+      "ItemTemplateFieldResolvedSource": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateFieldResolvedSource.json",
+        "references": [
+          "ItemConnection",
+          "String",
+          "Int"
+        ]
+      },
+      "ItemTemplateSection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSection.json",
+        "references": [
+          "String",
+          "ID",
+          "Int"
+        ]
+      },
+      "FieldVersioning": {
+        "kind": "ENUM",
+        "file": "types/FieldVersioning.json",
+        "references": []
+      },
+      "ItemTemplateSectionConnection": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSectionConnection.json",
+        "references": [
+          "ItemTemplateSectionEdge",
+          "ItemTemplateSection",
+          "PageInfo"
+        ]
+      },
+      "ItemTemplateSectionEdge": {
+        "kind": "OBJECT",
+        "file": "types/ItemTemplateSectionEdge.json",
+        "references": [
+          "String",
+          "ItemTemplateSection"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

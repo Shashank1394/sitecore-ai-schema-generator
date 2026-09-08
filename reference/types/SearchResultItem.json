@@ -1,0 +1,234 @@
+{
+  "name": "SearchResultItem",
+  "kind": "OBJECT",
+  "description": "Represents an item of the search result.",
+  "fields": [
+    {
+      "name": "createdBy",
+      "description": "The name of the user who created the item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "createdDate",
+      "description": "The creation date of the item.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "database",
+      "description": "The name of the database where the item exists.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "dataSource",
+      "description": "The source of the index document.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayName",
+      "description": "The localized name of the item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "innerItem",
+      "description": "The Sitecore item for the ",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "itemId",
+      "description": "The ID of the item.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "language",
+      "description": "The language of the item.",
+      "type": {
+        "display": "Language!",
+        "namedTypes": [
+          "Language"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name of the item. The name is not localized.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "parentId",
+      "description": "The ID of the parent item.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "path",
+      "description": "The full path of the item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "templateId",
+      "description": "The ID of the template the item uses.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "templateName",
+      "description": "The name of the template the item uses.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "updatedBy",
+      "description": "The name of the user who last updated the item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "updatedDate",
+      "description": "The date of the latest update to the item.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "uri",
+      "description": "The URI of the item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "version",
+      "description": "The version of the item.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "operation": "siteCollections",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DefaultSolutionInput",
+      "description": null
+    }
+  },
+  "returnType": "[SiteCollectionType]",
+  "inputTypes": {
+    "DefaultSolutionInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents default input parameters",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        }
+      }
+    }
+  },
+  "returnFields": {},
+  "outputDependencyGraph": {
+    "root": {
+      "display": "[SiteCollectionType]",
+      "namedTypes": [
+        "SiteCollectionType"
+      ]
+    },
+    "nodes": {
+      "SiteCollectionType": {
+        "kind": "OBJECT",
+        "file": "types/SiteCollectionType.json",
+        "references": [
+          "ItemAccess",
+          "String",
+          "ID",
+          "Int"
+        ]
+      },
+      "ItemAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

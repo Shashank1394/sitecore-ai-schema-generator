@@ -1,0 +1,38 @@
+{
+  "name": "PagingInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with paging parameters.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "pageIndex",
+      "description": "The page index.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Int",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "pageSize",
+      "description": "The page size.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Int",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,21 @@
+{
+  "name": "EmptyArchiveInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for emptying an archive",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "archiveName",
+      "description": "The name of the archive. The default value is 'archive'.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,84 @@
+{
+  "name": "UploadMediaInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input needed for creating a pre-signed upload URL.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "alt",
+      "description": "The alternative text for the media item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "database",
+      "description": "The database of the media item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "includeExtensionInItemName",
+      "description": "The indicator to include the file extension with the item name.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "itemPath",
+      "description": "The relative path, under sitecore media library, of the media item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language of the media item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "overwriteExisting",
+      "description": "The indicator to overwrite the media item.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "versioned",
+      "description": "The indicator to version the media item.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

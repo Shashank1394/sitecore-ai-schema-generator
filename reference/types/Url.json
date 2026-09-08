@@ -1,0 +1,13 @@
+{
+  "name": "Url",
+  "kind": "SCALAR",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

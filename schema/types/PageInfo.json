@@ -1,0 +1,60 @@
+{
+  "name": "PageInfo",
+  "kind": "OBJECT",
+  "description": "Information about pagination in a connection.",
+  "fields": [
+    {
+      "name": "endCursor",
+      "description": "When paginating forwards, the cursor to continue.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "hasNextPage",
+      "description": "Indicates whether more edges exist following the set defined by the clients arguments.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "hasPreviousPage",
+      "description": "Indicates whether more edges exist prior the set defined by the clients arguments.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "startCursor",
+      "description": "When paginating backwards, the cursor to continue.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

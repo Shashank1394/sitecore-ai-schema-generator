@@ -1,0 +1,28 @@
+{
+  "name": "MediaAvailabilityStatus",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "AVAILABLE",
+      "description": null
+    },
+    {
+      "name": "UNAVAILABLE",
+      "description": null
+    },
+    {
+      "name": "NOTFOUND",
+      "description": null
+    },
+    {
+      "name": "UNDEFINED",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

@@ -1,0 +1,79 @@
+{
+  "name": "SearchResult",
+  "kind": "OBJECT",
+  "description": "Represents a search result.",
+  "fields": [
+    {
+      "name": "facetMetrics",
+      "description": "The facet metric result.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "NON_NULL",
+          "name": null,
+          "ofType": {
+            "kind": "OBJECT",
+            "name": "KeyValuePairOfStringAndDecimal",
+            "ofType": null
+          }
+        }
+      }
+    },
+    {
+      "name": "facets",
+      "description": "The facet result.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "SearchResultFacetCategory",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "results",
+      "description": "The search result.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "SearchResultItem"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "totalCount",
+      "description": "The number of items in the search result.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Int",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

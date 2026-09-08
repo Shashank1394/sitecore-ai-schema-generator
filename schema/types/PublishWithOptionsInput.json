@@ -1,0 +1,28 @@
+{
+  "name": "PublishWithOptionsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for publishing with options.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "options",
+      "description": "The publishing options.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,22 @@
+{
+  "name": "SortDirection",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "ASCENDING",
+      "description": null
+    },
+    {
+      "name": "DESCENDING",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "PublishingTarget",
+  "kind": "OBJECT",
+  "description": "Represents the publishing target.",
+  "fields": [
+    {
+      "name": "name",
+      "description": "The name of the publishing target item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "previewPublishingTarget",
+      "description": "Indicates whether this publishing target can be assigned to workflow states that are not the final state.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "targetDatabase",
+      "description": "The name of the target database.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "name": "PublishItemInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for publishing an item.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "displayName",
+      "description": "The display name of the publish request.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "languages",
+      "description": "The publishing languages.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "name": "publishItemMode",
+      "description": "The publish item mode.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "PublishItemMode",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "publishRelatedItems",
+      "description": "Indicates whether to publish related items.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "publishSubItems",
+      "description": "Indicates whether to publish sub-items.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rootItemId",
+      "description": "The ID of the root item. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rootItemIds",
+      "description": "The IDs of the root items. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "rootItemPath",
+      "description": "The path of the root item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rootItemPaths",
+      "description": "The paths of the root items.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "sourceDatabase",
+      "description": "The source database name.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "targetDatabases",
+      "description": "The target databases name.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

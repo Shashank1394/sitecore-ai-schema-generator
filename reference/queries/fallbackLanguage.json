@@ -1,0 +1,77 @@
+{
+  "operation": "fallbackLanguage",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "Gets the fallback language for a specified language.",
+  "arguments": {
+    "databaseName": {
+      "type": "String",
+      "description": null
+    },
+    "name": {
+      "type": "String!",
+      "description": null
+    }
+  },
+  "returnType": "Language",
+  "inputTypes": {},
+  "returnFields": {
+    "charset": {
+      "type": "String",
+      "description": "The charset of the language.",
+      "arguments": {
+        "database": "String"
+      }
+    },
+    "displayName": {
+      "type": "String",
+      "description": "A human readable name of the language.",
+      "arguments": {}
+    },
+    "englishName": {
+      "type": "String",
+      "description": "Gets the culture name in the format languagefull [country/regionfull] in English.",
+      "arguments": {}
+    },
+    "iso": {
+      "type": "String",
+      "description": "The Two Letter ISO code of the language.",
+      "arguments": {}
+    },
+    "name": {
+      "type": "String!",
+      "description": "The culture name in the languagecode2-country/regioncode2 format.",
+      "arguments": {}
+    },
+    "nativeName": {
+      "type": "String",
+      "description": "The culture name, consisting of the language, the country/region, and the optional script, that the culture is set to display.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Language",
+      "namedTypes": [
+        "Language"
+      ]
+    },
+    "nodes": {
+      "Language": {
+        "kind": "OBJECT",
+        "file": "types/Language.json",
+        "references": [
+          "String"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

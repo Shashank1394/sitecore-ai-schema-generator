@@ -1,0 +1,353 @@
+{
+  "name": "Workflow",
+  "kind": "OBJECT",
+  "description": "Represents a workflow configured in Sitecore.",
+  "fields": [
+    {
+      "name": "commands",
+      "description": "Gets the workflow commands for the specified state. You can pass the state ID or specify an item of which the current workflow state will be used.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "WorkflowStateOrItemQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowCommandConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "displayName",
+      "description": "The display name of the workflow.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "history",
+      "description": "Gets the workflow history for the specified item.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "item",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "ItemQueryInput",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowEventConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "initialState",
+      "description": "Gets the initial state of the workflow.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowState",
+        "ofType": null
+      }
+    },
+    {
+      "name": "isApproved",
+      "description": "Checks if the workflow is approved for the specified item.",
+      "args": [
+        {
+          "name": "item",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "ItemQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "items",
+      "description": "Gets the items on the specified state",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "stateId",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemsCount",
+      "description": "Gets the number of items on the specified state.",
+      "args": [
+        {
+          "name": "stateId",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Int",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "state",
+      "description": "Finds a specific state.",
+      "args": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "WorkflowStateOrItemQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowState",
+        "ofType": null
+      }
+    },
+    {
+      "name": "states",
+      "description": "Gets the list of states defined for the workflow.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowStateConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "workflowId",
+      "description": "The workflow ID.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

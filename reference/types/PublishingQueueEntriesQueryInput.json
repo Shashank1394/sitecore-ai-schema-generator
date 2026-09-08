@@ -1,0 +1,54 @@
+{
+  "name": "PublishingQueueEntriesQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents an input for querying publishing queue entries.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "dateFilter",
+      "description": "The date filter parameters.",
+      "type": {
+        "display": "DateFilterInput",
+        "namedTypes": [
+          "DateFilterInput"
+        ]
+      }
+    },
+    {
+      "name": "itemsFilter",
+      "description": "The items filter parameters.",
+      "type": {
+        "display": "ItemsFilterInput",
+        "namedTypes": [
+          "ItemsFilterInput"
+        ]
+      }
+    },
+    {
+      "name": "paging",
+      "description": "The paging parameters.",
+      "type": {
+        "display": "PagingInput",
+        "namedTypes": [
+          "PagingInput"
+        ]
+      }
+    },
+    {
+      "name": "sort",
+      "description": "The sort parameters.",
+      "type": {
+        "display": "SortByInput!",
+        "namedTypes": [
+          "SortByInput"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

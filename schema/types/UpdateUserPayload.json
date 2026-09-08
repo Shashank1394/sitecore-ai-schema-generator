@@ -1,0 +1,22 @@
+{
+  "name": "UpdateUserPayload",
+  "kind": "OBJECT",
+  "description": "The result of the update operation for the security user.",
+  "fields": [
+    {
+      "name": "user",
+      "description": "The updated user.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "User",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

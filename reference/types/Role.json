@@ -1,0 +1,228 @@
+{
+  "name": "Role",
+  "kind": "OBJECT",
+  "description": "Represents a security role.",
+  "fields": [
+    {
+      "name": "accountType",
+      "description": "The type of the account.",
+      "type": {
+        "display": "AccountType!",
+        "namedTypes": [
+          "AccountType"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "description",
+      "description": "The description.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayName",
+      "description": "The display name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "domain",
+      "description": "The domain associated with the account.",
+      "type": {
+        "display": "Domain",
+        "namedTypes": [
+          "Domain"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "isEveryone",
+      "description": "The flag indicating if this role represents an 'everyone' role.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "isGlobal",
+      "description": "The flag indicating if this role is global.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "localName",
+      "description": "The local name of the role.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "memberOf",
+      "description": "The accounts with this role.",
+      "type": {
+        "display": "AccountConnection",
+        "namedTypes": [
+          "AccountConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "indirect",
+          "description": null,
+          "type": {
+            "display": "Boolean!",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "members",
+      "description": "The account members of the role.",
+      "type": {
+        "display": "AccountConnection",
+        "namedTypes": [
+          "AccountConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "indirect",
+          "description": null,
+          "type": {
+            "display": "Boolean!",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "name",
+      "description": "The name of the role.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [
+    "Account"
+  ],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "ItemWorkflow",
+  "kind": "OBJECT",
+  "description": "Represents the item workflow.",
+  "fields": [
+    {
+      "name": "canEdit",
+      "description": "Determines whether the source item can be edited.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "canSave",
+      "description": "Determines whether the source item can be saved.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "workflow",
+      "description": "The workflow.",
+      "type": {
+        "display": "Workflow",
+        "namedTypes": [
+          "Workflow"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "workflowState",
+      "description": "The current workflow state of the item.",
+      "type": {
+        "display": "WorkflowState",
+        "namedTypes": [
+          "WorkflowState"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

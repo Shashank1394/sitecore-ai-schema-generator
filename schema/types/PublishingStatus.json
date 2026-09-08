@@ -1,0 +1,92 @@
+{
+  "name": "PublishingStatus",
+  "kind": "OBJECT",
+  "description": "Represents the status of the publishing operation.",
+  "fields": [
+    {
+      "name": "isDone",
+      "description": "Indicates whether the publishing operation is completed.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "isFailed",
+      "description": "Indicates whether the publishing operation has failed.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "languages",
+      "description": "The published languages.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Language",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "processed",
+      "description": "The number of items processed by the publishing operation.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Long",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "state",
+      "description": "The state of the publishing operation.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "PublishingOperationState",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "targetDatabase",
+      "description": "The target database.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Database",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

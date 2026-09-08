@@ -1,0 +1,108 @@
+{
+  "name": "Job",
+  "kind": "OBJECT",
+  "description": "Represents a job to be executed in Sitecore.",
+  "fields": [
+    {
+      "name": "displayName",
+      "description": "The job display name.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "done",
+      "description": "Indicate whether the job is finished.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "handle",
+      "description": "The job handle.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "metadata",
+      "description": "The job metadata.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "KeyValuePair",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The job name.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "options",
+      "description": "The job options.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "JobOptions",
+        "ofType": null
+      }
+    },
+    {
+      "name": "queueTime",
+      "description": "The job queue time.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "DateTime",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "status",
+      "description": "The job status.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "JobStatus",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

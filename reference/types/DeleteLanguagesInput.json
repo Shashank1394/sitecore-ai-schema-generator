@@ -1,0 +1,32 @@
+{
+  "name": "DeleteLanguagesInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting multiple languages.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The database of the languages to be deleted.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "names",
+      "description": "The languages names to be deleted.",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "SitePosMappingsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to set POS",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "id",
+      "description": "Site id",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "newValue",
+      "description": "New POS value",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,88 @@
+{
+  "name": "ItemTemplateFieldResolvedSource",
+  "kind": "OBJECT",
+  "description": "Represents the resolved source mapping for an item field source.",
+  "fields": [
+    {
+      "name": "items",
+      "description": "The resolved items for this source mapping.",
+      "type": {
+        "display": "ItemConnection",
+        "namedTypes": [
+          "ItemConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "source",
+      "description": "The source value for this resolved mapping.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "sourceIndex",
+      "description": "The position of this source within the field source expression.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "RuleDefinition",
+  "kind": "OBJECT",
+  "description": "Represents a rule definition.",
+  "fields": [
+    {
+      "name": "definitionId",
+      "description": "The globally-unique identifier for this rule definition.",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "name",
+      "description": "The rule name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "operators",
+      "description": "The rule definition operators used for the reference text.",
+      "type": {
+        "display": "[RuleDefinitionOperation!]!",
+        "namedTypes": [
+          "RuleDefinitionOperation"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "referenceText",
+      "description": "The rule reference text.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "text",
+      "description": "The rule text.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

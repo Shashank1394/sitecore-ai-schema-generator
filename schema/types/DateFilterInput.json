@@ -1,0 +1,38 @@
+{
+  "name": "DateFilterInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with date filtering parameters.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "dateFrom",
+      "description": "The date to filter results from.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "DateTime",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "dateTo",
+      "description": "The date to filter results to.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "DateTime",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

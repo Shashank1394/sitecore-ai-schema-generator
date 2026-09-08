@@ -1,0 +1,75 @@
+{
+  "name": "PublishSiteInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for publishing a site.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "displayName",
+      "description": "The display name of the publish request.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "languages",
+      "description": "The publishing languages.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "name": "publishSiteMode",
+      "description": "The publish site mode.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "PublishSiteMode",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "sourceDatabase",
+      "description": "The source database name.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "targetDatabases",
+      "description": "The target databases name.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

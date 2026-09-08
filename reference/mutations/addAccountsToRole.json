@@ -1,0 +1,65 @@
+{
+  "operation": "addAccountsToRole",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "AddAccountsToRoleInput!",
+      "description": null
+    }
+  },
+  "returnType": "AddAccountsToRolePayload",
+  "inputTypes": {
+    "AddAccountsToRoleInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for adding security accounts to the current parent security role.",
+      "fields": {
+        "roleName": {
+          "type": "String!",
+          "description": "The name of the parent role."
+        },
+        "roles": {
+          "type": "[String]",
+          "description": "The names of the roles to add."
+        },
+        "users": {
+          "type": "[String]",
+          "description": "The names of the users to add."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The operation status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "AddAccountsToRolePayload",
+      "namedTypes": [
+        "AddAccountsToRolePayload"
+      ]
+    },
+    "nodes": {
+      "AddAccountsToRolePayload": {
+        "kind": "OBJECT",
+        "file": "types/AddAccountsToRolePayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

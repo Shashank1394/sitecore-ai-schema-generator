@@ -1,0 +1,34 @@
+{
+  "name": "SortByInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with sort by field name and direction parameters.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "direction",
+      "description": "The sort direction.",
+      "type": {
+        "display": "SortDirection!",
+        "namedTypes": [
+          "SortDirection"
+        ]
+      }
+    },
+    {
+      "name": "field",
+      "description": "The name of the field.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

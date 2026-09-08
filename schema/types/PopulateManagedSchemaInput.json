@@ -1,0 +1,28 @@
+{
+  "name": "PopulateManagedSchemaInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for populating the managed schema.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "indexNames",
+      "description": "The list of names indexes targetted by the schema population operation.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

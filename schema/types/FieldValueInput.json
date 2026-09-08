@@ -1,0 +1,43 @@
+{
+  "name": "FieldValueInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Item field data.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "name",
+      "description": "The field name.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "reset",
+      "description": "Indicates whether to reset the field value. The default value is false.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "value",
+      "description": "The field value. If the value is not specified or the Reset parameter is true, the field value is reset to the standard value.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

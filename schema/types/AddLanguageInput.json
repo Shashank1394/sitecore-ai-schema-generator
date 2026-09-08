@@ -1,0 +1,115 @@
+{
+  "name": "AddLanguageInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for adding a language.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "charset",
+      "description": "The charset of the language to be created.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "codePage",
+      "description": "The code page of the language to be created.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "customCode",
+      "description": "The custom code of the language to be created.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "The database of the language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "encoding",
+      "description": "The encoding of the language to be created.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "fallbackCode",
+      "description": "The fallback code of the language to be created.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "languageCode",
+      "description": "The code of the language to be created",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the language to be created.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "regionCode",
+      "description": "The region code of the language to be created.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "spellChecker",
+      "description": "The spellchecker of the language to be created.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "useSupportedLanguageAsFallback",
+      "description": "Indicator to use language definition as fallback. The default value is true.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

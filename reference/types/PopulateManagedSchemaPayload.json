@@ -1,0 +1,25 @@
+{
+  "name": "PopulateManagedSchemaPayload",
+  "kind": "OBJECT",
+  "description": "The result of the schema population operation.",
+  "fields": [
+    {
+      "name": "jobs",
+      "description": "The references to all schema population jobs.",
+      "type": {
+        "display": "[Job]",
+        "namedTypes": [
+          "Job"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

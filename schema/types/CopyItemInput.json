@@ -1,0 +1,75 @@
+{
+  "name": "CopyItemInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for copying an item.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "copyItemName",
+      "description": "The copied item name.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deepCopy",
+      "description": "Indicates whether to copy all descendent items. The default value is true.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The ID of the item. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "path",
+      "description": "The item path.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "targetParentId",
+      "description": "The ID of the parent item. If both ID and path parameters are specified, the target parent path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "targetParentPath",
+      "description": "The path of the parent item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

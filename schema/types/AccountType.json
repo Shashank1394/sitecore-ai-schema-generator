@@ -1,0 +1,24 @@
+{
+  "name": "AccountType",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "UNKNOWN",
+      "description": null
+    },
+    {
+      "name": "ROLE",
+      "description": null
+    },
+    {
+      "name": "USER",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

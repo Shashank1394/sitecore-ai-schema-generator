@@ -1,0 +1,105 @@
+{
+  "operation": "index",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "Get a specific search index.",
+  "arguments": {
+    "indexName": {
+      "type": "String!",
+      "description": null
+    }
+  },
+  "returnType": "Index",
+  "inputTypes": {},
+  "returnFields": {
+    "documentsCount": {
+      "type": "Long",
+      "description": "The number of documents in the index.",
+      "arguments": {}
+    },
+    "hasDeletions": {
+      "type": "Boolean",
+      "description": "Indicates if any document has been deleted.",
+      "arguments": {}
+    },
+    "lastRebuildDuration": {
+      "type": "String",
+      "description": "The time duration for the last index rebuild.",
+      "arguments": {}
+    },
+    "lastUpdated": {
+      "type": "DateTime",
+      "description": "The last time the index has been updated.",
+      "arguments": {}
+    },
+    "name": {
+      "type": "String!",
+      "description": "The search index name.",
+      "arguments": {}
+    },
+    "numberOfFields": {
+      "type": "Int",
+      "description": "The number of fields in the index.",
+      "arguments": {}
+    },
+    "numberOfTerms": {
+      "type": "Long",
+      "description": "The number of terms in the index.",
+      "arguments": {}
+    },
+    "outOfDate": {
+      "type": "Boolean",
+      "description": "Indicates if there are out of date indexes.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Index",
+      "namedTypes": [
+        "Index"
+      ]
+    },
+    "nodes": {
+      "Index": {
+        "kind": "OBJECT",
+        "file": "types/Index.json",
+        "references": [
+          "Long",
+          "Boolean",
+          "String",
+          "DateTime",
+          "Int"
+        ]
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

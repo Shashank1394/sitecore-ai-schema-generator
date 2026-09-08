@@ -1,0 +1,1803 @@
+{
+  "name": "Query",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "archivedItem",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "ArchiveItemQueryInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ArchivedItem",
+        "ofType": null
+      }
+    },
+    {
+      "name": "archivedItems",
+      "description": null,
+      "args": [
+        {
+          "name": "archiveName",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "pageIndex",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "Int",
+            "ofType": null
+          }
+        },
+        {
+          "name": "pageSize",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "Int",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "ArchivedItem",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "availableRenderings",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "GetRenderingsInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "RenderingItemType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "channel",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "GetChannelInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ChannelType",
+        "ofType": null
+      }
+    },
+    {
+      "name": "channels",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "GetChannelsInput",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ChannelTypeConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "currentUser",
+      "description": null,
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "User",
+        "ofType": null
+      }
+    },
+    {
+      "name": "databases",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DatabaseConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "dataSourceTemplates",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DataSourceTemplatesType",
+        "ofType": null
+      }
+    },
+    {
+      "name": "domain",
+      "description": null,
+      "args": [
+        {
+          "name": "domainName",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Domain",
+        "ofType": null
+      }
+    },
+    {
+      "name": "domains",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DomainConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "fallbackLanguage",
+      "description": "Gets the fallback language for a specified language.",
+      "args": [
+        {
+          "name": "databaseName",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "name",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Language",
+        "ofType": null
+      }
+    },
+    {
+      "name": "index",
+      "description": "Get a specific search index.",
+      "args": [
+        {
+          "name": "indexName",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Index",
+        "ofType": null
+      }
+    },
+    {
+      "name": "indexes",
+      "description": "Get search indexes. If the indexNames input parameter is null, get all search indexes.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "indexNames",
+          "description": null,
+          "type": {
+            "kind": "LIST",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "IndexConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "isJobQueued",
+      "description": null,
+      "args": [
+        {
+          "name": "jobName",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "isJobRunning",
+      "description": null,
+      "args": [
+        {
+          "name": "jobName",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "item",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "ItemQueryInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemTemplate",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "ItemTemplateQueryInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemTemplate",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemTemplates",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "ItemTemplateQueryInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ItemTemplateConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "job",
+      "description": "Get a specific job by job name or job handle.",
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "JobQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Job",
+        "ofType": null
+      }
+    },
+    {
+      "name": "jobs",
+      "description": "Get all jobs if no input is specified. The jobName parameter accepts StartWith/EndWith/Wrapped in (*).",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "JobQueryInput",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "JobConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "Gets the specified language.",
+      "args": [
+        {
+          "name": "name",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Language",
+        "ofType": null
+      }
+    },
+    {
+      "name": "languageItem",
+      "description": "Gets the specified language item.",
+      "args": [
+        {
+          "name": "databaseName",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "name",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Item",
+        "ofType": null
+      }
+    },
+    {
+      "name": "languages",
+      "description": "Get all the languages in the specified database for the current user.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "databaseName",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "LanguageConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "mediaItem",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "MediaItemQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "MediaItem",
+        "ofType": null
+      }
+    },
+    {
+      "name": "mediaItemAvailability",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "MediaItemQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "MediaAvailabilityStatus",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "meta",
+      "description": "API meta",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "ApiMeta",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "pageBranchesRoots",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultPageBranchesInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "PageBranchesRootItemType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "pageDesigns",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultPresentationInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "PageDesignType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "pageDesignsRoots",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultPresentationInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "PageDesignsRootType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "parseRule",
+      "description": null,
+      "args": [
+        {
+          "name": "rule",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RuleSetRule",
+        "ofType": null
+      }
+    },
+    {
+      "name": "parseRuleSet",
+      "description": null,
+      "args": [
+        {
+          "name": "ruleSet",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RuleSet",
+        "ofType": null
+      }
+    },
+    {
+      "name": "partialDesigns",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultPresentationInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "PartialDesignType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "partialDesignsRoots",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultPresentationInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "PartialDesignsRootType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "publishingQueueEntries",
+      "description": null,
+      "args": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "PublishingQueueEntriesQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "PublishingQueueEntryResult",
+        "ofType": null
+      }
+    },
+    {
+      "name": "publishingStatus",
+      "description": null,
+      "args": [
+        {
+          "name": "publishingOperationId",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "PublishingStatus",
+        "ofType": null
+      }
+    },
+    {
+      "name": "publishingTargets",
+      "description": null,
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "PublishingTarget",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "role",
+      "description": null,
+      "args": [
+        {
+          "name": "roleName",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Role",
+        "ofType": null
+      }
+    },
+    {
+      "name": "roles",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RoleConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rule",
+      "description": null,
+      "args": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RulesQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Rule",
+        "ofType": null
+      }
+    },
+    {
+      "name": "ruleSet",
+      "description": null,
+      "args": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RuleItemQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RuleSet",
+        "ofType": null
+      }
+    },
+    {
+      "name": "ruleTemplate",
+      "description": null,
+      "args": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "TemplateFieldRuleQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "TemplateFieldRule",
+        "ofType": null
+      }
+    },
+    {
+      "name": "search",
+      "description": null,
+      "args": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "SearchQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "SearchResult",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "selectionProfiles",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "UserProfileSelectorConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "site",
+      "description": null,
+      "args": [
+        {
+          "name": "siteName",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Site",
+        "ofType": null
+      }
+    },
+    {
+      "name": "siteCollections",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultSolutionInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "SiteCollectionType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "siteCollectionsResults",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultSolutionInput",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SiteCollectionTypeConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sites",
+      "description": null,
+      "args": [
+        {
+          "name": "includeSystemSites",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "Boolean",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Site",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "solutionSites",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "SolutionSitesInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "SolutionSiteType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "solutionSitesSearch",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "SolutionSitesSearchInput",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SolutionSiteWithRootTypeConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "solutionSitesWithRoot",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "SolutionSitesInput",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SolutionSiteWithRootTypeConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "solutionTemplates",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "DefaultSolutionInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "SolutionTemplateType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "supportedLanguages",
+      "description": "Gets all the languages that are supported by Sitecore.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SupportedLanguageConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "tenantTemplates",
+      "description": null,
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "TenantTemplatesInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "TenantTemplateType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "user",
+      "description": null,
+      "args": [
+        {
+          "name": "userName",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "User",
+        "ofType": null
+      }
+    },
+    {
+      "name": "users",
+      "description": null,
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "UserConnection",
+        "ofType": null
+      }
+    },
+    {
+      "name": "workflow",
+      "description": "Get a specific workflow.",
+      "args": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "WorkflowIdOrItemQueryInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Workflow",
+        "ofType": null
+      }
+    },
+    {
+      "name": "workflows",
+      "description": "Get all configured workflows.",
+      "args": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "String",
+            "ofType": null
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "kind": "SCALAR",
+            "name": "PaginationAmount",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "WorkflowConnection",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

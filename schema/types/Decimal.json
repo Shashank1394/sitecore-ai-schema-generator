@@ -1,0 +1,11 @@
+{
+  "name": "Decimal",
+  "kind": "SCALAR",
+  "description": "The built-in `Decimal` scalar type.",
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

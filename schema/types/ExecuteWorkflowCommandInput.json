@@ -1,0 +1,47 @@
+{
+  "name": "ExecuteWorkflowCommandInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for executing a workflow command.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "commandId",
+      "description": "The ID of the workflow command.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "comments",
+      "description": "The workflow comments.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "item",
+      "description": "The target item of the workflow command.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "ItemQueryInput",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,26 @@
+{
+  "name": "PublishSiteMode",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "FULL",
+      "description": null
+    },
+    {
+      "name": "INCREMENTAL",
+      "description": null
+    },
+    {
+      "name": "SMART",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

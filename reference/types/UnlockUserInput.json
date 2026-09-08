@@ -1,0 +1,24 @@
+{
+  "name": "UnlockUserInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for unlocking a security user.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "userName",
+      "description": "The name of the user to unlock.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

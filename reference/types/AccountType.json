@@ -1,0 +1,26 @@
+{
+  "name": "AccountType",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "UNKNOWN",
+      "description": null
+    },
+    {
+      "name": "ROLE",
+      "description": null
+    },
+    {
+      "name": "USER",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

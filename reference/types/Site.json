@@ -1,0 +1,388 @@
+{
+  "name": "Site",
+  "kind": "OBJECT",
+  "description": "Represents a site configured within Sitecore.",
+  "fields": [
+    {
+      "name": "backend",
+      "description": "Indicates whether this instance is a backend site.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "browserTitle",
+      "description": "The browser title.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "cacheMedia",
+      "description": "The flag indicating whether to use media cache. ",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "contentDatabase",
+      "description": "The content database.",
+      "type": {
+        "display": "Database",
+        "namedTypes": [
+          "Database"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "contentLanguage",
+      "description": "The content language.",
+      "type": {
+        "display": "Language",
+        "namedTypes": [
+          "Language"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "contentStartItem",
+      "description": "The content start item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "contentStartPath",
+      "description": "The content start path.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "database",
+      "description": "The database.",
+      "type": {
+        "display": "Database",
+        "namedTypes": [
+          "Database"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "defaultDevice",
+      "description": "The default device.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "device",
+      "description": "The device.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "dictionaryDomain",
+      "description": "The dictionary domain.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "disableFiltering",
+      "description": "Indicates whether the SiteContext disables the filtering.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "disableWebEditEditing",
+      "description": "Indicates whether the WebEdit mode is editable.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "disableXmlControls",
+      "description": "Indicates whether XML controls are disabled for this site.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayDate",
+      "description": "The display date.",
+      "type": {
+        "display": "DateTime",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayMode",
+      "description": "The display mode.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "domain",
+      "description": "The domain.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "enableDebugger",
+      "description": "Indicates whether the SiteContext enables the debugger.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "enablePreview",
+      "description": "Indicates whether the SiteContext enables previewing.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "enableWebEdit",
+      "description": "Indicates whether the SiteContext enables web editing.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "enableWorkflow",
+      "description": "Indicates whether the SiteContext enables workflow.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "filterItems",
+      "description": "Indicates whether the SiteContext filters the items.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "hostName",
+      "description": "The host name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "language",
+      "description": "The language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "loginPage",
+      "description": "The login page.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name of the site.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "previewUnpublishableItems",
+      "description": "Indicates whether to allow previewing items that cannot be published yet.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "properties",
+      "description": "The properties.",
+      "type": {
+        "display": "[KeyValuePair]",
+        "namedTypes": [
+          "KeyValuePair"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "requireLogin",
+      "description": "Indicates whether the SiteContext requires login.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "rootItem",
+      "description": "The root item.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "rootPath",
+      "description": "The root path.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "startItem",
+      "description": "The start item.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "startPath",
+      "description": "The start path.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "targetHostName",
+      "description": "The name of the target host.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "ApiMeta",
+  "kind": "OBJECT",
+  "description": "Represents meta information for the API.",
+  "fields": [
+    {
+      "name": "version",
+      "description": "API version.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "xMVersion",
+      "description": "XM version.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

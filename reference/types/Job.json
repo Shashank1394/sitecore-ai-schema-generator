@@ -1,0 +1,102 @@
+{
+  "name": "Job",
+  "kind": "OBJECT",
+  "description": "Represents a job to be executed in Sitecore.",
+  "fields": [
+    {
+      "name": "displayName",
+      "description": "The job display name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "done",
+      "description": "Indicate whether the job is finished.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "handle",
+      "description": "The job handle.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "metadata",
+      "description": "The job metadata.",
+      "type": {
+        "display": "[KeyValuePair]",
+        "namedTypes": [
+          "KeyValuePair"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The job name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "options",
+      "description": "The job options.",
+      "type": {
+        "display": "JobOptions",
+        "namedTypes": [
+          "JobOptions"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "queueTime",
+      "description": "The job queue time.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "status",
+      "description": "The job status.",
+      "type": {
+        "display": "JobStatus",
+        "namedTypes": [
+          "JobStatus"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "ItemToFilterInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with filtering parameters for item.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "itemId",
+      "description": "The item ID.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "language",
+      "description": "The item language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

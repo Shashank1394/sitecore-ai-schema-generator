@@ -1,0 +1,25 @@
+{
+  "name": "DeleteItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the delete operation for the item.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The status of the delete item operation.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

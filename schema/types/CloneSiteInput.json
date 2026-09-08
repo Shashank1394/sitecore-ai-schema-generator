@@ -1,0 +1,88 @@
+{
+  "name": "CloneSiteInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to clone a site",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "cloneName",
+      "description": "Clone site name",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "cloneSiteDefinitions",
+      "description": "Clone site defitninions from source site or create new one",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "description",
+      "description": "Clone site description",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "displayName",
+      "description": "Clone site display name",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "posMappings",
+      "description": "Point of sale mappings",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "PointOfSaleMappingInput",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "siteId",
+      "description": "Site ID",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "Site name",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

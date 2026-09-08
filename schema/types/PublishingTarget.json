@@ -1,0 +1,54 @@
+{
+  "name": "PublishingTarget",
+  "kind": "OBJECT",
+  "description": "Represents the publishing target.",
+  "fields": [
+    {
+      "name": "name",
+      "description": "The name of the publishing target item.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "previewPublishingTarget",
+      "description": "Indicates whether this publishing target can be assigned to workflow states that are not the final state.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "targetDatabase",
+      "description": "The name of the target database.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

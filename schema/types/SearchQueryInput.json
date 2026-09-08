@@ -1,0 +1,105 @@
+{
+  "name": "SearchQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with search query and parameters.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "facetMetrics",
+      "description": "The list of facets metrics.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "SearchFacetMetricInput",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "facetOnFields",
+      "description": "The list of fields for building facets.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "filterStatement",
+      "description": "The filter statement.",
+      "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "SearchStatementInput",
+        "ofType": null
+      }
+    },
+    {
+      "name": "index",
+      "description": "The name of the index used for searching.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "The flag controlling whether to search in a particular language.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "latestVersionOnly",
+      "description": "The flag controlling whether to return all or only latest versions of items in the search result.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "paging",
+      "description": "The paging parameters.",
+      "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "SearchPagingInput",
+        "ofType": null
+      }
+    },
+    {
+      "name": "searchStatement",
+      "description": "The search statement.",
+      "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "SearchStatementInput",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sort",
+      "description": "The list of fields for ordering the search results.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "SearchSortInput",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

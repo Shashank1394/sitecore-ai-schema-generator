@@ -1,0 +1,42 @@
+{
+  "name": "ConfigurePageDesignsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input parameters for templates and page designs",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "mapping",
+      "description": "List of template ID to page design ID mappings",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "Current site name",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

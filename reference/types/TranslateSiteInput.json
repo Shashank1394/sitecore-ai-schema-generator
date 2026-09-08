@@ -1,0 +1,84 @@
+{
+  "name": "TranslateSiteInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to translate a site",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "brandKitId",
+      "description": "Brand kit identifier",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "resetWorkflow",
+      "description": "Ensure that translated versions are created in the initial workflow state",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "siteId",
+      "description": "Site ID",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "sourceLanguage",
+      "description": "Source language",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "targetLanguage",
+      "description": "Target language",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "translateIfTargetVersionExists",
+      "description": "Skip item if target language version already exists",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

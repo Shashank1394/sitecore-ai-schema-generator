@@ -1,0 +1,22 @@
+{
+  "name": "CleanUpDatabasesInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for cleaning up a database.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "databaseNames",
+      "description": "The names of the databases targetted by the cleanup operation.",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

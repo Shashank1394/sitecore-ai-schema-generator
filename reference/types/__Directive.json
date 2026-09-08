@@ -1,0 +1,69 @@
+{
+  "name": "__Directive",
+  "kind": "OBJECT",
+  "description": "A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.\r\n\r\nIn some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.",
+  "fields": [
+    {
+      "name": "args",
+      "description": null,
+      "type": {
+        "display": "[__InputValue!]!",
+        "namedTypes": [
+          "__InputValue"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "description",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "isRepeatable",
+      "description": null,
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "locations",
+      "description": null,
+      "type": {
+        "display": "[__DirectiveLocation!]!",
+        "namedTypes": [
+          "__DirectiveLocation"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": null,
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

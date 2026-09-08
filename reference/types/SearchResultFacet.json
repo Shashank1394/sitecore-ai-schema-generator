@@ -1,0 +1,36 @@
+{
+  "name": "SearchResultFacet",
+  "kind": "OBJECT",
+  "description": "Represents a search facet.",
+  "fields": [
+    {
+      "name": "count",
+      "description": "The number of documents matching the facet value.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The facet value.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

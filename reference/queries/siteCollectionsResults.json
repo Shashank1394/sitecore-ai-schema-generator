@@ -1,0 +1,139 @@
+{
+  "operation": "siteCollectionsResults",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "input": {
+      "type": "DefaultSolutionInput",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "SiteCollectionTypeConnection",
+  "inputTypes": {
+    "DefaultSolutionInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents default input parameters",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "edges": {
+      "type": "[SiteCollectionTypeEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[SiteCollectionType]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    },
+    "totalCount": {
+      "type": "Int!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "SiteCollectionTypeConnection",
+      "namedTypes": [
+        "SiteCollectionTypeConnection"
+      ]
+    },
+    "nodes": {
+      "SiteCollectionTypeConnection": {
+        "kind": "OBJECT",
+        "file": "types/SiteCollectionTypeConnection.json",
+        "references": [
+          "SiteCollectionTypeEdge",
+          "SiteCollectionType",
+          "PageInfo",
+          "Int"
+        ]
+      },
+      "SiteCollectionTypeEdge": {
+        "kind": "OBJECT",
+        "file": "types/SiteCollectionTypeEdge.json",
+        "references": [
+          "String",
+          "SiteCollectionType"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "SiteCollectionType": {
+        "kind": "OBJECT",
+        "file": "types/SiteCollectionType.json",
+        "references": [
+          "ItemAccess",
+          "String",
+          "ID",
+          "Int"
+        ]
+      },
+      "ItemAccess": {
+        "kind": "OBJECT",
+        "file": "types/ItemAccess.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

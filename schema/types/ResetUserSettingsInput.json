@@ -1,0 +1,25 @@
+{
+  "name": "ResetUserSettingsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for resetting the settings of a security user.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "userName",
+      "description": "The name of the user.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

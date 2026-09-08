@@ -1,0 +1,92 @@
+{
+  "operation": "rule",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "query": {
+      "type": "RulesQueryInput!",
+      "description": null
+    }
+  },
+  "returnType": "Rule",
+  "inputTypes": {
+    "RulesQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the rule item query.",
+      "fields": {
+        "rulesPath": {
+          "type": "String!",
+          "description": "The rules path."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "actions": {
+      "type": "[RuleDefinitionGroup!]!",
+      "description": "The actions.",
+      "arguments": {}
+    },
+    "conditions": {
+      "type": "[RuleDefinitionGroup!]!",
+      "description": "The conditions.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Rule",
+      "namedTypes": [
+        "Rule"
+      ]
+    },
+    "nodes": {
+      "Rule": {
+        "kind": "OBJECT",
+        "file": "types/Rule.json",
+        "references": [
+          "RuleDefinitionGroup"
+        ]
+      },
+      "RuleDefinitionGroup": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinitionGroup.json",
+        "references": [
+          "ID",
+          "String",
+          "RuleDefinition"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "RuleDefinition": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinition.json",
+        "references": [
+          "ID",
+          "String",
+          "RuleDefinitionOperation"
+        ]
+      },
+      "RuleDefinitionOperation": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinitionOperation.json",
+        "references": [
+          "String"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "CreateRolePayload",
+  "kind": "OBJECT",
+  "description": "The result of creating a security role.",
+  "fields": [
+    {
+      "name": "role",
+      "description": "The created role",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Role",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

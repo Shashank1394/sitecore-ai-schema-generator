@@ -1,0 +1,74 @@
+{
+  "name": "RuleSetRule",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset rule entity.",
+  "fields": [
+    {
+      "name": "actions",
+      "description": "The actions.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "RuleSetRuleAction"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "conditions",
+      "description": "The conditions.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "RuleSetRuleCondition"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the rule.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "originalXml",
+      "description": "The original XML of the rule.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

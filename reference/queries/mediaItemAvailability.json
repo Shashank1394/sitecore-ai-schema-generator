@@ -1,0 +1,60 @@
+{
+  "operation": "mediaItemAvailability",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "where": {
+      "type": "MediaItemQueryInput!",
+      "description": null
+    }
+  },
+  "returnType": "MediaAvailabilityStatus!",
+  "inputTypes": {
+    "MediaItemQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents media item query",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "The name of the database where media item exits."
+        },
+        "language": {
+          "type": "String",
+          "description": "The language of the media item."
+        },
+        "mediaItemId": {
+          "type": "ID",
+          "description": "The ID of the media item. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "path": {
+          "type": "String",
+          "description": "The full path of the media item. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "version": {
+          "type": "Int",
+          "description": "The version number of the media item."
+        }
+      }
+    }
+  },
+  "returnFields": {},
+  "outputDependencyGraph": {
+    "root": {
+      "display": "MediaAvailabilityStatus!",
+      "namedTypes": [
+        "MediaAvailabilityStatus"
+      ]
+    },
+    "nodes": {
+      "MediaAvailabilityStatus": {
+        "kind": "ENUM",
+        "file": "types/MediaAvailabilityStatus.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

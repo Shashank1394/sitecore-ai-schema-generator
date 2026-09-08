@@ -1,0 +1,20 @@
+{
+  "name": "SortDirection",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "ASCENDING",
+      "description": null
+    },
+    {
+      "name": "DESCENDING",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

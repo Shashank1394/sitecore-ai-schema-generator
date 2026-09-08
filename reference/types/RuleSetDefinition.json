@@ -1,0 +1,47 @@
+{
+  "name": "RuleSetDefinition",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset.",
+  "fields": [
+    {
+      "name": "definition",
+      "description": "The rule definition.",
+      "type": {
+        "display": "RuleDefinition",
+        "namedTypes": [
+          "RuleDefinition"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "text",
+      "description": "The rule definition text.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "textParts",
+      "description": "The rule definition text parts.",
+      "type": {
+        "display": "[RuleSetTextPart!]!",
+        "namedTypes": [
+          "RuleSetTextPart"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "DataSourceTemplatesType",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "templates",
+      "description": "List of data source templates",
+      "type": {
+        "display": "[ItemTemplate!]!",
+        "namedTypes": [
+          "ItemTemplate"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

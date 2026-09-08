@@ -1,0 +1,36 @@
+{
+  "name": "SearchResultFacetCategory",
+  "kind": "OBJECT",
+  "description": "Represents a category with associated search facets.",
+  "fields": [
+    {
+      "name": "facets",
+      "description": "The search facets.",
+      "type": {
+        "display": "[SearchResultFacet!]!",
+        "namedTypes": [
+          "SearchResultFacet"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name of the facet category.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

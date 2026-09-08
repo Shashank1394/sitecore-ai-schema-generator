@@ -1,0 +1,36 @@
+{
+  "name": "Rule",
+  "kind": "OBJECT",
+  "description": "Represents a rule entity.",
+  "fields": [
+    {
+      "name": "actions",
+      "description": "The actions.",
+      "type": {
+        "display": "[RuleDefinitionGroup!]!",
+        "namedTypes": [
+          "RuleDefinitionGroup"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "conditions",
+      "description": "The conditions.",
+      "type": {
+        "display": "[RuleDefinitionGroup!]!",
+        "namedTypes": [
+          "RuleDefinitionGroup"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "RenameSiteCollectionInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to rename a site collection",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "id",
+      "description": "ID of the site collection to rename",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "description": "New site collection name",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

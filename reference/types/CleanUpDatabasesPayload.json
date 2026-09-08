@@ -1,0 +1,25 @@
+{
+  "name": "CleanUpDatabasesPayload",
+  "kind": "OBJECT",
+  "description": "The result of the database cleanup operation.",
+  "fields": [
+    {
+      "name": "job",
+      "description": "The reference of the cleanup job.",
+      "type": {
+        "display": "Job",
+        "namedTypes": [
+          "Job"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

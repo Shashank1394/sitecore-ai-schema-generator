@@ -1,0 +1,24 @@
+{
+  "name": "DeleteUserInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting a security user.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "userName",
+      "description": "The name of the user to delete.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

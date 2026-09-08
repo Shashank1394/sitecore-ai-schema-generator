@@ -1,0 +1,124 @@
+{
+  "name": "MediaItem",
+  "kind": "OBJECT",
+  "description": "Represents an item within Sitecore.",
+  "fields": [
+    {
+      "name": "alt",
+      "description": "The alt text.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "description",
+      "description": "The description of the media.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "extension",
+      "description": "The extension of the media file.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "innerItem",
+      "description": "The media item.",
+      "type": {
+        "display": "Item!",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "mediaPath",
+      "description": "The path in the media library.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "mimeType",
+      "description": "The MIME type of the media item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "size",
+      "description": "The size of the media item.",
+      "type": {
+        "display": "Long!",
+        "namedTypes": [
+          "Long"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "title",
+      "description": "The title of the media.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "url",
+      "description": "Gets the media URL.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "display": "MediaUrlOptionsInput",
+            "namedTypes": [
+              "MediaUrlOptionsInput"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

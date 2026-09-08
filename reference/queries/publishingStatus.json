@@ -1,0 +1,104 @@
+{
+  "operation": "publishingStatus",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "publishingOperationId": {
+      "type": "String!",
+      "description": null
+    }
+  },
+  "returnType": "PublishingStatus",
+  "inputTypes": {},
+  "returnFields": {
+    "isDone": {
+      "type": "Boolean!",
+      "description": "Indicates whether the publishing operation is completed.",
+      "arguments": {}
+    },
+    "isFailed": {
+      "type": "Boolean!",
+      "description": "Indicates whether the publishing operation has failed.",
+      "arguments": {}
+    },
+    "languages": {
+      "type": "[Language]",
+      "description": "The published languages.",
+      "arguments": {}
+    },
+    "processed": {
+      "type": "Long!",
+      "description": "The number of items processed by the publishing operation.",
+      "arguments": {}
+    },
+    "state": {
+      "type": "PublishingOperationState!",
+      "description": "The state of the publishing operation.",
+      "arguments": {}
+    },
+    "targetDatabase": {
+      "type": "Database",
+      "description": "The target database.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "PublishingStatus",
+      "namedTypes": [
+        "PublishingStatus"
+      ]
+    },
+    "nodes": {
+      "PublishingStatus": {
+        "kind": "OBJECT",
+        "file": "types/PublishingStatus.json",
+        "references": [
+          "Boolean",
+          "Language",
+          "Long",
+          "PublishingOperationState",
+          "Database"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "Language": {
+        "kind": "OBJECT",
+        "file": "types/Language.json",
+        "references": [
+          "String"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      },
+      "PublishingOperationState": {
+        "kind": "ENUM",
+        "file": "types/PublishingOperationState.json",
+        "references": []
+      },
+      "Database": {
+        "kind": "OBJECT",
+        "file": "types/Database.json",
+        "references": [
+          "String"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

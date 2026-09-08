@@ -1,0 +1,33 @@
+{
+  "name": "DataSourceTemplatesType",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "templates",
+      "description": "List of data source templates",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "ItemTemplate"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

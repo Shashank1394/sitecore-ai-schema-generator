@@ -1,0 +1,36 @@
+{
+  "name": "ArchiveItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the archive item operation.",
+  "fields": [
+    {
+      "name": "archiveItemId",
+      "description": "The globally-unique identifier.",
+      "args": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "kind": "ENUM",
+            "name": "IdFormat",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

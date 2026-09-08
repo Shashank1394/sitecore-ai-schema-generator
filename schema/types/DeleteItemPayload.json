@@ -1,0 +1,22 @@
+{
+  "name": "DeleteItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the delete operation for the item.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The status of the delete item operation.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

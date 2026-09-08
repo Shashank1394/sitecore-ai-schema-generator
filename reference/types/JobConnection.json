@@ -1,0 +1,47 @@
+{
+  "name": "JobConnection",
+  "kind": "OBJECT",
+  "description": "A connection to a list of items.",
+  "fields": [
+    {
+      "name": "edges",
+      "description": "A list of edges.",
+      "type": {
+        "display": "[JobEdge!]",
+        "namedTypes": [
+          "JobEdge"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "nodes",
+      "description": "A flattened list of the nodes.",
+      "type": {
+        "display": "[Job]",
+        "namedTypes": [
+          "Job"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "pageInfo",
+      "description": "Information to aid in pagination.",
+      "type": {
+        "display": "PageInfo!",
+        "namedTypes": [
+          "PageInfo"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

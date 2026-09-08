@@ -1,0 +1,36 @@
+{
+  "name": "KeyValuePairOfStringAndString",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "key",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "value",
+      "description": null,
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

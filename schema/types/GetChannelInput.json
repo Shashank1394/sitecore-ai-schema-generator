@@ -1,0 +1,30 @@
+{
+  "name": "GetChannelInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input needed to query a channel",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "channelId",
+      "description": "A globally-unique identifier of the channel",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "Context database",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

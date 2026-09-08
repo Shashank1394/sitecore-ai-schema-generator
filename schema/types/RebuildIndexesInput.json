@@ -1,0 +1,28 @@
+{
+  "name": "RebuildIndexesInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for the index rebuilding operation.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "indexNames",
+      "description": "The names of indexes to rebuild.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

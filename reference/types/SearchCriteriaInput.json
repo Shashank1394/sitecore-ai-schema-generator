@@ -1,0 +1,74 @@
+{
+  "name": "SearchCriteriaInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents a criterion in the search statement",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "boost",
+      "description": "The boost value.",
+      "type": {
+        "display": "Float",
+        "namedTypes": [
+          "Float"
+        ]
+      }
+    },
+    {
+      "name": "criteriaType",
+      "description": "The criterion type. The default value is EXACT.",
+      "type": {
+        "display": "SearchCriteriaType",
+        "namedTypes": [
+          "SearchCriteriaType"
+        ]
+      }
+    },
+    {
+      "name": "field",
+      "description": "The field name.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "operator",
+      "description": "The search operator. The default value is SHOULD.",
+      "type": {
+        "display": "SearchOperator",
+        "namedTypes": [
+          "SearchOperator"
+        ]
+      }
+    },
+    {
+      "name": "parameters",
+      "description": "The additional parameters. The field is needed for certain types of criteria.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "value",
+      "description": "The field value.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

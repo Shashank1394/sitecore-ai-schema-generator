@@ -1,0 +1,36 @@
+{
+  "name": "TenantTemplateType",
+  "kind": "OBJECT",
+  "description": "Represents a tenant template type",
+  "fields": [
+    {
+      "name": "pageDesign",
+      "description": "The page design item",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "template",
+      "description": "Provides access to the tenant template.",
+      "type": {
+        "display": "ItemTemplate!",
+        "namedTypes": [
+          "ItemTemplate"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

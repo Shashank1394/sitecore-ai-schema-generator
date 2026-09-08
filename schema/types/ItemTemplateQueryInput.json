@@ -1,0 +1,48 @@
+{
+  "name": "ItemTemplateQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents a query against item templates.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "contextItemId",
+      "description": "The ID of the context item. If provided the template query will try to lookup field sources.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "path",
+      "description": "The path of the item template.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "templateId",
+      "description": "The ID of the item template. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

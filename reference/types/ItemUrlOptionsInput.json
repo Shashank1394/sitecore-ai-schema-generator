@@ -1,0 +1,54 @@
+{
+  "name": "ItemUrlOptionsInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents an item query.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "alwaysIncludeServerUrl",
+      "description": "Indicates whether to include the server URL for an absolute URL path. Otherwise, a relative path will be generated.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "disableLanguageEmbedding",
+      "description": "Indicates whether to disable language embedding. To disable embedding the language in the URL path, set the value to true.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language to use in the generated URL.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "siteName",
+      "description": "The site name to use for generating URL.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

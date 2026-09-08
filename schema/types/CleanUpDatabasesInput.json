@@ -1,0 +1,28 @@
+{
+  "name": "CleanUpDatabasesInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for cleaning up a database.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "databaseNames",
+      "description": "The names of the databases targetted by the cleanup operation.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null
+          }
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

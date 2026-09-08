@@ -1,0 +1,32 @@
+{
+  "name": "ItemToPublishInput",
+  "kind": "INPUT_OBJECT",
+  "description": null,
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "id",
+      "description": null,
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      }
+    },
+    {
+      "name": "languages",
+      "description": null,
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

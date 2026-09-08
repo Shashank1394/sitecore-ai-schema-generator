@@ -1,0 +1,47 @@
+{
+  "name": "SearchStatementInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents a statement in the search query.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "criteria",
+      "description": "The criteria.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "SearchCriteriaInput",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "operator",
+      "description": "The search operator. The default value is SHOULD.",
+      "type": {
+        "kind": "ENUM",
+        "name": "SearchOperator",
+        "ofType": null
+      }
+    },
+    {
+      "name": "subStatements",
+      "description": "The sub-statements.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "SearchStatementInput",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

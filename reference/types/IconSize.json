@@ -1,0 +1,30 @@
+{
+  "name": "IconSize",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "SIZE16",
+      "description": null
+    },
+    {
+      "name": "SIZE24",
+      "description": null
+    },
+    {
+      "name": "SIZE32",
+      "description": null
+    },
+    {
+      "name": "SIZE48",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

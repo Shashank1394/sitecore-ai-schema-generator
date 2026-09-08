@@ -1,0 +1,188 @@
+{
+  "operation": "publishingQueueEntries",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "query": {
+      "type": "PublishingQueueEntriesQueryInput!",
+      "description": null
+    }
+  },
+  "returnType": "PublishingQueueEntryResult",
+  "inputTypes": {
+    "PublishingQueueEntriesQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents an input for querying publishing queue entries.",
+      "fields": {
+        "dateFilter": {
+          "type": "DateFilterInput",
+          "description": "The date filter parameters."
+        },
+        "itemsFilter": {
+          "type": "ItemsFilterInput",
+          "description": "The items filter parameters."
+        },
+        "paging": {
+          "type": "PagingInput",
+          "description": "The paging parameters."
+        },
+        "sort": {
+          "type": "SortByInput!",
+          "description": "The sort parameters."
+        }
+      }
+    },
+    "DateFilterInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input with date filtering parameters.",
+      "fields": {
+        "dateFrom": {
+          "type": "DateTime!",
+          "description": "The date to filter results from."
+        },
+        "dateTo": {
+          "type": "DateTime!",
+          "description": "The date to filter results to."
+        }
+      }
+    },
+    "ItemsFilterInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input with items filtering parameters.",
+      "fields": {
+        "includeItems": {
+          "type": "[ItemToFilterInput]",
+          "description": "The include items filter parameters."
+        }
+      }
+    },
+    "ItemToFilterInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input with filtering parameters for item.",
+      "fields": {
+        "itemId": {
+          "type": "ID!",
+          "description": "The item ID."
+        },
+        "language": {
+          "type": "String",
+          "description": "The item language."
+        }
+      }
+    },
+    "PagingInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input with paging parameters.",
+      "fields": {
+        "pageIndex": {
+          "type": "Int!",
+          "description": "The page index."
+        },
+        "pageSize": {
+          "type": "Int!",
+          "description": "The page size."
+        }
+      }
+    },
+    "SortByInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input with sort by field name and direction parameters.",
+      "fields": {
+        "direction": {
+          "type": "SortDirection!",
+          "description": "The sort direction."
+        },
+        "field": {
+          "type": "String!",
+          "description": "The name of the field."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "results": {
+      "type": "[PublishingQueueEntry!]!",
+      "description": "The list of the publishing queue entries.",
+      "arguments": {}
+    },
+    "totalCount": {
+      "type": "Long!",
+      "description": "The total number of publishing queue entries.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "PublishingQueueEntryResult",
+      "namedTypes": [
+        "PublishingQueueEntryResult"
+      ]
+    },
+    "nodes": {
+      "PublishingQueueEntryResult": {
+        "kind": "OBJECT",
+        "file": "types/PublishingQueueEntryResult.json",
+        "references": [
+          "PublishingQueueEntry",
+          "Long"
+        ]
+      },
+      "PublishingQueueEntry": {
+        "kind": "OBJECT",
+        "file": "types/PublishingQueueEntry.json",
+        "references": [
+          "String",
+          "DateTime",
+          "PublishingQueueItem",
+          "PublishingItemInfo"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "PublishingQueueItem": {
+        "kind": "OBJECT",
+        "file": "types/PublishingQueueItem.json",
+        "references": [
+          "String"
+        ]
+      },
+      "PublishingItemInfo": {
+        "kind": "OBJECT",
+        "file": "types/PublishingItemInfo.json",
+        "references": [
+          "PublishingItemRestriction"
+        ]
+      },
+      "PublishingItemRestriction": {
+        "kind": "OBJECT",
+        "file": "types/PublishingItemRestriction.json",
+        "references": [
+          "String",
+          "Int"
+        ]
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

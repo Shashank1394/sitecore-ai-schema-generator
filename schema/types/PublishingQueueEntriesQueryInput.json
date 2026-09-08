@@ -1,0 +1,52 @@
+{
+  "name": "PublishingQueueEntriesQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents an input for querying publishing queue entries.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "dateFilter",
+      "description": "The date filter parameters.",
+      "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "DateFilterInput",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemsFilter",
+      "description": "The items filter parameters.",
+      "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "ItemsFilterInput",
+        "ofType": null
+      }
+    },
+    {
+      "name": "paging",
+      "description": "The paging parameters.",
+      "type": {
+        "kind": "INPUT_OBJECT",
+        "name": "PagingInput",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sort",
+      "description": "The sort parameters.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "SortByInput",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

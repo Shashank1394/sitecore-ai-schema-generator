@@ -1,0 +1,80 @@
+{
+  "name": "JobStatus",
+  "kind": "OBJECT",
+  "description": "Represents a job status.",
+  "fields": [
+    {
+      "name": "exceptions",
+      "description": "The exceptions occurred during job execution.",
+      "type": {
+        "display": "[String]",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "expiry",
+      "description": "The expiry date and time of the job.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "jobState",
+      "description": "The state of the job.",
+      "type": {
+        "display": "JobState!",
+        "namedTypes": [
+          "JobState"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "messages",
+      "description": "The messages provided from the job execution.",
+      "type": {
+        "display": "[String]",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "processed",
+      "description": "The count of how many entities have been processed.",
+      "type": {
+        "display": "Long!",
+        "namedTypes": [
+          "Long"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "total",
+      "description": "The total.",
+      "type": {
+        "display": "Long!",
+        "namedTypes": [
+          "Long"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

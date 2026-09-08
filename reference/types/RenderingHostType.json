@@ -1,0 +1,91 @@
+{
+  "name": "RenderingHostType",
+  "kind": "OBJECT",
+  "description": "Represents a rendering host configuration",
+  "fields": [
+    {
+      "name": "appName",
+      "description": "Name of the application",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "id",
+      "description": "A globally-unique identifier of the rendering host item",
+      "type": {
+        "display": "ID",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "layoutServiceConfiguration",
+      "description": "Layout service configuration",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "Name of the rendering host item",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "serverSideRenderingEngineApplicationUrl",
+      "description": "Server side rendering engine application URL",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "serverSideRenderingEngineEndpointUrl",
+      "description": "Server side rendering engine endpoint URL",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

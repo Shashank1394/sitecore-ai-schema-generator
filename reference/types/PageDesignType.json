@@ -1,0 +1,36 @@
+{
+  "name": "PageDesignType",
+  "kind": "OBJECT",
+  "description": "Represents a page design type",
+  "fields": [
+    {
+      "name": "pageDesign",
+      "description": "The page design item",
+      "type": {
+        "display": "Item!",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "siteName",
+      "description": "Site name",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "RebuildIndexesInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for the index rebuilding operation.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "indexNames",
+      "description": "The names of indexes to rebuild.",
+      "type": {
+        "display": "[UNKNOWN!]!",
+        "namedTypes": []
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

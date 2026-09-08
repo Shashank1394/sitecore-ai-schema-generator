@@ -1,0 +1,25 @@
+{
+  "name": "RestoreArchivedItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of restoring an archived item.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": null,
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

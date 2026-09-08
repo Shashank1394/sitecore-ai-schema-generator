@@ -1,0 +1,113 @@
+{
+  "name": "ChannelType",
+  "kind": "OBJECT",
+  "description": "Represents a channel",
+  "fields": [
+    {
+      "name": "analyticsIdentifierIds",
+      "description": "Globally-unique identifiers of the analytics identifiers",
+      "type": {
+        "display": "[ID!]",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "channelTemplateType",
+      "description": "Template type of the channel used for XM channel type mapping",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "collectionId",
+      "description": "A globally-unique identifier of the collection",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "createdAt",
+      "description": "Creation timestamp of the channel",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "createdBy",
+      "description": "User who created the channel",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayName",
+      "description": "The display name of the channel.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "id",
+      "description": "A globally-unique identifier of the channel",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The system name of the channel",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "sortOrder",
+      "description": "Sort order of the channel",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

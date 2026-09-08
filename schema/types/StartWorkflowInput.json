@@ -1,0 +1,25 @@
+{
+  "name": "StartWorkflowInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for starting a workflow.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "item",
+      "description": "The target item for the workflow.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "ItemQueryInput",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

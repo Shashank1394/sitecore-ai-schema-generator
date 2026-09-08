@@ -1,0 +1,30 @@
+{
+  "name": "IdFormat",
+  "kind": "ENUM",
+  "description": null,
+  "fields": [],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [
+    {
+      "name": "N",
+      "description": null
+    },
+    {
+      "name": "D",
+      "description": null
+    },
+    {
+      "name": "B",
+      "description": null
+    },
+    {
+      "name": "P",
+      "description": null
+    }
+  ],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

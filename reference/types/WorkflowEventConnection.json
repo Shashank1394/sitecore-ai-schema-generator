@@ -1,0 +1,47 @@
+{
+  "name": "WorkflowEventConnection",
+  "kind": "OBJECT",
+  "description": "A connection to a list of items.",
+  "fields": [
+    {
+      "name": "edges",
+      "description": "A list of edges.",
+      "type": {
+        "display": "[WorkflowEventEdge!]",
+        "namedTypes": [
+          "WorkflowEventEdge"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "nodes",
+      "description": "A flattened list of the nodes.",
+      "type": {
+        "display": "[WorkflowEvent]",
+        "namedTypes": [
+          "WorkflowEvent"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "pageInfo",
+      "description": "Information to aid in pagination.",
+      "type": {
+        "display": "PageInfo!",
+        "namedTypes": [
+          "PageInfo"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

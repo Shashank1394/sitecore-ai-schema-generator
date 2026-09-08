@@ -1,0 +1,120 @@
+{
+  "operation": "parseRule",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "rule": {
+      "type": "String!",
+      "description": null
+    }
+  },
+  "returnType": "RuleSetRule",
+  "inputTypes": {},
+  "returnFields": {
+    "actions": {
+      "type": "[RuleSetRuleAction!]!",
+      "description": "The actions.",
+      "arguments": {}
+    },
+    "conditions": {
+      "type": "[RuleSetRuleCondition!]!",
+      "description": "The conditions.",
+      "arguments": {}
+    },
+    "name": {
+      "type": "String",
+      "description": "The name of the rule.",
+      "arguments": {}
+    },
+    "originalXml": {
+      "type": "String",
+      "description": "The original XML of the rule.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "RuleSetRule",
+      "namedTypes": [
+        "RuleSetRule"
+      ]
+    },
+    "nodes": {
+      "RuleSetRule": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetRule.json",
+        "references": [
+          "RuleSetRuleAction",
+          "RuleSetRuleCondition",
+          "String"
+        ]
+      },
+      "RuleSetRuleAction": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetRuleAction.json",
+        "references": [
+          "RuleSetDefinition"
+        ]
+      },
+      "RuleSetDefinition": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetDefinition.json",
+        "references": [
+          "RuleDefinition",
+          "String",
+          "RuleSetTextPart"
+        ]
+      },
+      "RuleDefinition": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinition.json",
+        "references": [
+          "ID",
+          "String",
+          "RuleDefinitionOperation"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "RuleDefinitionOperation": {
+        "kind": "OBJECT",
+        "file": "types/RuleDefinitionOperation.json",
+        "references": [
+          "String"
+        ]
+      },
+      "RuleSetTextPart": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetTextPart.json",
+        "references": [
+          "String",
+          "RuleSetTextPartType"
+        ]
+      },
+      "RuleSetTextPartType": {
+        "kind": "ENUM",
+        "file": "types/RuleSetTextPartType.json",
+        "references": []
+      },
+      "RuleSetRuleCondition": {
+        "kind": "OBJECT",
+        "file": "types/RuleSetRuleCondition.json",
+        "references": [
+          "RuleSetDefinition"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

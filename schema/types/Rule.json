@@ -1,0 +1,54 @@
+{
+  "name": "Rule",
+  "kind": "OBJECT",
+  "description": "Represents a rule entity.",
+  "fields": [
+    {
+      "name": "actions",
+      "description": "The actions.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "RuleDefinitionGroup"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "conditions",
+      "description": "The conditions.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "RuleDefinitionGroup"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

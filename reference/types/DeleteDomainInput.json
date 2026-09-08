@@ -1,0 +1,24 @@
+{
+  "name": "DeleteDomainInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for deleting a security domain.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "domainName",
+      "description": "The name of the domain to delete.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

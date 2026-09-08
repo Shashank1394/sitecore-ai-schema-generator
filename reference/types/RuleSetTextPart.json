@@ -1,0 +1,36 @@
+{
+  "name": "RuleSetTextPart",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset text part.",
+  "fields": [
+    {
+      "name": "text",
+      "description": "The text.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "type",
+      "description": "The type.",
+      "type": {
+        "display": "RuleSetTextPartType!",
+        "namedTypes": [
+          "RuleSetTextPartType"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

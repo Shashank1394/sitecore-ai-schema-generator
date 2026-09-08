@@ -1,0 +1,124 @@
+{
+  "name": "AddLanguageInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for adding a language.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "charset",
+      "description": "The charset of the language to be created.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "codePage",
+      "description": "The code page of the language to be created.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "customCode",
+      "description": "The custom code of the language to be created.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "database",
+      "description": "The database of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "encoding",
+      "description": "The encoding of the language to be created.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "fallbackCode",
+      "description": "The fallback code of the language to be created.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "languageCode",
+      "description": "The code of the language to be created",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the language to be created.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "regionCode",
+      "description": "The region code of the language to be created.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "spellChecker",
+      "description": "The spellchecker of the language to be created.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      }
+    },
+    {
+      "name": "useSupportedLanguageAsFallback",
+      "description": "Indicator to use language definition as fallback. The default value is true.",
+      "type": {
+        "display": "Boolean",
+        "namedTypes": [
+          "Boolean"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

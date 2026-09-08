@@ -1,0 +1,351 @@
+{
+  "name": "Workflow",
+  "kind": "OBJECT",
+  "description": "Represents a workflow configured in Sitecore.",
+  "fields": [
+    {
+      "name": "commands",
+      "description": "Gets the workflow commands for the specified state. You can pass the state ID or specify an item of which the current workflow state will be used.",
+      "type": {
+        "display": "WorkflowCommandConnection",
+        "namedTypes": [
+          "WorkflowCommandConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "display": "WorkflowStateOrItemQueryInput!",
+            "namedTypes": [
+              "WorkflowStateOrItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "displayName",
+      "description": "The display name of the workflow.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "history",
+      "description": "Gets the workflow history for the specified item.",
+      "type": {
+        "display": "WorkflowEventConnection",
+        "namedTypes": [
+          "WorkflowEventConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "item",
+          "description": null,
+          "type": {
+            "display": "ItemQueryInput!",
+            "namedTypes": [
+              "ItemQueryInput"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "initialState",
+      "description": "Gets the initial state of the workflow.",
+      "type": {
+        "display": "WorkflowState",
+        "namedTypes": [
+          "WorkflowState"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "isApproved",
+      "description": "Checks if the workflow is approved for the specified item.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "item",
+          "description": null,
+          "type": {
+            "display": "ItemQueryInput!",
+            "namedTypes": [
+              "ItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "items",
+      "description": "Gets the items on the specified state",
+      "type": {
+        "display": "ItemConnection",
+        "namedTypes": [
+          "ItemConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "stateId",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "itemsCount",
+      "description": "Gets the number of items on the specified state.",
+      "type": {
+        "display": "Int!",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "stateId",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "state",
+      "description": "Finds a specific state.",
+      "type": {
+        "display": "WorkflowState",
+        "namedTypes": [
+          "WorkflowState"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "display": "WorkflowStateOrItemQueryInput!",
+            "namedTypes": [
+              "WorkflowStateOrItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "states",
+      "description": "Gets the list of states defined for the workflow.",
+      "type": {
+        "display": "WorkflowStateConnection",
+        "namedTypes": [
+          "WorkflowStateConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "workflowId",
+      "description": "The workflow ID.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

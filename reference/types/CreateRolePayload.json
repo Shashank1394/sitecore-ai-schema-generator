@@ -1,0 +1,25 @@
+{
+  "name": "CreateRolePayload",
+  "kind": "OBJECT",
+  "description": "The result of creating a security role.",
+  "fields": [
+    {
+      "name": "role",
+      "description": "The created role",
+      "type": {
+        "display": "Role",
+        "namedTypes": [
+          "Role"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

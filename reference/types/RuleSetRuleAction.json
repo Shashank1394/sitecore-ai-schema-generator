@@ -1,0 +1,25 @@
+{
+  "name": "RuleSetRuleAction",
+  "kind": "OBJECT",
+  "description": "Represents a ruleset rule action entity.",
+  "fields": [
+    {
+      "name": "action",
+      "description": "The action text.",
+      "type": {
+        "display": "RuleSetDefinition",
+        "namedTypes": [
+          "RuleSetDefinition"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "operation": "isJobRunning",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "jobName": {
+      "type": "String!",
+      "description": null
+    }
+  },
+  "returnType": "Boolean!",
+  "inputTypes": {},
+  "returnFields": {},
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Boolean!",
+      "namedTypes": [
+        "Boolean"
+      ]
+    },
+    "nodes": {
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

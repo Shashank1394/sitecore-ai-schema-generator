@@ -1,0 +1,91 @@
+{
+  "name": "Language",
+  "kind": "OBJECT",
+  "description": "Represents a content language used in Sitecore.",
+  "fields": [
+    {
+      "name": "charset",
+      "description": "The charset of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "database",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "displayName",
+      "description": "A human readable name of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "englishName",
+      "description": "Gets the culture name in the format languagefull [country/regionfull] in English.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "iso",
+      "description": "The Two Letter ISO code of the language.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The culture name in the languagecode2-country/regioncode2 format.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "nativeName",
+      "description": "The culture name, consisting of the language, the country/region, and the optional script, that the culture is set to display.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "SetItemArchiveDatePayload",
+  "kind": "OBJECT",
+  "description": "The result of setting an item archive date.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": null,
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

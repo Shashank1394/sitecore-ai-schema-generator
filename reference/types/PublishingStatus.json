@@ -1,0 +1,80 @@
+{
+  "name": "PublishingStatus",
+  "kind": "OBJECT",
+  "description": "Represents the status of the publishing operation.",
+  "fields": [
+    {
+      "name": "isDone",
+      "description": "Indicates whether the publishing operation is completed.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "isFailed",
+      "description": "Indicates whether the publishing operation has failed.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "languages",
+      "description": "The published languages.",
+      "type": {
+        "display": "[Language]",
+        "namedTypes": [
+          "Language"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "processed",
+      "description": "The number of items processed by the publishing operation.",
+      "type": {
+        "display": "Long!",
+        "namedTypes": [
+          "Long"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "state",
+      "description": "The state of the publishing operation.",
+      "type": {
+        "display": "PublishingOperationState!",
+        "namedTypes": [
+          "PublishingOperationState"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "targetDatabase",
+      "description": "The target database.",
+      "type": {
+        "display": "Database",
+        "namedTypes": [
+          "Database"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

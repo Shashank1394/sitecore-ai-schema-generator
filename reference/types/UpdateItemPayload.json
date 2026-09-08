@@ -1,0 +1,25 @@
+{
+  "name": "UpdateItemPayload",
+  "kind": "OBJECT",
+  "description": "The result of the update operation for the item.",
+  "fields": [
+    {
+      "name": "item",
+      "description": "The updated item.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

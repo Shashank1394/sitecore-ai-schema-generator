@@ -1,0 +1,1684 @@
+{
+  "name": "Mutation",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "addAccountsToRole",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "AddAccountsToRoleInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "AddAccountsToRolePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "addItemVersion",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "AddItemVersionInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "AddItemVersionPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "addLanguage",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "AddLanguageInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "AddLanguagePayload",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "addRoleToRoles",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "AddRoleToRolesInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "AddRoleToRolesPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "archiveItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "ArchiveItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ArchiveItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "archiveVersion",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "ArchiveVersionInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ArchiveVersionPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "cancelPublishing",
+      "description": null,
+      "args": [
+        {
+          "name": "publishingOperationId",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CancelPublishingPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "changeUserPassword",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "ChangeUserPasswordInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ChangeUserPasswordPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "cleanUpDatabases",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CleanUpDatabasesInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CleanUpDatabasesPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "cloneSite",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CloneSiteInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CloneSitePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "configurePageDesigns",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "ConfigurePageDesignsInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "copyItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CopyItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CopyItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createDomain",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateDomainInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateDomainPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createItemFromBranch",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateItemFromBranchInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateItemFromBranchPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createItemTemplate",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateItemTemplateInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateItemTemplatePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createItemTemplateFolder",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateItemTemplateFolderInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createRole",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateRoleInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateRolePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createSite",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateSiteInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateSitePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createSiteCollection",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateSiteCollectionInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateSiteCollectionPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "createUser",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateUserInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateUserPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteAccountsFromRole",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteAccountsFromRoleInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteAccountsFromRolePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteArchivedItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteArchivedItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteArchivedItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteArchivedVersion",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteArchivedVersionInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteArchivedVersionPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteDomain",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteDomainInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteDomainPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteItemTemplate",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteItemTemplateInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteItemTemplatePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteItemVersion",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteItemVersionInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteItemVersionPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteLanguage",
+      "description": "Delete a specific language. This will remove ALL versions of this language from every item.",
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteLanguageInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "DeleteLanguagePayload",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "deleteLanguages",
+      "description": "Delete a set of languages. This will remove ALL versions of those languages from every item.",
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteLanguagesInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "DeleteLanguagesPayload",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "deleteRole",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteRoleInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteRolePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteRoleFromRoles",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteRoleFromRolesInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteRoleFromRolesPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteUser",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteUserInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DeleteUserPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "disableUser",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DisableUserInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "DisableUserPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "emptyArchive",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "EmptyArchiveInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "EmptyArchivePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "enableUser",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "EnableUserInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "EnableUserPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "executeWorkflowCommand",
+      "description": "Executes the workflow command for the specified item.",
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "ExecuteWorkflowCommandInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ExecuteWorkflowCommandPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "moveItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "MoveItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "MoveItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "populateManagedSchema",
+      "description": "Execute populate managed schema operation. If the indexNames input parameter is null, Populate Managed Schema for all indexes.",
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "PopulateManagedSchemaInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "PopulateManagedSchemaPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "publishItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "PublishItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "PublishItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "publishLanguageSpecificItems",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "PublishLanguageSpecificItemsInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "PublishItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "publishSite",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "PublishSiteInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "PublishSitePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "publishWithOptions",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "PublishWithOptionsInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "PublishWithOptionsPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rebuildIndexes",
+      "description": "Execute rebuild search index operation. If the indexNames input parameter is null, Rebuild for all search indexes.",
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "INPUT_OBJECT",
+            "name": "RebuildIndexesInput",
+            "ofType": null
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RebuildIndexesPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "rebuildLinkDatabase",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RebuildLinkDatabaseInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RebuildLinkDatabasePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "removeSite",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RemoveSiteInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RemoveSitePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "removeSiteCollection",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RemoveSiteCollectionInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RemoveSiteCollectionPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "renameItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RenameItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RenameItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "renameSite",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RenameSiteInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RenameSitePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "renameSiteCollection",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RenameSiteCollectionInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RenameSiteCollectionPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "resetUserSettings",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "ResetUserSettingsInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "ResetUserSettingsPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "restoreArchivedItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RestoreArchivedItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RestoreArchivedItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "restoreArchivedVersion",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "RestoreArchivedVersionInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "RestoreArchivedVersionPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "scaffoldSolution",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CreateSolutionSiteInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "CreateSolutionSitePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "setItemArchiveDate",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "SetItemArchiveDateInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SetItemArchiveDatePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "setMediaItemAvailability",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "SetMediaAvailabilityInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "setVersionArchiveDate",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "SetVersionArchiveDateInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SetVersionArchiveDatePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "startCopyItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "CopyItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "StartCopyItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "startDeleteItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "DeleteItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "StartDeleteItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "startWorkflow",
+      "description": "Starts the workflow for the specified item. When executed, it will set the state to the initial state and clear all workflow history",
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "StartWorkflowInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "StartWorkflowPayload",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "translateItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "TranslateItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "TranslateItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "translatePage",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "TranslatePageInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "TranslatePagePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "translateSite",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "TranslateSiteInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "TranslateSitePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "unlockUser",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "UnlockUserInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "UnlockUserPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "updateItem",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "UpdateItemInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "UpdateItemPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "updateItemTemplate",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "UpdateItemTemplateInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "UpdateItemTemplatePayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "updateSolutionSitesPos",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "UpdateSolutionSitesPosInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "SetPosPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "updateUser",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "UpdateUserInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "UpdateUserPayload",
+        "ofType": null
+      }
+    },
+    {
+      "name": "uploadMedia",
+      "description": null,
+      "args": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "INPUT_OBJECT",
+              "name": "UploadMediaInput",
+              "ofType": null
+            }
+          }
+        }
+      ],
+      "type": {
+        "kind": "OBJECT",
+        "name": "UploadMediaPayload",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

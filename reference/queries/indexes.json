@@ -1,0 +1,121 @@
+{
+  "operation": "indexes",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": "Get search indexes. If the indexNames input parameter is null, get all search indexes.",
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "indexNames": {
+      "type": "[String]",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "IndexConnection",
+  "inputTypes": {},
+  "returnFields": {
+    "edges": {
+      "type": "[IndexEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[Index]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "IndexConnection",
+      "namedTypes": [
+        "IndexConnection"
+      ]
+    },
+    "nodes": {
+      "IndexConnection": {
+        "kind": "OBJECT",
+        "file": "types/IndexConnection.json",
+        "references": [
+          "IndexEdge",
+          "Index",
+          "PageInfo"
+        ]
+      },
+      "IndexEdge": {
+        "kind": "OBJECT",
+        "file": "types/IndexEdge.json",
+        "references": [
+          "String",
+          "Index"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Index": {
+        "kind": "OBJECT",
+        "file": "types/Index.json",
+        "references": [
+          "Long",
+          "Boolean",
+          "String",
+          "DateTime",
+          "Int"
+        ]
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "Int": {
+        "kind": "SCALAR",
+        "file": "types/Int.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

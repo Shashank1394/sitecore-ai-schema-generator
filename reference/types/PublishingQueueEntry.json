@@ -1,0 +1,91 @@
+{
+  "name": "PublishingQueueEntry",
+  "kind": "OBJECT",
+  "description": "Represents the publishing queue entry.",
+  "fields": [
+    {
+      "name": "action",
+      "description": "The action that was done with the publishable item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "date",
+      "description": "The date when the item is publishable.",
+      "type": {
+        "display": "DateTime!",
+        "namedTypes": [
+          "DateTime"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "id",
+      "description": "The publishing queue entry id.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "item",
+      "description": null,
+      "type": {
+        "display": "PublishingQueueItem",
+        "namedTypes": [
+          "PublishingQueueItem"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "itemId",
+      "description": "The id of the publishable item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "language",
+      "description": "The language of the publishable item.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "publishing",
+      "description": null,
+      "type": {
+        "display": "PublishingItemInfo",
+        "namedTypes": [
+          "PublishingItemInfo"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

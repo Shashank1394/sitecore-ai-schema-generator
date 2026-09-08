@@ -1,0 +1,39 @@
+{
+  "name": "ArchiveItemInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for archiving an item.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "archiveName",
+      "description": "The name of the archive. The default value is 'archive'.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemId",
+      "description": "The ID of the item to archive.If both item ID and item path parameters are specified, the item path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "itemPath",
+      "description": "The full path of the item to archive. If both item ID and item path parameters are specified, the item path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

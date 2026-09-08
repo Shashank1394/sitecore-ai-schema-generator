@@ -1,0 +1,58 @@
+{
+  "name": "ItemLock",
+  "kind": "OBJECT",
+  "description": "Represents the item locking information.",
+  "fields": [
+    {
+      "name": "isLocked",
+      "description": "The item is locked.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "lockedBy",
+      "description": "The user who locks the item.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "user",
+      "description": "Get user info of the item lock.",
+      "type": {
+        "display": "ItemLockForUser",
+        "namedTypes": [
+          "ItemLockForUser"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "username",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

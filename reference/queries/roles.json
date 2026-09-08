@@ -1,0 +1,183 @@
+{
+  "operation": "roles",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "after": {
+      "type": "String",
+      "description": null
+    },
+    "before": {
+      "type": "String",
+      "description": null
+    },
+    "first": {
+      "type": "PaginationAmount",
+      "description": null
+    },
+    "last": {
+      "type": "PaginationAmount",
+      "description": null
+    }
+  },
+  "returnType": "RoleConnection",
+  "inputTypes": {},
+  "returnFields": {
+    "edges": {
+      "type": "[RoleEdge!]",
+      "description": "A list of edges.",
+      "arguments": {}
+    },
+    "nodes": {
+      "type": "[Role]",
+      "description": "A flattened list of the nodes.",
+      "arguments": {}
+    },
+    "pageInfo": {
+      "type": "PageInfo!",
+      "description": "Information to aid in pagination.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "RoleConnection",
+      "namedTypes": [
+        "RoleConnection"
+      ]
+    },
+    "nodes": {
+      "RoleConnection": {
+        "kind": "OBJECT",
+        "file": "types/RoleConnection.json",
+        "references": [
+          "RoleEdge",
+          "Role",
+          "PageInfo"
+        ]
+      },
+      "RoleEdge": {
+        "kind": "OBJECT",
+        "file": "types/RoleEdge.json",
+        "references": [
+          "String",
+          "Role"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Role": {
+        "kind": "OBJECT",
+        "file": "types/Role.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Boolean",
+          "AccountConnection"
+        ]
+      },
+      "AccountType": {
+        "kind": "ENUM",
+        "file": "types/AccountType.json",
+        "references": []
+      },
+      "Domain": {
+        "kind": "OBJECT",
+        "file": "types/Domain.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "AccountConnection": {
+        "kind": "OBJECT",
+        "file": "types/AccountConnection.json",
+        "references": [
+          "AccountEdge",
+          "Account",
+          "PageInfo"
+        ]
+      },
+      "AccountEdge": {
+        "kind": "OBJECT",
+        "file": "types/AccountEdge.json",
+        "references": [
+          "String",
+          "Account"
+        ]
+      },
+      "Account": {
+        "kind": "INTERFACE",
+        "file": "types/Account.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Role",
+          "User"
+        ]
+      },
+      "User": {
+        "kind": "OBJECT",
+        "file": "types/User.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Boolean",
+          "UserProfile",
+          "Role"
+        ]
+      },
+      "UserProfile": {
+        "kind": "OBJECT",
+        "file": "types/UserProfile.json",
+        "references": [
+          "String",
+          "DateTime",
+          "KeyValuePair",
+          "Boolean"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "name": "UpdateItemTemplateInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents the input for updating an item template.",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "baseTemplates",
+      "description": "The base templates of the item template.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "createStandardValuesItem",
+      "description": "The flag indicates whether should create the StandardValues item for the template or not.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "database",
+      "description": "The name of the item database.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "deleteMissingFields",
+      "description": "The flag indicates whether fields and sections should be removed from the template that are not present in the input.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    },
+    {
+      "name": "icon",
+      "description": "The icon of the item template.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language of the item template.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the item template.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "sections",
+      "description": "The section definitions of the item template. Sections with IDs will be updated. Sections without IDs will be created.",
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "INPUT_OBJECT",
+          "name": "ItemTemplateSectionInput",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "templateId",
+      "description": "The globally-unique identifier of the item template.",
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "ID",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

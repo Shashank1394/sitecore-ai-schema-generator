@@ -1,0 +1,22 @@
+{
+  "name": "DeleteDomainPayload",
+  "kind": "OBJECT",
+  "description": "The result of the delete operation for the security domain.",
+  "fields": [
+    {
+      "name": "successful",
+      "description": "The operation status.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "Boolean",
+        "ofType": null
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

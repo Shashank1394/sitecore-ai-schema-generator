@@ -1,0 +1,1805 @@
+{
+  "name": "Query",
+  "kind": "OBJECT",
+  "description": null,
+  "fields": [
+    {
+      "name": "archivedItem",
+      "description": null,
+      "type": {
+        "display": "ArchivedItem",
+        "namedTypes": [
+          "ArchivedItem"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "ArchiveItemQueryInput",
+            "namedTypes": [
+              "ArchiveItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "archivedItems",
+      "description": null,
+      "type": {
+        "display": "[ArchivedItem]",
+        "namedTypes": [
+          "ArchivedItem"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "archiveName",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "pageIndex",
+          "description": null,
+          "type": {
+            "display": "Int",
+            "namedTypes": [
+              "Int"
+            ]
+          }
+        },
+        {
+          "name": "pageSize",
+          "description": null,
+          "type": {
+            "display": "Int",
+            "namedTypes": [
+              "Int"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "availableRenderings",
+      "description": null,
+      "type": {
+        "display": "[RenderingItemType]",
+        "namedTypes": [
+          "RenderingItemType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "GetRenderingsInput",
+            "namedTypes": [
+              "GetRenderingsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "channel",
+      "description": null,
+      "type": {
+        "display": "ChannelType",
+        "namedTypes": [
+          "ChannelType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "GetChannelInput!",
+            "namedTypes": [
+              "GetChannelInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "channels",
+      "description": null,
+      "type": {
+        "display": "ChannelTypeConnection",
+        "namedTypes": [
+          "ChannelTypeConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "GetChannelsInput",
+            "namedTypes": [
+              "GetChannelsInput"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "currentUser",
+      "description": null,
+      "type": {
+        "display": "User",
+        "namedTypes": [
+          "User"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "databases",
+      "description": null,
+      "type": {
+        "display": "DatabaseConnection",
+        "namedTypes": [
+          "DatabaseConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "dataSourceTemplates",
+      "description": null,
+      "type": {
+        "display": "DataSourceTemplatesType",
+        "namedTypes": [
+          "DataSourceTemplatesType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DefaultInput",
+            "namedTypes": [
+              "DefaultInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "domain",
+      "description": null,
+      "type": {
+        "display": "Domain",
+        "namedTypes": [
+          "Domain"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "domainName",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "domains",
+      "description": null,
+      "type": {
+        "display": "DomainConnection",
+        "namedTypes": [
+          "DomainConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "fallbackLanguage",
+      "description": "Gets the fallback language for a specified language.",
+      "type": {
+        "display": "Language",
+        "namedTypes": [
+          "Language"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "databaseName",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "name",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "description": "Get a specific search index.",
+      "type": {
+        "display": "Index",
+        "namedTypes": [
+          "Index"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "indexName",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "indexes",
+      "description": "Get search indexes. If the indexNames input parameter is null, get all search indexes.",
+      "type": {
+        "display": "IndexConnection",
+        "namedTypes": [
+          "IndexConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "indexNames",
+          "description": null,
+          "type": {
+            "display": "[String]",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "isJobQueued",
+      "description": null,
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "jobName",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "isJobRunning",
+      "description": null,
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "jobName",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "item",
+      "description": null,
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "ItemQueryInput",
+            "namedTypes": [
+              "ItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "itemTemplate",
+      "description": null,
+      "type": {
+        "display": "ItemTemplate",
+        "namedTypes": [
+          "ItemTemplate"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "ItemTemplateQueryInput",
+            "namedTypes": [
+              "ItemTemplateQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "itemTemplates",
+      "description": null,
+      "type": {
+        "display": "ItemTemplateConnection",
+        "namedTypes": [
+          "ItemTemplateConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "ItemTemplateQueryInput",
+            "namedTypes": [
+              "ItemTemplateQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "job",
+      "description": "Get a specific job by job name or job handle.",
+      "type": {
+        "display": "Job",
+        "namedTypes": [
+          "Job"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "JobQueryInput!",
+            "namedTypes": [
+              "JobQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "jobs",
+      "description": "Get all jobs if no input is specified. The jobName parameter accepts StartWith/EndWith/Wrapped in (*).",
+      "type": {
+        "display": "JobConnection",
+        "namedTypes": [
+          "JobConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "JobQueryInput",
+            "namedTypes": [
+              "JobQueryInput"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "language",
+      "description": "Gets the specified language.",
+      "type": {
+        "display": "Language",
+        "namedTypes": [
+          "Language"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "name",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "languageItem",
+      "description": "Gets the specified language item.",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "databaseName",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "name",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "languages",
+      "description": "Get all the languages in the specified database for the current user.",
+      "type": {
+        "display": "LanguageConnection",
+        "namedTypes": [
+          "LanguageConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "databaseName",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "mediaItem",
+      "description": null,
+      "type": {
+        "display": "MediaItem",
+        "namedTypes": [
+          "MediaItem"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "MediaItemQueryInput!",
+            "namedTypes": [
+              "MediaItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "mediaItemAvailability",
+      "description": null,
+      "type": {
+        "display": "MediaAvailabilityStatus!",
+        "namedTypes": [
+          "MediaAvailabilityStatus"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "MediaItemQueryInput!",
+            "namedTypes": [
+              "MediaItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "meta",
+      "description": "API meta",
+      "type": {
+        "display": "ApiMeta!",
+        "namedTypes": [
+          "ApiMeta"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "pageBranchesRoots",
+      "description": null,
+      "type": {
+        "display": "[PageBranchesRootItemType]",
+        "namedTypes": [
+          "PageBranchesRootItemType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "DefaultPageBranchesInput",
+            "namedTypes": [
+              "DefaultPageBranchesInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "pageDesigns",
+      "description": null,
+      "type": {
+        "display": "[PageDesignType]",
+        "namedTypes": [
+          "PageDesignType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "DefaultPresentationInput",
+            "namedTypes": [
+              "DefaultPresentationInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "pageDesignsRoots",
+      "description": null,
+      "type": {
+        "display": "[PageDesignsRootType]",
+        "namedTypes": [
+          "PageDesignsRootType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "DefaultPresentationInput",
+            "namedTypes": [
+              "DefaultPresentationInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "parseRule",
+      "description": null,
+      "type": {
+        "display": "RuleSetRule",
+        "namedTypes": [
+          "RuleSetRule"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "rule",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "parseRuleSet",
+      "description": null,
+      "type": {
+        "display": "RuleSet",
+        "namedTypes": [
+          "RuleSet"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "ruleSet",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "partialDesigns",
+      "description": null,
+      "type": {
+        "display": "[PartialDesignType]",
+        "namedTypes": [
+          "PartialDesignType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "DefaultPresentationInput",
+            "namedTypes": [
+              "DefaultPresentationInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "partialDesignsRoots",
+      "description": null,
+      "type": {
+        "display": "[PartialDesignsRootType]",
+        "namedTypes": [
+          "PartialDesignsRootType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "DefaultPresentationInput",
+            "namedTypes": [
+              "DefaultPresentationInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "publishingQueueEntries",
+      "description": null,
+      "type": {
+        "display": "PublishingQueueEntryResult",
+        "namedTypes": [
+          "PublishingQueueEntryResult"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "display": "PublishingQueueEntriesQueryInput!",
+            "namedTypes": [
+              "PublishingQueueEntriesQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "publishingStatus",
+      "description": null,
+      "type": {
+        "display": "PublishingStatus",
+        "namedTypes": [
+          "PublishingStatus"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "publishingOperationId",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "publishingTargets",
+      "description": null,
+      "type": {
+        "display": "[PublishingTarget]",
+        "namedTypes": [
+          "PublishingTarget"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "role",
+      "description": null,
+      "type": {
+        "display": "Role",
+        "namedTypes": [
+          "Role"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "roleName",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "roles",
+      "description": null,
+      "type": {
+        "display": "RoleConnection",
+        "namedTypes": [
+          "RoleConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "rule",
+      "description": null,
+      "type": {
+        "display": "Rule",
+        "namedTypes": [
+          "Rule"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "display": "RulesQueryInput!",
+            "namedTypes": [
+              "RulesQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "ruleSet",
+      "description": null,
+      "type": {
+        "display": "RuleSet",
+        "namedTypes": [
+          "RuleSet"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "display": "RuleItemQueryInput!",
+            "namedTypes": [
+              "RuleItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "ruleTemplate",
+      "description": null,
+      "type": {
+        "display": "TemplateFieldRule",
+        "namedTypes": [
+          "TemplateFieldRule"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "display": "TemplateFieldRuleQueryInput!",
+            "namedTypes": [
+              "TemplateFieldRuleQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "search",
+      "description": null,
+      "type": {
+        "display": "SearchResult!",
+        "namedTypes": [
+          "SearchResult"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "query",
+          "description": null,
+          "type": {
+            "display": "SearchQueryInput!",
+            "namedTypes": [
+              "SearchQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "selectionProfiles",
+      "description": null,
+      "type": {
+        "display": "UserProfileSelectorConnection",
+        "namedTypes": [
+          "UserProfileSelectorConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "site",
+      "description": null,
+      "type": {
+        "display": "Site",
+        "namedTypes": [
+          "Site"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "siteName",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "siteCollections",
+      "description": null,
+      "type": {
+        "display": "[SiteCollectionType]",
+        "namedTypes": [
+          "SiteCollectionType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DefaultSolutionInput",
+            "namedTypes": [
+              "DefaultSolutionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "siteCollectionsResults",
+      "description": null,
+      "type": {
+        "display": "SiteCollectionTypeConnection",
+        "namedTypes": [
+          "SiteCollectionTypeConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DefaultSolutionInput",
+            "namedTypes": [
+              "DefaultSolutionInput"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "sites",
+      "description": null,
+      "type": {
+        "display": "[Site]",
+        "namedTypes": [
+          "Site"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "includeSystemSites",
+          "description": null,
+          "type": {
+            "display": "Boolean",
+            "namedTypes": [
+              "Boolean"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "solutionSites",
+      "description": null,
+      "type": {
+        "display": "[SolutionSiteType]",
+        "namedTypes": [
+          "SolutionSiteType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "SolutionSitesInput",
+            "namedTypes": [
+              "SolutionSitesInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "solutionSitesSearch",
+      "description": null,
+      "type": {
+        "display": "SolutionSiteWithRootTypeConnection",
+        "namedTypes": [
+          "SolutionSiteWithRootTypeConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "SolutionSitesSearchInput",
+            "namedTypes": [
+              "SolutionSitesSearchInput"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "solutionSitesWithRoot",
+      "description": null,
+      "type": {
+        "display": "SolutionSiteWithRootTypeConnection",
+        "namedTypes": [
+          "SolutionSiteWithRootTypeConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "SolutionSitesInput",
+            "namedTypes": [
+              "SolutionSitesInput"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "solutionTemplates",
+      "description": null,
+      "type": {
+        "display": "[SolutionTemplateType]",
+        "namedTypes": [
+          "SolutionTemplateType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "input",
+          "description": null,
+          "type": {
+            "display": "DefaultSolutionInput",
+            "namedTypes": [
+              "DefaultSolutionInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "supportedLanguages",
+      "description": "Gets all the languages that are supported by Sitecore.",
+      "type": {
+        "display": "SupportedLanguageConnection",
+        "namedTypes": [
+          "SupportedLanguageConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "tenantTemplates",
+      "description": null,
+      "type": {
+        "display": "[TenantTemplateType]",
+        "namedTypes": [
+          "TenantTemplateType"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "TenantTemplatesInput",
+            "namedTypes": [
+              "TenantTemplatesInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "user",
+      "description": null,
+      "type": {
+        "display": "User",
+        "namedTypes": [
+          "User"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "userName",
+          "description": null,
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "users",
+      "description": null,
+      "type": {
+        "display": "UserConnection",
+        "namedTypes": [
+          "UserConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "workflow",
+      "description": "Get a specific workflow.",
+      "type": {
+        "display": "Workflow",
+        "namedTypes": [
+          "Workflow"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "where",
+          "description": null,
+          "type": {
+            "display": "WorkflowIdOrItemQueryInput!",
+            "namedTypes": [
+              "WorkflowIdOrItemQueryInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "workflows",
+      "description": "Get all configured workflows.",
+      "type": {
+        "display": "WorkflowConnection",
+        "namedTypes": [
+          "WorkflowConnection"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "after",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "before",
+          "description": null,
+          "type": {
+            "display": "String",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        },
+        {
+          "name": "first",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        },
+        {
+          "name": "last",
+          "description": null,
+          "type": {
+            "display": "PaginationAmount",
+            "namedTypes": [
+              "PaginationAmount"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

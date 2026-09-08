@@ -1,0 +1,377 @@
+{
+  "name": "SolutionSiteType",
+  "kind": "OBJECT",
+  "description": "Represents a solution site",
+  "fields": [
+    {
+      "name": "access",
+      "description": "The access rights for the current user",
+      "type": {
+        "display": "ItemAccess",
+        "namedTypes": [
+          "ItemAccess"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "created",
+      "description": "Created date of the site",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "description",
+      "description": "Short description of the site",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayName",
+      "description": "Display name of the site",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "globalSettings",
+      "description": "Global settings",
+      "type": {
+        "display": "[KeyValuePairOfStringAndString!]",
+        "namedTypes": [
+          "KeyValuePairOfStringAndString"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "hostname",
+      "description": "Hostname",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "id",
+      "description": "A globally-unique identifier",
+      "type": {
+        "display": "ID!",
+        "namedTypes": [
+          "ID"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "format",
+          "description": null,
+          "type": {
+            "display": "IdFormat",
+            "namedTypes": [
+              "IdFormat"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "language",
+      "description": "Default language of the site",
+      "type": {
+        "display": "Language",
+        "namedTypes": [
+          "Language"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "languages",
+      "description": "Languages used on the site",
+      "type": {
+        "display": "[Language]",
+        "namedTypes": [
+          "Language"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "linkableSite",
+      "description": "Is site linkable",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "linkSettings",
+      "description": "Link settings",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "Name of the site",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "notFoundErrorPage",
+      "description": "The not found error page item of the site",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "posMappings",
+      "description": "Point of sale of the site",
+      "type": {
+        "display": "[PointOfSaleMappingType]",
+        "namedTypes": [
+          "PointOfSaleMappingType"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "properties",
+      "description": "List of site properties",
+      "type": {
+        "display": "[KeyValuePair!]!",
+        "namedTypes": [
+          "KeyValuePair"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "property",
+      "description": "Access property by key.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "key",
+          "description": "The property key.",
+          "type": {
+            "display": "String!",
+            "namedTypes": [
+              "String"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "renderingHost",
+      "description": null,
+      "type": {
+        "display": "RenderingHostType",
+        "namedTypes": [
+          "RenderingHostType"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "rootItem",
+      "description": "The root item of the site",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "rootItemThumbnailBase64",
+      "description": "The thumbnail for the site root item encoded to base64",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "rootItemThumbnailUrl",
+      "description": "The URL of the thumbnail for the site root item",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "display": "MediaUrlOptionsInput",
+            "namedTypes": [
+              "MediaUrlOptionsInput"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "serverErrorPage",
+      "description": "The server error page item of the site",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "settings",
+      "description": "The settings of the site",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "siteCollection",
+      "description": "Site collection",
+      "type": {
+        "display": "SiteCollectionType",
+        "namedTypes": [
+          "SiteCollectionType"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "siteDefinition",
+      "description": "The site definition item of the site",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "sortOrder",
+      "description": "Sort order",
+      "type": {
+        "display": "Int",
+        "namedTypes": [
+          "Int"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "startItem",
+      "description": "The start item of the site",
+      "type": {
+        "display": "Item",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "targetHostname",
+      "description": "Target hostname",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "thumbnailBase64",
+      "description": "The thumbnail for the site encoded to base64",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "thumbnailUrl",
+      "description": "The URL of the thumbnail for the site",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": [
+        {
+          "name": "options",
+          "description": null,
+          "type": {
+            "display": "MediaUrlOptionsInput",
+            "namedTypes": [
+              "MediaUrlOptionsInput"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

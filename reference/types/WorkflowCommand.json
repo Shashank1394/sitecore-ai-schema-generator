@@ -1,0 +1,58 @@
+{
+  "name": "WorkflowCommand",
+  "kind": "OBJECT",
+  "description": "Represents a workflow command.",
+  "fields": [
+    {
+      "name": "commandId",
+      "description": "Gets the workflow command ID.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayName",
+      "description": "Gets the display name of the workflow command.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "icon",
+      "description": "Gets the display name of the workflow state.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "suppressComments",
+      "description": "Gets value indicating whether to suppress comments for this command.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "CreateItemTemplatePayload",
+  "kind": "OBJECT",
+  "description": "The result of the create operation for the item template.",
+  "fields": [
+    {
+      "name": "itemTemplate",
+      "description": "The created item template.",
+      "type": {
+        "display": "ItemTemplate",
+        "namedTypes": [
+          "ItemTemplate"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

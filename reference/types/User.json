@@ -1,0 +1,126 @@
+{
+  "name": "User",
+  "kind": "OBJECT",
+  "description": "Represents a security user.",
+  "fields": [
+    {
+      "name": "accountType",
+      "description": "The type of the account.",
+      "type": {
+        "display": "AccountType!",
+        "namedTypes": [
+          "AccountType"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "description",
+      "description": "The description.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "displayName",
+      "description": "The display name.",
+      "type": {
+        "display": "String",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "domain",
+      "description": "The domain associated with the user.",
+      "type": {
+        "display": "Domain",
+        "namedTypes": [
+          "Domain"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "isAdministrator",
+      "description": "The flag indicating if this user is an administrator.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "isAuthenticated",
+      "description": "The flag indicating if this user has been authenticated.",
+      "type": {
+        "display": "Boolean!",
+        "namedTypes": [
+          "Boolean"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "localName",
+      "description": "The local name of the user.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "name",
+      "description": "The name of the user.",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "profile",
+      "description": "The user profile.",
+      "type": {
+        "display": "UserProfile",
+        "namedTypes": [
+          "UserProfile"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "roles",
+      "description": "The expanded list of roles.",
+      "type": {
+        "display": "[Role]",
+        "namedTypes": [
+          "Role"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [
+    "Account"
+  ],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "operation": "domain",
+  "operationType": "query",
+  "rootType": "Query",
+  "description": null,
+  "arguments": {
+    "domainName": {
+      "type": "String!",
+      "description": null
+    }
+  },
+  "returnType": "Domain",
+  "inputTypes": {},
+  "returnFields": {
+    "accountNameValidation": {
+      "type": "String",
+      "description": "The account name validation.",
+      "arguments": {}
+    },
+    "accountPrefix": {
+      "type": "String",
+      "description": "The account prefix expected for all accounts belonging to the current domain.",
+      "arguments": {}
+    },
+    "anonymousUserEmailPattern": {
+      "type": "String",
+      "description": "The anonymous user email pattern.",
+      "arguments": {}
+    },
+    "anonymousUserName": {
+      "type": "String",
+      "description": "The name of the 'anonymous' user.",
+      "arguments": {}
+    },
+    "defaultProfileItemId": {
+      "type": "String",
+      "description": "The default profile item ID.",
+      "arguments": {}
+    },
+    "ensureAnonymousUser": {
+      "type": "Boolean!",
+      "description": "The flag indicating if to ensure that an anonymous user exists for the domain.",
+      "arguments": {}
+    },
+    "everyoneRoleName": {
+      "type": "String",
+      "description": "The name of the 'everyone' role.",
+      "arguments": {}
+    },
+    "isDefault": {
+      "type": "Boolean!",
+      "description": "The flag indicating if this instance is default.",
+      "arguments": {}
+    },
+    "name": {
+      "type": "String",
+      "description": "The name of the domain.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Domain",
+      "namedTypes": [
+        "Domain"
+      ]
+    },
+    "nodes": {
+      "Domain": {
+        "kind": "OBJECT",
+        "file": "types/Domain.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

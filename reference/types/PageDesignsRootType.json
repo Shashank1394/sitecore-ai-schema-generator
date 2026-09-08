@@ -1,0 +1,36 @@
+{
+  "name": "PageDesignsRootType",
+  "kind": "OBJECT",
+  "description": "Represents a page designs root type",
+  "fields": [
+    {
+      "name": "root",
+      "description": "The root item",
+      "type": {
+        "display": "Item!",
+        "namedTypes": [
+          "Item"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "siteName",
+      "description": "Site name",
+      "type": {
+        "display": "String!",
+        "namedTypes": [
+          "String"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

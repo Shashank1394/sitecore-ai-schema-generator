@@ -1,0 +1,47 @@
+{
+  "name": "UserConnection",
+  "kind": "OBJECT",
+  "description": "A connection to a list of items.",
+  "fields": [
+    {
+      "name": "edges",
+      "description": "A list of edges.",
+      "type": {
+        "display": "[UserEdge!]",
+        "namedTypes": [
+          "UserEdge"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "nodes",
+      "description": "A flattened list of the nodes.",
+      "type": {
+        "display": "[User]",
+        "namedTypes": [
+          "User"
+        ]
+      },
+      "arguments": []
+    },
+    {
+      "name": "pageInfo",
+      "description": "Information to aid in pagination.",
+      "type": {
+        "display": "PageInfo!",
+        "namedTypes": [
+          "PageInfo"
+        ]
+      },
+      "arguments": []
+    }
+  ],
+  "inputFields": [],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

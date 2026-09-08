@@ -1,0 +1,30 @@
+{
+  "name": "PageDesignsMappingInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents mapping beetwean tempalte ID and page design ID",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "pageDesignId",
+      "description": "The ID of the page design",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "templateId",
+      "description": "The ID of the template",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

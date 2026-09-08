@@ -1,0 +1,24 @@
+{
+  "name": "ItemsFilterInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents input with items filtering parameters.",
+  "fields": [],
+  "inputFields": [
+    {
+      "name": "includeItems",
+      "description": "The include items filter parameters.",
+      "type": {
+        "display": "[ItemToFilterInput]",
+        "namedTypes": [
+          "ItemToFilterInput"
+        ]
+      }
+    }
+  ],
+  "interfaces": [],
+  "possibleTypes": [],
+  "enumValues": [],
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

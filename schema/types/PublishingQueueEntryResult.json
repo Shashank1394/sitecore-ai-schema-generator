@@ -1,0 +1,47 @@
+{
+  "name": "PublishingQueueEntryResult",
+  "kind": "OBJECT",
+  "description": "Represents a publishing queue entries result.",
+  "fields": [
+    {
+      "name": "results",
+      "description": "The list of the publishing queue entries.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "LIST",
+          "name": null,
+          "ofType": {
+            "kind": "NON_NULL",
+            "name": null,
+            "ofType": {
+              "kind": "OBJECT",
+              "name": "PublishingQueueEntry"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "totalCount",
+      "description": "The total number of publishing queue entries.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Long",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-09-08T07:46:03.445Z",
+  "schema": {
+    "queryRoot": "Query",
+    "mutationRoot": "Mutation",
+    "typeCount": 335
+  },
+  "queries": [],
+  "mutations": [],
+  "types": []
+}

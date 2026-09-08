@@ -1,0 +1,57 @@
+{
+  "name": "MediaItemQueryInput",
+  "kind": "INPUT_OBJECT",
+  "description": "Represents media item query",
+  "fields": null,
+  "inputFields": [
+    {
+      "name": "database",
+      "description": "The name of the database where media item exits.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "language",
+      "description": "The language of the media item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "mediaItemId",
+      "description": "The ID of the media item. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "ID",
+        "ofType": null
+      }
+    },
+    {
+      "name": "path",
+      "description": "The full path of the media item. If both ID and path parameters are specified, the path parameter is ignored.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "version",
+      "description": "The version number of the media item.",
+      "type": {
+        "kind": "SCALAR",
+        "name": "Int",
+        "ofType": null
+      }
+    }
+  ],
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}

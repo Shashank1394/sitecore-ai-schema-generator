@@ -1,0 +1,24 @@
+{
+  "name": "FieldVersioning",
+  "kind": "ENUM",
+  "description": null,
+  "fields": null,
+  "inputFields": null,
+  "interfaces": null,
+  "possibleTypes": null,
+  "enumValues": [
+    {
+      "name": "VERSIONED",
+      "description": null
+    },
+    {
+      "name": "UNVERSIONED",
+      "description": null
+    },
+    {
+      "name": "SHARED",
+      "description": null
+    }
+  ],
+  "ofType": null
+}

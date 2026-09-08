@@ -1,0 +1,141 @@
+{
+  "name": "User",
+  "kind": "OBJECT",
+  "description": "Represents a security user.",
+  "fields": [
+    {
+      "name": "accountType",
+      "description": "The type of the account.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "ENUM",
+          "name": "AccountType",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "description",
+      "description": "The description.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "displayName",
+      "description": "The display name.",
+      "args": [],
+      "type": {
+        "kind": "SCALAR",
+        "name": "String",
+        "ofType": null
+      }
+    },
+    {
+      "name": "domain",
+      "description": "The domain associated with the user.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "Domain",
+        "ofType": null
+      }
+    },
+    {
+      "name": "isAdministrator",
+      "description": "The flag indicating if this user is an administrator.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "isAuthenticated",
+      "description": "The flag indicating if this user has been authenticated.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "localName",
+      "description": "The local name of the user.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "name",
+      "description": "The name of the user.",
+      "args": [],
+      "type": {
+        "kind": "NON_NULL",
+        "name": null,
+        "ofType": {
+          "kind": "SCALAR",
+          "name": "String",
+          "ofType": null
+        }
+      }
+    },
+    {
+      "name": "profile",
+      "description": "The user profile.",
+      "args": [],
+      "type": {
+        "kind": "OBJECT",
+        "name": "UserProfile",
+        "ofType": null
+      }
+    },
+    {
+      "name": "roles",
+      "description": "The expanded list of roles.",
+      "args": [],
+      "type": {
+        "kind": "LIST",
+        "name": null,
+        "ofType": {
+          "kind": "OBJECT",
+          "name": "Role",
+          "ofType": null
+        }
+      }
+    }
+  ],
+  "inputFields": null,
+  "interfaces": [
+    {
+      "name": "Account",
+      "kind": "INTERFACE"
+    }
+  ],
+  "possibleTypes": null,
+  "enumValues": null,
+  "ofType": null
+}
