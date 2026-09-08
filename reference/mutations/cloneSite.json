@@ -1,0 +1,162 @@
+{
+  "operation": "cloneSite",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "CloneSiteInput!",
+      "description": null
+    }
+  },
+  "returnType": "CloneSitePayload",
+  "inputTypes": {
+    "CloneSiteInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input needed to clone a site",
+      "fields": {
+        "cloneName": {
+          "type": "String",
+          "description": "Clone site name"
+        },
+        "cloneSiteDefinitions": {
+          "type": "Boolean",
+          "description": "Clone site defitninions from source site or create new one"
+        },
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        },
+        "description": {
+          "type": "String",
+          "description": "Clone site description"
+        },
+        "displayName": {
+          "type": "String",
+          "description": "Clone site display name"
+        },
+        "posMappings": {
+          "type": "[PointOfSaleMappingInput]",
+          "description": "Point of sale mappings"
+        },
+        "siteId": {
+          "type": "ID",
+          "description": "Site ID"
+        },
+        "siteName": {
+          "type": "String",
+          "description": "Site name"
+        }
+      }
+    },
+    "PointOfSaleMappingInput": {
+      "kind": "INPUT_OBJECT",
+      "description": null,
+      "fields": {
+        "language": {
+          "type": "String",
+          "description": "Language of the Point of sale"
+        },
+        "name": {
+          "type": "String",
+          "description": "Name of the Point of sale"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "Reference of the job",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "CloneSitePayload",
+      "namedTypes": [
+        "CloneSitePayload"
+      ]
+    },
+    "nodes": {
+      "CloneSitePayload": {
+        "kind": "OBJECT",
+        "file": "types/CloneSitePayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

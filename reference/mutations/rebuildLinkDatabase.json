@@ -1,0 +1,120 @@
+{
+  "operation": "rebuildLinkDatabase",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "RebuildLinkDatabaseInput!",
+      "description": null
+    }
+  },
+  "returnType": "RebuildLinkDatabasePayload",
+  "inputTypes": {
+    "RebuildLinkDatabaseInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for rebuilding database links.",
+      "fields": {
+        "databaseNames": {
+          "type": "[UNKNOWN!]!",
+          "description": "The names of the database databases targetted by the link rebuilding operation."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "The reference of the database link rebuilding job.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "RebuildLinkDatabasePayload",
+      "namedTypes": [
+        "RebuildLinkDatabasePayload"
+      ]
+    },
+    "nodes": {
+      "RebuildLinkDatabasePayload": {
+        "kind": "OBJECT",
+        "file": "types/RebuildLinkDatabasePayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

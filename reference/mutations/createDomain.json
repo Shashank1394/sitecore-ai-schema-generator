@@ -1,0 +1,74 @@
+{
+  "operation": "createDomain",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "CreateDomainInput!",
+      "description": null
+    }
+  },
+  "returnType": "CreateDomainPayload",
+  "inputTypes": {
+    "CreateDomainInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for creating a security domain.",
+      "fields": {
+        "domainName": {
+          "type": "String!",
+          "description": "The name of the new domain."
+        },
+        "locallyManagedDomain": {
+          "type": "Boolean",
+          "description": "The flag indicating whether the domain is managed locally."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "domain": {
+      "type": "Domain",
+      "description": "The created domain.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "CreateDomainPayload",
+      "namedTypes": [
+        "CreateDomainPayload"
+      ]
+    },
+    "nodes": {
+      "CreateDomainPayload": {
+        "kind": "OBJECT",
+        "file": "types/CreateDomainPayload.json",
+        "references": [
+          "Domain"
+        ]
+      },
+      "Domain": {
+        "kind": "OBJECT",
+        "file": "types/Domain.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

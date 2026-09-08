@@ -1,0 +1,73 @@
+{
+  "operation": "publishSite",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "PublishSiteInput!",
+      "description": null
+    }
+  },
+  "returnType": "PublishSitePayload",
+  "inputTypes": {
+    "PublishSiteInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for publishing a site.",
+      "fields": {
+        "displayName": {
+          "type": "String",
+          "description": "The display name of the publish request."
+        },
+        "languages": {
+          "type": "[UNKNOWN!]!",
+          "description": "The publishing languages."
+        },
+        "publishSiteMode": {
+          "type": "PublishSiteMode!",
+          "description": "The publish site mode."
+        },
+        "sourceDatabase": {
+          "type": "String",
+          "description": "The source database name."
+        },
+        "targetDatabases": {
+          "type": "[UNKNOWN!]!",
+          "description": "The target databases name."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "operationId": {
+      "type": "String",
+      "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "PublishSitePayload",
+      "namedTypes": [
+        "PublishSitePayload"
+      ]
+    },
+    "nodes": {
+      "PublishSitePayload": {
+        "kind": "OBJECT",
+        "file": "types/PublishSitePayload.json",
+        "references": [
+          "String"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

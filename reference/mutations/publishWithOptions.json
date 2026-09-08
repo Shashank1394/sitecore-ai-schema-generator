@@ -1,0 +1,57 @@
+{
+  "operation": "publishWithOptions",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "PublishWithOptionsInput!",
+      "description": null
+    }
+  },
+  "returnType": "PublishWithOptionsPayload",
+  "inputTypes": {
+    "PublishWithOptionsInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for publishing with options.",
+      "fields": {
+        "options": {
+          "type": "[UNKNOWN!]!",
+          "description": "The publishing options."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "operationId": {
+      "type": "String",
+      "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "PublishWithOptionsPayload",
+      "namedTypes": [
+        "PublishWithOptionsPayload"
+      ]
+    },
+    "nodes": {
+      "PublishWithOptionsPayload": {
+        "kind": "OBJECT",
+        "file": "types/PublishWithOptionsPayload.json",
+        "references": [
+          "String"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

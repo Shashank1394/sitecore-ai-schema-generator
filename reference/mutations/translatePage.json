@@ -1,0 +1,144 @@
+{
+  "operation": "translatePage",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "TranslatePageInput!",
+      "description": null
+    }
+  },
+  "returnType": "TranslatePagePayload",
+  "inputTypes": {
+    "TranslatePageInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input needed to translate a page",
+      "fields": {
+        "brandKitId": {
+          "type": "String",
+          "description": "Brand kit identifier"
+        },
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        },
+        "pageId": {
+          "type": "ID!",
+          "description": "Page ID"
+        },
+        "resetWorkflow": {
+          "type": "Boolean!",
+          "description": "Ensure that translated versions are created in the initial workflow state"
+        },
+        "sourceLanguage": {
+          "type": "String",
+          "description": "Source language"
+        },
+        "targetLanguage": {
+          "type": "String",
+          "description": "Target language"
+        },
+        "translateIfTargetVersionExists": {
+          "type": "Boolean!",
+          "description": "Skip item if target language version already exists"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "Reference of the job",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "TranslatePagePayload",
+      "namedTypes": [
+        "TranslatePagePayload"
+      ]
+    },
+    "nodes": {
+      "TranslatePagePayload": {
+        "kind": "OBJECT",
+        "file": "types/TranslatePagePayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

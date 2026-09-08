@@ -1,0 +1,57 @@
+{
+  "operation": "resetUserSettings",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "ResetUserSettingsInput!",
+      "description": null
+    }
+  },
+  "returnType": "ResetUserSettingsPayload",
+  "inputTypes": {
+    "ResetUserSettingsInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for resetting the settings of a security user.",
+      "fields": {
+        "userName": {
+          "type": "String!",
+          "description": "The name of the user."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The operation status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ResetUserSettingsPayload",
+      "namedTypes": [
+        "ResetUserSettingsPayload"
+      ]
+    },
+    "nodes": {
+      "ResetUserSettingsPayload": {
+        "kind": "OBJECT",
+        "file": "types/ResetUserSettingsPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

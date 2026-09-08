@@ -1,0 +1,81 @@
+{
+  "operation": "uploadMedia",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "UploadMediaInput!",
+      "description": null
+    }
+  },
+  "returnType": "UploadMediaPayload",
+  "inputTypes": {
+    "UploadMediaInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input needed for creating a pre-signed upload URL.",
+      "fields": {
+        "alt": {
+          "type": "String",
+          "description": "The alternative text for the media item."
+        },
+        "database": {
+          "type": "String",
+          "description": "The database of the media item."
+        },
+        "includeExtensionInItemName": {
+          "type": "Boolean",
+          "description": "The indicator to include the file extension with the item name."
+        },
+        "itemPath": {
+          "type": "String!",
+          "description": "The relative path, under sitecore media library, of the media item."
+        },
+        "language": {
+          "type": "String",
+          "description": "The language of the media item."
+        },
+        "overwriteExisting": {
+          "type": "Boolean",
+          "description": "The indicator to overwrite the media item."
+        },
+        "versioned": {
+          "type": "Boolean",
+          "description": "The indicator to version the media item."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "presignedUploadUrl": {
+      "type": "String!",
+      "description": "The absolute URI for the api to upload the media file.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "UploadMediaPayload",
+      "namedTypes": [
+        "UploadMediaPayload"
+      ]
+    },
+    "nodes": {
+      "UploadMediaPayload": {
+        "kind": "OBJECT",
+        "file": "types/UploadMediaPayload.json",
+        "references": [
+          "String"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

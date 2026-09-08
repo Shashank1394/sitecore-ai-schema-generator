@@ -1,0 +1,75 @@
+{
+  "operation": "archiveVersion",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "ArchiveVersionInput!",
+      "description": null
+    }
+  },
+  "returnType": "ArchiveVersionPayload",
+  "inputTypes": {
+    "ArchiveVersionInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for archiving a version.",
+      "fields": {
+        "archiveName": {
+          "type": "String",
+          "description": "The name of the archive. The default value is 'archive'."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The ID of the item to archive. If both item ID and item path parameters are specified, the item path parameter is ignored."
+        },
+        "itemPath": {
+          "type": "String",
+          "description": "The full path of the item to archive. If both item ID and item path parameters are specified, the item path parameter is ignored."
+        },
+        "language": {
+          "type": "String!",
+          "description": "The language of the version to archive."
+        },
+        "version": {
+          "type": "Int",
+          "description": "The version number to archive. If not present, the latest version will be used."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "archiveVersionId": {
+      "type": "ID!",
+      "description": "The globally-unique identifier.",
+      "arguments": {
+        "format": "IdFormat"
+      }
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ArchiveVersionPayload",
+      "namedTypes": [
+        "ArchiveVersionPayload"
+      ]
+    },
+    "nodes": {
+      "ArchiveVersionPayload": {
+        "kind": "OBJECT",
+        "file": "types/ArchiveVersionPayload.json",
+        "references": [
+          "ID"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

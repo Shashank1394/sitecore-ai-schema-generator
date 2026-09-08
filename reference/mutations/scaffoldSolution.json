@@ -1,0 +1,178 @@
+{
+  "operation": "scaffoldSolution",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "CreateSolutionSiteInput!",
+      "description": null
+    }
+  },
+  "returnType": "CreateSolutionSitePayload",
+  "inputTypes": {
+    "CreateSolutionSiteInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input needed to create a site",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        },
+        "hostName": {
+          "type": "String!",
+          "description": "Host name of the new site"
+        },
+        "language": {
+          "type": "String!",
+          "description": "Language of the new site"
+        },
+        "languages": {
+          "type": "[String]",
+          "description": "List of supported site languages"
+        },
+        "posMappings": {
+          "type": "[PointOfSaleMappingInput]",
+          "description": "List of Point of sale mappings to language"
+        },
+        "siteCollectionDescription": {
+          "type": "String",
+          "description": "Description of the site collection"
+        },
+        "siteCollectionDisplayName": {
+          "type": "String",
+          "description": "Display name of the site collection"
+        },
+        "siteCollectionName": {
+          "type": "String",
+          "description": "Name of the site collection"
+        },
+        "siteDescription": {
+          "type": "String",
+          "description": "Description of the new site"
+        },
+        "siteDisplayName": {
+          "type": "String",
+          "description": "Display name of the new site"
+        },
+        "siteName": {
+          "type": "String!",
+          "description": "Name of the new site"
+        },
+        "templateId": {
+          "type": "String!",
+          "description": "Site template"
+        }
+      }
+    },
+    "PointOfSaleMappingInput": {
+      "kind": "INPUT_OBJECT",
+      "description": null,
+      "fields": {
+        "language": {
+          "type": "String",
+          "description": "Language of the Point of sale"
+        },
+        "name": {
+          "type": "String",
+          "description": "Name of the Point of sale"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "Reference of the job",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "CreateSolutionSitePayload",
+      "namedTypes": [
+        "CreateSolutionSitePayload"
+      ]
+    },
+    "nodes": {
+      "CreateSolutionSitePayload": {
+        "kind": "OBJECT",
+        "file": "types/CreateSolutionSitePayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

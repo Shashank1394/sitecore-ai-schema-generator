@@ -1,0 +1,69 @@
+{
+  "operation": "deleteItem",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteItemInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteItemPayload",
+  "inputTypes": {
+    "DeleteItemInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting an item.",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "The name of the item database."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The ID of the item. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "path": {
+          "type": "String",
+          "description": "The item path."
+        },
+        "permanently": {
+          "type": "Boolean",
+          "description": "When true the item is permanently deleted."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The status of the delete item operation.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteItemPayload",
+      "namedTypes": [
+        "DeleteItemPayload"
+      ]
+    },
+    "nodes": {
+      "DeleteItemPayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteItemPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

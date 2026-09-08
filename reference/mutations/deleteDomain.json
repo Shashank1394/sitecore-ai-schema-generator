@@ -1,0 +1,57 @@
+{
+  "operation": "deleteDomain",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteDomainInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteDomainPayload",
+  "inputTypes": {
+    "DeleteDomainInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting a security domain.",
+      "fields": {
+        "domainName": {
+          "type": "String!",
+          "description": "The name of the domain to delete."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The operation status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteDomainPayload",
+      "namedTypes": [
+        "DeleteDomainPayload"
+      ]
+    },
+    "nodes": {
+      "DeleteDomainPayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteDomainPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

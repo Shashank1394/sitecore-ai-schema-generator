@@ -1,0 +1,65 @@
+{
+  "operation": "deleteAccountsFromRole",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteAccountsFromRoleInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteAccountsFromRolePayload",
+  "inputTypes": {
+    "DeleteAccountsFromRoleInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting security accounts from the current parent security role.",
+      "fields": {
+        "roleName": {
+          "type": "String!",
+          "description": "The name of the parent role."
+        },
+        "roles": {
+          "type": "[String]",
+          "description": "The names of the roles to delete."
+        },
+        "users": {
+          "type": "[String]",
+          "description": "The names of the users to delete."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The operation status",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteAccountsFromRolePayload",
+      "namedTypes": [
+        "DeleteAccountsFromRolePayload"
+      ]
+    },
+    "nodes": {
+      "DeleteAccountsFromRolePayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteAccountsFromRolePayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

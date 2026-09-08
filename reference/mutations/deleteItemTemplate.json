@@ -1,0 +1,61 @@
+{
+  "operation": "deleteItemTemplate",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteItemTemplateInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteItemTemplatePayload",
+  "inputTypes": {
+    "DeleteItemTemplateInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting an item template.",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "The name of the item database."
+        },
+        "templateId": {
+          "type": "ID!",
+          "description": "The ID of the item template."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The delete template operation status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteItemTemplatePayload",
+      "namedTypes": [
+        "DeleteItemTemplatePayload"
+      ]
+    },
+    "nodes": {
+      "DeleteItemTemplatePayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteItemTemplatePayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

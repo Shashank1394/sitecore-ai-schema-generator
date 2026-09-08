@@ -1,0 +1,74 @@
+{
+  "operation": "updateSolutionSitesPos",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "UpdateSolutionSitesPosInput!",
+      "description": null
+    }
+  },
+  "returnType": "SetPosPayload",
+  "inputTypes": {
+    "UpdateSolutionSitesPosInput": {
+      "kind": "INPUT_OBJECT",
+      "description": null,
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        },
+        "posMappingsInput": {
+          "type": "[UNKNOWN!]!",
+          "description": "Point of sale mappings input"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "result": {
+      "type": "[SetPosResult]",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "SetPosPayload",
+      "namedTypes": [
+        "SetPosPayload"
+      ]
+    },
+    "nodes": {
+      "SetPosPayload": {
+        "kind": "OBJECT",
+        "file": "types/SetPosPayload.json",
+        "references": [
+          "SetPosResult"
+        ]
+      },
+      "SetPosResult": {
+        "kind": "OBJECT",
+        "file": "types/SetPosResult.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

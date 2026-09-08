@@ -1,0 +1,120 @@
+{
+  "operation": "populateManagedSchema",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": "Execute populate managed schema operation. If the indexNames input parameter is null, Populate Managed Schema for all indexes.",
+  "arguments": {
+    "input": {
+      "type": "PopulateManagedSchemaInput",
+      "description": null
+    }
+  },
+  "returnType": "PopulateManagedSchemaPayload",
+  "inputTypes": {
+    "PopulateManagedSchemaInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for populating the managed schema.",
+      "fields": {
+        "indexNames": {
+          "type": "[UNKNOWN!]!",
+          "description": "The list of names indexes targetted by the schema population operation."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "jobs": {
+      "type": "[Job]",
+      "description": "The references to all schema population jobs.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "PopulateManagedSchemaPayload",
+      "namedTypes": [
+        "PopulateManagedSchemaPayload"
+      ]
+    },
+    "nodes": {
+      "PopulateManagedSchemaPayload": {
+        "kind": "OBJECT",
+        "file": "types/PopulateManagedSchemaPayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

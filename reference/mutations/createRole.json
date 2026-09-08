@@ -1,0 +1,162 @@
+{
+  "operation": "createRole",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "CreateRoleInput!",
+      "description": null
+    }
+  },
+  "returnType": "CreateRolePayload",
+  "inputTypes": {
+    "CreateRoleInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for creating a security role.",
+      "fields": {
+        "roleName": {
+          "type": "String!",
+          "description": "The name of the new role."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "role": {
+      "type": "Role",
+      "description": "The created role",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "CreateRolePayload",
+      "namedTypes": [
+        "CreateRolePayload"
+      ]
+    },
+    "nodes": {
+      "CreateRolePayload": {
+        "kind": "OBJECT",
+        "file": "types/CreateRolePayload.json",
+        "references": [
+          "Role"
+        ]
+      },
+      "Role": {
+        "kind": "OBJECT",
+        "file": "types/Role.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Boolean",
+          "AccountConnection"
+        ]
+      },
+      "AccountType": {
+        "kind": "ENUM",
+        "file": "types/AccountType.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Domain": {
+        "kind": "OBJECT",
+        "file": "types/Domain.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "AccountConnection": {
+        "kind": "OBJECT",
+        "file": "types/AccountConnection.json",
+        "references": [
+          "AccountEdge",
+          "Account",
+          "PageInfo"
+        ]
+      },
+      "AccountEdge": {
+        "kind": "OBJECT",
+        "file": "types/AccountEdge.json",
+        "references": [
+          "String",
+          "Account"
+        ]
+      },
+      "Account": {
+        "kind": "INTERFACE",
+        "file": "types/Account.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Role",
+          "User"
+        ]
+      },
+      "User": {
+        "kind": "OBJECT",
+        "file": "types/User.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Boolean",
+          "UserProfile",
+          "Role"
+        ]
+      },
+      "UserProfile": {
+        "kind": "OBJECT",
+        "file": "types/UserProfile.json",
+        "references": [
+          "String",
+          "DateTime",
+          "KeyValuePair",
+          "Boolean"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

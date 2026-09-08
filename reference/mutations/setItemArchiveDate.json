@@ -1,0 +1,65 @@
+{
+  "operation": "setItemArchiveDate",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "SetItemArchiveDateInput!",
+      "description": null
+    }
+  },
+  "returnType": "SetItemArchiveDatePayload",
+  "inputTypes": {
+    "SetItemArchiveDateInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for setting the archive date for an item.",
+      "fields": {
+        "archiveDate": {
+          "type": "DateTime",
+          "description": "The archive date. A null value will reset the archive date."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The ID of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored."
+        },
+        "itemPath": {
+          "type": "String",
+          "description": "The full path of the target item. If both item ID and item path parameters are specified, the item path parameter is ignored."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "SetItemArchiveDatePayload",
+      "namedTypes": [
+        "SetItemArchiveDatePayload"
+      ]
+    },
+    "nodes": {
+      "SetItemArchiveDatePayload": {
+        "kind": "OBJECT",
+        "file": "types/SetItemArchiveDatePayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "operation": "publishItem",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "PublishItemInput!",
+      "description": null
+    }
+  },
+  "returnType": "PublishItemPayload",
+  "inputTypes": {
+    "PublishItemInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for publishing an item.",
+      "fields": {
+        "displayName": {
+          "type": "String",
+          "description": "The display name of the publish request."
+        },
+        "languages": {
+          "type": "[UNKNOWN!]!",
+          "description": "The publishing languages."
+        },
+        "publishItemMode": {
+          "type": "PublishItemMode!",
+          "description": "The publish item mode."
+        },
+        "publishRelatedItems": {
+          "type": "Boolean",
+          "description": "Indicates whether to publish related items."
+        },
+        "publishSubItems": {
+          "type": "Boolean",
+          "description": "Indicates whether to publish sub-items."
+        },
+        "rootItemId": {
+          "type": "ID",
+          "description": "The ID of the root item. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "rootItemIds": {
+          "type": "[ID]",
+          "description": "The IDs of the root items. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "rootItemPath": {
+          "type": "String",
+          "description": "The path of the root item."
+        },
+        "rootItemPaths": {
+          "type": "[String]",
+          "description": "The paths of the root items."
+        },
+        "sourceDatabase": {
+          "type": "String",
+          "description": "The source database name."
+        },
+        "targetDatabases": {
+          "type": "[UNKNOWN!]!",
+          "description": "The target databases name."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "operationId": {
+      "type": "String",
+      "description": "The publishing operation ID. It can be used to track the progress of the publishing operation.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "PublishItemPayload",
+      "namedTypes": [
+        "PublishItemPayload"
+      ]
+    },
+    "nodes": {
+      "PublishItemPayload": {
+        "kind": "OBJECT",
+        "file": "types/PublishItemPayload.json",
+        "references": [
+          "String"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "operation": "disableUser",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DisableUserInput!",
+      "description": null
+    }
+  },
+  "returnType": "DisableUserPayload",
+  "inputTypes": {
+    "DisableUserInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for disabling a security user.",
+      "fields": {
+        "userName": {
+          "type": "String!",
+          "description": "The name of the user to disable."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The operation status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DisableUserPayload",
+      "namedTypes": [
+        "DisableUserPayload"
+      ]
+    },
+    "nodes": {
+      "DisableUserPayload": {
+        "kind": "OBJECT",
+        "file": "types/DisableUserPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

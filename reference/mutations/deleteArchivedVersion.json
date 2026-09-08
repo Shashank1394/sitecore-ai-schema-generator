@@ -1,0 +1,61 @@
+{
+  "operation": "deleteArchivedVersion",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteArchivedVersionInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteArchivedVersionPayload",
+  "inputTypes": {
+    "DeleteArchivedVersionInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting an archived version.",
+      "fields": {
+        "archiveName": {
+          "type": "String",
+          "description": "The name of the archive. The default value is 'archive'."
+        },
+        "versionId": {
+          "type": "ID!",
+          "description": "The version archival ID."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteArchivedVersionPayload",
+      "namedTypes": [
+        "DeleteArchivedVersionPayload"
+      ]
+    },
+    "nodes": {
+      "DeleteArchivedVersionPayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteArchivedVersionPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

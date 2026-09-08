@@ -1,0 +1,132 @@
+{
+  "operation": "createSiteCollection",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "CreateSiteCollectionInput!",
+      "description": null
+    }
+  },
+  "returnType": "CreateSiteCollectionPayload",
+  "inputTypes": {
+    "CreateSiteCollectionInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input needed to create a site collection",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        },
+        "description": {
+          "type": "String",
+          "description": "Description of the site collection"
+        },
+        "displayName": {
+          "type": "String",
+          "description": "Display name of the site collection"
+        },
+        "name": {
+          "type": "String!",
+          "description": "Name of the site collection"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "Reference of the job",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "CreateSiteCollectionPayload",
+      "namedTypes": [
+        "CreateSiteCollectionPayload"
+      ]
+    },
+    "nodes": {
+      "CreateSiteCollectionPayload": {
+        "kind": "OBJECT",
+        "file": "types/CreateSiteCollectionPayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

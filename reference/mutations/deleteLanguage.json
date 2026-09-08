@@ -1,0 +1,61 @@
+{
+  "operation": "deleteLanguage",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": "Delete a specific language. This will remove ALL versions of this language from every item.",
+  "arguments": {
+    "input": {
+      "type": "DeleteLanguageInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteLanguagePayload!",
+  "inputTypes": {
+    "DeleteLanguageInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting a language",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "The database of the language to be deleted."
+        },
+        "name": {
+          "type": "String!",
+          "description": "The language name to be deleted."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The status of the delete operation",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteLanguagePayload!",
+      "namedTypes": [
+        "DeleteLanguagePayload"
+      ]
+    },
+    "nodes": {
+      "DeleteLanguagePayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteLanguagePayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

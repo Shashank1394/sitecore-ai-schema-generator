@@ -1,0 +1,97 @@
+{
+  "operation": "addLanguage",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "AddLanguageInput!",
+      "description": null
+    }
+  },
+  "returnType": "AddLanguagePayload!",
+  "inputTypes": {
+    "AddLanguageInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for adding a language.",
+      "fields": {
+        "charset": {
+          "type": "String",
+          "description": "The charset of the language to be created."
+        },
+        "codePage": {
+          "type": "String",
+          "description": "The code page of the language to be created."
+        },
+        "customCode": {
+          "type": "String",
+          "description": "The custom code of the language to be created."
+        },
+        "database": {
+          "type": "String",
+          "description": "The database of the language."
+        },
+        "encoding": {
+          "type": "String",
+          "description": "The encoding of the language to be created."
+        },
+        "fallbackCode": {
+          "type": "String",
+          "description": "The fallback code of the language to be created."
+        },
+        "languageCode": {
+          "type": "String!",
+          "description": "The code of the language to be created"
+        },
+        "name": {
+          "type": "String",
+          "description": "The name of the language to be created."
+        },
+        "regionCode": {
+          "type": "String",
+          "description": "The region code of the language to be created."
+        },
+        "spellChecker": {
+          "type": "String",
+          "description": "The spellchecker of the language to be created."
+        },
+        "useSupportedLanguageAsFallback": {
+          "type": "Boolean",
+          "description": "Indicator to use language definition as fallback. The default value is true."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The status of the add operation.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "AddLanguagePayload!",
+      "namedTypes": [
+        "AddLanguagePayload"
+      ]
+    },
+    "nodes": {
+      "AddLanguagePayload": {
+        "kind": "OBJECT",
+        "file": "types/AddLanguagePayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

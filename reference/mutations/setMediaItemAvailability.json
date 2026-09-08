@@ -1,0 +1,48 @@
+{
+  "operation": "setMediaItemAvailability",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "SetMediaAvailabilityInput!",
+      "description": null
+    }
+  },
+  "returnType": "Boolean!",
+  "inputTypes": {
+    "SetMediaAvailabilityInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input for setting media item availability status.",
+      "fields": {
+        "mediaItemId": {
+          "type": "ID",
+          "description": "The ID of the media item."
+        },
+        "status": {
+          "type": "MediaAvailabilityStatus!",
+          "description": "The target media availability status."
+        }
+      }
+    }
+  },
+  "returnFields": {},
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Boolean!",
+      "namedTypes": [
+        "Boolean"
+      ]
+    },
+    "nodes": {
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

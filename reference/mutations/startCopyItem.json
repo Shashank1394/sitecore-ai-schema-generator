@@ -1,0 +1,144 @@
+{
+  "operation": "startCopyItem",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "CopyItemInput!",
+      "description": null
+    }
+  },
+  "returnType": "StartCopyItemPayload",
+  "inputTypes": {
+    "CopyItemInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for copying an item.",
+      "fields": {
+        "copyItemName": {
+          "type": "String",
+          "description": "The copied item name."
+        },
+        "database": {
+          "type": "String",
+          "description": "The name of the item database."
+        },
+        "deepCopy": {
+          "type": "Boolean",
+          "description": "Indicates whether to copy all descendent items. The default value is true."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The ID of the item. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "path": {
+          "type": "String",
+          "description": "The item path."
+        },
+        "targetParentId": {
+          "type": "ID",
+          "description": "The ID of the parent item. If both ID and path parameters are specified, the target parent path parameter is ignored."
+        },
+        "targetParentPath": {
+          "type": "String",
+          "description": "The path of the parent item."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "Reference of the job",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "StartCopyItemPayload",
+      "namedTypes": [
+        "StartCopyItemPayload"
+      ]
+    },
+    "nodes": {
+      "StartCopyItemPayload": {
+        "kind": "OBJECT",
+        "file": "types/StartCopyItemPayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

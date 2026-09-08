@@ -1,0 +1,57 @@
+{
+  "operation": "emptyArchive",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "EmptyArchiveInput!",
+      "description": null
+    }
+  },
+  "returnType": "EmptyArchivePayload",
+  "inputTypes": {
+    "EmptyArchiveInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for emptying an archive",
+      "fields": {
+        "archiveName": {
+          "type": "String",
+          "description": "The name of the archive. The default value is 'archive'."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "EmptyArchivePayload",
+      "namedTypes": [
+        "EmptyArchivePayload"
+      ]
+    },
+    "nodes": {
+      "EmptyArchivePayload": {
+        "kind": "OBJECT",
+        "file": "types/EmptyArchivePayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

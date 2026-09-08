@@ -1,0 +1,91 @@
+{
+  "operation": "startWorkflow",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": "Starts the workflow for the specified item. When executed, it will set the state to the initial state and clear all workflow history",
+  "arguments": {
+    "input": {
+      "type": "StartWorkflowInput!",
+      "description": null
+    }
+  },
+  "returnType": "StartWorkflowPayload!",
+  "inputTypes": {
+    "StartWorkflowInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for starting a workflow.",
+      "fields": {
+        "item": {
+          "type": "ItemQueryInput!",
+          "description": "The target item for the workflow."
+        }
+      }
+    },
+    "ItemQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents an item query.",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "The name of the database where item exits."
+        },
+        "existingVersionOnly": {
+          "type": "Boolean",
+          "description": "Indicates whether to return the item even if the requested version does not exist."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The item ID. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "language": {
+          "type": "String",
+          "description": "The item language."
+        },
+        "path": {
+          "type": "String",
+          "description": "The full item path. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "requirePresentation": {
+          "type": "Boolean",
+          "description": "DEPRECATED. Indicates whether the item required must have presentation."
+        },
+        "version": {
+          "type": "Int",
+          "description": "The version number of the item."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean!",
+      "description": "The operation status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "StartWorkflowPayload!",
+      "namedTypes": [
+        "StartWorkflowPayload"
+      ]
+    },
+    "nodes": {
+      "StartWorkflowPayload": {
+        "kind": "OBJECT",
+        "file": "types/StartWorkflowPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

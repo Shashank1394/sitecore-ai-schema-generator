@@ -1,0 +1,62 @@
+{
+  "operation": "cancelPublishing",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "publishingOperationId": {
+      "type": "String!",
+      "description": null
+    }
+  },
+  "returnType": "CancelPublishingPayload",
+  "inputTypes": {},
+  "returnFields": {
+    "message": {
+      "type": "String",
+      "description": null,
+      "arguments": {}
+    },
+    "publishingOperationId": {
+      "type": "String",
+      "description": null,
+      "arguments": {}
+    },
+    "success": {
+      "type": "Boolean!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "CancelPublishingPayload",
+      "namedTypes": [
+        "CancelPublishingPayload"
+      ]
+    },
+    "nodes": {
+      "CancelPublishingPayload": {
+        "kind": "OBJECT",
+        "file": "types/CancelPublishingPayload.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

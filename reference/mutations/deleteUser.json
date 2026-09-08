@@ -1,0 +1,57 @@
+{
+  "operation": "deleteUser",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteUserInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteUserPayload",
+  "inputTypes": {
+    "DeleteUserInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting a security user.",
+      "fields": {
+        "userName": {
+          "type": "String!",
+          "description": "The name of the user to delete."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The operation status",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteUserPayload",
+      "namedTypes": [
+        "DeleteUserPayload"
+      ]
+    },
+    "nodes": {
+      "DeleteUserPayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteUserPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

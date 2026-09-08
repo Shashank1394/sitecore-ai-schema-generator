@@ -1,0 +1,158 @@
+{
+  "operation": "createItemFromBranch",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "CreateItemFromBranchInput!",
+      "description": null
+    }
+  },
+  "returnType": "CreateItemFromBranchPayload",
+  "inputTypes": {
+    "CreateItemFromBranchInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for creating an item from a branch.",
+      "fields": {
+        "branchId": {
+          "type": "ID!",
+          "description": "The unique ID of the branch used for creating the new item."
+        },
+        "database": {
+          "type": "String",
+          "description": "The name of the item database."
+        },
+        "fields": {
+          "type": "[FieldValueInput]",
+          "description": "The field values."
+        },
+        "language": {
+          "type": "String",
+          "description": "The item language."
+        },
+        "name": {
+          "type": "String!",
+          "description": "Name of the new item."
+        },
+        "parent": {
+          "type": "ID!",
+          "description": "The unique ID of the parent item."
+        }
+      }
+    },
+    "FieldValueInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Item field data.",
+      "fields": {
+        "name": {
+          "type": "String!",
+          "description": "The field name."
+        },
+        "reset": {
+          "type": "Boolean",
+          "description": "Indicates whether to reset the field value. The default value is false."
+        },
+        "value": {
+          "type": "String",
+          "description": "The field value. If the value is not specified or the Reset parameter is true, the field value is reset to the standard value."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "Reference of the job",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "CreateItemFromBranchPayload",
+      "namedTypes": [
+        "CreateItemFromBranchPayload"
+      ]
+    },
+    "nodes": {
+      "CreateItemFromBranchPayload": {
+        "kind": "OBJECT",
+        "file": "types/CreateItemFromBranchPayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

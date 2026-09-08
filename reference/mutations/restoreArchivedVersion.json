@@ -1,0 +1,61 @@
+{
+  "operation": "restoreArchivedVersion",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "RestoreArchivedVersionInput!",
+      "description": null
+    }
+  },
+  "returnType": "RestoreArchivedVersionPayload",
+  "inputTypes": {
+    "RestoreArchivedVersionInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for restoring an archived version.",
+      "fields": {
+        "archiveName": {
+          "type": "String",
+          "description": "The name of the archive. The default value is 'archive'."
+        },
+        "versionId": {
+          "type": "ID!",
+          "description": "The version archival ID."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "RestoreArchivedVersionPayload",
+      "namedTypes": [
+        "RestoreArchivedVersionPayload"
+      ]
+    },
+    "nodes": {
+      "RestoreArchivedVersionPayload": {
+        "kind": "OBJECT",
+        "file": "types/RestoreArchivedVersionPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

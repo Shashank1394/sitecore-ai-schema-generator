@@ -1,0 +1,210 @@
+{
+  "operation": "updateUser",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "UpdateUserInput!",
+      "description": null
+    }
+  },
+  "returnType": "UpdateUserPayload",
+  "inputTypes": {
+    "UpdateUserInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for updating a security user.",
+      "fields": {
+        "clientLanguage": {
+          "type": "String",
+          "description": "The client language."
+        },
+        "comment": {
+          "type": "String",
+          "description": "A comment about the new user."
+        },
+        "defaultContentLanguage": {
+          "type": "String",
+          "description": "The default content language."
+        },
+        "email": {
+          "type": "String",
+          "description": "The email."
+        },
+        "fullName": {
+          "type": "String",
+          "description": "The full name."
+        },
+        "isAdministrator": {
+          "type": "Boolean",
+          "description": "The flag indicating if this user is an administrator."
+        },
+        "portrait": {
+          "type": "String",
+          "description": "The portrait."
+        },
+        "regionalIsoCode": {
+          "type": "String",
+          "description": "The regional ISO code."
+        },
+        "roleNames": {
+          "type": "[String]",
+          "description": "The roles to assign to the user."
+        },
+        "startUrl": {
+          "type": "String",
+          "description": "The start URL."
+        },
+        "userName": {
+          "type": "String!",
+          "description": "The name of the user."
+        },
+        "userProfileId": {
+          "type": "String",
+          "description": "The profile ID."
+        },
+        "wallpaper": {
+          "type": "String",
+          "description": "The wallpaper."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "user": {
+      "type": "User",
+      "description": "The updated user.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "UpdateUserPayload",
+      "namedTypes": [
+        "UpdateUserPayload"
+      ]
+    },
+    "nodes": {
+      "UpdateUserPayload": {
+        "kind": "OBJECT",
+        "file": "types/UpdateUserPayload.json",
+        "references": [
+          "User"
+        ]
+      },
+      "User": {
+        "kind": "OBJECT",
+        "file": "types/User.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Boolean",
+          "UserProfile",
+          "Role"
+        ]
+      },
+      "AccountType": {
+        "kind": "ENUM",
+        "file": "types/AccountType.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Domain": {
+        "kind": "OBJECT",
+        "file": "types/Domain.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "UserProfile": {
+        "kind": "OBJECT",
+        "file": "types/UserProfile.json",
+        "references": [
+          "String",
+          "DateTime",
+          "KeyValuePair",
+          "Boolean"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "Role": {
+        "kind": "OBJECT",
+        "file": "types/Role.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Boolean",
+          "AccountConnection"
+        ]
+      },
+      "AccountConnection": {
+        "kind": "OBJECT",
+        "file": "types/AccountConnection.json",
+        "references": [
+          "AccountEdge",
+          "Account",
+          "PageInfo"
+        ]
+      },
+      "AccountEdge": {
+        "kind": "OBJECT",
+        "file": "types/AccountEdge.json",
+        "references": [
+          "String",
+          "Account"
+        ]
+      },
+      "Account": {
+        "kind": "INTERFACE",
+        "file": "types/Account.json",
+        "references": [
+          "AccountType",
+          "String",
+          "Domain",
+          "Role",
+          "User"
+        ]
+      },
+      "PageInfo": {
+        "kind": "OBJECT",
+        "file": "types/PageInfo.json",
+        "references": [
+          "String",
+          "Boolean"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

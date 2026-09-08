@@ -1,0 +1,128 @@
+{
+  "operation": "renameSiteCollection",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "RenameSiteCollectionInput!",
+      "description": null
+    }
+  },
+  "returnType": "RenameSiteCollectionPayload",
+  "inputTypes": {
+    "RenameSiteCollectionInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input needed to rename a site collection",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        },
+        "id": {
+          "type": "ID!",
+          "description": "ID of the site collection to rename"
+        },
+        "name": {
+          "type": "String",
+          "description": "New site collection name"
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "Reference of the job",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "RenameSiteCollectionPayload",
+      "namedTypes": [
+        "RenameSiteCollectionPayload"
+      ]
+    },
+    "nodes": {
+      "RenameSiteCollectionPayload": {
+        "kind": "OBJECT",
+        "file": "types/RenameSiteCollectionPayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

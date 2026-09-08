@@ -1,0 +1,52 @@
+{
+  "operation": "configurePageDesigns",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "ConfigurePageDesignsInput!",
+      "description": null
+    }
+  },
+  "returnType": "Boolean!",
+  "inputTypes": {
+    "ConfigurePageDesignsInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents input parameters for templates and page designs",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "Context database"
+        },
+        "mapping": {
+          "type": "[UNKNOWN!]!",
+          "description": "List of template ID to page design ID mappings"
+        },
+        "siteName": {
+          "type": "String!",
+          "description": "Current site name"
+        }
+      }
+    }
+  },
+  "returnFields": {},
+  "outputDependencyGraph": {
+    "root": {
+      "display": "Boolean!",
+      "namedTypes": [
+        "Boolean"
+      ]
+    },
+    "nodes": {
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

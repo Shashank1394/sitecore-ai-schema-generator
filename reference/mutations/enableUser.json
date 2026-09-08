@@ -1,0 +1,57 @@
+{
+  "operation": "enableUser",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "EnableUserInput!",
+      "description": null
+    }
+  },
+  "returnType": "EnableUserPayload",
+  "inputTypes": {
+    "EnableUserInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for enabling a security user.",
+      "fields": {
+        "userName": {
+          "type": "String!",
+          "description": "The name of the user to enable."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The operation status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "EnableUserPayload",
+      "namedTypes": [
+        "EnableUserPayload"
+      ]
+    },
+    "nodes": {
+      "EnableUserPayload": {
+        "kind": "OBJECT",
+        "file": "types/EnableUserPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

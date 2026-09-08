@@ -1,0 +1,125 @@
+{
+  "operation": "executeWorkflowCommand",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": "Executes the workflow command for the specified item.",
+  "arguments": {
+    "input": {
+      "type": "ExecuteWorkflowCommandInput!",
+      "description": null
+    }
+  },
+  "returnType": "ExecuteWorkflowCommandPayload",
+  "inputTypes": {
+    "ExecuteWorkflowCommandInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for executing a workflow command.",
+      "fields": {
+        "commandId": {
+          "type": "String!",
+          "description": "The ID of the workflow command."
+        },
+        "comments": {
+          "type": "String",
+          "description": "The workflow comments."
+        },
+        "item": {
+          "type": "ItemQueryInput!",
+          "description": "The target item of the workflow command."
+        }
+      }
+    },
+    "ItemQueryInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents an item query.",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "The name of the database where item exits."
+        },
+        "existingVersionOnly": {
+          "type": "Boolean",
+          "description": "Indicates whether to return the item even if the requested version does not exist."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The item ID. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "language": {
+          "type": "String",
+          "description": "The item language."
+        },
+        "path": {
+          "type": "String",
+          "description": "The full item path. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "requirePresentation": {
+          "type": "Boolean",
+          "description": "DEPRECATED. Indicates whether the item required must have presentation."
+        },
+        "version": {
+          "type": "Int",
+          "description": "The version number of the item."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "completed": {
+      "type": "Boolean!",
+      "description": "Indicates if command execution is completed.",
+      "arguments": {}
+    },
+    "error": {
+      "type": "String",
+      "description": "Gets the command execution error if any.",
+      "arguments": {}
+    },
+    "message": {
+      "type": "String",
+      "description": "Gets command execution message.",
+      "arguments": {}
+    },
+    "nextStateId": {
+      "type": "String",
+      "description": "Gets the next state ID in the workflow.",
+      "arguments": {}
+    },
+    "successful": {
+      "type": "Boolean!",
+      "description": "The operation status.",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ExecuteWorkflowCommandPayload",
+      "namedTypes": [
+        "ExecuteWorkflowCommandPayload"
+      ]
+    },
+    "nodes": {
+      "ExecuteWorkflowCommandPayload": {
+        "kind": "OBJECT",
+        "file": "types/ExecuteWorkflowCommandPayload.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

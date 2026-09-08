@@ -1,0 +1,57 @@
+{
+  "operation": "deleteRole",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteRoleInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteRolePayload",
+  "inputTypes": {
+    "DeleteRoleInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting a security role.",
+      "fields": {
+        "roleName": {
+          "type": "String!",
+          "description": "The name of the role to delete."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean",
+      "description": "The operation status",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteRolePayload",
+      "namedTypes": [
+        "DeleteRolePayload"
+      ]
+    },
+    "nodes": {
+      "DeleteRolePayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteRolePayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

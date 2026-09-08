@@ -1,0 +1,67 @@
+{
+  "operation": "archiveItem",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "ArchiveItemInput!",
+      "description": null
+    }
+  },
+  "returnType": "ArchiveItemPayload",
+  "inputTypes": {
+    "ArchiveItemInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for archiving an item.",
+      "fields": {
+        "archiveName": {
+          "type": "String",
+          "description": "The name of the archive. The default value is 'archive'."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The ID of the item to archive.If both item ID and item path parameters are specified, the item path parameter is ignored."
+        },
+        "itemPath": {
+          "type": "String",
+          "description": "The full path of the item to archive. If both item ID and item path parameters are specified, the item path parameter is ignored."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "archiveItemId": {
+      "type": "ID!",
+      "description": "The globally-unique identifier.",
+      "arguments": {
+        "format": "IdFormat"
+      }
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "ArchiveItemPayload",
+      "namedTypes": [
+        "ArchiveItemPayload"
+      ]
+    },
+    "nodes": {
+      "ArchiveItemPayload": {
+        "kind": "OBJECT",
+        "file": "types/ArchiveItemPayload.json",
+        "references": [
+          "ID"
+        ]
+      },
+      "ID": {
+        "kind": "SCALAR",
+        "file": "types/ID.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

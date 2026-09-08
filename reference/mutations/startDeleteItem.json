@@ -1,0 +1,132 @@
+{
+  "operation": "startDeleteItem",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteItemInput!",
+      "description": null
+    }
+  },
+  "returnType": "StartDeleteItemPayload",
+  "inputTypes": {
+    "DeleteItemInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting an item.",
+      "fields": {
+        "database": {
+          "type": "String",
+          "description": "The name of the item database."
+        },
+        "itemId": {
+          "type": "ID",
+          "description": "The ID of the item. If both ID and path parameters are specified, the path parameter is ignored."
+        },
+        "path": {
+          "type": "String",
+          "description": "The item path."
+        },
+        "permanently": {
+          "type": "Boolean",
+          "description": "When true the item is permanently deleted."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "job": {
+      "type": "Job",
+      "description": "Reference of the job",
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "StartDeleteItemPayload",
+      "namedTypes": [
+        "StartDeleteItemPayload"
+      ]
+    },
+    "nodes": {
+      "StartDeleteItemPayload": {
+        "kind": "OBJECT",
+        "file": "types/StartDeleteItemPayload.json",
+        "references": [
+          "Job"
+        ]
+      },
+      "Job": {
+        "kind": "OBJECT",
+        "file": "types/Job.json",
+        "references": [
+          "String",
+          "Boolean",
+          "KeyValuePair",
+          "JobOptions",
+          "DateTime",
+          "JobStatus"
+        ]
+      },
+      "String": {
+        "kind": "SCALAR",
+        "file": "types/String.json",
+        "references": []
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      },
+      "KeyValuePair": {
+        "kind": "OBJECT",
+        "file": "types/KeyValuePair.json",
+        "references": [
+          "String",
+          "Any"
+        ]
+      },
+      "Any": {
+        "kind": "SCALAR",
+        "file": "types/Any.json",
+        "references": []
+      },
+      "JobOptions": {
+        "kind": "OBJECT",
+        "file": "types/JobOptions.json",
+        "references": [
+          "Boolean",
+          "String"
+        ]
+      },
+      "DateTime": {
+        "kind": "SCALAR",
+        "file": "types/DateTime.json",
+        "references": []
+      },
+      "JobStatus": {
+        "kind": "OBJECT",
+        "file": "types/JobStatus.json",
+        "references": [
+          "String",
+          "DateTime",
+          "JobState",
+          "Long"
+        ]
+      },
+      "JobState": {
+        "kind": "ENUM",
+        "file": "types/JobState.json",
+        "references": []
+      },
+      "Long": {
+        "kind": "SCALAR",
+        "file": "types/Long.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

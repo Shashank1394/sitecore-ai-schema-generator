@@ -1,0 +1,61 @@
+{
+  "operation": "deleteArchivedItem",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "DeleteArchivedItemInput!",
+      "description": null
+    }
+  },
+  "returnType": "DeleteArchivedItemPayload",
+  "inputTypes": {
+    "DeleteArchivedItemInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for deleting an archived item.",
+      "fields": {
+        "archivalId": {
+          "type": "ID!",
+          "description": "The item archival ID."
+        },
+        "archiveName": {
+          "type": "String",
+          "description": "The name of the archive. The default value is 'archive'."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "DeleteArchivedItemPayload",
+      "namedTypes": [
+        "DeleteArchivedItemPayload"
+      ]
+    },
+    "nodes": {
+      "DeleteArchivedItemPayload": {
+        "kind": "OBJECT",
+        "file": "types/DeleteArchivedItemPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}

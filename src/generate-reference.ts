@@ -513,54 +513,6 @@ function buildOutputFields(
 }
 
 /**
- * Collect nested OBJECT output dependencies.
- *
- * This allows us to describe things such as:
- *
- * createItem
- *   -> CreateItemPayload
- *        -> Item
- *             -> ItemTemplate
- */
-async function resolveOutputDependencies(
-  type: TypeRef | null | undefined,
-  dependencies: Set<string>,
-  visited: Set<string>,
-): Promise<void> {
-  if (!type) {
-    return;
-  }
-
-  const namedTypes = new Set<string>();
-
-  collectNamedTypes(type, namedTypes);
-
-  for (const namedType of namedTypes) {
-    if (visited.has(namedType)) {
-      continue;
-    }
-
-    visited.add(namedType);
-
-    const definition = await loadType(namedType);
-
-    if (!definition) {
-      continue;
-    }
-
-    if (definition.kind !== "OBJECT") {
-      continue;
-    }
-
-    dependencies.add(namedType);
-
-    for (const field of definition.fields ?? []) {
-      await resolveOutputDependencies(field.type, dependencies, visited);
-    }
-  }
-}
-
-/**
  * Build one complete operation reference.
  */
 async function buildOperationReference(

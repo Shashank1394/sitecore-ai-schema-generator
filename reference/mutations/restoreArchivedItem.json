@@ -1,0 +1,61 @@
+{
+  "operation": "restoreArchivedItem",
+  "operationType": "mutation",
+  "rootType": "Mutation",
+  "description": null,
+  "arguments": {
+    "input": {
+      "type": "RestoreArchivedItemInput!",
+      "description": null
+    }
+  },
+  "returnType": "RestoreArchivedItemPayload",
+  "inputTypes": {
+    "RestoreArchivedItemInput": {
+      "kind": "INPUT_OBJECT",
+      "description": "Represents the input for restoring an archived item.",
+      "fields": {
+        "archivalId": {
+          "type": "ID!",
+          "description": "The item archival ID."
+        },
+        "archiveName": {
+          "type": "String",
+          "description": "The name of the archive. The default value is 'archive'."
+        }
+      }
+    }
+  },
+  "returnFields": {
+    "successful": {
+      "type": "Boolean!",
+      "description": null,
+      "arguments": {}
+    }
+  },
+  "outputDependencyGraph": {
+    "root": {
+      "display": "RestoreArchivedItemPayload",
+      "namedTypes": [
+        "RestoreArchivedItemPayload"
+      ]
+    },
+    "nodes": {
+      "RestoreArchivedItemPayload": {
+        "kind": "OBJECT",
+        "file": "types/RestoreArchivedItemPayload.json",
+        "references": [
+          "Boolean"
+        ]
+      },
+      "Boolean": {
+        "kind": "SCALAR",
+        "file": "types/Boolean.json",
+        "references": []
+      }
+    }
+  },
+  "metadata": {
+    "generatedFrom": "SitecoreAI GraphQL introspection"
+  }
+}
